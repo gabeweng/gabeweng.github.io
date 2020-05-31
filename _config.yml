@@ -24,6 +24,9 @@ github_username: amitness
 minimal_mistakes_skin: default
 search: true
 
+twitter:
+  username: "amitness"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
