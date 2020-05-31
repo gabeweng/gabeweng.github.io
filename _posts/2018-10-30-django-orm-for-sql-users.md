@@ -1,6 +1,6 @@
 ---
 title: "Django ORM if you already know SQL"
-date: 2018-10-31T22:16:30-04:00
+date: 2018-10-30T22:16:30-04:00
 categories:
   - django
 classes: wide
