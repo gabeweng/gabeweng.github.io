@@ -9,6 +9,7 @@ classes: wide
 excerpt: A summary of “Train Once, Test Anywhere” paper for zero-shot text classification
 header:
   og_image: https://amitness.com/images/zero-shot-vs-transfer.png
+  teaser: "https://amitness.com/images/zero-shot-vs-transfer.png"
 ---
 
 
