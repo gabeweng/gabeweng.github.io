@@ -1,8 +1,8 @@
 ---
 title: "Zero Shot Learning for Text Classification in NLP"
-date: 2019-04-18T15:34:30-04:00
+date: 2020-05-30T15:34:30-04:00
 categories:
-  - blog
+  - nlp
 tags:
   - Jekyll
   - update
