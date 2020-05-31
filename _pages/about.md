@@ -1,8 +1,21 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
+excerpt: Learn about me, my current endeavors, interest areas in Machine Learning and the reason why I started this personal blog.
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+**Who I am**  
+I'm a T-shaped engineer going [wide and deep](https://github.com/amitness/learning) on the multidisciplinary fields of data science.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+**What I do**  
+Currently, I work as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com), where I apply state-of-the-art research to solve business problems. I've worked in domains of education technology, health-care, logistics and market research.
+
+**Interest Areas**  
+I'm interested in the paradigm of learning with limited labels (Self-Supervised Learning / Semi-Supervised Learning) and Natural Language Processing.
+
+**About this blog**  
+I write posts with hand-drawn diagrams and intuitions to clarify various machine learning concepts. I personally find such visual explanations very helpful to link the big picture with the actual details and mathematics involved.
+
+**Get Connected**  
+If you find my work interesting, let's get connected on [Twitter](https://twitter.com/amitness).
