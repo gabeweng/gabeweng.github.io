@@ -103,6 +103,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "images/"
+    values:
+      image: true
+
 
 category_archive:
   type: liquid
