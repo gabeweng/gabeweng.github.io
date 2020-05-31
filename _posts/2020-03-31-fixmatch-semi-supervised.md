@@ -3,7 +3,6 @@ title: "The Illustrated FixMatch for Semi-Supervised Learning"
 date: 2020-03-31T10:00:30-04:00
 categories:
   - semi-supervised-learning
-  - zero-shot-learning
 classes: wide
 excerpt: Learn how to leverage unlabeled data using FixMatch for semi-supervised learning
 header:
