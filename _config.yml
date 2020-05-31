@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Amit Chaudhary"
-  avatar : ""/images/pp1.jpg""
+  avatar : "/images/pp1.jpg"
   bio    : "Machine Learning Engineer applying research to product"
   links:
     - label: "Twitter"
