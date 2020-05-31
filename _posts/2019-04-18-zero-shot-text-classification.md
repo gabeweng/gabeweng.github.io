@@ -12,6 +12,8 @@ header:
   teaser: "https://amitness.com/images/zero-shot-vs-transfer.png"
 ---
 
+$$ e^{i \pi} = -1$$
+
 
 The recent release of GPT-3 got me interested in the state of zero-shot learning and few-shot learning in NLP. While most of the zero-shot learning research is concentrated in Computer Vision, there has been some interesting work in the NLP domain as well.  
 
