@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll!"
+title: "Zero Shot Learning for Text Classification in NLP"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
