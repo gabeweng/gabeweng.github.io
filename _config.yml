@@ -72,7 +72,13 @@ author:
       url: "https://github.com/amitness"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/amitness"
+      url: "https://np.linkedin.com/in/amitness"
+    - label: "Email"
+      icon: "fab fa-fw fa-envelope"
+      url: "mailto:meamitkc@gmail.com"
+    - label: "Feed"
+      icon: "fab fa-fw fa-globe"
+      url: "/feed.xml"
 
 footer:
   links:
