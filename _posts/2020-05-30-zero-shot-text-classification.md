@@ -39,14 +39,17 @@ The paper uses word2vec pre-trained on Google News as the word embeddings for bo
 The paper proposes three different architecture to learn the relation between sentence and label embeddings.  
 ## a. Architecture 1  
 In this architecture, we take the mean of word embeddings in the sentence as the sentence embedding and concatenate it with the label embedding. This vector is then passed through a fully connected layer to classify if the sentence and label are related or not.  
+
 ![](/images/zero-shot-architecture-1.png){: .align-center} 
 
 ## b. Architecture 2  
 In this architecture, instead of taking the mean, the word embeddings are passed through an LSTM and the last hidden state of the network is treated as the sentence vector. It is concatenated with the word vector of the label and then passed through a fully connected layer to classify if the sentence and label are related or not.   
+
 ![](/images/zero-shot-architecture-2.png){: .align-center} 
 
 ## c. Architecture 3  
 In this architecture, the embedding of each word in the sentence is concatenated with the embedding of the label. This combined embedding is passed through an LSTM and the last hidden state of the network is taken. It is then passed through a fully connected layer to classify if the sentence and label are related or not.  
+
 ![](/images/zero-shot-architecture-3.png){: .align-center} 
 
 ## 4. Training  
