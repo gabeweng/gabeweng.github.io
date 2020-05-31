@@ -1,5 +1,5 @@
 ---
-title: "Zero Shot Learning for Text Classification in NLP"
+title: "Zero Shot Learning for Text Classification"
 date: 2020-05-30T17:27:30-04:00
 categories:
   - nlp
