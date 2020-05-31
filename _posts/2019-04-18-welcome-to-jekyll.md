@@ -7,6 +7,7 @@ tags:
   - Jekyll
   - update
 classes: wide
+excerpt: A summary of “Train Once, Test Anywhere” paper for zero-shot text classification
 ---
 
 
