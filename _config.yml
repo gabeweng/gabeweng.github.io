@@ -133,3 +133,19 @@ comments:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
 repository: "amitness/blog-comments"
+
+google_site_verification: "xETphZ5K1WItiUzH0YMRgZ8njDZlQMcGd_HD3zxGkuI"
+
+social:
+  type:  Person
+  name:  Amit Chaudhary
+  links:
+    - "https://twitter.com/amitness"
+    - "https://www.facebook.com/amitify"
+    - "https://www.linkedin.com/in/amitness"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-98232022-1"
+    anonymize_ip: false
