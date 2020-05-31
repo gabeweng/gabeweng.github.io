@@ -20,7 +20,7 @@ I will be writing a series of blog posts to cover existing research on zero-shot
 Zero-Shot Learning is the ability to detect classes that the model has never seen during training. It resembles our ability as humans to generalize and identify new things without explicit supervision.  
  
 For example, let's say we want to do <span style="color: #546E7A; font-weight: bold;">sentiment classification</span> and <span style="color: #795548; font-weight: bold;">news category</span> classification. Normally, we will train/fine-tune a new model for each dataset. In contrast, with zero-shot learning, you can perform tasks such as sentiment and news classification directly without any task-specific training.  
-![](/images/zero-shot-vs-transfer.png){.img-center}  
+![](/images/zero-shot-vs-transfer.png){: .align-center}
 
 ## Train Once, Test Anywhere
 In the paper, the authors propose a simple idea for zero-shot classification. Instead of classifying texts into X classes, they re-formulate the task as a binary classification to determine if a text and a class are related or not.   
@@ -29,7 +29,7 @@ In the paper, the authors propose a simple idea for zero-shot classification. In
 Let's understand their formulation and end-to-end process in more detail now.    
 ## 1. Data Preparation  
 The authors crawled 4.2 million <span style="color: #7E57C2; font-weight: bold;">news headlines</span> from the web and used the <span style="color: #795548; font-weight: bold;">SEO tags</span> for the news article as the <span style="color: #795548; font-weight: bold;">labels</span>. After crawling, they got total <span style="color: #795548; font-weight: bold;">300,000 unique tags</span> as the labels. We can see how troublesome it would have been if we had to train a supervised model on <span style="color: #795548; font-weight: bold;">300,000 classes</span>. 
-![](/images/zero-shot-data-crawling.png){.img-center}  
+![](/images/zero-shot-data-crawling.png){: .align-center}
 Each <span style="color: #7E57C2; font-weight: bold;">headline</span> was truncated to 28 words and anything shorter was padded.  
 
 ## 2. Word Embedding   
@@ -39,15 +39,15 @@ The paper uses word2vec pre-trained on Google News as the word embeddings for bo
 The paper proposes three different architecture to learn the relation between sentence and label embeddings.  
 ## a. Architecture 1  
 In this architecture, we take the mean of word embeddings in the sentence as the sentence embedding and concatenate it with the label embedding. This vector is then passed through a fully connected layer to classify if the sentence and label are related or not.  
-![](/images/zero-shot-architecture-1.png){.img-center}  
+![](/images/zero-shot-architecture-1.png){: .align-center}
 
 ## b. Architecture 2  
 In this architecture, instead of taking the mean, the word embeddings are passed through an LSTM and the last hidden state of the network is treated as the sentence vector. It is concatenated with the word vector of the label and then passed through a fully connected layer to classify if the sentence and label are related or not.   
-![](/images/zero-shot-architecture-2.png){.img-center}  
+![](/images/zero-shot-architecture-2.png){: .align-center}  
 
 ## c. Architecture 3  
 In this architecture, the embedding of each word in the sentence is concatenated with the embedding of the label. This combined embedding is passed through an LSTM and the last hidden state of the network is taken. It is then passed through a fully connected layer to classify if the sentence and label are related or not.  
-![](/images/zero-shot-architecture-3.png){.img-center}  
+![](/images/zero-shot-architecture-3.png){: .align-center} 
 
 ## 4. Training  
 Using the crawled news headlines dataset, each headline is paired with 50% actual labels and 50% randomly selected unrelated labels. Then the model is trained using above 3 architectures with a binary cross-entropy loss with Adam optimizer.  
@@ -61,10 +61,10 @@ Now, taking the trained model that can compute relatedness score of sentences wi
 - **UCI News Aggregator Dataset:**    
 In this dataset, there are 420,000 sentences with 4 labels: technology, business, medicine and entertainment. They propose a heuristic called category tree where they expand each label with related words. The process is as follows:  
     - Take the unseen labels and add a few words related to this concept. For example, related words for business can be 'finance' and 'revenue'.  
-    ![](/images/zero-shot-category-tree.png){.img-center}  
+    ![](/images/zero-shot-category-tree.png){: .align-center}
     - To predict the class(category) for a sentence, they predict the relatedness of the sentence to related words under that category and take their mean as the final relatedness.  
     - The classes which had mean relatedness probability above a threshold are assumed as the predicted classes.  This threshold is a hyperparameter and the paper uses 0.5 as the threshold.   
-    ![](/images/zero-shot-threshold.png){.img-center}    
+    ![](/images/zero-shot-threshold.png){: .align-center}  
     
     The authors tested this process on the entire dataset and achieved 61.73%, 63% and 64.21% accuracy. In comparison, the supervised methods achieve 94.75% accuracy. The result is still interesting because without even training on a single sample, it achieves better than random accuracy.  
 
