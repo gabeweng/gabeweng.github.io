@@ -116,3 +116,4 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
+repository: "amitness/blog-comments"
