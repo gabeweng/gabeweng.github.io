@@ -12,12 +12,14 @@ header:
   teaser: "https://amitness.com/images/zero-shot-vs-transfer.png"
 ---
 
-$$ e^{i \pi} = -1$$
 
 
 The recent release of GPT-3 got me interested in the state of zero-shot learning and few-shot learning in NLP. While most of the zero-shot learning research is concentrated in Computer Vision, there has been some interesting work in the NLP domain as well.  
 
-I will be writing a series of blog posts to cover existing research on zero-shot learning in NLP. In this first post, I will explain the paper ["Train Once, Test Anywhere: Zero-Shot Learning for Text Classification"](https://arxiv.org/abs/1712.05972) by Pushp et al. This paper from December 2017 was the first work to propose a zero-shot learning paradigm for text classification.  
+I will be writing a series of blog posts to cover existing research on zero-shot learning in NLP. In this first post, I will explain the paper ["Train Once, Test Anywhere: Zero-Shot Learning for Text Classification"](https://arxiv.org/abs/1712.05972) by Pushp et al. This paper from December 2017 was the first work to propose a zero-shot learning paradigm for text classification.
+
+
+$$ e^{i \pi} = -1$$
 
 
 ## What is Zero-Shot Learning?
