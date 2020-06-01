@@ -109,7 +109,7 @@ Zhang et al. used this idea in their paper called "Split-Brain Autoencoder". To 
 Example adapted from "Split-Brain Autoencoder" paper
 {: .text-center}
 
-For this color image, we can split it into grayscale and color channels. Then, for the grayscale channel, we predict the color channel and for the color channel part, we predict the grayscale channel. The two predicted channels <tt class="math">X_1</tt> and <tt class="math">X_2</tt> are combined to get back a reconstruction of the original image. We can compare this reconstruction to the original color image to get a loss and improve the model.  
+For this color image, we can split it into grayscale and color channels. Then, for the grayscale channel, we predict the color channel and for the color channel part, we predict the grayscale channel. The two predicted channels $$X_1$$ and $$X_2$$ are combined to get back a reconstruction of the original image. We can compare this reconstruction to the original color image to get a loss and improve the model.  
 
 This same setup can be applied for images with depth as well where we use the color channels and the depth channels from a RGB-HHA image to predict each other and compare output image and original image.
 

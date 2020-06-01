@@ -124,13 +124,13 @@ We can understand the behavior of the code with the following figure:
 
 ![](/images/rnn-stacked.png){: .align-center}
 
-<article class="notice--primary">
-Insight: Why do we usually set return_sequences to True for all layers except the final?  
-<br><br>
+<div class="notice--info">
+<h4 class="no_toc">Insight: Why do we usually set return_sequences to True for all layers except the final?</h4> 
+<br>
 <p>
 Since the second layer needs inputs from the first layer, we set return_sequence=True for the first SimpleRNN layer. For the second layer, we usually set it to False if we are going to just be doing text classification. If out task is NER prediction, we can set it to True in the final layer as well.
 </p>
-</article>
+</div>
 
 
 ## References
