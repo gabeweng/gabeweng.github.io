@@ -5,7 +5,7 @@ categories:
   - nlp
   - zero-shot-learning
 classes: wide
-excerpt: An overview of a text generation approach to zero-shot text classification with GPT-2
+excerpt: A text generation approach to zero-shot text classification with GPT-2
 header:
   og_image: /images/zsl-generation-idea.png
   teaser: "/images/zsl-generation-idea.png"
