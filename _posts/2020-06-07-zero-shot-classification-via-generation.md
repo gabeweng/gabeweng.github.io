@@ -91,7 +91,7 @@ Even without access to the training data, the model was able to achieve up to 45
     |---|---|---|---|
     |Random Guess|50.6|52.9|50.4|
     |Majority Class|49.9|49.3|49.2|
-    |<span style="color: #49AD4D;">Zero-Shot 355M All Data</span>|**62.5**|**80.2**|**74.7**|
+    |<span style="color: #49AD4D; font-weight: bold;">Zero-Shot 355M All Data</span>|**62.5**|**80.2**|**74.7**|
     |355M Finetuned|93.23|97.115|94.479|
     |SOTA(XLNET, 2019)|96.8|97.6|98.45|
 
@@ -102,7 +102,7 @@ Even without access to the training data, the model was able to achieve up to 45
     |Zero-Shot 117M All Data|51.8|50.3|50.1|
     |<span style="font-weight: bold;">Zero-Shot 355M All Data</span>|**62.5**|**80.2**|**74.7**|
 
-- When pretraining is done on the only 1/4th of the total data, it leads to a decrease in overall performance. This shows that pretraining across a diverse set of tasks is needed and it can be provided by a larger dataset.  
+- When pretraining is done on the only 1/4th of the total data, it leads to a decrease in overall performance. This shows that pretraining across a diverse set of tasks is needed and a larger dataset provides that.  
 
     |Model|SST-2|Amazon-2|Yelp-2|
     |---|---|---|---|
@@ -117,13 +117,17 @@ Even without access to the training data, the model was able to achieve up to 45
     |Majority Class|25.3|7.6|9.9|
     |Zero-Shot 117M All Data|40.2|39.6|26.1|
     |Zero-Shot 355M 1/4 Data|**68.3**|**52.5**|**52.2**|
-    |Zero-Shot 355M All Data|65.5|44.8|49,5|
+    |Zero-Shot 355M All Data|65.5|44.8|49.5|
     |355M Finetuned|94.87|99.0|72.79|
     |SOTA|95.51|99.38|76.26|
 
 - The authors point out that there were controllability issues because GPT-2 was generating answers which were not a valid class. For example, for the yahoo answers dataset, valid classes are "education & reference" and "science and mathematics'. But, the model sometimes mixed these two and generated 'education and mathematics'. This problem diminished as the model size was increased to 355M and full data was used.  
+  
+![](/images/zsl-generation-controllability-issue.png){: .align-center}
 
 - Another issue with the model was the generation of an empty string and rearranging the tokens of a valid answer e.g. "Positive Sentiment" -> "Sentiment Positive". This problem was frequent with top-k and top-p sampling and rare with greedy decoding, and so the authors chose greedy decoding.  
+
+![](/images/zsl-generation-challenges.png){: .align-center}
 
 ## Conclusion  
 The paper provides a good overview of the method and challenges of using generative language models for zero-shot classification and show that natural language could be a promising meta-learning strategy for text problems. 
