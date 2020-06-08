@@ -50,11 +50,11 @@ Now for each document, we randomly choose between 2 to 15 titles. One title is c
 
 We also add regularization by replacing a title with "none of the above" 50% of the time. And the correct title is also replaced with "none of the above" with a probability 1/(number of titles). Such noise can help train the model to choose "none of the above" if none of the choices match the content.    
 
-As shown below, the titles are placed after the question as a comma-separated list.  
+As shown below, the <span style="color: #5f4339; font-weight: bold;">titles</span> are placed after the <span style="color: #49AD4D;font-weight: bold;">question</span> as a comma-separated list.  
 
 |Question|Text|Answer|
 |---|---|---|
-|<span style="color: #49AD4D;">Which of these choices best describes the following document?:</span> " OpenAI Releases Largest GPT-2 Text Generation Model ", " Facebook buys Whatsapp "|We’ve trained a large-scale ...|OpenAI Releases Largest GPT-2 Text Generation Model|
+|<span style="color: #087f23;">Which of these choices best describes the following document?:</span> " <span style="color: #5f4339;">OpenAI Releases Largest GPT-2 Text Generation Model</span> ", " <span style="color: #5f4339;">Facebook buys Whatsapp</span> "|We’ve trained a large-scale ...|OpenAI Releases Largest GPT-2 Text Generation Model|
 
 The question is prepended to the document to simulate a multiple-choice question answering task and a pre-trained GPT-2 language model is fine-tuned on this dataset to learn the submission title prediction task. 
 
@@ -78,9 +78,11 @@ For each dataset, they perform the following steps:
 
     |Question|Text|Answer|
     |---|---|---|
-    |Which of these choices best describes the following document?:" Positive Sentiment ", " Negative Sentiment "|the film is one of the year's best|Positive Sentiment|
+    |To which category does the text belong?:" Positive Sentiment ", " Negative Sentiment "|the film is one of the year's best|Positive Sentiment|
 
-- The question is prepended to the text and passed to GPT-2 as a prompt. The output from GPT-2 is decoded using greedy sampling and it is compared to the actual class. Accuracy for each dataset is calculated.  
+- The question is prepended to the text and passed to GPT-2 as a prompt. Then we use greedy sampling to generate the output from GPT-2 and compare it with the actual class. Accuracy for each dataset is calculated.
+
+![](/images/zsl-generation-downstream-usage.png){: .align-center}  
 
 ## Results and Insights  
 Even without access to the training data, the model was able to achieve up to 45% improvement in classification accuracy over random and majority class baselines. 
