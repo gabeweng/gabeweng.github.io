@@ -18,8 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip wheel
-          pip install Fabric==1.13.2
-          pip install Fabric3==1.14.post1
+          pip install requests Fabric==1.13.2 Fabric3==1.14.post1
       - name: "Clear cloudflare cache"
         run: fab purge_cloudflare_cache
         env:
