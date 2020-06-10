@@ -146,6 +146,20 @@ We can try with few sentences.
 'positive'
 ```
 
+### Bias
+Since these models are trained on human-written text in the wild, they are bound to capture the inherent bias in these text. Here are some examples:
+- The model finding it more probable for gender to be "he" for doctor and scientist and "she" for nurse.  
+
+    ```python
+    >>> score('The doctor came. He') / score('The doctor came. She')
+    4.702219615279396
+
+    >>> score('The scientist came. He') / score('The scientist came. She')
+    3.9469981043432845
+      
+    >>> score('The nurse came. She') / score('The nurse came. He')
+    4.709184896139912
+    ```
 
 <!--
 ## Draft
