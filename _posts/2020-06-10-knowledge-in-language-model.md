@@ -4,7 +4,7 @@ date: 2020-06-07T12:50:00-00:00
 categories:
   - nlp
 classes: wide
-excerpt: An exploration of simple knowledge captured by language model trained on a bunch of strings
+excerpt: An exploration of simple knowledge captured by language models
 header:
   og_image: /images/alex-slides.png
   teaser: "/images/alex-slides.png"
