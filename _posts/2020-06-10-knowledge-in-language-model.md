@@ -10,11 +10,13 @@ header:
   teaser: "/images/alex-slides.png"
 ---
 
-I recently completed the UC Berkeley's [Deep Unsupervised Learning](https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP) course. The course had an interesting [guest lecture](https://www.youtube.com/watch?v=BnpB3GrpsfM) on the history of language modeling by Alec Radford, the author of GPT model.  
+I recently completed the UC Berkeley's [Deep Unsupervised Learning](https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP) course. The course had an interesting [guest lecture](https://www.youtube.com/watch?v=BnpB3GrpsfM) on the history of language modeling by Alec Radford, the author of GPT model.    
+
 In one of his slides, Alec mentions how by simply observing a bunch of strings, language models tend to capture useful knowledge. He also mentions that maybe in the future, we could have an unsupervised language model that can be directly used on tasks without further fine-tuning. This talk was before GPT-3 was released and GPT-3 has shown the few-shot learning ability of language models.  
+
 ![](/images/alex-slides.png){: .align-center}
 
-In this post, I will share my exploration of the simple examples he mentioned in the lecture with code and expand on them.  
+In this post, I will share my exploration of the simple examples he mentioned in the lecture with code and expand more on them.  
 
 
 ## Probabilistic Language Modeling
