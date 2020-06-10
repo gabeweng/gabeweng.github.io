@@ -131,7 +131,7 @@ def sentiment(sentence):
     return 'positive' if positive_score > negative_score else 'negative'
 ```
 
-We can try with few sentences.
+We can try with a few sentences.
 ```python
 >>> sentiment('Awesome product.')
 'positive'
