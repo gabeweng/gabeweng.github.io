@@ -6,8 +6,8 @@ categories:
 classes: wide
 excerpt: An exploration of simple knowledge captured by language model trained on a bunch of strings
 header:
-  og_image: /images/zsl-generation-idea.png
-  teaser: "/images/zsl-generation-idea.png"
+  og_image: /images/alex-slides.png
+  teaser: "/images/alex-slides.png"
 ---
 
 I recently completed the UC Berkeley's [Deep Unsupervised Learning](https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP) course. The course had an interesting [guest lecture](https://www.youtube.com/watch?v=BnpB3GrpsfM) on the history of language modeling by Alec Radford, the author of GPT model.  
