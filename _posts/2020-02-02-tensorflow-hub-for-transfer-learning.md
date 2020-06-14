@@ -7,8 +7,8 @@ categories:
 classes: wide
 excerpt: Learn how to integrate and finetune tensorflow-hub modules in Tensorflow 2.0
 header:
-  og_image: /images/zero-shot-paper-idea.png
-  teaser: "/images/zero-shot-paper-idea.png"
+  og_image: /images/clickbait-or-not-illustration.png
+  teaser: "/images/clickbait-or-not-illustration.png"
 ---
 
 Tensorflow 2.0 introduced Keras as the default high-level API to build models. Combined with pretrained models from Tensorflow Hub, it provides a dead-simple way for transfer learning in NLP to create good models out of the box.   
