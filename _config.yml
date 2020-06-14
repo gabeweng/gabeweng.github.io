@@ -63,7 +63,7 @@ plugins:
 
 author:
   name   : "Amit Chaudhary"
-  avatar : "/images/pp1.jpg"
+  avatar : "/images/bio-photo.jpg"
   bio    : "Research && Engineering"
   links:
     - label: "Twitter"
