@@ -6,8 +6,8 @@ categories:
 classes: wide
 excerpt: An illustrated summary of ALBERT paper.
 header:
-  og_image: /images/zero-shot-paper-idea.png
-  teaser: "/images/zero-shot-paper-idea.png"
+  og_image: /images/nlp-representation-learning.png
+  teaser: "/images/nlp-representation-learning.png"
 ---
 
 Consider a sentence given below. As humans, when we encounter the word "**apple**", we could: 
