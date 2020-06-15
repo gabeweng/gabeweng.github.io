@@ -82,9 +82,9 @@ This encoder has better accuracy on downstream tasks but higher memory and compu
 
 
 ### Variant 2: Deep Averaging Network(DAN)  
-In this simpler variant, the encoder is based on the architecture proposed by [Iyyer et al.](https://people.cs.umass.edu/~miyyer/pubs/2015_acl_dan.pdf). First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training.    
+In this simpler variant, the encoder is based on the architecture proposed by [Iyyer et al.](https://people.cs.umass.edu/~miyyer/pubs/2015_acl_dan.pdf). First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through 4-layer feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training.    
 
-<!--[Image]-->
+![](/images/use-deep-averaging-network-variant.png){: .align-center}  
 
 It has slightly reduced accuracy compared to the transformer variant, but the inference time is very efficient. Since we are only doing feedforward operations, the compute time is of linear complexity in terms of length of the input sequence.  
 
