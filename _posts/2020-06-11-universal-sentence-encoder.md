@@ -27,7 +27,7 @@ A naive technique to get sentence embedding is to average the embeddings of word
 
 ![Averaging Word Vectors to Get Sentence Embedding](/images/use-word-embedding-average.png){: .align-center}  
 
-Let's understand these challenges with some code examples using the spacy library. As shown below, we install spacy and create an `nlp` object to load the medium version of their model.  
+Let's understand these challenges with some code examples using the spacy library. We first install spacy and create an `nlp` object to load the medium version of their model.  
 ```python
 # pip install spacy
 # python -m spacy download en_core_web_md
