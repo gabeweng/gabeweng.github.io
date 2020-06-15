@@ -121,7 +121,7 @@ The idea to learn sentence embedding based on SNLI seems to be inspired by the [
 Once the model is trained using the above tasks, we can use it to map any sentence into fixed-length 512 dimension sentence embedding. This can be used for semantic search, paraphrase detection, clustering, smart-reply, text classification, and many other NLP tasks.  
 
 ## Results
-One caveat with the USE paper was that it doesn't have a section on comparison with other competing sentence embedding methods over standard benchmarks. The paper seems to be written from an engineering perspective based on usage in products such as Inbox by Gmail and Google Books.  
+One caveat with the USE paper was that it doesn't have a section on comparison with other competing sentence embedding methods over standard benchmarks. The paper seems to be written from an engineering perspective based on learnings from products such as Inbox by Gmail and Google Books.  
  
 ## Implementation  
 The pre-trained models for "Universal Sentence Encoder" are available via Tensorflow Hub. You can use it to get embeddings as well as use it as a pre-trained model in Keras. You can refer to my article on [tutorial on Tensorflow Hub](https://amitness.com/2020/02/tensorflow-hub-for-transfer-learning/) to learn how to use it.  
