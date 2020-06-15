@@ -1,6 +1,6 @@
 ---
 title: "Universal Sentence Encoder Visually Explained"
-date: 2020-06-07T12:50:00-00:00
+date: 2020-06-15T12:51-00:00
 categories:
   - nlp
 classes: wide
