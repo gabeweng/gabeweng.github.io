@@ -112,10 +112,12 @@ In this task, we need to predict if a hypothesis entails, contradicts, or is neu
 |I love Marvel movies|I hate Marvel movies|contradiction|
 |I love Marvel movies|A ship arrived|neutral|
 
+The sentence pairs are encoded using shared Transformer/DAN encoders and the output 512-dim embeddings u1 and u2 are obtained. Then, they are concatenated along with their L1 distance and their dot product(angle). This concatenated vector is passed through fully-connected layers and softmax is applied to get probability for entailment/contradiction/neutral classes.  
+![](/images/use-snli-task.png){: .align-center}  
+
 
 The idea to learn sentence embedding based on SNLI seems to be inspired by the [InferSent](https://arxiv.org/abs/1705.02364) paper though the authors don't cite it.      
 
-<!--[Image]-->
 
 ## 4. Inference  
 Once the model is trained using the above tasks, we can use it to map any sentence into fixed-length 512 dimension sentence embedding. This can be used for semantic search, paraphrase detection, clustering, smart-reply, text classification, and many other NLP tasks.  
