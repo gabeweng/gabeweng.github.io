@@ -106,7 +106,7 @@ Image Source: [Henderson et al.](https://arxiv.org/abs/1705.00652)
 {: .text-center}
 
 The USE authors use a corpus from web question-answering pages and discussion forums and formulate this task in context of sentence encoder.    
-<!--[Image]-->
+![](/images/use-input-response-prediction.png){: .align-center}  
 
 
 ### c. Natural Language Inference
