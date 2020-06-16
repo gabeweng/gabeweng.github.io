@@ -99,7 +99,13 @@ In USE, the same core idea is used but instead of LSTM encoder-decoder architect
 ![](/images/use-skipthought-task.png){: .align-center}  
 
 ### b. Conversational Input-Response Prediction
-In this task, we need to predict the correct response for a given input among a list of correct responses and other randomly sampled responses. This task is inspired by [Henderson et al.](https://arxiv.org/abs/1705.00652) who proposed a scalable email reply prediction architecture. This also powered the "Smart Reply" feature in "Inbox by Gmail". The USE authors use a corpus from web question-answering pages and discussion forums.  
+In this task, we need to predict the correct response for a given input among a list of correct responses and other randomly sampled responses. This task is inspired by [Henderson et al.](https://arxiv.org/abs/1705.00652) who proposed a scalable email reply prediction architecture. This also powered the "Smart Reply" feature in "Inbox by Gmail".  
+
+![](/images/use-smart-reply-example.png){: .align-center}  
+Image Source: [Henderson et al.](https://arxiv.org/abs/1705.00652)
+{: .text-center}
+
+The USE authors use a corpus from web question-answering pages and discussion forums and formulate this task in context of sentence encoder.    
 <!--[Image]-->
 
 
