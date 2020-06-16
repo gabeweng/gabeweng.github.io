@@ -50,7 +50,7 @@ In this example, we swap the order of words in a sentence resulting in a sentenc
     1.0
     ```
 
-We could fix some of these challenges with hacky manual feature engineering like skipping stop-words, weighting the words by their TF-IDF scores, adding bi-grams to respect order when averaging.  
+We could fix some of these challenges with hacky manual feature engineering like skipping stop-words, weighting the words by their TF-IDF scores, adding n-grams to respect order when averaging, concatenating embeddings, stacking max pooling and averaged embeddings and so on. 
 
 A different line of thought is training an end-to-end model to get us sentence embeddings:
 > What if we could train a neural network to figure out how to best combine the word embeddings?
@@ -96,7 +96,7 @@ The idea with original skip-thought paper from [Kiros et al.](https://arxiv.org/
 
 In USE, the same core idea is used but instead of LSTM encoder-decoder architecture, only an encoder based on transformer or DAN is used. USE was trained on this task using the Wikipedia and News corpus.    
 
-<!--[Image]-->
+![](/images/use-skipthought-task.png){: .align-center}  
 
 ### b. Conversational Input-Response Prediction
 In this task, we need to predict the correct response for a given input among a list of correct responses and other randomly sampled responses. This task is inspired by [Henderson et al.](https://arxiv.org/abs/1705.00652) who proposed a scalable email reply prediction architecture. This also powered the "Smart Reply" feature in "Inbox by Gmail". The USE authors use a corpus from web question-answering pages and discussion forums.  
