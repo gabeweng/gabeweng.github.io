@@ -145,3 +145,4 @@ The pre-trained models for "Universal Sentence Encoder" are available via Tensor
 - Matthew Henderson et al., ["Efficient Natural Language Response Suggestion for Smart Reply"](https://arxiv.org/abs/1705.00652)
 - Yinfei Yang et al., ["Learning Semantic Textual Similarity from Conversations"](https://arxiv.org/abs/1804.07754)
 - Alexis Conneau et al., ["Supervised Learning of Universal Sentence Representations from Natural Language Inference Data"](https://arxiv.org/abs/1705.02364)
+- Google AI Blog, ["Advances in Semantic Textual Similarity"](https://ai.googleblog.com/2018/05/advances-in-semantic-textual-similarity.html)
