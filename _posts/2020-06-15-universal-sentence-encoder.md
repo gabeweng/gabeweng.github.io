@@ -105,9 +105,11 @@ In this task, we need to predict the correct response for a given input among a 
 Image Source: [Henderson et al.](https://arxiv.org/abs/1705.00652)
 {: .text-center}
 
-The USE authors use a corpus from web question-answering pages and discussion forums and formulate this task in context of sentence encoder.    
+The USE authors use a corpus scraped from web question-answering pages and discussion forums and formulate this task using a sentence encoder. The input sentence is encoded into a vector u. The response is also encoded by the same encoder and response embeddings are passed through a DNN to get vector v. This is done to model the difference in meaning of input and response. The dot product of this two vectors gives the relevance of an input to response.  
+
 ![](/images/use-input-response-prediction.png){: .align-center}  
 
+Training is done by taking a batch of K randomly shuffled input-response pairs. In each batch, for a input, its response pair is taken as the correct response and the remaining responses are treated as incorrect. Then, the dot product scores are calculated and converted to probabilities using a softmax function. Model is trained to maximize the log likelihood of the correct response for each input.  
 
 ### c. Natural Language Inference
 In this task, we need to predict if a hypothesis entails, contradicts, or is neutral to a premise. The authors used the 570K sentence pairs from [SNLI](https://nlp.stanford.edu/projects/snli/) corpus to train USE on this task.   
