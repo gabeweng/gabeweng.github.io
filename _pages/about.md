@@ -9,7 +9,7 @@ excerpt: Learn about me, my current endeavors, research interest areas and the m
 I'm a T-shaped engineer going [wide and deep](https://github.com/amitness/learning) on the multidisciplinary fields of data science.
 
 **What I do**  
-Currently, I work as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com), where I apply state-of-the-art research to solve business problems. I've worked in domains of education technology, health-care, logistics and market research.
+I work as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com), where I apply ML research to industry problems. I've worked in domains of education, health-care, logistics and market research.
 
 **Interest Areas**  
 I'm interested in the paradigm of learning with limited labels (Self-Supervised Learning / Semi-Supervised Learning) and Natural Language Processing.
