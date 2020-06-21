@@ -102,21 +102,23 @@ Each character n-gram is hashed to an integer in the range between 1 to B. Thoug
 
 ![](/images/fasttext-hashing-function.png){: .align-center}  
 
-### 2. Pre-training task
-To understand the learning process, let's take a simple toy example. We have a sentence with a center word "eating" and need to predict the context words "am" and "food".  
+### 2. Skip-gram with negative sampling  
+To understand the pre-training, let's take a simple toy example. We have a sentence with a center word "eating" and need to predict the context words "am" and "food".  
 
 ![](/images/fasttext-toy-example.png){: .align-center}  
 
-1. The embedding for the center word is calculated by taking a sum of vectors for the character n-grams and the whole word itself.  
-
+1. First, the embedding for the center word is calculated by taking a sum of vectors for the character n-grams and the whole word itself.  
 ![](/images/fasttext-center-word-embedding.png){: .align-center}  
 
+2. For the actual context words, we directly take their word vector from the embedding table without adding the character n-grams. 
+![](/images/fasttext-context-words.png){: .align-center}  
 
-2. This word is scored with the context vector, but the context vector doesn't contain any subword info
+3. Now, we collect negative samples randomly from the unigram distribution to use as negative examples in the context.  
 
-5. Skip-gram architecture is used to model the probability of a context-word given a word
+4. We take dot product between the center word and the actual context words and apply sigmoid function to get a match score between 0 and 1. 
 
-6. SGD is used as an optimization technique to improve word vectors.  
+5. Based on the loss, we update the embedding vectors with SGD optimizer to bring actual context words closer to the center word but increase distance to the negative samples.
+
  
 ## References
 - Piotr Bojanowski et al., ["Enriching Word Vectors with Subword Information"](https://arxiv.org/abs/1607.04606)
