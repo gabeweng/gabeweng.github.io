@@ -114,10 +114,12 @@ To understand the pre-training, let's take a simple toy example. We have a sente
 ![](/images/fasttext-context-words.png){: .align-center}  
 
 3. Now, we collect negative samples randomly from the unigram distribution to use as negative examples in the context.  
+![](/images/fasttext-negative-samples.png){: .align-center}  
 
-4. We take dot product between the center word and the actual context words and apply sigmoid function to get a match score between 0 and 1. 
+4. We take dot product between the center word and the actual context words and apply sigmoid function to get a match score between 0 and 1.  
 
 5. Based on the loss, we update the embedding vectors with SGD optimizer to bring actual context words closer to the center word but increase distance to the negative samples.
+![](/images/fasttext-negative-sampling-goal.png){: .align-center}
 
  
 ## References
