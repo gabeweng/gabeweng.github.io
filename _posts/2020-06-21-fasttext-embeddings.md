@@ -6,8 +6,8 @@ categories:
 classes: wide
 excerpt: A deep-dive into how FastText enriches word vectors with subword information  
 header:
-  og_image: /images/word2vec-oov.png
-  teaser: "/images/word2vec-oov.png"
+  og_image: /images/fasttext-center-word-embedding.png
+  teaser: "/images/fasttext-center-word-embedding.png"
 ---
 
 Word Embeddings are one of the most interesting aspects of the Natural Language Processing field. When I first came across them, it was intriguing to see a simple recipe of unsupervised training on a bunch of text yield representations that show signs of syntactic and semantic understanding.  
