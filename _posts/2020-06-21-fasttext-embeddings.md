@@ -70,7 +70,6 @@ Representations learned had interesting properties such as this popular example 
 While Word2Vec was a game-changer for NLP, we will see how there was still some room for improvement:    
 - **Out of Vocabulary(OOV) Words**:  
 In Word2Vec, an embedding is created for each word. As such, it can't handle any words it has not encountered during its training.  
-![](/images/word2vec-oov.png){: .align-center} 
 
     For example, words such as "<span style="color: #82B366;">tensor</span>" and "<span style="color: #6C8EBF;">flow</span>" are present in the vocabulary of Word2Vec. But if you try to get embedding for the compound word "<span style="color: #82B366;">tensor</span><span style="color: #6C8EBF;">flow</span>", you will get an <span style="color: #B85450;">out of vocabulary error</span>.  
     ![](/images/word2vec-oov-tensorflow.png){: .align-center}  
