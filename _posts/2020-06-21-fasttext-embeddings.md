@@ -120,6 +120,9 @@ To understand the pre-training, let's take a simple toy example. We have a sente
 5. Based on the loss, we update the embedding vectors with SGD optimizer to bring actual context words closer to the center word but increase distance to the negative samples.
 ![](/images/fasttext-negative-sampling-goal.png){: .align-center}
 
+## Implementation  
+To train your own embeddings, you can use the [FastText implementation](https://radimrehurek.com/gensim/auto_examples/tutorials/run_fasttext.html) available in gensim. Pre-trained word vectors trained on Common Crawl and Wikipedia for 157 languages are available [here](https://fasttext.cc/docs/en/crawl-vectors.html) and variants of English word vectors are available [here](https://fasttext.cc/docs/en/english-vectors.html).
+
  
 ## References
 - Piotr Bojanowski et al., ["Enriching Word Vectors with Subword Information"](https://arxiv.org/abs/1607.04606)
