@@ -120,7 +120,7 @@ To understand the pre-training, let's take a simple toy example. We have a sente
 2. For the actual context words, we directly take their word vector from the embedding table without adding the character n-grams. 
 ![](/images/fasttext-context-words.png){: .align-center}  
 
-3. Now, we collect negative samples randomly from the unigram distribution to use as negative examples in the context.  
+3. Now, we collect negative samples randomly with probability proportion to the square root of the unigram frequency. For one actual context word, 5 random negative words are sampled.  
 ![](/images/fasttext-negative-samples.png){: .align-center}  
 
 4. We take dot product between the center word and the actual context words and apply sigmoid function to get a match score between 0 and 1.  
@@ -153,6 +153,22 @@ To understand the pre-training, let's take a simple toy example. We have a sente
     |**Italian**|52.3|**54.7**|52.3|
 
 - FastText is 1.5 times slower to train than regular skipgram due to added overhead of n-grams.  
+
+- Using sub-word information with character-ngrams has better performance than CBOW and skip-gram baselines on word-similarity task. Representing out-of-vocab words by summing their sub-words has better performance than assigning null vectors.  
+
+    |||skipgram|cbow|fasttext(null OOV)|fasttext(char-ngrams for OOV)|
+    |---|---|---|---|---|---|
+    |Arabic|WS353|51|52|54|**55**|
+    ||GUR350|61|62|64|**70**|
+    |German|GUR65|78|78|81|**81**|
+    ||ZG222|35|38|41|**44**|
+    |English|RW|43|43|46|**47**|
+    ||WS353|72|73|71|**71**|
+    |Spanish|WS353|57|58|58|**59**|
+    |French|RG65|70|69|75|**75**|
+    |Romanian|WS353|48|52|51|**54**|
+    |Russian|HJ|69|60|60|**66**|
+
 
 ## Implementation  
 To train your own embeddings, you can either use the [official CLI tool](https://fasttext.cc/docs/en/unsupervised-tutorial.html) or use the [fasttext implementation](https://radimrehurek.com/gensim/auto_examples/tutorials/run_fasttext.html) available in gensim. 
