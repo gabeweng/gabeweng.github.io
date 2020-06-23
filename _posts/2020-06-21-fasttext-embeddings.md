@@ -128,6 +128,25 @@ To understand the pre-training, let's take a simple toy example. We have a sente
 5. Based on the loss, we update the embedding vectors with SGD optimizer to bring actual context words closer to the center word but increase distance to the negative samples.
 ![](/images/fasttext-negative-sampling-goal.png){: .align-center}
 
+## Paper Insights  
+- Morphological information introduced by FastText improves performance for syntactic word analogy tasks. This is significant for morphologically rich language like Czech and German.  
+
+    ||word2vec-skipgram|word2vec-cbow|fasttext|
+    |---|---|---|---|
+    |**Czech**|52.8|55.0|**77.8**|
+    |**German**|44.5|45.0|56.4|
+    |**English**|70.1|69.9|74.9|
+    |**Italian**|51.5|51.8|62.7|
+
+- FastText has degraded performance on semantic analogy tasks compared to Word2Vec.  
+
+    ||word2vec-skipgram|word2vec-cbow|fasttext|
+    |---|---|---|---|
+    |**Czech**|25.7|**27.6**|27.5|
+    |**German**|66.5|**66.8**|62.3|
+    |**English**|**78.5**|78.2|77.8|
+    |**Italian**|52.3|**54.7**|52.3|
+
 ## Implementation  
 To train your own embeddings, you can either use the [official CLI tool](https://fasttext.cc/docs/en/unsupervised-tutorial.html) or use the [fasttext implementation](https://radimrehurek.com/gensim/auto_examples/tutorials/run_fasttext.html) available in gensim. Pre-trained word vectors trained on Common Crawl and Wikipedia for 157 languages are available [here](https://fasttext.cc/docs/en/crawl-vectors.html) and variants of English word vectors are available [here](https://fasttext.cc/docs/en/english-vectors.html).
 
