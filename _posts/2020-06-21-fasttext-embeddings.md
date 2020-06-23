@@ -152,8 +152,12 @@ To understand the pre-training, let's take a simple toy example. We have a sente
     |**English**|**78.5**|78.2|77.8|
     |**Italian**|52.3|**54.7**|52.3|
 
+- FastText is 1.5 times slower to train than regular skipgram due to added overhead of n-grams.  
+
 ## Implementation  
-To train your own embeddings, you can either use the [official CLI tool](https://fasttext.cc/docs/en/unsupervised-tutorial.html) or use the [fasttext implementation](https://radimrehurek.com/gensim/auto_examples/tutorials/run_fasttext.html) available in gensim. Pre-trained word vectors trained on Common Crawl and Wikipedia for 157 languages are available [here](https://fasttext.cc/docs/en/crawl-vectors.html) and variants of English word vectors are available [here](https://fasttext.cc/docs/en/english-vectors.html).
+To train your own embeddings, you can either use the [official CLI tool](https://fasttext.cc/docs/en/unsupervised-tutorial.html) or use the [fasttext implementation](https://radimrehurek.com/gensim/auto_examples/tutorials/run_fasttext.html) available in gensim. 
+
+Pre-trained word vectors trained on Common Crawl and Wikipedia for 157 languages are available [here](https://fasttext.cc/docs/en/crawl-vectors.html) and variants of English word vectors are available [here](https://fasttext.cc/docs/en/english-vectors.html).
 
  
 ## References
