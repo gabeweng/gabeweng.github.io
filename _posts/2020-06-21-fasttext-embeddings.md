@@ -129,16 +129,21 @@ To understand the pre-training, let's take a simple toy example. We have a sente
 ![](/images/fasttext-negative-sampling-goal.png){: .align-center}
 
 ## Paper Insights  
-- Morphological information introduced by FastText improves performance for syntactic word analogy tasks. This is significant for morphologically rich language like Czech and German.  
+- FastText improves performance on syntactic word analogy tasks significantly for morphologically rich language like Czech and German.  
 
+    ![](/images/fasttext-syntactic-analogy.png){: .align-center}  
+    
+    
     ||word2vec-skipgram|word2vec-cbow|fasttext|
     |---|---|---|---|
     |**Czech**|52.8|55.0|**77.8**|
-    |**German**|44.5|45.0|56.4|
-    |**English**|70.1|69.9|74.9|
-    |**Italian**|51.5|51.8|62.7|
+    |**German**|44.5|45.0|**56.4**|
+    |**English**|70.1|69.9|**74.9**|
+    |**Italian**|51.5|51.8|**62.7**|
 
 - FastText has degraded performance on semantic analogy tasks compared to Word2Vec.  
+    ![](/images/fasttext-semantic-analogy.gif){: .align-center}  
+    
 
     ||word2vec-skipgram|word2vec-cbow|fasttext|
     |---|---|---|---|
