@@ -123,6 +123,31 @@ Colab also provides a magic command to use Tensorboard directly from the noteboo
 
 ![](/images/colab-tensorboard.png){: .align-center}  
 
+## 10. Gauge resource limits    
+Colab provides the following specs for their free and pro versions. Based on your use case, you can switch to the pro version at $10/month if you need a better runtime, GPU and memory.  
+
+|Version|GPU|GPU Ram|RAM|Storage|CPU Cores|Idle Timeout|Maximum Runtime|
+|---|---|---|---|---|---|---|---|
+|Free|Tesla K80|11.44GB|13.7GB|37GB|2|90 min|12 hrs|
+|Pro|Tesla P100|16GB|27.4GB|37GB|4|90 min|24 hrs|
+
+You can view the GPU you have been assigned by running the following command
+```shell
+!nvidia-smi
+```
+For information on the CPU, you can run this command
+```shell
+!cat /proc/cpuinfo
+```
+
+Similarly, you can view the RAM capacity by running
+```python
+import psutil
+ram_gb = psutil.virtual_memory().total / 1e9
+print(ram_gb)
+```
+
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
