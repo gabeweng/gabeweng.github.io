@@ -161,6 +161,10 @@ To quit from the shell, just type `exit` in the input box.
   
 ![](/images/colab-bash-exit.png){: .align-center}  
 
+## 12. Current memory and storage usage  
+Colab provides an indicator of RAM and disk usage. If you hover over the indicator, you will get an popup with the current usage and the total capacity.  
+
+![](/images/colab-ram-usage.png){: .align-center}  
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
