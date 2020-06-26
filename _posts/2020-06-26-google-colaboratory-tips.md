@@ -166,6 +166,17 @@ Colab provides an indicator of RAM and disk usage. If you hover over the indicat
 
 ![](/images/colab-ram-usage.png){: .align-center}  
 
+## 13. "Open in Colab" Badge  
+You can add a 'Open in Colab' badge to your `README.md` or jupyter notebooks using the following markdown code.  
+![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg){: .align-center}  
+
+In the markdown code, we're basically loading an SVG image and then linking it to a colab notebook.    
+
+```markdown
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+```
+
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
