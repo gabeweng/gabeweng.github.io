@@ -6,8 +6,8 @@ categories:
 classes: wide
 excerpt: Learn about lesser-known features in Google Colaboratory to improve your productivity.   
 header:
-  og_image: /images/colab-clutter.png
-  teaser: "/images/colab-clutter.png"
+  og_image: /images/colab-cover.png
+  teaser: "/images/colab-cover.png"
 ---
 
 Colab is one of the best products to come from Google. It has made GPUs freely accessible to learners and practitioners like me who otherwise wouldn't be able to afford a high-end GPU.  
