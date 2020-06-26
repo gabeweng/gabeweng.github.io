@@ -3,6 +3,7 @@ title: "The Python Magic Behind PyTorch"
 date: 2020-03-23T10:00:30-04:00
 categories:
   - python
+  - pytorch
 classes: wide
 excerpt: Learn about the advanced python native features behind PyTorch
 header:

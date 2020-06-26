@@ -3,6 +3,7 @@ title: "A Visual Guide to Recurrent Layers in Keras"
 date: 2020-04-23T02:22:30-04:00
 categories:
   - nlp
+  - tensorflow
 classes: wide
 excerpt: Understand how to use Recurrent Layers like RNN, GRU and LSTM in Keras with diagrams
 header:
