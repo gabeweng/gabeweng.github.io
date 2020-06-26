@@ -147,6 +147,20 @@ ram_gb = psutil.virtual_memory().total / 1e9
 print(ram_gb)
 ```
 
+## 11. Use interactive shell  
+There is no built-in interactive terminal in Colab. But you can use the `bash` command to try out shell commands interactively. Just run this command and you will get a interactive input.    
+```shell
+!bash
+```
+
+Now, you can run any shell command in the given input box.  
+
+![](/images/colab-bash.png){: .align-center}  
+
+To quit from the shell, just type `exit` in the input box.  
+  
+![](/images/colab-bash-exit.png){: .align-center}  
+
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
