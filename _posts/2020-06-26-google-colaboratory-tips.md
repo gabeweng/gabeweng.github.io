@@ -176,6 +176,14 @@ In the markdown code, we're basically loading an SVG image and then linking it t
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 ```
 
+## 14. Interactive Tables for Pandas  
+Colab provides a notebook extension to add interactive sorting and filtering capabilities to pandas dataframes. To use it, run the following code.  
+```python
+%load_ext google.colab.data_table
+```
+You can see the regular pandas dataframe and the interactive dataframe after loading the extension below.  
+![](/images/pandas-table-before.png){: .align-center}  
+![](/images/colab-pandas-after.png){: .align-center}  
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
