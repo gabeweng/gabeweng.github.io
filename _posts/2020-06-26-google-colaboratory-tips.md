@@ -6,13 +6,13 @@ categories:
 classes: wide
 excerpt: Learn about lesser-known features in Google Colaboratory to improve your productivity.   
 header:
-  og_image: /images/fasttext-center-word-embedding.png
-  teaser: "/images/fasttext-center-word-embedding.png"
+  og_image: /images/colab-clutter.png
+  teaser: "/images/colab-clutter.png"
 ---
 
 Colab is one of the best products to come from Google. It has made GPUs freely accessible to learners and practitioners like me who otherwise wouldn't be able to afford a high-end GPU.  
 
-While the interface is very easy to use, there are many features in colab which are not documented and widely known. In this post, I will share features that I've discovered from their official talks and basic usage.   
+While the interface is very easy to use, there are many lesser-known and undocumented features in colab. In this post, I will share features that I've discovered from their official talks and basic usage.    
 
 ## 1. Scratchpad Notebook
 It's a pretty common scenario that we have a bunch of cluttered untitled notebooks created when we try out temporary stuff on colab.  
