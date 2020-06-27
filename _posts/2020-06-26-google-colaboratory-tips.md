@@ -185,6 +185,29 @@ You can see the regular pandas dataframe and the interactive dataframe after loa
 ![](/images/pandas-table-before.png){: .align-center}  
 ![](/images/colab-pandas-after.png){: .align-center}  
 
+## 15. Setup Conda environment  
+If you use miniconda as your python environment manager, you can setup it on colab by running this command at the top of your notebook.  
+
+```shell
+# Download Miniconda installation script
+!wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Make it executable
+!chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+# Start installation in silent mode
+!bash ./Miniconda3-latest-Linux-x86_64.sh -b -f -p /usr/local
+
+# Make conda packages available in current environment
+import sys
+sys.path.append('/usr/local/lib/python3.7/site-packages/')
+```
+
+After the cell is executed, you can use conda to install packages as usual.
+```shell
+!conda install -y flask
+```
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
