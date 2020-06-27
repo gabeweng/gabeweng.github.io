@@ -208,6 +208,11 @@ After the cell is executed, you can use conda to install packages as usual.
 !conda install -y flask
 ```
 
+## 16. Manage Colab Notebooks from Command Line  
+You can use a library called [colab-cli](https://github.com/Akshay090/colab-cli) to easily create and sync colab notebooks with your local notebooks.  
+
+[![colab-cli-demo](https://asciinema.org/a/314749.svg)](https://asciinema.org/a/314749)
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
