@@ -213,6 +213,14 @@ You can use a library called [colab-cli](https://github.com/Akshay090/colab-cli)
 
 [![colab-cli-demo](https://asciinema.org/a/314749.svg)](https://asciinema.org/a/314749)
 
+## 17. Run background tasks  
+There are use-cases when we need to start some web server or background task before we can execute our regular program.  
+
+To run background tasks, use the `nohup` command followed by your regular shell command and add `&` to the end to run it in the background. This makes sure that you can run cells afterwards in the notebook without your background task blocking it. 
+```shell
+!nohup bash ping.sh &
+```
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
