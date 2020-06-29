@@ -1,6 +1,6 @@
 ---
 title: "FastAPI for Flask Users"
-date: 2020-07-03T09:00-00:00
+date: 2020-06-29T12:00-00:00
 categories:
   - serving
 excerpt: A comprehensive guide to FastAPI with a side-by-side code comparison with Flask    
