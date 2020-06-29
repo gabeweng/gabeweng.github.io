@@ -259,6 +259,57 @@ As seen, instead of getting a dictionary, the JSON data is converted into an obj
 }
 ```
 
+## Separated Views  
+We want to decompose the views from a single app.py into separate files.
+```json
+- app.py
+- views
+  - user.py
+``` 
+ 
+**Flask:**  
+In Flask, we use a concept called blueprints to manage this. We would first create a blueprint for the user view as:
+```python
+# views/user.py
+from flask import Blueprint
+user_blueprint = Blueprint('user', __name__)
+
+@user_blueprint.route('/users')
+def list_users():
+    return {'users': ['a', 'b', 'c']}
+
+```
+Then, this view is registered in the main `app.py` file.
+```python
+# app.py
+from flask import Flask
+from views.user import user_blueprint
+
+app = Flask(__name__)
+app.register_blueprint(user_blueprint)
+```
+
+**FastAPI:**  
+In FastAPI, the equivalent of blueprint is called router. First, we create a user router as:
+```python
+# routers/user.py
+from fastapi import APIRouter, UploadFile, File, Form
+router = APIRouter()
+
+@router.get('/users')
+def list_users():
+    return {'users': ['a', 'b', 'c']}
+```
+
+Then, we attach this router to the main app object as:  
+```python
+# app.py
+from fastapi import FastAPI
+from routers import user
+
+app = FastAPI()
+app.include_router(user.router)
+```
 
 ## References
 - [FastAPI Documentation](https://fastapi.tiangolo.com)
