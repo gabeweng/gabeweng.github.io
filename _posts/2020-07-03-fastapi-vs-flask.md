@@ -1,0 +1,264 @@
+---
+title: "FastAPI for Flask Users"
+date: 2020-07-03T09:00-00:00
+categories:
+  - serving
+excerpt: A comprehensive guide to FastAPI with a side-by-side code comparison with Flask    
+header:
+  og_image: /images/flask-to-fastapi.png
+  teaser: "/images/flask-to-fastapi.png"
+toc: true
+toc_sticky: true
+---
+
+While Flask has become the de-facto choice for API development in Machine Learning projects, there is a new framework called FastAPI that has been getting a lot of community traction.  
+
+![](/images/flask-to-fastapi.png){: .align-center}  
+
+I recently decided to give FastAPI a spin by porting a production project written in Flask. FastAPI was very easy to pick up coming from Flask and I was able to get things up and running in just a few hours. 
+
+The added benefit of automatic data validation, documentation generation and baked-in best-practices such as pydantic schemas and python typing makes this a strong choice for future projects.  
+
+In this post, I will introduce FastAPI by contrasting the implementation of various common use-cases in both Flask and FastAPI.  
+
+<div class="notice--info">
+<strong>Version Info:</strong>
+<p>
+At the time of this writing, the Flask version is 1.1.2 and the FastAPI version is 0.58.1
+</p>
+</div>
+
+## Installation  
+Both Flask and FastAPI are available on PyPI. For conda, you need to use the `conda-forge` channel to install FastAPI while it's available in the default channel for Flask.  
+
+**Flask:**
+```shell
+pip install flask
+conda install flask
+```
+
+**FastAPI:**
+```shell
+pip install fastapi uvicorn
+conda install fastapi unicorn -c conda-forge
+```
+
+## Running "Hello World" 
+**Flask:**
+```python
+# app.py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return {'hello': 'world'}
+
+if __name__ == '__main__':
+    app.run()
+```
+
+Now you can run the development server using the below command. It runs on port 5000 by default.  
+```shell
+python app.py
+```
+
+**FastAPI**  
+```python
+# app.py
+import uvicorn
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/')
+def home():
+    return {'hello': 'world'}
+
+if __name__ == '__main__':
+    uvicorn.run(app)
+```
+
+FastAPI defers serving to a production-ready server called `uvicorn`. We can run it in development mode with a default port of 8000.   
+```shell
+python app.py
+```
+
+## Production server 
+**Flask:**
+```python
+# app.py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return {'hello': 'world'}
+
+if __name__ == '__main__':
+    app.run()
+```
+
+For a production server, `gunicorn` is a common choice in Flask.  
+```shell
+gunicorn app:app
+```
+
+**FastAPI**  
+```python
+# app.py
+import uvicorn
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/')
+def home():
+    return {'hello': 'world'}
+
+if __name__ == '__main__':
+    uvicorn.run(app)
+```
+
+FastAPI defers serving to a production-ready server called `uvicorn`. We can start the server as:
+```shell
+uvicorn app:app
+```
+
+You can also start it in hot-reload mode by running
+```shell
+uvicorn app:app --reload
+```
+
+## HTTP Methods  
+**Flask:**
+```python
+@app.route('/', methods=['POST'])
+def example():
+    ...
+```
+
+**FastAPI:**  
+```python
+@app.post('/')
+def example():
+    ...
+```
+You have individual decorator methods for each HTTP method.
+```python
+@app.get('/')
+@app.put('/')
+@app.patch('/')
+@app.delete('/')
+```
+
+## URL Variables  
+We want to get the user id from the URL e.g. `/users/1` and then return the user id to the user.  
+ 
+**Flask:**  
+```python
+@app.route('/users/<int:user_id>')
+def get_user_details(user_id):
+    return {'user_id': user_id}
+```
+
+**FastAPI:**  
+```python
+@app.get('/users/{user_id}')
+def get_user_details(user_id: int):
+    return {'user_id': user_id}
+```
+In FastAPI, we make use of typing in Python to specify all the data types. For example, here we specify that `user_id` should be an integer. The variable in the URL path is also specified similar to f-strings.  
+
+## Query Strings    
+We want to allow the user to specify a search term by using a query string `?q=abc` in the URL.  
+ 
+**Flask:**  
+```python
+from flask import request
+
+@app.route('/search')
+def search():
+    query = request.args.get('q')
+    return {'query': query}
+```
+
+**FastAPI:**  
+```python
+@app.get('/search')
+def search(q: str):
+    return {'query': q}
+```
+
+## JSON POST Request  
+Let's take a toy example where we want to send a JSON POST request with a `text` key and get back a lowercased version.  
+```json
+# Request
+{"text": "HELLO"}
+
+# Response
+{"text": "hello"}
+```
+
+ 
+**Flask:**  
+```python
+from flask import request
+
+@app.route('/lowercase', methods=['POST'])
+def lower_case():
+    text = request.json.get('text')
+    return {'text': text.lower()}
+```
+
+**FastAPI:**  
+If you simply replicate the functionality from Flask, you can do it as follows in FastAPI.  
+```python
+from typing import Dict
+
+@app.post('/lowercase')
+def lower_case(json_data: Dict):
+    text = json_data.get('text')
+    return {'text': text.lower()}
+```
+
+But, this is where FastAPI introduces a new concept of creating Pydantic schema that maps to the JSON data being received. We can refactor the above example using pydantic as:   
+```python
+from pydantic import BaseModel
+
+class Sentence(BaseModel):
+    text: str
+
+@app.post('/lowercase')
+def lower_case(sentence: Sentence):
+    return {'text': sentence.text.lower()}
+```
+
+As seen, instead of getting a dictionary, the JSON data is converted into an object of the schema `Sentence`. As such, we can access the data using data attributes such as `sentence.text`. This also provides automatic validation of data types. If the user tries to send any data other than a string, they will be given an auto-generated validation error.  
+  
+**Example Invalid Request**
+```json
+{"text": null}
+```
+
+**Automatic Response**
+```json
+{
+    "detail": [
+        {
+            "loc": [
+                "body",
+                "text"
+            ],
+            "msg": "none is not an allowed value",
+            "type": "type_error.none.not_allowed"
+        }
+    ]
+}
+```
+
+
+## References
+- [FastAPI Documentation](https://fastapi.tiangolo.com)
