@@ -165,12 +165,14 @@ def get_user_details(user_id):
 ```
 
 **FastAPI:**  
+
+In FastAPI, we make use of type hints in Python to specify all the data types. For example, here we specify that `user_id` should be an integer. The variable in the URL path is also specified similar to f-strings.  
+
 ```python
 @app.get('/users/{user_id}')
 def get_user_details(user_id: int):
     return {'user_id': user_id}
 ```
-In FastAPI, we make use of typing in Python to specify all the data types. For example, here we specify that `user_id` should be an integer. The variable in the URL path is also specified similar to f-strings.  
 
 ## Query Strings    
 We want to allow the user to specify a search term by using a query string `?q=abc` in the URL.  
