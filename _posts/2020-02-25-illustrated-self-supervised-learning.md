@@ -162,7 +162,7 @@ Formulation:
 
 ![Training Data for Geometric Transformation](/images/ss-geometric-transformation-gen.png){: .align-center} 
 
-To solve this pre-text task, [Gidaris et al.](https://arxiv.org/abs/1505.05192) propose an architecture where a rotated image is passed through a ConvNet and the network has to classify it into 4 classes(0/90/270/360 degrees).
+To solve this pre-text task, [Gidaris et al.](https://arxiv.org/abs/1803.07728) propose an architecture where a rotated image is passed through a ConvNet and the network has to classify it into 4 classes(0/90/270/360 degrees).
 ![Architecture for Geometric Transformation Predction](/images/ss-geometric-transformation-architecture.png){: .align-center}
 
 Though a very simple idea, the model has to understand location, types and pose of objects in an image to solve this task and as such, the representations learned are useful for downstream tasks.
