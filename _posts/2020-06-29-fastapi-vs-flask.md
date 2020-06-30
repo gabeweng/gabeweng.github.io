@@ -400,7 +400,7 @@ class UserGroup(BaseModel):
 ```
 
 ## Conclusion  
-Thus, FastAPI is a good alternative to Flask for building robust APIs with all the best-practices baked in.  
+Thus, FastAPI is an excellent alternative to Flask for building robust APIs with best-practices baked in. You can refer to the [documentation](https://fastapi.tiangolo.com/) to learn more.    
 
 ## References
 - [FastAPI Documentation](https://fastapi.tiangolo.com)
