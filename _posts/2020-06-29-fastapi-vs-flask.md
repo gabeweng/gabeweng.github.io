@@ -295,7 +295,7 @@ app.register_blueprint(user_blueprint)
 In FastAPI, the equivalent of blueprint is called router. First, we create a user router as:
 ```python
 # routers/user.py
-from fastapi import APIRouter, UploadFile, File, Form
+from fastapi import APIRouter
 router = APIRouter()
 
 @router.get('/users')
