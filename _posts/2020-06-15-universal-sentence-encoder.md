@@ -71,11 +71,11 @@ This is the component that encodes a sentence into fixed-length 512-dimension em
 ### Variant 1: Transformer Encoder  
 In this variant, we use the encoder part of the original transformer architecture. The architecture consists of 6 stacked transformer layers. Each layer has a self-attention module followed by a feed-forward network.  
 
-![](/images/use-transformer-one-layer.png){: .align-center}
+![Encoder Layer in Transformer](/images/use-transformer-one-layer.png){: .align-center}
 
 The self-attention process takes word order and surrounding context into account when generating each word representation. The output context-aware word embeddings are added element-wise and divided by the square root of the length of the sentence to account for the sentence-length difference. We get a 512-dimensional vector as output sentence embedding.  
 
-![](/images/use-transformer-variant.png){: .align-center}  
+![Transformer Variant of Universal Sentence Encoder](/images/use-transformer-variant.png){: .align-center}  
 
 
 This encoder has better accuracy on downstream tasks but higher memory and compute resource usage due to complex architecture. Also, the compute time scales dramatically with the length of sentence as self-attention has $$O(n^{2})$$ time complexity with the length of the sentence. But for short sentences, it is only moderately slower.  
@@ -84,7 +84,7 @@ This encoder has better accuracy on downstream tasks but higher memory and compu
 ### Variant 2: Deep Averaging Network(DAN)  
 In this simpler variant, the encoder is based on the architecture proposed by [Iyyer et al.](https://people.cs.umass.edu/~miyyer/pubs/2015_acl_dan.pdf). First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through 4-layer feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training.    
 
-![](/images/use-deep-averaging-network-variant.png){: .align-center}  
+![Deep Averaging Network Architecture](/images/use-deep-averaging-network-variant.png){: .align-center}  
 
 It has slightly reduced accuracy compared to the transformer variant, but the inference time is very efficient. Since we are only doing feedforward operations, the compute time is of linear complexity in terms of length of the input sequence.  
 
@@ -92,22 +92,22 @@ It has slightly reduced accuracy compared to the transformer variant, but the in
 To learn the sentence embeddings, the encoder is shared and trained across a range of unsupervised tasks along with supervised training on the SNLI corpus. The tasks are as follows:
 ### a. Modified Skip-thought
 The idea with original skip-thought paper from [Kiros et al.](https://arxiv.org/abs/1506.06726) was to use the current sentence to predict the previous and next sentence. 
-![](/images/nlp-ssl-neighbor-sentence.gif){: .align-center}  
+![Interactive example of skip-thought method](/images/nlp-ssl-neighbor-sentence.gif){: .align-center}  
 
 In USE, the same core idea is used but instead of LSTM encoder-decoder architecture, only an encoder based on transformer or DAN is used. USE was trained on this task using the Wikipedia and News corpus.    
 
-![](/images/use-skipthought-task.png){: .align-center}  
+![Skipthought formulation in Universal Sentence Encoder](/images/use-skipthought-task.png){: .align-center}  
 
 ### b. Conversational Input-Response Prediction
 In this task, we need to predict the correct response for a given input among a list of correct responses and other randomly sampled responses. This task is inspired by [Henderson et al.](https://arxiv.org/abs/1705.00652) who proposed a scalable email reply prediction architecture. This also powered the "Smart Reply" feature in "Inbox by Gmail".  
 
-![](/images/use-smart-reply-example.png){: .align-center}  
-Image Source: [Henderson et al.](https://arxiv.org/abs/1705.00652)
+![Smart reply in Google Inbox](/images/use-smart-reply-example.png){: .align-center}  
+Source: [Henderson et al.](https://arxiv.org/abs/1705.00652)
 {: .text-center}
 
 The USE authors use a corpus scraped from web question-answering pages and discussion forums and formulate this task using a sentence encoder. The input sentence is encoded into a vector u. The response is also encoded by the same encoder and response embeddings are passed through a DNN to get vector v. This is done to model the difference in meaning of input and response. The dot product of this two vectors gives the relevance of an input to response.  
 
-![](/images/use-input-response-prediction.png){: .align-center}  
+![Response Prediction in Universal Sentence Encoder](/images/use-input-response-prediction.png){: .align-center}  
 
 Training is done by taking a batch of K randomly shuffled input-response pairs. In each batch, for a input, its response pair is taken as the correct response and the remaining responses are treated as incorrect. Then, the dot product scores are calculated and converted to probabilities using a softmax function. Model is trained to maximize the log likelihood of the correct response for each input.  
 
@@ -121,7 +121,7 @@ In this task, we need to predict if a hypothesis entails, contradicts, or is neu
 |I love Marvel movies|A ship arrived|neutral|
 
 The sentence pairs are encoded using shared Transformer/DAN encoders and the output 512-dim embeddings u1 and u2 are obtained. Then, they are concatenated along with their L1 distance and their dot product(angle). This concatenated vector is passed through fully-connected layers and softmax is applied to get probability for entailment/contradiction/neutral classes.  
-![](/images/use-snli-task.png){: .align-center}  
+![SNLI Architecture](/images/use-snli-task.png){: .align-center}  
 
 
 The idea to learn sentence embedding based on SNLI seems to be inspired by the [InferSent](https://arxiv.org/abs/1705.02364) paper though the authors don't cite it.      
