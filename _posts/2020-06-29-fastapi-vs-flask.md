@@ -292,7 +292,7 @@ app.register_blueprint(user_blueprint)
 ```
 
 **FastAPI:**  
-In FastAPI, the equivalent of blueprint is called router. First, we create a user router as:
+In FastAPI, the equivalent of a blueprint is called a router. First, we create a user router as:
 ```python
 # routers/user.py
 from fastapi import APIRouter
@@ -315,11 +315,11 @@ app.include_router(user.router)
 
 ## Data Validation  
 **Flask**  
-Flask doesn't provide any input data validation feature out-of-the-box. It's common practice to either write your own validation logic or use libraries such as [marshmalllow](https://marshmallow.readthedocs.io/en/stable/) or [pydantic](https://pydantic-docs.helpmanual.io/).
+Flask doesn't provide any input data validation feature out-of-the-box. It's common practice to either write custom validation logic or use libraries such as [marshmalllow](https://marshmallow.readthedocs.io/en/stable/) or [pydantic](https://pydantic-docs.helpmanual.io/).
 
 **FastAPI:**  
 
-FastAPI wraps pydantic into its framework and allows data validation by simply using a combination of pydantic schema and python type hints.  
+FastAPI wraps pydantic into its framework and allow data validation by simply using a combination of pydantic schema and python type hints.  
 
 ```python
 from fastapi import FastAPI
@@ -337,9 +337,9 @@ def save_user(user: User):
             'age': user.age}
 ```
 
-This code will perform automatic validation to ensure `name` is string and `age` is integer. If any other data type is sent, it auto generates validation error with relevant message.  
+This code will perform automatic validation to ensure `name` is a string and `age` is an integer. If any other data type is sent, it auto-generates validation error with a relevant message.  
 
-Here are some examples of pydantic schema for common usecases.  
+Here are some examples of pydantic schema for common use-cases.  
  
 ### Example 1: Key-value pairs
 ```json
