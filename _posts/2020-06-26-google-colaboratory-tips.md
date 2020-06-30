@@ -17,7 +17,7 @@ While the interface is very easy to use, there are many lesser-known and undocum
 ## 1. Scratchpad Notebook
 It's a pretty common scenario that we have a bunch of cluttered untitled notebooks created when we try out temporary stuff on colab.  
   
-![](/images/colab-clutter.png){: .align-center}  
+![Clutter of Untitled Notebooks in Colab](/images/colab-clutter.png){: .align-center}  
 To solve this, you can bookmark the below link. It will open a special **scratch notebook** and any changes you make to that notebook are not saved to your main account.  
 
 > [https://colab.research.google.com/notebooks/empty.ipynb](https://colab.research.google.com/notebooks/empty.ipynb)
@@ -27,15 +27,15 @@ It's pretty common that we manually calculate the difference between start and e
 
 Colab provides an inbuilt feature to do this. After a cell is executed, just hover over the cell run icon and you will get an estimate of the execution time taken.  
 
-![](/images/colab-cell-hover.png){: .align-center}  
+![Execution Time by hovering on run cell](/images/colab-cell-hover.png){: .align-center}  
 
 ## 3. Run part of a cell  
 You can also run only a part of the cell by selecting it and pressing the `Runtime > Run Selection` button or using the keyboard shortcut `Ctrl + Shift + Enter`.  
 
-![](/images/colab-run-few-lines.gif){: .align-center}  
+![Running specific line in colab](/images/colab-run-few-lines.gif){: .align-center}  
 
 ## 4. Jupyter Notebook Keyboard Shortcuts  
-If you are familiar with keyboard shortcuts from Jupyter Notebook, they don't work directly in Colab. I found a mental model to map between them.  
+If you are familiar with keyboard shortcuts from Jupyter Notebook, they don't work directly in Colab. But I found a mental model to map between them.  
 
 Just add `Ctrl + M` before whatever keyboard shortcut you were using in Jupyter.  This rule of thumb works for the majority of common use-cases.  
 
@@ -63,13 +63,13 @@ Below are some notable exceptions to this rule for which either the shortcut is 
 ## 5. Jump to Class Definition  
 Similar to an IDE, you can go to a class definition by pressing `Ctrl` and then clicking a class name. For example, here we view the class definition of the Dense layer in Keras by pressing Ctrl and then clicking the `Dense` class name.  
 
-![](/images/colab-goto-class.gif){: .align-center}  
+![Demo of jumping to class definition](/images/colab-goto-class.gif){: .align-center}  
 
 ## 6. Open Notebooks from GitHub   
 The Google Colab team provides an official chrome extension to open notebooks on GitHub directly on colab. You can install it from [here](https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo).
 
 After installation, click the colab icon on any GitHub notebook to open it directly.  
-![](/images/colab-from-github.png){: .align-center}  
+![Extension for opening github notebook in colab](/images/colab-from-github.png){: .align-center}  
 
 Alternatively, you can also manually open any GitHub notebook by replacing `github.com` with `colab.research.google.com/github`.
 > https://**github.com**/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     app.run()
 ```
 
-![](/images/colab-flask.png){: .align-center}  
+![Example of running flask-ngrok](/images/colab-flask.png){: .align-center}  
 
 You can try this out from the package author's [official example](https://colab.research.google.com/github/gstaff/flask-ngrok/blob/master/examples/flask_ngrok_example.ipynb) on Colab.  
 
@@ -121,7 +121,7 @@ Colab also provides a magic command to use Tensorboard directly from the noteboo
 %tensorboard --logdir logs
 ```
 
-![](/images/colab-tensorboard.png){: .align-center}  
+![Embedded Tensorboard in Colab](/images/colab-tensorboard.png){: .align-center}  
 
 ## 10. Gauge resource limits    
 Colab provides the following specs for their free and pro versions. Based on your use case, you can switch to the pro version at $10/month if you need a better runtime, GPU and memory.  
@@ -155,16 +155,16 @@ There is no built-in interactive terminal in Colab. But you can use the `bash` c
 
 Now, you can run any shell command in the given input box.  
 
-![](/images/colab-bash.png){: .align-center}  
+![Using interactive shell in colab](/images/colab-bash.png){: .align-center}  
 
 To quit from the shell, just type `exit` in the input box.  
   
-![](/images/colab-bash-exit.png){: .align-center}  
+![Exiting interactive shell in colab](/images/colab-bash-exit.png){: .align-center}  
 
 ## 12. Current memory and storage usage  
 Colab provides an indicator of RAM and disk usage. If you hover over the indicator, you will get an popup with the current usage and the total capacity.  
 
-![](/images/colab-ram-usage.png){: .align-center}  
+![Showing current memory and ram usage in colab](/images/colab-ram-usage.png){: .align-center}  
 
 ## 13. "Open in Colab" Badge  
 You can add a 'Open in Colab' badge to your `README.md` or jupyter notebooks using the following markdown code.  
@@ -182,8 +182,8 @@ Colab provides a notebook extension to add interactive sorting and filtering cap
 %load_ext google.colab.data_table
 ```
 You can see the regular pandas dataframe and the interactive dataframe after loading the extension below.  
-![](/images/pandas-table-before.png){: .align-center}  
-![](/images/colab-pandas-after.png){: .align-center}  
+![Regular pandas dataframe output](/images/pandas-table-before.png){: .align-center}  
+![Interactive pandas dataframe output](/images/colab-pandas-after.png){: .align-center}  
 
 ## 15. Setup Conda environment  
 If you use miniconda as your python environment manager, you can setup it on colab by running this command at the top of your notebook.  
