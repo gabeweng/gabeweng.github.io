@@ -261,7 +261,7 @@ As seen, instead of getting a dictionary, the JSON data is converted into an obj
 }
 ```
 
-## Separated Views  
+## Modular Views  
 We want to decompose the views from a single app.py into separate files.
 ```json
 - app.py
