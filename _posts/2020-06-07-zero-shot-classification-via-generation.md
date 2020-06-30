@@ -20,7 +20,7 @@ The goal of zero-shot text classification is to design a general and flexible ap
 ## Paper Idea  
 In the paper, the authors reformulate text classification as a text generation problem. Instead of classifying a text into X classes, the model needs to generate the correct class when given a text and the classes in a multiple-choice question answering format. Both the input and the output of the model are in natural language.  
   
-![](/images/zsl-generation-idea.png){: .align-center}  
+![High-level idea of zero-shot classification](/images/zsl-generation-idea.png){: .align-center}  
 
 
 Let's understand how the authors implemented this idea in a step-by-step process:      
@@ -32,7 +32,7 @@ In the original GPT-2 paper, the training data was prepared by scraping outbound
 
 In the current paper, the authors build upon this idea with the [OpenWebText](https://github.com/jcpeterson/openwebtext) dataset. Since we can know the subreddit the link was posted in and the submission title the user used, this metadata can be collected and used as the supervision signal.  
 
-![](/images/zsl-openwebtext.png){: .align-center}  
+![Fetching submission title and subreddit](/images/zsl-openwebtext.png){: .align-center}  
 For multiple submissions of the same link, subreddits and submission titles can be aggregated. Thus, we have pairs of webpage text, submission title, and subreddit name as annotations.  
 
 |Scraped Text|Submission Title|Subreddit|
@@ -44,7 +44,7 @@ The authors found subreddit prediction didn't generalize well and so they use su
 
 ### 2. Multiple choice question answering format
 To feed the annotated data into GPT-2, the authors prepared 26 different multiple-choice question format. A random question format is sampled during training.  
-![](/images/zsl-26-questions.png){: .align-center} 
+![Multiple choice question answering template](/images/zsl-26-questions.png){: .align-center} 
 
 Now for each document, we randomly choose between 2 to 15 titles. One title is correct for that document while all others are random titles.  
 
@@ -82,7 +82,7 @@ For each dataset, they perform the following steps:
 
 - The question is prepended to the text and passed to GPT-2 as a prompt. Then we use greedy sampling to generate the output from GPT-2 and compare it with the actual class. Accuracy for each dataset is calculated.
 
-![](/images/zsl-generation-downstream-usage.png){: .align-center}  
+![Using GPT-2 to predict sentiment](/images/zsl-generation-downstream-usage.png){: .align-center}  
 
 ## Results and Insights  
 Even without access to the training data, the model was able to achieve up to 45% improvement in classification accuracy over random and majority class baselines. 
@@ -125,11 +125,11 @@ Even without access to the training data, the model was able to achieve up to 45
 
 - The authors point out that there were controllability issues because GPT-2 was generating answers which were not a valid class. For example, for the yahoo answers dataset, valid classes are "education & reference" and "science and mathematics'. But, the model sometimes mixed these two and generated 'education and mathematics'. This problem diminished as the model size was increased to 355M and full data was used.  
   
-![](/images/zsl-generation-controllability-issue.png){: .align-center}
+![Mixing of classes during generation](/images/zsl-generation-controllability-issue.png){: .align-center}
 
 - Another issue with the model was the generation of an empty string and rearranging the tokens of a valid answer e.g. "Positive Sentiment" -> "Sentiment Positive". This problem was frequent with top-k and top-p sampling and rare with greedy decoding, and so the authors chose greedy decoding.  
 
-![](/images/zsl-generation-challenges.png){: .align-center}
+![Challenges of using text generation](/images/zsl-generation-challenges.png){: .align-center}
 
 ## Conclusion  
 The paper provides a good overview of the method and challenges of using generative language models for zero-shot classification and show that natural language could be a promising meta-learning strategy for text problems. 
