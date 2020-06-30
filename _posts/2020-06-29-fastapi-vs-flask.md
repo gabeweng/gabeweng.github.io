@@ -40,7 +40,7 @@ conda install flask
 **FastAPI:**
 ```shell
 pip install fastapi uvicorn
-conda install fastapi unicorn -c conda-forge
+conda install fastapi uvicorn -c conda-forge
 ```
 
 ## Running "Hello World" 
