@@ -24,7 +24,7 @@ Credits: Marvel Studios
 
 To use this sentence in a RNN, we need to first convert it into numeric form. We could either use one-hot encoding, pretrained word vectors or learn word embeddings from scratch. For simplicity, let's assume we used some word embedding to convert each word into 2 numbers.
 
-![](/images/i-am-groot-embedding.png){: .align-center}
+![Embedding for I am Groot](/images/i-am-groot-embedding.png){: .align-center}
 
 Now, to pass these words into a RNN, we treat each word as time-step and the embedding as it's features. Let's build a RNN layer to pass these into
 ```python
@@ -32,7 +32,7 @@ model = Sequential()
 model.add(SimpleRNN(4, input_shape=(3, 2)))
 ```
 
-![](/images/rnn-default-keras.png){: .align-center} 
+![How SimpleRNN works](/images/rnn-default-keras.png){: .align-center} 
 As seen above, here is what the various parameters means and why they were set as such:  
 
 - **input_shape=(<span style="color: #9e74b3;">3</span>, <span style="color: #5aa397;">2</span>)**:  
@@ -74,7 +74,7 @@ model.add(SimpleRNN(4, input_shape=(3, 2),
                     return_sequences=True))
 ```
 
-![](/images/rnn-return-sequences.png){: .align-center}
+![Multiple output from SimpleRNN](/images/rnn-return-sequences.png){: .align-center}
 
 As seen above, we get an <span style="color: #49a4aa; font-weight: bold;">output vector</span> of size  <span style="color: #49a4aa; font-weight: bold;">4</span> for each word in the sentence. 
 
@@ -95,7 +95,7 @@ print(output.shape)
 
 ## TimeDistributed Layer
 Suppose we want to recognize entities in a text. For example, in our text "I am <span style="color: #4a820d;">Groot</span>", we want to identify <span style="color: #4a820d;">"Groot"</span> as a <span style="color: #4a820d;">name</span>.
-![](/images/keras-groot-ner.png){: .align-center}
+![Identifying entity in text](/images/keras-groot-ner.png){: .align-center}
 
 We have already seen how to get output for each word in the sentence in previous section. Now, we need some way to apply classification on the output vector from the RNN cell on each word. For simple cases such as text classification, you know how we use `Dense()` layer with `softmax` activation as the last layer.  
 
@@ -108,7 +108,7 @@ model.add(SimpleRNN(4, input_shape=(3, 2),
 model.add(TimeDistributed(Dense(4, activation='softmax')))
 ```
 
-![](/images/keras-time-distributed.png){: .align-center}
+![TimeDistributed Layer in Keras](/images/keras-time-distributed.png){: .align-center}
 
 
 As seen, we take a 3 word sentence and classify output of RNN for each word into 4 classes using <span style="color: #5fb9e0; font-weight: bold;">Dense layer</span>. These classes can be the entities like name, person, location etc.
@@ -123,7 +123,7 @@ model.add(SimpleRNN(4))
 
 We can understand the behavior of the code with the following figure:  
 
-![](/images/rnn-stacked.png){: .align-center}
+![Behavior of Stacked RNNs in Keras](/images/rnn-stacked.png){: .align-center}
 
 <div class="notice--info">
 <h4 class="no_toc">Insight: Why do we usually set return_sequences to True for all layers except the final?</h4> 
