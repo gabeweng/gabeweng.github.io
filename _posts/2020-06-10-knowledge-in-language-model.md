@@ -14,7 +14,7 @@ I recently completed the UC Berkeley's [Deep Unsupervised Learning](https://www.
 
 In one of his slides, Alec mentions how by simply observing a bunch of strings, language models tend to capture useful knowledge. He also mentions that maybe in the future, we could have an unsupervised language model that can be directly used on tasks without further fine-tuning. This talk was before GPT-3 was released and GPT-3 has shown the few-shot learning ability of language models.  
 
-![](/images/alex-slides.png){: .align-center}
+![Screenshot of slides from Alec Radford](/images/alex-slides.png){: .align-center}
 
 In this post, I will share my exploration of the simple examples he mentioned in the lecture with code and expand more on them.  
 
@@ -116,7 +116,7 @@ True
 It's the cat. This makes sense as cats are domesticated and hyena is a wild animal.  
 
 ### Sentiment Analysis  
-Alec presents another idea where we find the conditional probability of positive/negative opinion following some text to perform sentiment analysis. For example, we could calculate the probability for "Sentiment: Positive." and " Sentiment: Negative." coming after a text and assign the sentiment as positive or negative respectively.    
+Alec presents another idea where we find the conditional probability of positive/negative opinion following some text to perform sentiment analysis. For example, we could calculate the probability for "Sentiment: Positive." and "Sentiment: Negative." coming after a text and assign the sentiment as positive or negative respectively.    
 
 $$
 p(Sentiment:\ Positive.\ |\ sentence)\\
