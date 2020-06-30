@@ -313,5 +313,94 @@ app = FastAPI()
 app.include_router(user.router)
 ```
 
+## Data Validation  
+**Flask**  
+Flask doesn't provide any input data validation feature out-of-the-box. It's common practice to either write your own validation logic or use libraries such as [marshmalllow](https://marshmallow.readthedocs.io/en/stable/) or [pydantic](https://pydantic-docs.helpmanual.io/).
+
+**FastAPI:**  
+
+FastAPI wraps pydantic into its framework and allows data validation by simply using a combination of pydantic schema and python type hints.  
+
+```python
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class User(BaseModel):
+    name: str
+    age: int
+
+@app.post('/users')
+def save_user(user: User):
+    return {'name': user.name,
+            'age': user.age}
+```
+
+This code will perform automatic validation to ensure `name` is string and `age` is integer. If any other data type is sent, it auto generates validation error with relevant message.  
+
+Here are some examples of pydantic schema for common usecases.  
+ 
+### Example 1: Key-value pairs
+```json
+{
+  "name": "Isaac",
+  "age": 60
+}
+```
+```python
+from pydantic import BaseModel
+
+class User(BaseModel):
+    name: str
+    age: int
+```
+
+### Example 2: Collection of things  
+```json
+{
+  "series": ["GOT", "Dark", "Mr. Robot"]
+}
+```
+```python
+from pydantic import BaseModel
+from typing import List
+
+class Metadata(BaseModel):
+    series: List[str]
+```
+
+### Example 3: Nested Objects  
+```json
+{
+  "users": [
+    {
+      "name": "xyz",
+      "age": 25
+    },
+    {
+      "name": "abc",
+      "age": 30
+    }
+  ],
+  "group": "Group A"
+}
+```
+```python
+from pydantic import BaseModel
+from typing import List
+
+class User(BaseModel):
+    name: str
+    age: int
+
+class UserGroup(BaseModel):
+    users: List[User]
+    group: str
+```
+
+## Conclusion  
+Thus, FastAPI is a good alternative to Flask for building robust APIs with all the best-practices baked in.  
+
 ## References
 - [FastAPI Documentation](https://fastapi.tiangolo.com)
