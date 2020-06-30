@@ -437,3 +437,5 @@ Thus, FastAPI is an excellent alternative to Flask for building robust APIs with
 
 ## References
 - [FastAPI Documentation](https://fastapi.tiangolo.com)
+- [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
+- [Uvicorn: The lightning-fast ASGI server](https://www.uvicorn.org/)
