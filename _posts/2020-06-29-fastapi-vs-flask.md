@@ -13,7 +13,7 @@ toc_sticky: true
 
 While Flask has become the de-facto choice for API development in Machine Learning projects, there is a new framework called FastAPI that has been getting a lot of community traction.  
 
-![](/images/flask-to-fastapi.png){: .align-center}  
+![Flask and FastAPI Logo](/images/flask-to-fastapi.png){: .align-center}  
 
 I recently decided to give FastAPI a spin by porting a production project written in Flask. FastAPI was very easy to pick up coming from Flask and I was able to get things up and running in just a few hours. 
 
@@ -421,15 +421,15 @@ def search(q: str):
 ### Swagger Documentation
 If you run the server and goto the endpoint `http://127.0.0.1:8000/docs`, you will get an auto-generated swagger documentation.  
 
-![](/images/fastapi-swagger.png){: .align-center}  
+![OpenAPI Swagger UI in FastAPI](/images/fastapi-swagger.png){: .align-center}  
 
 You can interactively try out the API from the browser itself.  
 
-![](/images/fastapi-swagger-interactive.png){: .align-center}  
+![Interactive API Usage in FastAPI](/images/fastapi-swagger-interactive.png){: .align-center}  
 
 ### ReDoc Documentation
 In addition to swagger, if you goto the endpoint `http://127.0.0.01:8000/redoc`, you will get an auto-generated reference documentation. There is information on parameters, request format, response format and status codes.  
-![](/images/fastapi-redoc.png){: .align-center}  
+![ReDoc functionality in FastAPI](/images/fastapi-redoc.png){: .align-center}  
 
 
 ## Conclusion  
