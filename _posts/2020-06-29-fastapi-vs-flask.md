@@ -399,6 +399,39 @@ class UserGroup(BaseModel):
     group: str
 ```
 
+## Automatic Documentation    
+**Flask**  
+Flask doesn't provide any built-in feature for documentation generation. There are extensions such as [flask-swagger](https://pypi.org/project/flask-swagger/) or [flask-restful](https://flask-restplus.readthedocs.io/en/stable/swagger.html) to fill that gap but the workflow is comparatively complex.  
+
+**FastAPI:**  
+FastAPI automatically generates an interactive swagger documentation endpoint at `/docs` and a reference documentation at `/redoc`.
+
+For example, say we had a simple view given below that echoes what the user searched for.  
+```python
+# app.py
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/search')
+def search(q: str):
+    return {'query': q}
+```
+
+### Swagger Documentation
+If you run the server and goto the endpoint `http://127.0.0.1:8000/docs`, you will get an auto-generated swagger documentation.  
+
+![](/images/fastapi-swagger.png){: .align-center}  
+
+You can interactively try out the API from the browser itself.  
+
+![](/images/fastapi-swagger-interactive.png){: .align-center}  
+
+### ReDoc Documentation
+In addition to swagger, if you goto the endpoint `http://127.0.0.01:8000/redoc`, you will get an auto-generated reference documentation. There is information on parameters, request format, response format and status codes.  
+![](/images/fastapi-redoc.png){: .align-center}  
+
+
 ## Conclusion  
 Thus, FastAPI is an excellent alternative to Flask for building robust APIs with best-practices baked in. You can refer to the [documentation](https://fastapi.tiangolo.com/) to learn more.    
 
