@@ -399,6 +399,8 @@ class UserGroup(BaseModel):
     group: str
 ```
 
+You can learn more about Python Type hints from [here](https://fastapi.tiangolo.com/python-types/).
+
 ## Automatic Documentation    
 **Flask**  
 Flask doesn't provide any built-in feature for documentation generation. There are extensions such as [flask-swagger](https://pypi.org/project/flask-swagger/) or [flask-restful](https://flask-restplus.readthedocs.io/en/stable/swagger.html) to fill that gap but the workflow is comparatively complex.  
