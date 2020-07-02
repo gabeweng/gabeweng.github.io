@@ -122,7 +122,7 @@ if __name__ == '__main__':
     uvicorn.run(app)
 ```
 
-FastAPI defers serving to a production-ready server called `uvicorn`. We can start the server as:
+FastAPI defers serving to a production-ready server called [uvicorn](https://www.uvicorn.org/settings/). We can start the server as:
 ```shell
 uvicorn app:app
 ```
@@ -131,6 +131,17 @@ You can also start it in hot-reload mode by running
 ```shell
 uvicorn app:app --reload
 ```
+
+Furthermore, you can change the port as well.
+```shell
+uvicorn app:app --port 5000
+```
+
+The number of workers can be controlled as well.
+```shell
+uvicorn app:app --workers 2
+```
+
 
 ## HTTP Methods  
 **Flask:**
