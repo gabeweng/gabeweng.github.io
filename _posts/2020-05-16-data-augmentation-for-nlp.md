@@ -11,6 +11,7 @@ header:
 ---
 
 Unlike Computer Vision where using image data augmentation is a standard practice, augmentation of text data in NLP is pretty rare. This is because trivial operations for images like rotating an image a few degrees or converting it into grayscale doesn't change its semantics. This presence of semantically invariant transformation is what made augmentation an essential toolkit in Computer Vision research.
+
 ![Challenge of Semantically Invariant Transformation in NLP](/images/semantic-invariance-nlp.png){: .align-center}
 
 I was curious if there were attempts at developing augmentation techniques for NLP and explored the existing literature. In this post, I will give an overview of the current approaches being used for text data augmentation based on my findings.    
