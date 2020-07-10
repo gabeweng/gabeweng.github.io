@@ -10,6 +10,10 @@ toc: true
 toc_sticky: true
 ---
 
+This page contains useful libraries I've found when working on Machine Learning projects.  
+
+The libraries are organized below by phases of a typical Machine Learning project.  
+
 ## Phase: Data
 ### Data Annotation  
 
