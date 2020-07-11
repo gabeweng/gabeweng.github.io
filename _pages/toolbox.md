@@ -49,7 +49,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Prebuilt| [openml](https://openml.github.io/openml-python/master/), [nlp](https://github.com/huggingface/nlp), [lineflow](https://github.com/tofunlp/lineflow)||
+| Prebuilt| [openml](https://openml.github.io/openml-python/master/), [lineflow](https://github.com/tofunlp/lineflow)||
+||[rs_datasets](https://darel13712.github.io/rs_datasets/)|Recommendation Datasets|
+||[nlp](https://github.com/huggingface/nlp)|Python interface to NLP datasets|
 | Audio| [pydub](https://github.com/jiaaro/pydub)||
 | Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
 | | [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
@@ -167,6 +169,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Deep Clustering| [deep-clustering-toolbox](https://github.com/jizongFox/deep-clustering-toolbox)||
 | Graph Neural Networks| [spektral](https://github.com/danielegrattarola/spektral/)|GNN for Keras|
 | Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
+|Gradient Free Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|
 
 ### Natural Language Processing  
 
@@ -193,6 +196,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pymagnitude](https://github.com/plasticityai/magnitude)|Access word-embeddings programatically|
 ||[chakin](https://github.com/chakki-works/chakin)|Download pre-trained word vectors|
 ||[zeugma](https://github.com/nkthiebaut/zeugma)|Pretrained-word embeddings as scikit-learn transformers|
+||[starspace](https://github.com/facebookresearch/StarSpace)|Learn embeddings for anything|
 | Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
 | Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html)||
@@ -271,11 +275,13 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Factorization machines (FM), and field-aware factorization machines (FFM)| [xlearn](https://github.com/aksnzhy/xlearn), [DeepCTR](https://github.com/shenweichen/DeepCTR)||
+|Libraries| [xlearn](https://github.com/aksnzhy/xlearn), [DeepCTR](https://github.com/shenweichen/DeepCTR)| Factorization machines (FM), and field-aware factorization machines (FFM)|
+||[lightfm](https://github.com/lyst/lightfm), [spotlight](https://github.com/maciejkula/spotlight)|Popular Recsys algos|
 | Collaborative Filtering| [implicit](https://github.com/benfred/implicit)||
 | Scikit-learn like API| [surprise](https://github.com/NicolasHug/Surprise)||
 | Recommendation System in Pytorch| [CaseRecommender](https://github.com/caserec/CaseRecommender)||
 | Apriori algorithm| [apyori](https://github.com/ymoch/apyori)||
+|Metrics|[rs_metrics](https://darel13712.github.io/rs_metrics/metrics/)||
 
 ### Timeseries  
 
@@ -406,9 +412,10 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Generate frontend with python| [streamlit](https://github.com/streamlit/streamlit)||
+|Libraries| [streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
+||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
 
 ### Adversarial testing  
 
