@@ -159,7 +159,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Active Learning| [modal](https://github.com/modAL-python/modAL)||
 | Support Vector Machines| [thundersvm](https://github.com/Xtra-Computing/thundersvm)|Run SVM on GPU|
 | Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
-| Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate)||
+| Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate), [pymc3](https://docs.pymc.io/)||
 | Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/)||
 | Anomaly detection| [adtk](https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html)||
 | Spiking Neural Network| [norse](https://github.com/norse/norse)||
