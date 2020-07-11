@@ -279,20 +279,31 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Predict Time Series| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [atspy(automated time-series models)](https://github.com/firmai/atspy), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy)||
-| Scikit-learn like API| [sktime](https://github.com/alan-turing-institute/sktime)||
+| Libraries| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy), [darts](https://github.com/unit8co/darts)||
+|| [sktime](https://github.com/alan-turing-institute/sktime)|Scikit-learn like API|
+||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
 
 ### Framework extensions  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Pytorch| [Keras like summary for pytorch](https://github.com/sksq96/pytorch-summary), [skorch (wrap pytorch in scikit-learn compatible API)](https://github.com/skorch-dev/skorch), [catalyst](https://github.com/catalyst-team/catalyst)||
-| Einstein notation| [einops](https://github.com/arogozhnikov/einops), [kornia](https://torchgeometry.readthedocs.io/en/latest/index.html), [torchcontrib(recent paper ideas)](https://github.com/pytorch/contrib)||
-| Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterstrat (cross-validation for multi-label data)](https://github.com/trent-b/iterative-stratification), [iterative-stratification](https://github.com/trent-b/iterative-stratification), [tscv(time series cross-validation)](https://github.com/WenjieZ/TSCV)||
-| Keras| [keras-radam](https://github.com/CyberZHG/keras-radam), [larq (binarized neural networks)](https://github.com/larq/larq), [ktrain (fastai like interface for keras)](https://pypi.org/project/ktrain/), [tavolo (useful techniques from kaggle as utilities)](https://github.com/eliorc/tavolo), [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
-| Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
 |Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
+| Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
+||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
+||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
+||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
+||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)||
+||[torchcontrib](https://github.com/pytorch/contrib)|SOTA Bulding Blocks in PyTorch|
+| Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
+||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
+||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
+| Keras| [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
+||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
+||[larq](https://github.com/larq/larq)|Binarized neural networks|
+||[ktrain](https://pypi.org/project/ktrain/)|FastAI like interface for keras|
+||[tavolo](https://github.com/eliorc/tavolo)|Kaggle Tricks as Keras Layers|
+| Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
 
 ## Phase: Validation
 ### Model Training Monitoring  
@@ -310,45 +321,49 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Visualize keras models| [keras-vis](https://github.com/raghakot/keras-vis)||
 | Interpret models| [eli5](https://eli5.readthedocs.io/en/latest/), [lime](https://github.com/marcotcr/lime), [shap](https://github.com/slundberg/shap), [alibi](https://github.com/SeldonIO/alibi), [tf-explain](https://github.com/sicara/tf-explain), [treeinterpreter](https://github.com/andosa/treeinterpreter), [pybreakdown](https://github.com/MI2DataLab/pyBreakDown), [xai](https://github.com/EthicalML/xai), [lofo-importance](https://github.com/aerdem4/lofo-importance), [interpretML](https://github.com/interpretml/interpret)||
-| Interpret BERT| [exbert](http://exbert.net/exBERT.html?sentence=I%20liked%20the%20music&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..9&metaMatch=pos&metaMax=pos&displayInspector=null&offsetIdxs=..-1,0,1&hideClsSep=true), [bertviz (see attention)](https://github.com/jessevig/bertviz)||
+| Interpret BERT| [exbert](http://exbert.net/exBERT.html?sentence=I%20liked%20the%20music&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..9&metaMatch=pos&metaMax=pos&displayInspector=null&offsetIdxs=..-1,0,1&hideClsSep=true)||
+||[bertviz](https://github.com/jessevig/bertviz)|Explore self-attention in BERT|
 | Interpret word2vec| [word2viz](https://lamyiowce.github.io/word2viz/), [whatlies](https://github.com/RasaHQ/whatlies)||
+
+### Visualization  
+
+|Category|Tool|Remarks|
+|---|---|---|
+| Libraries| [pygal](http://www.pygal.org/en/latest/index.html), [plotly](https://github.com/plotly/plotly.py), [plotnine](https://github.com/has2k1/plotnine)||
+|| [yellowbrick](https://www.scikit-yb.org/en/latest/index.html), [scikit-plot](https://scikit-plot.readthedocs.io/en/stable/metrics.html)|Visualization for scikit-learn|
+|| [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
+| Interactive charts| [bokeh](https://github.com/bokeh/bokeh)||
+|| [flourish-studio](https://flourish.studio/)|Create interactive charts online|
+|| [mpld3](http://mpld3.github.io/index.html)|Matplotlib to D3 Converter|
+|Model Visualization|[netron](https://github.com/lutzroeder/netron), [nn-svg](http://alexlenail.me/NN-SVG/LeNet.html)|Architecture|
+|| [keract](https://github.com/philipperemy/keract)|Activation maps for keras|
+|| [keras-vis](https://github.com/raghakot/keras-vis)|Visualize keras models|
+| Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
+||[mplcyberpunk](https://github.com/dhaitz/mplcyberpunk)|Cyberpunk style for matplotlib|
+|| [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
+| Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
+| High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
+| Bar chart race animation| [bar_chart_race](https://github.com/dexplo/bar_chart_race)||
 
 ## Phase: Optimization
 ### Hyperparameter Optimization  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
-| Scikit-learn| [sklearn-deap (evolutionary algorithm for hyperparameter search)](https://github.com/rsteca/sklearn-deap), [hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn)||
 | General| [hyperopt](https://github.com/hyperopt/hyperopt), [optuna](https://optuna.org/), [evol](https://github.com/godatadriven/evol), [talos](https://github.com/autonomio/talos)||
+| Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
+| Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn)|Bayesian Optimization|
+||[sklearn-deap](https://github.com/rsteca/sklearn-deap)|Evolutionary algorithm|
 | Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
-
-### Visualization  
-
-|Category|Tool|Remarks|
-|---|---|---|
-| Visualization libraries| [pygal](http://www.pygal.org/en/latest/index.html), [plotly](https://github.com/plotly/plotly.py), [plotnine](https://github.com/has2k1/plotnine)||
-| Interactive charts| [bokeh](https://github.com/bokeh/bokeh)||
-| Visualization for scikit-learn| [yellowbrick](https://www.scikit-yb.org/en/latest/index.html), [scikit-plot](https://scikit-plot.readthedocs.io/en/stable/metrics.html)||
-| XKCD like charts| [chart.xkcd](https://timqian.com/chart.xkcd/)||
-| Convert matplotlib charts to D3 charts| [mpld3](http://mpld3.github.io/index.html)||
-| Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
-| Visualize topics models| [pyldavis](https://pyldavis.readthedocs.io/en/latest/)||
-| High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
-| Visualize architectures| [netron](https://github.com/lutzroeder/netron), [nn-svg](http://alexlenail.me/NN-SVG/LeNet.html)||
-| Activation maps for keras| [keract](https://github.com/philipperemy/keract)||
-| Create interactive charts online| [flourish-studio](https://flourish.studio/)||
-| Color Schemes| [open-color](https://yeun.github.io/open-color/),[mplcyberpunk(cyberpunk style for matplotlib)](https://github.com/dhaitz/mplcyberpunk)||
-| Bar chart race animation| [bar_chart_race](https://github.com/dexplo/bar_chart_race)||
 
 ## Phase: Production
 ### Model Serialization  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Transpiling| [sklearn-porter (transpile sklearn model to C, Java, JavaScript and others)](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen), [hummingbird (convert boosting models to pytorch](https://github.com/microsoft/hummingbird)||
+| Transpiling| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
+||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 | Pickling extended| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)||
 
 ### Scalability  
