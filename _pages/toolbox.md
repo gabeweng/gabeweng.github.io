@@ -24,6 +24,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [prodigy](https://prodi.gy/)|Paid|
 |Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
 |General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html)|Label in notebooks|
+|| [labelstudio](https://labelstud.io/)|Open Source Data Labeling Tool|
 
 ### Data Collection  
 
@@ -255,7 +256,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Video summarization| [videodigest](https://github.com/agermanidis/videodigest)||
 | Semantic search over videos| [scoper](https://github.com/RameshAditya/scoper)||
 | OCR| [keras-ocr](https://github.com/faustomorales/keras-ocr), [pytesseract](https://github.com/madmaze/pytesseract)||
-| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2)||
+| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection)||
 | Image hashing| [ImageHash](https://pypi.org/project/ImageHash/)||
 
 ### Audio  
@@ -294,8 +295,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
 ||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
 ||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
-||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)||
+||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)|Computer Vision Methods|
 ||[torchcontrib](https://github.com/pytorch/contrib)|SOTA Bulding Blocks in PyTorch|
+||[pytorch-optimizer](https://github.com/jettify/pytorch-optimizer)|Collection of optimizers|
 | Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
 ||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
 ||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
@@ -345,6 +347,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
 | Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
 | High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
+||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
 | Bar chart race animation| [bar_chart_race](https://github.com/dexplo/bar_chart_race)||
 
 ## Phase: Optimization
@@ -372,6 +375,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 | Parallelize Pandas| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)||
+|Pandas on Huge data|[vaex](https://github.com/vaexio/vaex)||
 | Parallelize numpy operations| [numba](http://numba.pydata.org/)||
 | Distributed training| [horovod](https://github.com/horovod/horovod)||
 
@@ -401,6 +405,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 | Generate frontend with python| [streamlit](https://github.com/streamlit/streamlit)||
+||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 
 ### Adversarial testing  
 
@@ -429,6 +434,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | CLI Formatting| [rich](https://github.com/willmcgugan/rich)||
 | Control mouse and output device| [pynput](https://pypi.org/project/pynput/)||
 | Shell commands as functions| [sh](http://amoffat.github.io/sh/)||
+|Standard Library Extension|[ubelt](https://github.com/Erotemic/ubelt)||
+|Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
 
 ### Workflow  
 
