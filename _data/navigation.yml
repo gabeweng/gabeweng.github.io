@@ -3,8 +3,8 @@ main:
     url: /archives/
   - title: "Categories"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Toolbox"
+    url: /toolbox/
   - title: "About"
     url: /about/
   - title: "Contact"
