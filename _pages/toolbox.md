@@ -20,7 +20,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Image | [makesense.ai](https://www.makesense.ai/)||
-|Text | [doccano](https://doccano.herokuapp.com/), [prodigy](https://prodi.gy/), [dataturks](https://dataturks.com/), [brat](http://brat.nlplab.org/)||
+|Text | [doccano](https://doccano.herokuapp.com/), [dataturks](https://dataturks.com/), [brat](http://brat.nlplab.org/)||
+| | [prodigy](https://prodi.gy/)|Paid|
 |Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
 |General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html)|Label in notebooks|
 
@@ -28,8 +29,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Curations|[nlp-datasets](https://github.com/niderhoff/nlp-datasets), [The Big Bad NLP Database](https://quantumstat.com/dataset/dataset.html), [datasetlist](https://www.datasetlist.com/), [UCI Machine Learning Datasets](https://archive.ics.uci.edu/ml/datasets.php), [Google Dataset Search](https://toolbox.google.com/datasetsearch), [fastai-datasets](https://course.fast.ai/datasets.html), [Data For Everyone](https://www.figure-eight.com/data-for-everyone/)||
-|Words|[curse-words](https://github.com/reimertz/curse-words), [badwords](https://github.com/MauriceButler/badwords), [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words), [english-words (A text file containing over 466k English words)](https://github.com/dwyl/english-words), [10K most common words](https://github.com/first20hours/google-10000-english), [common-misspellings](https://bitbucket.org/bedizel/moe/src/master/data/)||
+|Curations|[nlp-datasets](https://github.com/niderhoff/nlp-datasets), [The Big Bad NLP Database](https://quantumstat.com/dataset/dataset.html), [datasetlist](https://www.datasetlist.com/), [UCI](https://archive.ics.uci.edu/ml/datasets.php), [Google Dataset Search](https://toolbox.google.com/datasetsearch), [fastai-datasets](https://course.fast.ai/datasets.html)||
+|Words|[curse-words](https://github.com/reimertz/curse-words), [badwords](https://github.com/MauriceButler/badwords), [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words), [10K most common words](https://github.com/first20hours/google-10000-english), [common-misspellings](https://bitbucket.org/bedizel/moe/src/master/data/)||
+||[english-words](https://github.com/dwyl/english-words)|A text file containing over 466k English words|
 |Text Corpus|[project gutenberg](https://www.gutenberg.org/), [oscar (big multilingual corpus)](https://traces1.inria.fr/oscar/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets),  [1 trillion n-grams](https://catalog.ldc.upenn.edu/LDC2006T13), [litbank](https://github.com/dbamman/litbank), [BookCorpus](https://github.com/soskek/bookcorpus), [south-asian text corpus](https://github.com/google-research-datasets/dakshina)||
 |Sentiment|[SST2](https://github.com/clairett/pytorch-sentiment-classification/tree/master/data/SST2), [Amazon Reviews](https://www.kaggle.com/bittlingmayer/amazonreviews), [Yelp Reviews](https://www.kaggle.com/yelp-dataset/yelp-dataset), [Movie Reviews](http://www.cs.cornell.edu/people/pabo/movie-review-data/), [Food Reviews](https://www.kaggle.com/snap/amazon-fine-food-reviews), [Twitter Airline](https://www.kaggle.com/crowdflower/twitter-airline-sentiment), [GOP Debate](https://www.kaggle.com/crowdflower/first-gop-debate-twitter-sentiment), [Sentiment Lexicons for 81 languages](https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages), [SentiWordNet](http://sentiwordnet.isti.cnr.it/), [Opinion Lexicon](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon), [Wordstat words](https://provalisresearch.com/products/content-analysis-software/wordstat-dictionary/sentiment-dictionaries/), [Emoticon Sentiment](http://people.few.eur.nl/hogenboom/files/EmoticonSentimentLexicon.zip)||
 |Emotion|[NRC-Emotion-Lexicon-Wordlevel](https://raw.githubusercontent.com/dinbav/LeXmo/master/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt), [ISEAR(17K)](https://github.com/PoorvaRane/Emotion-Detector/blob/master/ISEAR.csv), [HappyDB](https://megagon.ai/projects/happydb-a-happiness-database-of-100000-happy-moments/)|
@@ -38,7 +40,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Image|[1 million fake faces](https://archive.org/details/1mFakeFaces), [flickr-faces](https://github.com/NVlabs/ffhq-dataset), [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [SVHN](http://ufldl.stanford.edu/housenumbers/), [STL-10](http://ai.stanford.edu/~acoates/stl10/), [imagenette](https://github.com/fastai/imagenette), [objectnet](https://objectnet.dev/), [YFCC100m](http://projects.dfki.uni-kl.de/yfcc100m/), [USPS](https://www.kaggle.com/bistaumanga/usps-dataset), [Animal Faces-HQ dataset (AFHQ)](https://github.com/clovaai/stargan-v2/blob/master/README.md#animal-faces-hq-dataset-afhq)||
 |Paraphrasing| [PPDB](http://paraphrase.org/)||
 |One Shot Learning | [omniglot](https://github.com/brendenlake/omniglot), [mini-imagenet](https://github.com/yaoyao-liu/mini-imagenet-tools)|
-|Audio | [audioset (youtube audio with labels)](https://research.google.com/audioset/index.html)||
+|Audio | [audioset](https://research.google.com/audioset/index.html)|YouTube audio with labels|
 |Graphs| [Social Networks (Github, Facebook, Reddit)](https://github.com/benedekrozemberczki/datasets)||
 |Handwriting| [iam-handwriting](http://www.fki.inf.unibe.ch/databases/iam-on-line-handwriting-database)||
 
@@ -46,7 +48,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Prebuilt| [OpenML](https://openml.github.io/openml-python/master/), [nlp](https://github.com/huggingface/nlp), [lineflow](https://github.com/tofunlp/lineflow)||
+| Prebuilt| [openml](https://openml.github.io/openml-python/master/), [nlp](https://github.com/huggingface/nlp), [lineflow](https://github.com/tofunlp/lineflow)||
 | Audio| [pydub](https://github.com/jiaaro/pydub)||
 | Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
 | | [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
@@ -55,10 +57,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [pygooglenews](https://github.com/kotartemiy/pygooglenews)|Google News|
 | Lyrics| [lyricsgenius](https://github.com/johnwmillr/LyricsGenius)||
 | Email| [talon](https://github.com/mailgun/talon)||
-| PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [Parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber)||
+| PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber)||
 | Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
 | Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
-| Crawling| [pyppeteer (chrome automation)](https://github.com/miyakogi/pyppeteer), [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
+| Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
+| | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
 | Google sheets| [gspread](https://github.com/burnash/gspread)||
 | Google drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
 | Python API| [pydataset](https://github.com/iamaziz/PyDataset)||
@@ -77,7 +80,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Audio| [audiomentations](https://github.com/iver56/audiomentations), [muda](https://github.com/bmcfee/muda)||
 | OCR data| [TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator)||
 | Tabular data| [deltapy](https://github.com/firmai/deltapy)||
-| Automatic augmentation| [deepaugment(image)](https://pypi.org/project/deepaugment/)||
+| Automatic augmentation| [deepaugment](https://pypi.org/project/deepaugment/)|Image|
 
 ## Phase: Exploration
 
@@ -85,14 +88,14 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Dataframe| [cudf (pandas with GPU)](https://github.com/rapidsai/cudf)||
+| Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
 | Missing values| [missingno](https://github.com/ResidentMario/missingno)||
 | Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
 | Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
 | Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
-| Numerical data| [numerizer (convert natural language numerics into ints and floats)](https://github.com/jaidevd/numerizer)||
-| Data Validation| [pandera (validation for pandas)](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)||
-| Data Cleaning| [pyjanitor (janitor ported to python)](https://github.com/ericmjl/pyjanitor)||
+| Numerical data| [numerizer](https://github.com/jaidevd/numerizer)|Parse natural language number|
+| Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
+| Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
 | Parsing| [pyparsing](https://pyparsing-docs.readthedocs.io/en/latest/index.html), [parse](https://pypi.org/project/parse/)||
 | Natural date parser| [dateparser](https://github.com/scrapinghub/dateparser)||
 | Unicode| [text-unidecode](https://pypi.org/project/text-unidecode/)||
@@ -104,22 +107,23 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| View Jupyter notebooks through CLI| [nbdime](https://github.com/jupyter/nbdime)||
-| Parametrize notebooks| [papermill](https://github.com/nteract/papermill)||
-| Access notebooks programatically| [nbformat](https://nbformat.readthedocs.io/en/latest/api.html)||
-| Convert notebooks to other formats| [nbconvert](https://nbconvert.readthedocs.io/en/latest/)||
-| Extra utilities not present in frameworks| [mlxtend](https://github.com/rasbt/mlxtend)||
-| Maps in notebooks| [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)||
-| Data Exploration| [bamboolib (a GUI for pandas)](https://bamboolib.8080labs.com/)||
+|Notebook Tools| [nbdime](https://github.com/jupyter/nbdime)|View Jupyter notebooks through CLI|
+|| [papermill](https://github.com/nteract/papermill)| Parametrize notebooks|
+| | [nbformat](https://nbformat.readthedocs.io/en/latest/api.html)|Access notebooks programatically|
+| | [nbconvert](https://nbconvert.readthedocs.io/en/latest/)|Convert notebooks to other formats|
+|Jupyter Extensions| [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)|Maps in notebooks|
 
 ## Phase: Feature Engineering
 ### Feature Generation  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Automatic feature engineering| [featuretools](https://github.com/FeatureLabs/featuretools), [autopandas](https://autopandas.io/), [tsfresh (automatic feature engineering for time series)](https://github.com/blue-yonder/tsfresh)||
-| Custom distance metric learning| [metric-learn](http://contrib.scikit-learn.org/metric-learn/getting_started.html), [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)||
-| Time series| [python-holidays](https://github.com/dr-prodigy/python-holidays), [skits](https://github.com/ethanrosenthal/skits), [catch22](https://github.com/chlubba/catch22)||
+| Automatic feature engineering| [featuretools](https://github.com/FeatureLabs/featuretools), [autopandas](https://autopandas.io/)||
+|| [tsfresh](https://github.com/blue-yonder/tsfresh)|Automatic feature engineering for time series|
+| Metric learning| [metric-learn](http://contrib.scikit-learn.org/metric-learn/getting_started.html), [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)||
+| Time series| [python-holidays](https://github.com/dr-prodigy/python-holidays)|List of holidays|
+| | [skits](https://github.com/ethanrosenthal/skits)|Transformation for time-series data|
+| | [catch22](https://github.com/chlubba/catch22)|Pre-built features for time-series data|
 | DAG based dataset generation| [DFFML](https://intel.github.io/dffml/usage/integration.html)||
 
 ### Dimensionality reduction  
@@ -135,16 +139,22 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 | Find SOTA models| [sotawhat](https://sotawhat.herokuapp.com), [papers-with-code](https://paperswithcode.com/sota)||
-| Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub), [pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch), [huggingface-models](https://huggingface.co/models)||
-| Automated Machine Learning (AutoML)| [auto-sklearn](https://automl.github.io/auto-sklearn), [tpot](https://github.com/EpistasisLab/tpot), [mljar-supervised](https://github.com/mljar/mljar-supervised), [lazypredict](https://github.com/shankarpandala/lazypredict)||
-| Curations| [bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)||
-| Autogenerate ML code| [automl-gs](https://github.com/minimaxir/automl-gs), [mindsdb](https://github.com/mindsdb/mindsdb), [autocat (auto-generate text classification models in spacy)](https://autocat.apps.allenai.org/), [lugwig](https://uber.github.io/ludwig/)||
+||[bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)|BERT Papers|
+| Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub)|General|
+||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch)|Pre-trained ConvNets|
+| | [huggingface-models](https://huggingface.co/models)|Transformer Models|
+| AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs)||
+||[lazypredict](https://github.com/shankarpandala/lazypredict)|Run all sklearn models at once|
+||[tpot](https://github.com/EpistasisLab/tpot)|Genetic AutoML|
+||[autocat](https://autocat.apps.allenai.org/)|Auto-generate text classification models in spacy|
+| Autogenerate ML code| [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://uber.github.io/ludwig/)||
 | ML from command line (or Python or HTTP)| [DFFML](https://intel.github.io/dffml/)||
-| Gradient Boosting| [catboost](https://catboost.ai/docs/concepts/about.html), [lightgbm (GPU-capable)](https://github.com/Microsoft/LightGBM), [thunderbm (GPU-capable)](https://github.com/Xtra-Computing/thundergbm), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
+| Gradient Boosting| [catboost](https://catboost.ai/docs/concepts/about.html), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
+||[lightgbm](https://github.com/Microsoft/LightGBM), [thunderbm](https://github.com/Xtra-Computing/thundergbm)|GPU Capable|
 | Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
 | Genetic Programming| [gplearn](https://gplearn.readthedocs.io/en/stable/index.html)||
 | Active Learning| [modal](https://github.com/modAL-python/modAL)||
-| Support Vector Machines| [thundersvm (GPU-capable)](https://github.com/Xtra-Computing/thundersvm)||
+| Support Vector Machines| [thundersvm](https://github.com/Xtra-Computing/thundersvm)|Run SVM on GPU|
 | Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
 | Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate)||
 | Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/)||
@@ -154,7 +164,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
 | Few Shot Learning| [keras-fewshotlearning](https://github.com/ClementWalter/Keras-FewShotLearning)||
 | Deep Clustering| [deep-clustering-toolbox](https://github.com/jizongFox/deep-clustering-toolbox)||
-| Graph Neural Networks| [spektral (GNN for Keras)](https://github.com/danielegrattarola/spektral/)||
+| Graph Neural Networks| [spektral](https://github.com/danielegrattarola/spektral/)|GNN for Keras|
 | Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
 
 ### Natural Language Processing  
@@ -164,14 +174,14 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [camphr (spacy plugin for transformers, elmo, udify)](https://github.com/PKSHATechnology-Research/camphr/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/)||
 | Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | Wrappers| [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)||
-| Domain-specific BERT| [CodeBERT](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
+| Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
 || [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
-|Scientific Domain| [scispacy (spacy for medical documents)](https://github.com/allenai/scispacy)||
+|Scientific Domain| [scispacy](https://github.com/allenai/scispacy)|Spacy for bio-medical data|
 | Fix casing| [truecase](https://pypi.org/project/truecase/)||
 | Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy)||
 || [JamSpell](https://github.com/bakwc/JamSpell), [pyhunspell](https://github.com/blatinier/pyhunspell), [pyspellchecker](https://github.com/barrust/pyspellchecker), [cython_hunspell](https://github.com/MSeal/cython_hunspell), [hunspell-dictionaries](https://github.com/wooorm/dictionaries), [autocorrect (can add more languages)](https://github.com/phatpiglet/autocorrect), [symspellpy](https://github.com/mammothb/symspellpy), [spello (train your own spelling correction)](https://github.com/hellohaptik/spello)|Spelling Correction|
 | | [contractions](https://github.com/kootenpv/contractions), [pycontractions](https://pypi.org/project/pycontractions/)|Contraction Mapping|
-| | [stopwords-iso(stopwords for all languages)](https://github.com/stopwords-iso/stopwords-iso)|Stopwords|
+| | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check)|Language Detection|
 | Text Extraction| [textract (Image, Audio, PDF)](https://textract.readthedocs.io/en/stable/)||
 | Text Generation| [gp2client](https://github.com/rish-16/gpt2client), [textgenrnn](https://github.com/minimaxir/textgenrnn), [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple), [aitextgen](https://github.com/minimaxir/aitextgen)|GPT-2|
@@ -267,6 +277,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterstrat (cross-validation for multi-label data)](https://github.com/trent-b/iterative-stratification), [iterative-stratification](https://github.com/trent-b/iterative-stratification), [tscv(time series cross-validation)](https://github.com/WenjieZ/TSCV)||
 | Keras| [keras-radam](https://github.com/CyberZHG/keras-radam), [larq (binarized neural networks)](https://github.com/larq/larq), [ktrain (fastai like interface for keras)](https://pypi.org/project/ktrain/), [tavolo (useful techniques from kaggle as utilities)](https://github.com/eliorc/tavolo), [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
 | Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
+|Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
 
 ## Phase: Validation
 ### Model Training Monitoring  
