@@ -3,7 +3,7 @@ title: "Semi-Supervised Learning in Computer Vision"
 date: 2020-07-12T14:24-00:00
 categories:
   - semi-supervised-learning
-excerpt: A comprehensive overview of nine recent semi-supervised learning methods in Computer Vision
+excerpt: A comprehensive overview of recent semi-supervised learning methods in Computer Vision
 header:
   og_image: /images/ssl-pseudo-label.png
   teaser: /images/ssl-pseudo-label.png
