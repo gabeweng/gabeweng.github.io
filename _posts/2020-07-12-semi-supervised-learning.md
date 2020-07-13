@@ -120,6 +120,7 @@ As seen, we train a supervised model on our labeled images with cross-entropy lo
 ![](/images/fixmatch-pipeline.png){: .align-center}
 
 ## Comparison of Methods  
+Here is a high-level summary of differences between all the above mentioned methods.  
 
 |Method Name|Year|Unlabeled Loss|Augmentation|
 |---|---|---|---|
@@ -133,7 +134,19 @@ As seen, we train a supervised model on our labeled images with cross-entropy lo
 |Noisy Student|2019|Cross-Entropy|RandAugment|
 |FixMatch|2020|Cross-Entropy|CTAugment / RandAugment|
 
-<!-- Classic methods
+## Common Evaluation Datasets  
+To evaluate the performance of these semi-supervised methods, these dataset are commonly used.
+
+|Dataset|Classes|Image Size|Train|Validation|Unlabeled|Remarks|
+|---|---|---|---|---|---|
+|[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)|10|32*32|50,000|10,000|-|Subset of tiny images dataset|
+|[CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)|100|32*32|50,000|10,000|-|Subset of tiny images dataset|
+|[STL-10](http://ai.stanford.edu/~acoates/stl10/)|10|96*96|5000|8000|1,00,000|Subset of ImageNet|
+|[SVHN](http://ufldl.stanford.edu/housenumbers/)|10|32*32|73,257|26,032|5,31,131|Google Street View House Numbers|
+|[ILSVRC-2012](https://www.tensorflow.org/datasets/catalog/imagenet2012)|1000|vary|1.2 million|150,000|1,50,000|Subset of ImageNet|
+
+
+<!-- Part 2: Classic methods
 - S4L
 - Ladder Network
 - Bad GAN
