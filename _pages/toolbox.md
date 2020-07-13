@@ -215,6 +215,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
 | Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine)||
 | Multiply Choice Question Answering| [mcQA](https://github.com/mcQA-suite/mcQA)||
+|Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
 | NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
 | Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
 | Readability| [homer](https://github.com/wyounas/homer)||
