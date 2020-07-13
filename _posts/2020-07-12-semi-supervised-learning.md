@@ -119,6 +119,20 @@ As seen, we train a supervised model on our labeled images with cross-entropy lo
 
 ![](/images/fixmatch-pipeline.png){: .align-center}
 
+## Comparison of Methods  
+
+|Method Name|Year|Unlabeled Loss|Augmentation|
+|---|---|---|---|
+|Pseudo-label|2013|Cross-Entropy|Random|
+|π-model|2016|MSE|Random|
+|Temporal Ensembling|2016|MSE|Random|
+|Mean Teacher|2017|MSE|Random|
+|Virtual Adversarial Training(VAT)|2017|KL-divergence|Adversarial transformation|
+|Unsupervised Data Augmentation(UDA)|2019|KL-divergence|AutoAugment|
+|MixMatch|2019|MSE|Random|
+|Noisy Student|2019|Cross-Entropy|RandAugment|
+|FixMatch|2020|Cross-Entropy|CTAugment / RandAugment|
+
 <!-- Classic methods
 - S4L
 - Ladder Network
