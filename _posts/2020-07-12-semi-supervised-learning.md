@@ -45,7 +45,9 @@ The key idea is to train two models called <span style="background-color: #e8f5e
 Once a <span style="background-color: #fff3e0;">student model</span> is trained, it becomes the new <span style="background-color: #e8f5e9;">teacher</span> and this process is repeated for three iterations.
 
 ## **2. Consistency Regularization**
-This paradigm uses the idea that model predictions on an unlabeled image should remain the same even after adding noise to the dataset. We could use input noise such as Gaussian noise and Image Augmentations. Noise can also be added to the architecture itself using techniques such as Dropout and Stochastic Depth.  
+This paradigm uses the idea that <span style="background-color: #e8f5e9;">model</span> predictions on an unlabeled image should remain the same even after adding noise. We could use input noise such as Image Augmentation and Gaussian noise. Noise can also be added to the architecture itself using techniques such as Dropout and Stochastic Depth.  
+
+![Consistency Regularization Concept](/images/fixmatch-unlabeled-augment-concept.png){: .align-center}  
 
 ### a. π-model
 This model was proposed by [Laine et al.](https://arxiv.org/abs/1610.02242) in a conference paper at ICLR 2017.
