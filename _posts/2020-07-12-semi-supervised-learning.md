@@ -16,7 +16,7 @@ In this post, I will explain the key ideas of these recent methods for semi-supe
 
 
 ## **1. Self-Training**
-In this formulation, a model is trained on labeled data and used to predict pseudo-labels for the unlabeled data. The model is trained with both ground truth labels and pseudo-labels simultaneously.
+In this formulation, a model is trained on labeled data and used to predict pseudo-labels for the unlabeled data. The model is trained on both ground truth labels and pseudo-labels simultaneously.
 
 ### a. Pseudo-label
 [Dong-Hyun Lee](http://deeplearning.net/wp-content/uploads/2013/03/pseudo_label_final.pdf) proposed a very simple and efficient formulation called "Pseudo-label" in 2013.
