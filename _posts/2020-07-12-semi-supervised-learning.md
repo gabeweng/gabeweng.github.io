@@ -136,7 +136,7 @@ Here is a high-level summary of differences between all the above mentioned meth
 |FixMatch|2020|Cross-Entropy|CTAugment / RandAugment|
 
 ## Common Evaluation Datasets  
-To evaluate the performance of these semi-supervised methods, these dataset are commonly used.
+To evaluate the performance of these semi-supervised methods, the following dataset are commonly used. The authors simulate a low-data regime by using only a small portion(e.g. 40/250/4,000/10,000 examples) of the whole dataset as labeled and treating the remaining as the unlabeled set.  
 
 |Dataset|Classes|Image Size|Train|Validation|Unlabeled|Remarks|
 |---|---|---|---|---|---|
@@ -145,7 +145,6 @@ To evaluate the performance of these semi-supervised methods, these dataset are 
 |[STL-10](http://ai.stanford.edu/~acoates/stl10/)|10|96*96|5000|8000|1,00,000|Subset of ImageNet|
 |[SVHN](http://ufldl.stanford.edu/housenumbers/)|10|32*32|73,257|26,032|5,31,131|Google Street View House Numbers|
 |[ILSVRC-2012](https://www.tensorflow.org/datasets/catalog/imagenet2012)|1000|vary|1.2 million|150,000|1,50,000|Subset of ImageNet|
-
 
 <!-- Part 2: Classic methods
 - S4L
