@@ -95,7 +95,7 @@ This method was proposed by [Berthelot et al.](https://arxiv.org/abs/1905.02249 
 
 To understand this method, let's take a walk through each of the steps.  
   
-i. For the labeled image, we create an augmentation of it. For the unlabeled image, we create K augmentations and get the model predictions on all K-images. Then, the predictions are averaged and temperature scaling is applied to get a final pseudo-label. This pseudo-label will be used for all the K-augmentations.  
+i. For the labeled image, we create an augmentation of it. For the unlabeled image, we create K augmentations and get the model <span style="background-color: #ffebee;">predictions</span> on all K-images. Then, the <span style="background-color: #ffebee;">predictions</span> are <span style="background-color: #e0f7fa;">averaged</span> and <span style="background-color: #e3f2fd;">temperature scaling</span> is applied to get a final pseudo-label. This pseudo-label will be used for all the K-augmentations.  
 
 ![](/images/ssl-mixmatch-part-1.png){: .align-center}
 
@@ -107,7 +107,7 @@ iii. Now, Mixup is applied between the augmented labeled batch and group $$W_L$$
 
 ![](/images/ssl-mixmatch-part-3.png){: .align-center}
 
-iv. Now, for the labeled group, we take model predictions and compute cross-entropy loss with the ground truth mixup labels. Similarly, for the unlabeled group, we compute model predictions and compute mean square error(MSE) loss with the mixup pseudo labels. A weighted sum is taken of these two terms with $$\lambda$$ weighting the MSE loss.  
+iv. Now, for the labeled group, we take model predictions and compute <span style="background-color: #e0f2f1;">cross-entropy loss</span> with the ground truth mixup labels. Similarly, for the unlabeled group, we compute model predictions and compute <span style="background-color: #ede7f6;">mean square error(MSE) loss</span> with the mixup pseudo labels. A weighted sum is taken of these two terms with $$\lambda$$ weighting the MSE loss.  
 
 ![](/images/ssl-mixmatch-part-4.png){: .align-center}
 
