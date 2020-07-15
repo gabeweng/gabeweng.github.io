@@ -10,66 +10,67 @@ header:
 classes: wide
 ---
 
-Semi-supervised learning methods for Computer Vision have been progressing rapidly in the past few years. Recent state-of-the-art methods are simplifying previous work in terms of architecture and loss function or proposing hybrid methods by combining different formulations.
+Semi-supervised learning methods for Computer Vision have been advancing quickly in the past few years. Current state-of-the-art methods are simplifying prior work in terms of architecture and loss function or introducing hybrid methods by blending different formulations.
 
-In this post, I will explain the key ideas of these recent methods for semi-supervised learning through diagrams.
+In this post, I will illustrate the key ideas of these recent methods for semi-supervised learning through diagrams.
 
 
 ## **1. Self-Training**
-In this semi-supervised formulation, a model is trained on labeled data and used to predict pseudo-labels for the unlabeled data. The model is trained on both ground truth labels and pseudo-labels simultaneously.
-![](/images/ssl-self-training.png){: .align-center}  
+In this semi-supervised formulation, a model is trained on labeled data and used to predict pseudo-labels for the unlabeled data. The model is then trained on both ground truth labels and pseudo-labels simultaneously.
+
+![Idea of Self-Training](/images/ssl-self-training.png){: .align-center}  
 
 ### a. Pseudo-label
-[Dong-Hyun Lee](http://deeplearning.net/wp-content/uploads/2013/03/pseudo_label_final.pdf) proposed a very simple and efficient formulation called "Pseudo-label" in 2013.
+[Dong-Hyun Lee](http://deeplearning.net/wp-content/uploads/2013/03/pseudo_label_final.pdf "Pseudo-Label: The Simple and Efficient Semi-Supervised Learning Method for Deep Neural Networks") proposed a very simple and efficient formulation called "Pseudo-label" in 2013.
 
-The idea is to train a <span style="background-color: #e8f5e9;">model</span> simultaneously on a batch of both labeled and unlabeled images. The <span style="background-color: #e8f5e9;">model</span> is trained on labeled images in usual supervised manner with a cross-entropy loss. The same model is used to get predictions for a batch of unlabeled images and the <span style="background-color: #fce4ec;">maximum confidence class</span> is used as the <span style="background-color: #f3e5f5;">pseudo-label</span>. Then, cross-entropy loss is calculated for the unlabeled images as well.
+The idea is to train a <span style="background-color: #e8f5e9;">model</span> simultaneously on a batch of both labeled and unlabeled images. The <span style="background-color: #e8f5e9;">model</span> is trained on labeled images in usual supervised manner with a cross-entropy loss. The same model is used to get predictions for a batch of unlabeled images and the <span style="background-color: #fce4ec;">maximum confidence class</span> is used as the <span style="background-color: #f3e5f5;">pseudo-label</span>. Then, cross-entropy loss is calculated by comparing <span style="background-color: #e8f5e9;">model</span> predictions and the pseudo-label for the unlabeled images .  
 
-![](/images/ssl-pseudo-label.png){: .align-center}
+![Pseudo-Label for Semi-supervised Learning](/images/ssl-pseudo-label.png){: .align-center}
 
-The overall loss is the weighted sum of the labeled and unlabeled loss terms.
+The total loss is a weighted sum of the labeled and unlabeled loss terms.
 
 $$
 L = L_{labeled} + \alpha_{t} * L_{unlabeled}
 $$
 
-To make sure the model has learned enough from the labeled data, the $$\alpha_t$$ term is set to 0 during initial training steps and gradually increased up to 600 training steps and then kept constant.
-![](/images/ssl-pseudolabel-alpha-increase.png){: .align-center}
+To make sure the model has learned enough from the labeled data, the $$\alpha_t$$ term is set to 0 during initial 100 training steps. It is then gradually increased up to 600 training steps and then kept constant.
+![Impact of alpha on semi-supervised loss](/images/ssl-pseudolabel-alpha-increase.png){: .align-center}
 
 
 ### b. Noisy Student
-[Xie et al.](https://arxiv.org/abs/1911.04252) proposed a semi-supervised method inspired by Knowledge Distillation called "Noisy Student" in 2019.
+[Xie et al.](https://arxiv.org/abs/1911.04252 "Self-training with Noisy Student improves ImageNet classification") proposed a semi-supervised method inspired by Knowledge Distillation called "Noisy Student" in 2019.
 
-The key idea is to train two models called <span style="background-color: #e8f5e9;">"Teacher"</span> and <span style="background: #fff3e0;">"Student"</span>. The <span style="background-color: #e8f5e9;">teacher model</span> is first trained on the labeled images and then it is used to infer the pseudo-labels for the unlabeled images. These pseudo-labels can either be soft-label or converted to hard-label by <span style="background-color: #fce4ec;">taking the most confident class</span>. Then, the labeled and unlabeled images are combined together and a <span style="background-color: #fff3e0;">student model</span> is trained on this combined data. Input noise is injected to student model by using RandAugment to augment the images. Also, model noise such as Dropout and Stochastic Depth are used in the student model.
+The key idea is to train two separate models called <span style="background-color: #e8f5e9;">"Teacher"</span> and <span style="background: #fff3e0;">"Student"</span>. The <span style="background-color: #e8f5e9;">teacher model</span> is first trained on the labeled images and then it is used to infer the pseudo-labels for the unlabeled images. These pseudo-labels can either be soft-label or converted to hard-label by <span style="background-color: #fce4ec;">taking the most confident class</span>. Then, the labeled and unlabeled images are combined together and a <span style="background-color: #fff3e0;">student model</span> is trained on this combined data. The images are augmented using RandAugment as a form of input noise. Also, model noise such as Dropout and Stochastic Depth are incorporated in the student model architecture.
 
-![](/images/ssl-noisy-student.png){: .align-center}
+![Noisy Student](/images/ssl-noisy-student.png){: .align-center}
 
 Once a <span style="background-color: #fff3e0;">student model</span> is trained, it becomes the new <span style="background-color: #e8f5e9;">teacher</span> and this process is repeated for three iterations.
 
 ## **2. Consistency Regularization**
-This paradigm uses the idea that <span style="background-color: #e8f5e9;">model</span> predictions on an unlabeled image should remain the same even after adding noise. We could use input noise such as Image Augmentation and Gaussian noise. Noise can also be added to the architecture itself using techniques such as Dropout and Stochastic Depth.  
+This paradigm uses the idea that <span style="background-color: #e8f5e9;">model</span> predictions on an unlabeled image should remain the same even after adding noise. We could use input noise such as Image Augmentation and Gaussian noise. Noise can also be incorporated in the architecture itself using Dropout.  
 
 ![Consistency Regularization Concept](/images/fixmatch-unlabeled-augment-concept.png){: .align-center}  
 
 ### a. π-model
-This model was proposed by [Laine et al.](https://arxiv.org/abs/1610.02242) in a conference paper at ICLR 2017.
+This model was proposed by [Laine et al.](https://arxiv.org/abs/1610.02242 "Temporal Ensembling for Semi-Supervised Learning") in a conference paper at ICLR 2017.
 
-The key idea is to create two random augmented versions of an image for both labeled and unlabeled data. Then, a <span style="background-color: #e8f5e9;">model with dropout module</span> is used to predict the label of both these images. The <span style="background-color: #ede7f6;">square difference</span> of these two <span style="background-color: #e3f2fd;">predictions</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we also calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The final loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">w(t)</span> is applied to decide how much the consistency loss contributes in the overall loss.  
+The key idea is to create two random augmentations of an image for both labeled and unlabeled data. Then, a <span style="background-color: #e8f5e9;">model with dropout</span> is used to predict the label of both these images. The <span style="background-color: #ede7f6;">square difference</span> of these two <span style="background-color: #e3f2fd;">predictions</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we also calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The total loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">w(t)</span> is applied to decide how much the consistency loss contributes in the overall loss.  
 
-![](/images/ssl-pi-model.png){: .align-center}
+![PI Model](/images/ssl-pi-model.png){: .align-center}
 
 ### b. Temporal Ensembling  
 This method was also proposed by [Laine et al.](https://arxiv.org/abs/1610.02242) in the same paper as the pi-model. This method modifies the π-model by leveraging the Exponential Moving Average(EMA) of predictions.    
 
 The key idea is to store the <span style="background-color: #fff3e0;">exponential moving average</span> of past predictions as one view. To get another view, we augment the image as usual and a <span style="background-color: #e8f5e9;">model</span> with dropout is used to predict the label. The <span style="background-color: #ede7f6;">square difference</span> of <span style="background-color: #e3f2fd;">current prediction</span> and <span style="background-color: #fff3e0;">EMA prediction</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we also calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The final loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">w(t)</span> is applied to decide how much the consistency loss contributes in the overall loss.  
 
-![](/images/ssl-temporal-ensembling.png){: .align-center}
+![Temporal Ensembling](/images/ssl-temporal-ensembling.png){: .align-center}
 
 ### c. Mean Teacher
 This method was proposed by [Tarvainen et al.](https://arxiv.org/abs/1703.01780 "Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results"). The general idea is similar to Temporal Ensembling but it uses Exponential Moving Average(EMA) of the model parameters instead of predictions.  
 
 The key idea is to have two models called <span style="background-color: #e8f5e9;">"Student"</span> and <span style="background-color: #ffebee;">"Teacher"</span>. The <span style="background-color: #e8f5e9;">student</span> model is a regular model with dropout. And the <span style="background-color: #ffebee;">teacher</span> model has the same architecture as the <span style="background-color: #e8f5e9;">student</span> model but its weights are set using an <span style="background-color: #ffebee;">exponential moving average</span> of the weights of <span style="background-color: #e8f5e9;">student</span> model. For a labeled or unlabeled image, we create two random augmented versions of the image. Then, the <span style="background-color: #e8f5e9;">student</span> model is used to predict <span style="background-color: #e3f2fd;">label distribution</span> for first image. And, the <span style="background-color: #ffebee;">teacher</span> model is used to predict the <span style="background-color: #e3f2fd;">label distribution</span> for the second augmented image. The <span style="background-color: #ede7f6;">square difference</span> of these two <span style="background-color: #e3f2fd;">predictions</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we also calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The final loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">w(t)</span> is applied to decide how much the consistency loss contributes in the overall loss.  
 
-![](/images/ssl-mean-teacher.png){: .align-center}
+![Mean Teacher](/images/ssl-mean-teacher.png){: .align-center}
 
 ### d. Virtual Adversarial Training
 This method was proposed by [Miyato et al.](https://arxiv.org/abs/1704.03976 "Virtual Adversarial Training: A Regularization Method for Supervised and Semi-Supervised Learning"). It uses the concept of adversarial examples for consistency regularization.  
@@ -79,14 +80,14 @@ The key idea is to generate an adversarial transformation of an image that will 
 Then we proceed as previous methods. We take a labeled/unlabeled image and take its adversarial example generated in previous step as the second view. Then, the same <span style="background-color: #e8f5e9;">model</span> is used to predict <span style="background-color: #e3f2fd;">label distributions</span> for both images. The <span style="background-color: #ede7f6;">KL-divergence</span> of these two <span style="background-color: #e3f2fd;">predictions</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we also calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The final loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">$$\alpha$$</span> is applied to decide how much the consistency loss contributes in the overall loss. 
 
 
-![](/images/ssl-virtual-adversarial-training.png){: .align-center}
+![Virtual Adversarial Training](/images/ssl-virtual-adversarial-training.png){: .align-center}
 
 ### e. Unsupervised Data Augmentation
 This method was proposed by [Xie et al.](https://arxiv.org/abs/1904.12848 "Unsupervised data augmentation for consistency training"). 
 
 The key idea is to create an augmented version of a unlabeled image using AutoAugment. Then, a same <span style="background-color: #e8f5e9;">model</span> is used to predict the label of both these images. The <span style="background-color: #ede7f6;">KL-divergence</span> of these two <span style="background-color: #e3f2fd;">predictions</span> is used as a <span style="background-color: #ede7f6;">consistency loss</span>. For labeled images, we only calculate the <span style="background-color: #e0f2f1;">cross-entropy loss</span>. The final loss is a weighted sum of these two loss terms. A weight <span style="background-color: #eeeeee;">w(t)</span> is applied to decide how much the consistency loss contributes in the overall loss. 
 
-![](/images/ssl-unsupervised-data-augmentation.png){: .align-center}
+![Unsupervised Data Augmentation](/images/ssl-unsupervised-data-augmentation.png){: .align-center}
 
 ## **3. Hybrid Methods**
 
@@ -97,19 +98,19 @@ To understand this method, let's take a walk through each of the steps.
   
 i. For the labeled image, we create an augmentation of it. For the unlabeled image, we create K augmentations and get the model <span style="background-color: #ffebee;">predictions</span> on all K-images. Then, the <span style="background-color: #ffebee;">predictions</span> are <span style="background-color: #e0f7fa;">averaged</span> and <span style="background-color: #e3f2fd;">temperature scaling</span> is applied to get a final pseudo-label. This pseudo-label will be used for all the K-augmentations.  
 
-![](/images/ssl-mixmatch-part-1.png){: .align-center}
+![Preparing Pseudo-label in MixMatch](/images/ssl-mixmatch-part-1.png){: .align-center}
 
 ii. The batches of augmented labeled and unlabeled images are combined and the whole group is shuffled. Then, the first N images of this group are taken as $$W_L$$, and remaining M images are taken as $$W_U$$.  
 
-![](/images/ssl-mixmatch-part-2.png){: .align-center}
+![Shuffling labeled and unlabeled images](/images/ssl-mixmatch-part-2.png){: .align-center}
 
 iii. Now, Mixup is applied between the augmented labeled batch and group $$W_L$$. Similarly, mixup is applied between the M augmented unlabeled group and the $$W_U$$ group. Thus, we get labeled and unlabeled group.  
 
-![](/images/ssl-mixmatch-part-3.png){: .align-center}
+![Applying Mixup trick in MixMatch](/images/ssl-mixmatch-part-3.png){: .align-center}
 
 iv. Now, for the labeled group, we take model predictions and compute <span style="background-color: #e0f2f1;">cross-entropy loss</span> with the ground truth mixup labels. Similarly, for the unlabeled group, we compute model predictions and compute <span style="background-color: #ede7f6;">mean square error(MSE) loss</span> with the mixup pseudo labels. A weighted sum is taken of these two terms with $$\lambda$$ weighting the MSE loss.  
 
-![](/images/ssl-mixmatch-part-4.png){: .align-center}
+![MixMatch overall pipeline](/images/ssl-mixmatch-part-4.png){: .align-center}
 
 <!-- ### b. ReMixMatch-->
 
@@ -118,7 +119,7 @@ This method was proposed by [Sohn et al.](https://arxiv.org/abs/2001.07685 "FixM
 
 As seen, we train a supervised model on our labeled images with cross-entropy loss. For each unlabeled image, <span style="background-color:#efdcd5">weak augmentation</span> and <span style="background-color: #e8f5e9">strong augmentations</span> are applied to get two images. The <span style="background-color:#efdcd5;">weakly augmented image</span> is passed to our model and we get prediction over classes. The probability for the most confident class is compared to a <span style="background-color: #fce4ec">threshold</span>. If it is above the <span style="background-color: #fce4ec;">threshold</span>, then we take that class as the ground label i.e. <span style="background-color: #f3e5f5;">pseudo-label</span>. Then, the <span style="background-color: #e8f5e9">strongly augmented</span> image is passed through our model to get a prediction over classes. This <span style="background-color: #e1f5fe;">probability distribution</span> is compared to ground truth <span style="background-color: #f3e5f5;">pseudo-label</span> using cross-entropy loss. Both the losses are combined and the model is tuned.
 
-![](/images/fixmatch-pipeline.png){: .align-center}
+![Overall Architecture of FixMatch](/images/fixmatch-pipeline.png){: .align-center}
 
 ## Comparison of Methods  
 Here is a high-level summary of differences between all the above mentioned methods.  
