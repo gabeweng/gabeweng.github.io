@@ -312,6 +312,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
 | Keras| [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
 ||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
+||[scikeras](https://github.com/adriangb/scikeras)|Scikit-learn Wrapper for Keras|
 ||[larq](https://github.com/larq/larq)|Binarized neural networks|
 ||[ktrain](https://pypi.org/project/ktrain/)|FastAI like interface for keras|
 ||[tavolo](https://github.com/eliorc/tavolo)|Kaggle Tricks as Keras Layers|
