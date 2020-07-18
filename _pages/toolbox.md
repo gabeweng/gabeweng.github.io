@@ -225,6 +225,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering)||
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
 ||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
+||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
 | String match|[phrase-seeker](https://github.com/kirillgashkov/phrase-seeker), [textsearch](https://github.com/kootenpv/textsearch)||
 ||[jellyfish](https://pypi.org/project/jellyfish/)|Perform string and phonetic comparison|
