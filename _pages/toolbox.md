@@ -216,6 +216,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Machine Translation| [MarianMT](https://huggingface.co/transformers/model_doc/marian.html)||
 | | [googletrans](https://pypi.org/project/googletrans/), [word2word](https://github.com/Kyubyong/word2word), [translate-python](https://github.com/terryyin/translate-python)|Translation libraries|
 | Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
+|Question Generation|[question-generation](https://github.com/patil-suraj/question_generation) |Question Generation Pipeline for Transformers|
 | Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine)||
 | Multiply Choice Question Answering| [mcQA](https://github.com/mcQA-suite/mcQA)||
 |Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
