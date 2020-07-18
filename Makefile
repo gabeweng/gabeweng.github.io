@@ -1,2 +1,2 @@
 serve:
-	bundle exec jekyll serve --incremental --future --unpublished
+	bundle exec jekyll serve --incremental --future --unpublished --verbose
