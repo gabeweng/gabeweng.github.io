@@ -196,8 +196,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
-| Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
-||[rank_bm25](https://github.com/dorianbrown/rank_bm25), [BM25Transformer](https://github.com/arosh/BM25Transformer)|BM25 Embedding|
+| Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
 || [sentence-transformers](https://github.com/UKPLab/sentence-transformers)|BERT sentence embeddings|
 ||[pymagnitude](https://github.com/plasticityai/magnitude)|Access word-embeddings programatically|
 ||[chakin](https://github.com/chakki-works/chakin)|Download pre-trained word vectors|
