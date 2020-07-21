@@ -18,7 +18,7 @@ While the interface is very easy to use, there are many lesser-known and undocum
 It's a pretty common scenario that we have a bunch of cluttered untitled notebooks created when we try out temporary stuff on colab.  
   
 ![Clutter of Untitled Notebooks in Colab](/images/colab-clutter.png){: .align-center}  
-To solve this, you can bookmark the below link. It will open a special **scratch notebook** and any changes you make to that notebook are not saved to your main account.  
+To solve this, you can bookmark the link given below. It will open a special **scratch notebook** and any changes you make to that notebook are not saved to your main account.  
 
 > [https://colab.research.google.com/notebooks/empty.ipynb](https://colab.research.google.com/notebooks/empty.ipynb)
 
@@ -124,7 +124,7 @@ Colab also provides a magic command to use Tensorboard directly from the noteboo
 ![Embedded Tensorboard in Colab](/images/colab-tensorboard.png){: .align-center}  
 
 ## 10. Gauge resource limits    
-Colab provides the following specs for their free and pro versions. Based on your use case, you can switch to the pro version at $10/month if you need a better runtime, GPU and memory.  
+Colab provides the following specs for their free and pro versions. Based on your use case, you can switch to the pro version at $10/month if you need a better runtime, GPU, and memory.  
 
 |Version|GPU|GPU Ram|RAM|Storage|CPU Cores|Idle Timeout|Maximum Runtime|
 |---|---|---|---|---|---|---|---|
@@ -148,7 +148,7 @@ print(ram_gb)
 ```
 
 ## 11. Use interactive shell  
-There is no built-in interactive terminal in Colab. But you can use the `bash` command to try out shell commands interactively. Just run this command and you will get a interactive input.    
+There is no built-in interactive terminal in Colab. But you can use the `bash` command to try out shell commands interactively. Just run this command and you will get an interactive input.    
 ```shell
 !bash
 ```
@@ -162,7 +162,7 @@ To quit from the shell, just type `exit` in the input box.
 ![Exiting interactive shell in colab](/images/colab-bash-exit.png){: .align-center}  
 
 ## 12. Current memory and storage usage  
-Colab provides an indicator of RAM and disk usage. If you hover over the indicator, you will get an popup with the current usage and the total capacity.  
+Colab provides an indicator of RAM and disk usage. If you hover over the indicator, you will get a popup with the current usage and the total capacity.  
 
 ![Showing current memory and ram usage in colab](/images/colab-ram-usage.png){: .align-center}  
 
@@ -170,7 +170,7 @@ Colab provides an indicator of RAM and disk usage. If you hover over the indicat
 You can add a 'Open in Colab' badge to your `README.md` or jupyter notebooks using the following markdown code.  
 ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg){: .align-center}  
 
-In the markdown code, we're basically loading an SVG image and then linking it to a colab notebook.    
+In the markdown code, we're loading an SVG image and then linking it to a colab notebook.    
 
 ```markdown
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
@@ -214,9 +214,9 @@ You can use a library called [colab-cli](https://github.com/Akshay090/colab-cli)
 [![colab-cli-demo](https://asciinema.org/a/314749.svg)](https://asciinema.org/a/314749)
 
 ## 17. Run background tasks  
-There are use-cases when we need to start some web server or background task before we can execute our regular program.  
+There are use-cases when we need to start some web server or background tasks before we can execute our regular program.  
 
-To run background tasks, use the `nohup` command followed by your regular shell command and add `&` to the end to run it in the background. This makes sure that you can run cells afterwards in the notebook without your background task blocking it. 
+To run background tasks, use the `nohup` command followed by your regular shell command and add `&` to the end to run it in the background. This makes sure that you can run cells afterward in the notebook without your background task blocking it. 
 ```shell
 !nohup bash ping.sh &
 ```
