@@ -192,7 +192,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check)|Language Detection|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
-| | [inflect](https://pypi.org/project/inflect/)|Inflections|
+| | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
