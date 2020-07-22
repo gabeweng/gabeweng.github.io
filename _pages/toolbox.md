@@ -195,6 +195,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
 | | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
+| | [ftfy](https://pypi.org/project/ftfy/)|Fix Unicode Issues|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
 | Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
