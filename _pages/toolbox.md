@@ -120,6 +120,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [nbformat](https://nbformat.readthedocs.io/en/latest/api.html)|Access notebooks programatically|
 | | [nbconvert](https://nbconvert.readthedocs.io/en/latest/)|Convert notebooks to other formats|
 |Jupyter Extensions| [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)|Maps in notebooks|
+|Relationship|[ppscore](https://github.com/8080labs/ppscore)|Predictive Power Score|
 
 ## Phase: Feature Engineering
 ### Feature Generation  
