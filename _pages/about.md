@@ -5,6 +5,8 @@ classes: wide
 excerpt: Learn about me, my current endeavors, research interest areas and the motive behind this personal blog.
 ---
 
+In this blog, I explain machine learning concepts using diagrams, animations and intuition.  
+
 **Who I am**  
 I'm an engineer going [wide and deep](https://github.com/amitness/learning) in the multidisciplinary fields of data science.
 
@@ -14,8 +16,5 @@ I currently apply Machine Learning research to industry problems at [Fusemachine
 **Interest Areas**  
 I'm interested in the paradigm of learning with limited labels ([Self-Supervised Learning](https://amitness.com/categories/#self-supervised-learning) / [Semi-Supervised Learning](https://amitness.com/categories/#semi-supervised-learning)) and [Natural Language Processing](https://amitness.com/categories/#nlp).
 
-**About the blog**  
-I explain machine learning concepts using diagrams, animations and intuition.  
-
-**Get Connected**  
+**Let's Get Connected**  
 I’m on Twitter at [@amitness](https://twitter.com/amitness).
