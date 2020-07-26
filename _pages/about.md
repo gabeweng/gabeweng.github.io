@@ -6,7 +6,7 @@ excerpt: Learn about me, my current endeavors, research interest areas and the m
 ---
 
 **Who I am**  
-I'm an engineer going [wide and deep](https://github.com/amitness/learning) on the multidisciplinary fields of data science.
+I'm an engineer going [wide and deep](https://github.com/amitness/learning) in the multidisciplinary fields of data science.
 
 **What I do**  
 I currently apply Machine Learning research to industry problems at [Fusemachines](https://fusemachines.com) . 
@@ -18,4 +18,4 @@ I'm interested in the paradigm of learning with limited labels ([Self-Supervised
 I explain machine learning concepts using diagrams, animations and intuition.  
 
 **Get Connected**  
-If you find my work interesting, let's get connected on [Twitter](https://twitter.com/amitness).
+I’m on Twitter at [@amitness](https://twitter.com/amitness).
