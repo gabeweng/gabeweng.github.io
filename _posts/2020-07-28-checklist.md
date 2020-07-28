@@ -5,8 +5,8 @@ categories:
   - nlp
 excerpt: An overview of the "CheckList" framework for fine-grained evaluation of NLP models   
 header:
-  og_image: /images/checklist-conceptual-matrix.png
-  teaser: /images/checklist-conceptual-matrix.png
+  og_image: /images/checklist-cover.png
+  teaser: /images/checklist-cover.png
 classes: wide
 ---
 
