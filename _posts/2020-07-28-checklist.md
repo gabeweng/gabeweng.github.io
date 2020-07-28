@@ -5,8 +5,8 @@ categories:
   - nlp
 excerpt: An overview of the "CheckList" framework for fine-grained evaluation of NLP models   
 header:
-  og_image: /images/checklist-INV.png
-  teaser: /images/checklist-INV.png
+  og_image: /images/checklist-conceptual-matrix.png
+  teaser: /images/checklist-conceptual-matrix.png
 classes: wide
 ---
 
@@ -15,6 +15,8 @@ When developing an NLP model, it's a standard practice to test how well a model 
 But, when real users start using it, the story could be completely different than what our 95% performance metric was saying. Our model might perform poorly even on simple variations of the training text.  
 
 In contrast, the field of software engineering uses a suite of unit tests, integration tests, and end-to-end tests to evaluate all aspects of the product for failures. An application is deployed to production only after passing these rigorous tests.  
+
+![](/images/checklist-software-testing.png){: .align-center}
 
 [Ribeiro et al.](https://arxiv.org/abs/2005.04118) noticed this gap and took inspiration from software engineering to propose an evaluation methodology for NLP called **"CheckList"**. Their paper won the best overall paper award at ACL 2020.  
 
