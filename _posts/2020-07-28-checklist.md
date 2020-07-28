@@ -338,7 +338,7 @@ CheckList also provides out-of-box support for generic categories such as:
 CheckList also provides perturbation functions such as character swaps, contractions, name and location changes, and neutral word replacement.   
 
 ## Conclusion  
-Thus, CheckList proposes a general framework to perform a comprehensive and fine-grained evaluation of NLP models. This can help us better understand the state of NLP models beyond the leaderboard and how to fix them.  
+Thus, CheckList proposes a general framework to perform a comprehensive and fine-grained evaluation of NLP models. This can help us better understand the state of NLP models beyond the leaderboard.  
 
 ## References
 - Marco Tulio Ribeiro et al., ["Beyond Accuracy: Behavioral Testing of NLP models with CheckList"](https://arxiv.org/abs/2005.04118)
