@@ -72,7 +72,9 @@ Let's understand each part of this conceptual matrix in detail now.
 These are the columns in the previous matrix. There are 3 types of tests proposed in the CheckList framework: 
 
 #### a. Minimum Functionality Test(MFT)    
-This test is similar to unit tests in software engineering. We create a collection of simple phrases and expected labels and test the model. For example, 
+This test is similar to unit tests in software engineering. We create a collection of  (text, expected label) pairs and test the model on this collection. 
+
+For example, we are testing the negation capability of the model using an MFT test below.  
 
 ![](/images/checklist-mft.png){: .align-center}  
 Template: I <span style="color: #E57373;">{NEGATION}</span> <span style="color: #81C784;">{POS_VERB}</span> the <span style="color: #90A4AE;">{THING}</span>
