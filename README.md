@@ -8,5 +8,5 @@ bundle
 
 ## Run jekyll locally
 ```shell
-bundle exec jekyll serve
+make
 ```
