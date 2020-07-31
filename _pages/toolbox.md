@@ -228,6 +228,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Multiply Choice Question Answering| [mcQA](https://github.com/mcQA-suite/mcQA)||
 |Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
 |Search|[elasticsearch-dsl](https://elasticsearch-dsl.readthedocs.io/en/latest/)|Wrapper for elastic search|
+||[jina](https://github.com/jina-ai/jina)|production-level neural semantic search|
 | NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
 | Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
 | Readability| [homer](https://github.com/wyounas/homer)||
