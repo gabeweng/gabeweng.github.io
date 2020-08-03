@@ -115,6 +115,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Explore Data|[sweetviz](https://pypi.org/project/sweetviz/), [dataprep](https://pypi.org/project/dataprep/), [quickda](https://medium.com/@gauty95/quickda-low-code-python-library-for-quick-exploratory-data-analysis-b4b1c3af369d)|Generate quick visualizations of data|
 |Notebook Tools| [nbdime](https://github.com/jupyter/nbdime)|View Jupyter notebooks through CLI|
 || [papermill](https://github.com/nteract/papermill)| Parametrize notebooks|
 | | [nbformat](https://nbformat.readthedocs.io/en/latest/api.html)|Access notebooks programatically|
