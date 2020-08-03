@@ -466,6 +466,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Shell commands as functions| [sh](http://amoffat.github.io/sh/)||
 |Standard Library Extension|[ubelt](https://github.com/Erotemic/ubelt)||
 |Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
+|Code to Maths|[latexify-py](https://github.com/odashi/latexify_py)||
 
 ### Workflow  
 
