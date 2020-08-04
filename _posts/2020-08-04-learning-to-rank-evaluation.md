@@ -5,8 +5,8 @@ categories:
   - nlp
 excerpt: Learn about common metrics used to evaluate performance of learning-to-rank methods     
 header:
-  og_image: /images/ltr-mean-reciprocal-rank.png
-  teaser: /images/ltr-mean-reciprocal-rank.png
+  og_image: /images/ltr-cover.png
+  teaser: /images/ltr-cover.png
 classes: wide
 ---
 
