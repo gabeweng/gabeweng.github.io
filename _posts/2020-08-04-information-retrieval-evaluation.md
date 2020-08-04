@@ -1,9 +1,9 @@
 ---
-title: "Evaluation Metrics For Learning to Rank Problems"
+title: "Evaluation Metrics For Information Retrieval"
 date: 2020-08-04T12:06-00:00
 categories:
   - nlp
-excerpt: Learn about common metrics used to evaluate performance of learning-to-rank methods     
+excerpt: Learn about common metrics used to evaluate performance of information retrieval systems      
 header:
   og_image: /images/ltr-cover.png
   teaser: /images/ltr-cover.png
