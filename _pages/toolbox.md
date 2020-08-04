@@ -424,6 +424,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
 | Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
 | Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
+||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
 | Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/)||
 | Logging| [loguru](https://github.com/Delgan/loguru)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
