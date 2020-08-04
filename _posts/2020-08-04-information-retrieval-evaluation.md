@@ -215,10 +215,10 @@ So, we need some way to penalize the scores by their position. DCG uses a log-ba
 |4|$$log_{2}(4+1) = log_{2}(5) = 2.321928094887362$$|
 |5|$$log_{2}(5+1) = log_{2}(6) = 2.584962500721156$$|
 
-Using this penality, we can now calculate the discounted cumulative gain simply by taking the sum of the relevance score normalized by the penalty. Mathematically, this is given by:
+Using this penalty, we can now calculate the discounted cumulative gain simply by taking the sum of the <span class="bg-color-green">relevance score</span> <span class="bg-color-red">normalized by the penalty</span>. Mathematically, this is given by:
 
 $$
-DCG@k = \sum_{i=1}^{k} \frac{rel_{i}}{log_{2}(i + 1)}
+DCG@k = \sum_{i=1}^{k} \frac{ \color{#81c784}{rel_{i}} }{ \color{#e57373}{log_{2}(i + 1)} }
 $$
 
 Let's calculate this for our example.  
