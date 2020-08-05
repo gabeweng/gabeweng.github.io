@@ -168,6 +168,7 @@ where
 
 ## Problem Setup 2: Graded Relevance  
 Let's take another simple toy example where we annotated the items not just as relevant or not-relevant but instead using a grading scale between 0 to 5 with 0 being least relevant and 5 being most relevant.  
+![](/images/ltr-graded-scale.png){:.align-center}  
 
 We have a ranking model that gives us back 5-most relevant results for a certain query. The first item had a relevance score of 3 as per our ground-truth annotation, the second item has a relevance score of 2 and so on.  
 
