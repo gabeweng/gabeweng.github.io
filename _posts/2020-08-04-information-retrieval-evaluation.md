@@ -224,7 +224,10 @@ $$
 
 Let's calculate this for our example.  
 
-|$$i$$|$$relevance\ score(rel_{i})$$|$$log_{2}(i+1)$$|$$\frac{rel_{i}}{log_{2}(i+1)}$$|
+![](/images/ltr-graded-relevance.png){:.align-center}  
+
+
+|$$Position(i)$$|$$Relevance(rel_{i})$$|$$log_{2}(i+1)$$|$$\frac{rel_{i}}{log_{2}(i+1)}$$|
 |:-:|:-:|---|---|
 |1|3|$$log_{2}(1+1) = log_{2}(2) = 1$$|3 / 1 = 3|
 |2|2|$$log_{2}(2+1) = log_{2}(3) = 1.5849625007211563$$|2 / 1.5849 = 1.2618|
@@ -232,7 +235,7 @@ Let's calculate this for our example.
 |4|0|$$log_{2}(4+1) = log_{2}(5) = 2.321928094887362$$|0 / 2.3219 = 0|
 |5|1|$$log_{2}(5+1) = log_{2}(6) = 2.584962500721156$$|1 / 2.5849 = 0.3868|
 
-Based on these calculated values, we can now calculate DCG at various K values simply by taking the sum up to k.  
+Based on these penalized scores, we can now calculate DCG at various k values simply by taking their sum up to k.  
 
 |k|DCG@k|
 |---|---|
@@ -251,6 +254,47 @@ $$
 While DCG solves the issues with cumulative gain, it has a limitation. Suppose we a query Q1 with 3 results and query Q2 with 5 results. Then the query with 5 results Q2 will have a larger overall DCG score. But we can't say that query 2 was better than query 1.  
 
 ![](/images/ltr-dcg-drawback.png){:.align-center}  
+
+### 3. Normalized Discounted Cumulative Gain (NDCG@k)  
+To allow comparision of DCG across queries, we can use NDCG that normalizes the DCG values using the ideal order of the relevant items.  
+
+Let's take our previous example where we had already calculated the DCG values at various K values.
+
+![](/images/ltr-graded-relevance.png){:.align-center}  
+
+|k|DCG@k|
+|---|---|
+|DCG@1|$$3$$|
+|DCG@2|$$3+1.2618=4.2618$$|
+|DCG@3|$$3+1.2618+1.5=5.7618$$|
+|DCG@4|$$3+1.2618+1.5+0=5.7618$$|
+|DCG@5|$$3+1.2618+1.5+0+0.3868 = 6.1486$$|
+
+For our example, ideally we would have wanted the items to be sorted in descending order of relevance scores.
+
+![](/images/ltr-ndcg-ideal.png){:.align-center}  
+
+Let's calculate the ideal DCG(IDCG) for this order.  
+
+|$$Position(i)$$|$$Relevance(rel_{i})$$|$$log_{2}(i+1)$$|$$\frac{rel_{i}}{log_{2}(i+1)}$$|IDCG@k|
+|:-:|:-:|---|---|---|
+|1|3|$$log_{2}(2) = 1$$|3 / 1 = 3|3|
+|2|3|$$log_{2}(3) = 1.5849$$|3 / 1.5849 = 1.8927|3+1.8927=4.8927|
+|3|2|$$log_{2}(4) = 2$$|2 / 2 = 1|3+1.8927+1=5.8927|
+|4|1|$$log_{2}(5) = 2.3219$$|1 / 2.3219 = 0.4306|3+1.8927+1+0.4306=6.3233|
+|5|0|$$log_{2}(6) = 2.5849$$|0 / 2.5849 = 0|3+1.8927+1+0.4306+0=6.3233|
+
+Now we can calculate the NDCG@k for various k by diving DCG@k by IDCG@k as shown below:  
+
+|$$k$$|DCG@k|IDCG@k|NDCG@k|
+|:-:|:-:|---|---|
+|1|3|3|3 / 3 = 1|
+|2|4.2618|4.8927|4.2618 / 4.8927 = 0.8710|
+|3|5.7618|5.8927|5.7618 / 5.8927 = 0.9777|
+|4|5.7618|6.3233|5.7618 / 6.3233 = 0.9112|
+|5|6.1486|6.3233|6.1486 / 6.3233 = 0.9723|
+
+Thus, we get NDCG scores with a range between 0 and 1. A perfect ranking would get a score of 1. We can also compare NDCG@k scores of different queries since it's a normalized score.   
 
 ## References
 - [Mean Reciprocal Rank, Wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
