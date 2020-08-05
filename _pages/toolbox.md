@@ -199,7 +199,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
 | | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
-| | [ftfy](https://pypi.org/project/ftfy/)|Fix Unicode Issues|
+| | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
