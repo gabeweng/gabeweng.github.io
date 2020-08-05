@@ -241,6 +241,18 @@ Based on these calculated values, we can now calculate DCG at various K values s
 |DCG@4|$$3+1.2618+1.5+0=5.7618$$|
 |DCG@5|$$3+1.2618+1.5+0+0.3868 = 6.1486$$|
 
+There is also an alternative formulation for DCG@K that gives more penalty if relevant items are ranked lower. This formulation is preferred more in industry.  
+
+$$
+DCG@k = \sum_{i=1}^{k} \frac{ \color{#81c784}{2^{rel_{i}} - 1} }{ \color{#e57373}{log_{2}(i + 1)} }
+$$
+
+While DCG solves the issues with cumulative gain, it has a limitation. Suppose we a query Q1 with 3 results and query Q2 with 5 results. Then the query with 5 results Q2 will have a larger overall DCG score. But we can't say that query 2 was better than query 1.  
+
+![](/images/ltr-dcg-drawback.png){:.align-center}  
+
 ## References
-- [Evaluation measures (information retrieval), Wikipedia](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 - [Mean Reciprocal Rank, Wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
+- [Discounted cumulative gain, Wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
+- [Evaluation measures (information retrieval), Wikipedia](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Jarvelin et al., "Cumulated Gain-Based Evaluation of IR Techniques"](https://www.cc.gatech.edu/~zha/CS8803WST/dcg.pdf)
