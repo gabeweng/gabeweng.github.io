@@ -10,7 +10,7 @@ header:
 classes: wide
 ---
 
-Most software products we encounter today have some form of search functionality integrated into them. We search for anything on Google, videos on YouTube, products on Amazon, messages on Slack, emails on Gmail, people on Facebook, and so on.  
+Most software products we encounter today have some form of search functionality integrated into them. We search for content on Google, videos on YouTube, products on Amazon, messages on Slack, emails on Gmail, people on Facebook, and so on.  
 
 ![](/images/ltr-search-box.png){:.align-center}  
 
@@ -23,11 +23,11 @@ In this post, I will answer the above question by explaining the common offline 
 ## Problem Setup 1: Binary Relevance  
 Let's take a simple toy example to understand the details and trade-offs of various evaluation metrics.  
 
-We have a ranking model that gives us back 5-most relevant results for a certain query. The first, third, and fifth results were relevant as per our ground-truth annotation.    
+We have a ranking model that gives us back 5-most relevant results for a certain query. The first, third, and fifth results were <span class="bg-color-green">relevant</span> as per our ground-truth annotation.    
 
 ![](/images/ltr-documents-horizontal.png){:.align-center}  
 
-Let's see various metrics to evaluate this example.  
+Let's look at various metrics to evaluate this simple example.  
 
 ## A. Order-Unaware Metrics  
 ### 1. Precision@k
@@ -37,7 +37,7 @@ $$
 Precision@k = \frac{ true\ positives@k}{(true\ positives@k) + (false\ positives@k)}
 $$
 
-For our example, precision@1 = 1 as we only have relevant results in the first 1 results.  
+For our example, precision@1 = 1 as all items in the first 1 results is relevant.  
 
 ![](/images/ltr-precision-at-1.png){:.align-center}  
 
@@ -45,13 +45,13 @@ Similarly, precision@2 = 0.5 as only one of the top-2 results are relevant.
  
 ![](/images/ltr-precision-at-2.png){:.align-center}  
 
-Thus, we can calculate the precision score for all K values.   
+Thus, we can calculate the precision score for all k values.   
 
 |k|1|2|3|4|5|
 |---|---|---|---|---|---|
 |**Precision@k**|$$\frac{1}{1}=1$$|$$\frac{1}{2}=0.5$$|$$\frac{2}{3}=0.67$$|$$\frac{2}{4}=0.5$$|$$\frac{3}{5}=0.6$$|
 
-A drawback of this method is that it doesn't consider the position of the relevant items. Consider two models A and B that have the same number of relevant results i.e. 3 out of 5.  
+A limitation of precision@k is that it doesn't consider the position of the relevant items. Consider two models A and B that have the same number of relevant results i.e. 3 out of 5.  
 
 For model A, the first three items were relevant, while for model B, the last three items were relevant. Precision@5 would be the same for both of these models even though model A is better.  
 
@@ -96,14 +96,18 @@ Using the previously calculated values of precision and recall, we can calculate
 
 
 ## B. Order Aware Metrics  
-While precision, recall, and F1 give us a single-value metric, they don't consider the order in which the returned search results are sent.  
+While precision, recall, and F1 give us a single-value metric, they don't consider the order in which the returned search results are sent. To solve that limitation, people have devised order-aware metrics given below:
 
 ### 1. Mean Reciprocal Rank(MRR)  
-This metric is useful when we want our system to return only one relevant result and the relevant result is at a higher position. Mathematically, this is given by:
+This metric is useful when we want our system to return only one relevant result and want the relevant result to be at a higher position. Mathematically, this is given by:
 
 $$
 MRR = \frac{1}{|Q|} \sum_{i=1}^{|Q|} \frac{1}{rank_{i}}
 $$
+
+where:  
+- $$\lVert Q \rVert$$ denotes the total number of queries  
+- $$rank_i$$ denotes the rank of the first relevant result
 
 To calculate MRR, we first calculate the **reciprocal rank**. It is simply the reciprocal of the rank of the first correct relevant result and the value ranges from 0 to 1.  
 
@@ -123,15 +127,15 @@ For multiple different queries, we can calculate the MRR by taking the mean of t
 
 ![](/images/ltr-mean-reciprocal-rank.png){:.align-center}  
 
-We can see that MRR doesn't care about the remaining relevant results and where they are ranked. So, if your use-case requires returning multiple relevant results, MRR might not be a suitable choice.   
+We can see that MRR doesn't care about the position of the remaining relevant results. So, if your use-case requires returning multiple relevant results in the best possible way, MRR is not a suitable metric.  
 
 ### 2. Average Precision(AP)  
-Average Precision is a metric that evaluates whether all of the actual relevant items selected by the model are ranked higher or not. Unlike MRR, it considers all the relevant items.  
+Average Precision is a metric that evaluates whether all of the ground-truth relevant items selected by the model are ranked higher or not. Unlike MRR, it considers all the relevant items.  
 
 Mathematically, it is given by:
 
 $$
-AP = \frac{\sum_{k=1}^{n} (P(k) * rel(k))}{number\ of\ relevant\ documents} 
+AP = \frac{\sum_{k=1}^{n} (P(k) * rel(k))}{number\ of\ relevant\ items} 
 $$
 
 where:  
@@ -167,7 +171,7 @@ where
 
 
 ## Problem Setup 2: Graded Relevance  
-Let's take another simple toy example where we annotated the items not just as relevant or not-relevant but instead using a grading scale between 0 to 5 with 0 being least relevant and 5 being most relevant.  
+Let's take another toy example where we annotated the items not just as relevant or not-relevant but instead used a grading scale between 0 to 5 where 0 denotes least relevant and 5 denotes the most relevant.  
 ![](/images/ltr-graded-scale.png){:.align-center}  
 
 We have a ranking model that gives us back 5-most relevant results for a certain query. The first item had a relevance score of 3 as per our ground-truth annotation, the second item has a relevance score of 2 and so on.  
@@ -183,7 +187,7 @@ $$
 CG@k = \sum_{1}^{k} rel_{i}
 $$
 
-For our example, CG@2 will be 5 because we add the first two relevance scores.    
+For our example, CG@2 will be 5 because we add the first two relevance scores 3 and 2.    
 
 ![](/images/ltr-cumulative-gain-2.png){:.align-center}  
 
@@ -206,7 +210,7 @@ Consider an example below. With the cumulative gain, we are simply adding the sc
 
 > An item with a relevance score of 3 at position 1 is better than the same item with relevance score 3 at position 2.
 
-So, we need some way to penalize the scores by their position. DCG uses a log-based penalty function to reduce the relevance score at each position. For 5 items, the penalty would be
+So, we need some way to penalize the scores by their position. DCG introduces a log-based penalty function to reduce the relevance score at each position. For 5 items, the penalty would be
 
 |$$i$$|$$log_{2}(i+1)$$|
 |---|---|
@@ -222,7 +226,11 @@ $$
 DCG@k = \sum_{i=1}^{k} \frac{ \color{#81c784}{rel_{i}} }{ \color{#e57373}{log_{2}(i + 1)} }
 $$
 
-Let's calculate this for our example.  
+To understand the behavior of the log-penalty, let's plot ranking position in x-axis and the percentage of relevance score i.e. $$\frac{1}{log_{2}(i+1)} * 100$$ in the y-axis. As seen, in position 1, we don't apply any penalty and score remains unchanged. But, the percentage of score kept decays exponentially from 100% in position 1 to 63% in position 2, 50% in position 3, and so on.  
+
+![](/images/ltr-penalty-plot.png){:.align-center}  
+
+Let's now calculate DCG for our example.  
 
 ![](/images/ltr-graded-relevance.png){:.align-center}  
 
@@ -256,7 +264,7 @@ While DCG solves the issues with cumulative gain, it has a limitation. Suppose w
 ![](/images/ltr-dcg-drawback.png){:.align-center}  
 
 ### 3. Normalized Discounted Cumulative Gain (NDCG@k)  
-To allow comparision of DCG across queries, we can use NDCG that normalizes the DCG values using the ideal order of the relevant items.  
+To allow a comparison of DCG across queries, we can use NDCG that normalizes the DCG values using the ideal order of the relevant items.  
 
 Let's take our previous example where we had already calculated the DCG values at various K values.
 
@@ -270,7 +278,7 @@ Let's take our previous example where we had already calculated the DCG values a
 |DCG@4|$$3+1.2618+1.5+0=5.7618$$|
 |DCG@5|$$3+1.2618+1.5+0+0.3868 = 6.1486$$|
 
-For our example, ideally we would have wanted the items to be sorted in descending order of relevance scores.
+For our example, ideally, we would have wanted the items to be sorted in descending order of relevance scores.
 
 ![](/images/ltr-ndcg-ideal.png){:.align-center}  
 
@@ -295,6 +303,9 @@ Now we can calculate the NDCG@k for various k by diving DCG@k by IDCG@k as shown
 |5|6.1486|6.3233|6.1486 / 6.3233 = 0.9723|
 
 Thus, we get NDCG scores with a range between 0 and 1. A perfect ranking would get a score of 1. We can also compare NDCG@k scores of different queries since it's a normalized score.   
+
+## Conclusion
+Thus, we learned about various evaluation metrics for both binary and graded ground-truth labels and how each metric improves upon the previous.
 
 ## References
 - [Mean Reciprocal Rank, Wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
