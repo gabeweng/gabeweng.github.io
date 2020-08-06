@@ -262,6 +262,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
 | Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm)||
 | Record Linking| [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)||
+|Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
 
 
 ### Computer Vision  
