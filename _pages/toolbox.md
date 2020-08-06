@@ -154,6 +154,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[acl-explorer](http://acl-explorer.eu-west-2.elasticbeanstalk.com/)|ACL Publications Explorer|
 | Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub)|General|
 ||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch)|Pre-trained ConvNets|
+||[pytorch-image-models](https://rwightman.github.io/pytorch-image-models/)|200+ pretrained ConvNet backbones|
 | | [huggingface-models](https://huggingface.co/models)|Transformer Models|
 ||[huggingface-languages](https://huggingface.co/languages)|Multi-lingual Models|
 | AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs), [pycaret](https://pycaret.org/guide/)||
