@@ -99,7 +99,7 @@ Using the previously calculated values of precision and recall, we can calculate
 While precision, recall, and F1 give us a single-value metric, they don't consider the order in which the returned search results are sent. To solve that limitation, people have devised order-aware metrics given below:
 
 ### 1. Mean Reciprocal Rank(MRR)  
-This metric is useful when we want our system to return only one relevant result and want the relevant result to be at a higher position. Mathematically, this is given by:
+This metric is useful when we want our system to return the best relevant item and want that item to be at a higher position. Mathematically, this is given by:
 
 $$
 MRR = \frac{1}{|Q|} \sum_{i=1}^{|Q|} \frac{1}{rank_{i}}
@@ -293,6 +293,10 @@ Let's calculate the ideal DCG(IDCG) for this order.
 |5|0|$$log_{2}(6) = 2.5849$$|0 / 2.5849 = 0|3+1.8927+1+0.4306+0=6.3233|
 
 Now we can calculate the NDCG@k for various k by diving DCG@k by IDCG@k as shown below:  
+
+$$
+NDCG@k = \frac{DCG@k}{IDCG@k}
+$$
 
 |$$k$$|DCG@k|IDCG@k|NDCG@k|
 |:-:|:-:|---|---|
