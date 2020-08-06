@@ -72,7 +72,7 @@ Let's understand each part of this conceptual matrix in detail now.
 These are the columns in the previous matrix. There are 3 types of tests proposed in the CheckList framework: 
 
 #### a. Minimum Functionality Test(MFT)    
-This test is similar to unit tests in software engineering. We create a collection of  (text, expected label) pairs and test the model on this collection. 
+This test is similar to unit tests in software engineering. We build a collection of (text, expected label) pairs from scratch and test the model on this collection.  
 
 For example, we are testing the negation capability of the model using an MFT test below.  
 
@@ -83,7 +83,7 @@ Template: I <span style="color: #E57373;">{NEGATION}</span> <span style="color: 
 The goal of this test is to make sure the model is not taking any shortcuts and possesses linguistic capabilities.  
 
 #### b. Invariance Test(INV)  
-In this test, we perturb the text examples in a way that the label should not change. Then, the model is tested on this perturbed example and the model passes the test only if its prediction remains the same (i.e invariant).  
+In this test, we perturb our existing training examples in a way that the label should not change. Then, the model is tested on this perturbed example and the model passes the test only if its prediction remains the same (i.e invariant).  
 
 For example, changing the location from Chicago to Dallas should not change the original sentiment of a text.  
 
@@ -282,7 +282,7 @@ Below are examples of tests we can devise to evaluate the fairness of a sentimen
 
 
 ### 3. Test Generation  
-The paper's authors have open-sourced a [software tool](https://github.com/marcotcr/checklist) that can generate test cases quickly based on the ideas above.
+The paper's authors have open-sourced a [software tool](https://github.com/marcotcr/checklist) that can generate test cases at scale based on the ideas above.
 
 The tool provides three approaches to write test cases:
 
@@ -333,7 +333,7 @@ For example, here we are using ROBERTA to suggest words for the mask and then we
 These fill-ins can be reused across multiple tests. The paper also suggests using WordNet to select only context-appropriate synonyms from ROBERTA.   
 
 #### Built-in Fill-ins  
-CheckList also provides out-of-box support for generic categories such as:
+CheckList also provides out-of-box support for lexicons such as:
 
 - **NER**: common first/last names, cities and countries
 - **Protected Group Adjectives**: Nationalities, Religions, Gender, Sexuality  
