@@ -153,9 +153,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)|BERT Papers|
 ||[acl-explorer](http://acl-explorer.eu-west-2.elasticbeanstalk.com/)|ACL Publications Explorer|
 | Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub)|General|
-||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch)|Pre-trained ConvNets|
+||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch), [pytorchcv](https://pypi.org/project/pytorchcv/)|Pre-trained ConvNets|
 ||[pytorch-image-models](https://rwightman.github.io/pytorch-image-models/)|200+ pretrained ConvNet backbones|
-| | [huggingface-models](https://huggingface.co/models)|Transformer Models|
+| | [huggingface-models](https://huggingface.co/models), [huggingface-pretrained](https://huggingface.co/transformers/pretrained_models.html)|Transformer Models|
 ||[huggingface-languages](https://huggingface.co/languages)|Multi-lingual Models|
 | AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs), [pycaret](https://pycaret.org/guide/)||
 ||[lazypredict](https://github.com/shankarpandala/lazypredict)|Run all sklearn models at once|
@@ -270,7 +270,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Pretrained models| [pytorchcv](https://pypi.org/project/pytorchcv/)||
 | Image processing| [scikit-image](https://github.com/scikit-image/scikit-image), [imutils](https://github.com/jrosebr1/imutils)||
 | Segmentation Models| [segmentation_models](https://github.com/qubvel/segmentation_models)|Keras|
 | Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition)||
