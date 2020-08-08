@@ -214,6 +214,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
 | Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html)||
 || [inltk](https://github.com/goru001/inltk), [indic_nlp](https://github.com/anoopkunchukuttan/indic_nlp_library)|Indic Languages|
+|Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased)||
 | Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
 | Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
