@@ -221,6 +221,16 @@ To run background tasks, use the `nohup` command followed by your regular shell 
 !nohup bash ping.sh &
 ```
 
+## 18. Notify on Training Completion  
+If you're running a long task such as training a model, you can setup Colab to send a desktop notification once it's completed.
+
+To enable that, goto Tools ⮕ Settings ⮕ Site and enable `Show desktop notifications` checkbox.  
+
+![](/images/colab-notification.png){:.align-center}  
+
+You will get a popup to enable browser notification. Just accept it and colab will notify you on task completion even if you are on another tab, window or application.  
+
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
