@@ -445,6 +445,39 @@ In addition to swagger, if you goto the endpoint `http://127.0.0.01:8000/redoc`,
 ![ReDoc functionality in FastAPI](/images/fastapi-redoc.png){: .align-center}  
 
 
+## Cross-Origin Resource Sharing(CORS)  
+**Flask**  
+Flask doesn't provide CORS support out of the box. We need to use extension such as [flask-cors](https://flask-cors.readthedocs.io/en/latest/) to configure CORS as shown below.
+```python
+# app.py
+
+from flask import Flask
+from flask_cors import CORS
+
+app_ = Flask(__name__)
+CORS(app_)
+```
+
+**FastAPI:**  
+FastAPI provides a [built-in middleware](https://fastapi.tiangolo.com/tutorial/cors/) to handle CORS. We show an example of CORS below where we are allowing any origin to access our APIs.  
+
+```python
+# app.py
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+```
+
+
 ## Conclusion  
 Thus, FastAPI is an excellent alternative to Flask for building robust APIs with best-practices baked in. You can refer to the [documentation](https://fastapi.tiangolo.com/) to learn more.    
 
