@@ -219,6 +219,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased)||
 | Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
+||[verbnet-parser](https://github.com/jgung/verbnet-parser)|VerbNet parser|
 | Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
 || [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
 |Scientific Domain| [scispacy](https://github.com/allenai/scispacy)|Spacy for bio-medical data|
