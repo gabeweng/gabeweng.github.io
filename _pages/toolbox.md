@@ -332,6 +332,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
 ||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
 ||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
+||[scikit-multilearn](http://scikit.ml/)|Multi-label classification|
 | Keras| [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
 ||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
 ||[scikeras](https://github.com/adriangb/scikeras)|Scikit-learn Wrapper for Keras|
