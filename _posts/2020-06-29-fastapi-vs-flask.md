@@ -303,6 +303,56 @@ def upload_file(file: UploadFile = File(...)):
     return {'name': file.filename}
 ```
 
+## Form Submission   
+We want to access a text form field that's defined as shown below and echo the value.  
+```html
+<input name='city' type='text'>
+```
+
+**Flask**  
+Flask allows accessing the form fields via the request object.
+```python
+# app.py
+
+from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/submit', methods=['POST'])
+def echo():
+    city = request.form.get('city')
+    return {'city': city}
+```
+
+**FastAPI:**  
+We use function parameter to define the key and data type for the form field.  
+
+```python
+# app.py
+from fastapi import FastAPI, Form
+app = FastAPI()
+
+@app.post('/submit')
+def echo(city: str = Form(...)):
+    return {'city': city}
+```
+
+We can also make the form field optional as shown below
+```python
+from typing import Optional
+
+@app.post('/submit')
+def echo(city: Optional[str] = Form(None)):
+    return {'city': city}
+```
+
+Similarly, we can set a default value for the form field as shown below.  
+```python
+@app.post('/submit')
+def echo(city: Optional[str] = Form('Paris')):
+    return {'city': city}
+```
+
+
 ## Cookies  
 We want to access a cookie called `name` from the request.  
 
