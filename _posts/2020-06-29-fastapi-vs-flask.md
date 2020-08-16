@@ -272,6 +272,37 @@ As seen, instead of getting a dictionary, the JSON data is converted into an obj
 }
 ```
 
+## File Upload  
+Let's create an API to return the uploaded file name. The key used when uploading the file will be `file`.    
+
+**Flask**  
+Flask allows accessing the uploaded file via the request object.
+```python
+# app.py
+
+from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    file = request.files.get('file')
+    return {'name': file.filename}
+```
+
+**FastAPI:**  
+FastAPI uses python types to specify the file key and get the file in the function parameters.  
+
+```python
+# app.py
+from fastapi import FastAPI, UploadFile, File
+
+app = FastAPI()
+
+@app.post('/upload')
+def upload_file(file: UploadFile = File(...)):
+    return {'name': file.filename}
+```
+
 ## Modular Views  
 We want to decompose the views from a single app.py into separate files.
 ```json
@@ -476,7 +507,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 ```
-
 
 ## Conclusion  
 Thus, FastAPI is an excellent alternative to Flask for building robust APIs with best-practices baked in. You can refer to the [documentation](https://fastapi.tiangolo.com/) to learn more.    
