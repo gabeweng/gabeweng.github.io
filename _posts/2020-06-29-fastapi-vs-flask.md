@@ -290,7 +290,7 @@ def upload_file():
 ```
 
 **FastAPI:**  
-FastAPI uses python types to specify the file key and get the file in the function parameters.  
+FastAPI uses function parameter to specify the file key.  
 
 ```python
 # app.py
@@ -301,6 +301,36 @@ app = FastAPI()
 @app.post('/upload')
 def upload_file(file: UploadFile = File(...)):
     return {'name': file.filename}
+```
+
+## Cookies  
+We want to access a cookie called `name` from the request.  
+
+**Flask**  
+Flask allows accessing the cookies via the request object.
+```python
+# app.py
+
+from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/profile')
+def profile():
+    name = request.cookies.get('name')
+    return {'name': name}
+```
+
+**FastAPI:**  
+We use parameter to define the key for the cookie.  
+
+```python
+# app.py
+from fastapi import FastAPI, Cookie
+app = FastAPI()
+
+@app.get('/profile')
+def profile(name=Cookie(None)):
+    return {'name': name}
 ```
 
 ## Modular Views  
