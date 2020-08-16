@@ -15,7 +15,7 @@ While Flask has become the de-facto choice for API development in Machine Learni
 
 ![Flask and FastAPI Logo](/images/flask-to-fastapi.png){: .align-center}  
 
-I recently decided to give FastAPI a spin by porting a production project written in Flask. FastAPI was very easy to pick up coming from Flask and I was able to get things up and running in just a few hours. 
+I recently decided to give FastAPI a spin by porting a production Flask project. It was very easy to pick up FastAPI coming from Flask and I was able to get things up and running in just a few hours. 
 
 The added benefit of automatic data validation, documentation generation and baked-in best-practices such as pydantic schemas and python typing makes this a strong choice for future projects.  
 
@@ -140,6 +140,11 @@ uvicorn app:app --port 5000
 The number of workers can be controlled as well.
 ```shell
 uvicorn app:app --workers 2
+```
+
+You can use `gunicorn` to manage uvicorn as well using the following command. All regular gunicorn flags such as number of workers(`-w`) work.  
+```shell
+gunicorn -k uvicorn.workers.UvicornWorker app:app
 ```
 
 
@@ -379,7 +384,7 @@ from fastapi import FastAPI, Cookie
 app = FastAPI()
 
 @app.get('/profile')
-def profile(name=Cookie(None)):
+def profile(name = Cookie(None)):
     return {'name': name}
 ```
 
