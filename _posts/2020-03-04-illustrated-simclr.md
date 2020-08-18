@@ -163,7 +163,7 @@ Source: [SimCLR paper](https://arxiv.org/abs/2002.05709)
 
 
 ## SimCLR Code
-The official implementation of SimCLR in Tensorflow by the paper authors is available on [GitHub](https://github.com/google-research/simclr). They also provide [pretrained models](https://github.com/google-research/simclr#pre-trained-models) for 1x, 2x, and 3x variants of the ResNet50 architectures using Tensorflow Hub.  
+The official implementation of SimCLR in Tensorflow by the paper authors is available on [GitHub](https://github.com/google-research/simclr). They also provide [pretrained models](https://github.com/google-research/simclr#pre-trained-models-for-simclrv1) for 1x, 2x, and 3x variants of the ResNet50 architectures using Tensorflow Hub.  
 
 There are various unofficial SimCLR PyTorch implementations available that have been tested on small datasets like [CIFAR-10](https://github.com/leftthomas/SimCLR) and [STL-10](https://github.com/Spijkervet/SimCLR).
 
