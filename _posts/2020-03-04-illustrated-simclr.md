@@ -10,7 +10,9 @@ header:
   teaser: /images/contrastive-find-a-pair.png
 ---
 
-In recent years, [numerous self-supervised learning methods](https://amitness.com/2020/02/illustrated-self-supervised-learning/) have been proposed for learning image representations, each getting better than the previous. But, their performance was still below the supervised counterparts. This changed when **Chen et. al** proposed a new framework in their research paper "[SimCLR: A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)". The SimCLR paper not only improves upon the previous state-of-the-art self-supervised learning methods but also beats the supervised learning method on ImageNet classification.
+In recent years, [numerous self-supervised learning methods](https://amitness.com/2020/02/illustrated-self-supervised-learning/) have been proposed for learning image representations, each getting better than the previous. But, their performance was still below the supervised counterparts. 
+
+This changed when **Chen et. al** proposed a new framework in their research paper "[SimCLR: A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)". The SimCLR paper not only improves upon the previous state-of-the-art self-supervised learning methods but also beats the supervised learning method on ImageNet classification by scaling up the architecture.  
 
 In this article, I will explain the key ideas of the framework proposed in the research paper using diagrams.
 
@@ -23,7 +25,7 @@ The way a child would solve it is by looking at the picture of the animal on the
 
 ![Child Matching Animal Pairs](/images/contrastive-puzzle.gif){: .align-center}   
 
-> "Such exercises were prepared for the child to be able to recognize an object and contrast that to other objects. Can we teach machines in a similar manner?"
+> "Such exercises were prepared for the child to be able to recognize an object and contrast that to other objects. Can we similarly teach machines?"
 
 It turns out that we can through a technique called **Contrastive Learning**. It attempts to teach machines to distinguish between similar and dissimilar things.
 
@@ -75,7 +77,7 @@ First, we generate batches of size N from the raw images. Let's take a batch of 
 The paper defines a random transformation function T that takes an image and applies a combination of `random (crop + flip + color jitter + grayscale)`.
 ![Random Augmentation on Image](/images/simclr-random-transformation-function.gif){: .align-center} 
 
-For each image in this batch, random transformation function is applied to get a pairs of 2 images. Thus, for a batch size of 2, we get 2\*N = 2\*2 = 4 total images.  
+For each image in this batch, a random transformation function is applied to get a pair of 2 images. Thus, for a batch size of 2, we get 2\*N = 2\*2 = 4 total images.  
 ![Augmenting images in a batch for SimCLR](/images/simclr-batch-data-preparation.png){: .align-center} 
 2. **Getting Representations** [Base Encoder]  
 
@@ -118,10 +120,10 @@ First, the augmented pairs in the batch are taken one by one.
 ![Example of a single batch in SimCLR](/images/simclr-augmented-pairs-batch.png){: .align-center}
 Next, we apply the softmax function to get the probability of these two images being similar.  
 ![Softmax Calculation on Image Similarities](/images/simclr-softmax-calculation.png)
-This softmax calculation is equivalent to getting the probability of the second augmented cat image being the most similar to the first cat image in the pair. Here, all remaining images in the batch are sampled as dissimilar image (negative pair). Thus, we don't need specialized architecture, memory bank or queue need by previous approaches like [InstDisc](https://arxiv.org/pdf/1805.01978.pdf), [MoCo](https://arxiv.org/abs/1911.05722) or [PIRL](https://amitness.com/2020/03/illustrated-pirl/).
+This softmax calculation is equivalent to getting the probability of the second augmented cat image being the most similar to the first cat image in the pair. Here, all remaining images in the batch are sampled as a dissimilar image (negative pair). Thus, we don't need specialized architecture, memory bank or queue need by previous approaches like [InstDisc](https://arxiv.org/pdf/1805.01978.pdf), [MoCo](https://arxiv.org/abs/1911.05722) or [PIRL](https://amitness.com/2020/03/illustrated-pirl/).
 ![Interpretation of Softmax Function](/images/simclr-softmax-interpretation.png){: .align-center}
 
-Then, the loss is calculated for a pair by taking the negative of the log of above calculation. This formulation is the Noise Contrastive Estimation(NCE) Loss.
+Then, the loss is calculated for a pair by taking the negative of the log of the above calculation. This formulation is the Noise Contrastive Estimation(NCE) Loss.
 
 $$
 l(i, j) = -log\frac{exp(s_{i, j})}{ \sum_{k=1}^{2N} l_{[k!= i]} exp(s_{i, k})}
@@ -149,7 +151,7 @@ Once the SimCLR model is trained on the contrastive learning task, it can be use
 ![Using SimCLR for downstream tasks](/images/simclr-downstream.png)
 
 ## Objective Results
-SimCLR outperformed previous self-supervised methods on ImageNet. The below image shows top-1 accuracy of linear classifiers trained on representations learned with different self-supervised methods on ImageNet. The gray cross is supervised ResNet50 and SimCLR is shown in bold.
+SimCLR outperformed previous self-supervised methods on ImageNet. The below image shows the top-1 accuracy of linear classifiers trained on representations learned with different self-supervised methods on ImageNet. The gray cross is supervised ResNet50 and SimCLR is shown in bold.
 
 ![Performance of SimCLR on ImageNet](/images/simclr-performance.png){: .align-center}
 
@@ -161,9 +163,9 @@ Source: [SimCLR paper](https://arxiv.org/abs/2002.05709)
 
 
 ## SimCLR Code
-The official implementation of SimCLR in Tensorflow by the paper authors is available on [GitHub](https://github.com/google-research/simclr). They also provide [pretrained models](https://github.com/google-research/simclr#pre-trained-models) for 1x, 2x and 3x variants of the ResNet50 architectures using Tensorflow Hub.  
+The official implementation of SimCLR in Tensorflow by the paper authors is available on [GitHub](https://github.com/google-research/simclr). They also provide [pretrained models](https://github.com/google-research/simclr#pre-trained-models) for 1x, 2x, and 3x variants of the ResNet50 architectures using Tensorflow Hub.  
 
-There are various unofficial SimCLR PyTorch implementations available which have been tested on small datasets like [CIFAR-10](https://github.com/leftthomas/SimCLR) and [STL-10](https://github.com/Spijkervet/SimCLR).
+There are various unofficial SimCLR PyTorch implementations available that have been tested on small datasets like [CIFAR-10](https://github.com/leftthomas/SimCLR) and [STL-10](https://github.com/Spijkervet/SimCLR).
 
 ## Conclusion
 Thus, SimCLR provides a strong framework for doing further research in this direction and improve the state of self-supervised learning for Computer Vision.
@@ -183,3 +185,4 @@ If you found this blog post useful, please consider citing it as:
 - ["A Simple Framework for Contrastive Learning of Visual Representations"](https://arxiv.org/abs/2002.05709)  
 - ["On Calibration of Modern Neural Networks"](https://arxiv.org/pdf/1706.04599.pdf)  
 - ["Distilling the Knowledge in a Neural Network"](https://arxiv.org/pdf/1503.02531.pdf)  
+- ["SimCLR Slides, Google Brain Team"](https://docs.google.com/presentation/d/1ccddJFD_j3p3h0TCqSV9ajSi2y1yOfh0-lJoK29ircs/edit#slide=id.g8c1b8d6efd_0_1)
