@@ -230,6 +230,11 @@ To enable that, goto Tools ⮕ Settings ⮕ Site and enable `Show desktop notifi
 
 You will get a popup to enable browser notification. Just accept it and colab will notify you on task completion even if you are on another tab, window or application.  
 
+## 19. Run javascript code  
+You can run javascript code by using the `%%javascript` magic command.  
+
+![](/images/colab-javascript.png){:.align-center}  
+
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
