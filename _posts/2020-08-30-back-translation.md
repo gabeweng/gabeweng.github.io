@@ -52,7 +52,7 @@ en_tokenizer = MarianTokenizer.from_pretrained(en_model_name)
 en_model = MarianMTModel.from_pretrained(en_model_name)
 ```
 
-Next, I have written a helper function to translate a batch of text given the machine translation model, tokenizer and the target romance language.  
+Next, we write a helper function to translate a batch of text given the machine translation model, tokenizer and the target romance language.  
 ```python
 def translate(texts, model, tokenizer, language="fr"):
     # Prepare the text data into appropriate format for the model
