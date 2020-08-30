@@ -30,7 +30,7 @@ Unsupervised algorithms for keyword extraction don't need to be trained on the c
 
 Let's understand each algorithm by starting from simple methods and gradually adding complexity.  
 
-## Naive Counting       
+## 1. Naive Counting       
 This is a simple method which only takes into account how many times each term occurs. 
 
 Let's understand it by applying it to an example document.   
@@ -62,7 +62,7 @@ We can sort the keywords in descending order based on the counts and take the to
 ### Drawback of Naive Counting  
 This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document, but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
 
-## Rapid Automatic Keyword Extraction (RAKE)
+## 2. Rapid Automatic Keyword Extraction (RAKE)
 RAKE is a domain-independent keyword extraction method proposed in 2010. It uses word frequency and co-occurrence to identify the keywords. It is very useful for identifying relevant multi-word expressions. 
 
 ### How RAKE works
@@ -70,19 +70,19 @@ Let's apply RAKE on a toy example document to understand how it works:
 
 ![](/images/keyword-sentence.png){:.align-center}  
 
-#### 1. Preprocessing
+#### a. Preprocessing
 First, the stop words in the document are removed.
 
 ![](/images/keyword-stopwords-removal.png){:.align-center}  
 
-#### 2. Candidate Generation
+#### b. Candidate Generation
 We split the document at the stop word positions and punctuations to get content words. The words that occur consecutively without any stop word between them are taken as candidate keywords.
 
 ![](/images/keyword-split-at-stopwords.png){:.align-center}  
 
 For example, "Deep Learning" is treated as a single keyword.  
 
-#### 3. Candidate Scoring
+#### c. Candidate Scoring
 Next, the frequency of all the individual words in the candidate keywords are calculated. This finds words that occur frequently.  
 
 ||deep|learning|subfield|ai|useful|
@@ -106,7 +106,7 @@ Then, we divide the degree by the frequency for each word to get a final score. 
 |---|---|---|---|---|---|
 |**Score = $$\frac{deg(w)}{freq(w)}$$**|2 / 1 = 2|2 / 1 = 2|1 / 1 = 1|1 / 1 = 1|1 / 1 = 1|
 
-#### 4. Final Ranking  
+#### d. Final Ranking  
 Finally, we calculate the scores for our candidate keywords by adding the scores for their member words. The higher the score, the more useful a keyword is.  
 
 |Keyword|Score|Remarks|
@@ -140,21 +140,21 @@ print(rake.get_ranked_phrases_with_scores())
 # [(4.0, 'deep learning'), (1.0, 'useful'), (1.0, 'subfield'), (1.0, 'ai')]
 ```
 
-## Yet Another Keyword Extractor (YAKE)  
+## 3. Yet Another Keyword Extractor (YAKE)  
 YAKE is another popular keyword extraction algorithm proposed in 2018. It outperforms TF-IDF and RAKE across many datasets and went on to win the best "short paper award" at [ECIR 2018](http://ecir2018.org/ "European Conference on Information Retrieval 2018").   
 
 YAKE uses statistical features to identify and rank the most important keywords. It doesn't need any linguistic information like NER or POS tagging and thus can be used with any language. It only requires a stop word list for the language.  
 
 ### How YAKE works:
 
-#### 1. Preprocessing and Candidate Generation  
+#### i. Preprocessing and Candidate Generation  
 The sentences are split into terms using space and special character(line break, bracket, comma, period) as the delimiter.
 
 We decide the maximum length of the keyword to be generated. If we decide max length of 3, then 1-gram, 2-gram, and 3-gram candidate phrases are generated using a sliding window.   
 
 Then, we remove phrases that contain punctuation marks. Also, phrases that begin and end with a stop word are removed.  
 
-#### 2. Candidate Scoring  
+#### ii. Candidate Scoring  
 YAKE uses 5 features to quantify how good each word is.  
 
 ##### a. Casing
@@ -229,7 +229,7 @@ $$
 S(kw) = \frac{product(scores\ of\ words\ in\ keyword)}{1 + (sum\ of\ scores\ of\ words) * count(keyword)}
 $$
 
-#### 3. Post-processing  
+#### iii. Post-processing  
 It's pretty common to get similar candidates when extracting keyphrases. For example, we could have variations like:
 - "work", "works"
 - "relevant", "relevance"
@@ -242,7 +242,7 @@ To eliminate such duplicates, the following process is applied:
 
 Thus, the chosen keyword list contains the final deduplicated keywords.
 
-#### 4. Final Ranking  
+#### iv. Final Ranking  
 Thus, we have a list of keywords along with their scores. A keyword is more important if it has a lower score. 
 
 We can sort the keywords in ascending order and take the top N keywords as the output.  
