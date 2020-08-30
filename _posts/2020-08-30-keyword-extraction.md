@@ -279,7 +279,7 @@ extractor.candidate_weighting(window=2,
                               use_stems=False)
 
 # 5. Select 10 highest ranked keywords
-# Remove redundant keywords with >80% similarity
+# Remove redundant keywords with similarity above 80%
 key_phrases = extractor.get_n_best(n=10, threshold=0.8)
 print(key_phrases)
 ```
