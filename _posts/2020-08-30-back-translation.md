@@ -74,7 +74,7 @@ def translate(texts, model, tokenizer, language="fr"):
 Next, we will prepare a function to use the above `translate()` function to perform back translation.
 ```python
 def back_translate(texts, target_lang="fr", source_lang="en"):
-    # Translate to target language
+    # Translate from source to target language
     fr_texts = translate(texts, target_model, target_tokenizer, 
                          language=target_lang)
 
@@ -107,6 +107,21 @@ print(aug_texts)
 
 ```python
 ["It's so cool.", 'I hated food.', "They've been very helpful."]
+```
+
+## Chained Back Translation  
+You can also run back translation in a chain to get more diversity. For example, `English -> Spanish -> English -> French -> English`
+```python
+en_texts = ['This is so cool', 'I hated the food', 'They were very helpful']
+
+aug1_texts = back_translate(en_texts, source_lang="en", target_lang="es")
+aug2_texts = back_translate(aug1_texts, source_lang="en", target_lang="fr")
+
+print(aug2_texts)
+```
+
+```
+["Yeah, that's cool.", "It's the food I hated.", 'They were of great help.']
 ```
 
 ## Available Models  
