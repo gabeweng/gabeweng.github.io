@@ -4,7 +4,7 @@ date: 2020-08-30T18:00-00:00
 permalink: /keyphrase-extraction/
 categories:
   - nlp
-  - information retrieval
+  - text mining
 excerpt: Learn about unsupervised algorithms for automatically extracting representative keyword and phrases from documents
 header:
   og_image: /images/keyword-extraction-pipeline.png
