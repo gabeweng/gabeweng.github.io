@@ -23,7 +23,7 @@ For keyword extraction, all algorithms follow a similar pipeline as shown below.
 
 ![](/images/keyword-extraction-pipeline.png){:.align-center}  
 
-Then, a score is calculated for each candidate keyword using some algorithm. Then, the highest-ranking keywords are taken and post-processing such as removing near-duplicates is applied. Finally, the algorithm returns the top N ranking keywords as output.  
+Then, a score is calculated for each candidate keyword using some algorithm. The highest-ranking keywords are taken and post-processing such as removing near-duplicates is applied. Finally, the algorithm returns the top N ranking keywords as output.  
 
 ## Unsupervised Methods  
 Unsupervised algorithms for keyword extraction don't need to be trained on the corpus and don't need any pre-defined rules, dictionary, or thesaurus. They can use statistical features from the text itself and as such can be applied to large documents easily without re-training. Most of these algorithms don't need any linguistic features except for stop word lists and so can be applied to multiple languages.  
@@ -33,7 +33,7 @@ Let's understand each algorithm by starting from simple methods and gradually ad
 ## Naive Counting       
 This is a simple method which only takes into account how many times each term occurs. 
 
-Let's understand it by applying the four-step process to an example document.   
+Let's understand it by applying it to an example document.   
 
 ![](/images/keyword-matter-example.png){:.align-center}  
 
@@ -59,6 +59,8 @@ We can sort the keywords in descending order based on the counts and take the to
 
 ![](/images/keyword-counting-ranking.png){:.align-center}  
 
+### Drawback of Naive Counting  
+This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document, but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
 
 ## Rapid Automatic Keyword Extraction (RAKE)
 RAKE is a domain-independent keyword extraction method proposed in 2010. It uses word frequency and co-occurrence to identify the keywords. It is very useful for identifying relevant multi-word expressions. 
