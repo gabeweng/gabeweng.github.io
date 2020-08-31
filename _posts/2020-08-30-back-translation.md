@@ -15,9 +15,9 @@ classes: wide
 
 Hugging Face recently released [1008 translation models](https://huggingface.co/models?search=Helsinki-NLP%2Fopus-mt) for almost 140 languages on their model hub. 
 
-These models were originally trained by [Jörg Tiedemann](https://researchportal.helsinki.fi/en/persons/j%C3%B6rg-tiedemann) of the [Language Technology Research Group at the University of Helsinki](https://blogs.helsinki.fi/language-technology/). The original models were trained on the [Open Parallel Corpus(OPUS)](http://opus.nlpl.eu/) using a neural machine translation framework called [MarianNMT](https://marian-nmt.github.io/).
+These models were originally trained by [Jörg Tiedemann](https://researchportal.helsinki.fi/en/persons/j%C3%B6rg-tiedemann) of the [Language Technology Research Group at the University of Helsinki](https://blogs.helsinki.fi/language-technology/). They were trained on the [Open Parallel Corpus(OPUS)](http://opus.nlpl.eu/) using a neural machine translation framework called [MarianNMT](https://marian-nmt.github.io/).
 
-In this post, I will explain how you can use the MarianMT models to perform data augmentation for text.  
+In this post, I will explain how you can use the MarianMT models to augment data text data.    
 
 ## Back Translation    
 We will use a data augmentation technique called "Back Translation". In this, we take an original text written in English. Then, we convert it into another language (eg. French) using MarianMT. We translate the French text back into English using MarianMT. We keep the back-translated English text if it is different from the original English sentence.
@@ -139,6 +139,11 @@ To view all available language codes, you can run
 ```python
 target_tokenizer.supported_language_codes
 ```
+
+## Alternative Applications
+Besides data augmentation, the back translation process can also be used for text paraphrasing. 
+
+Similarly, we can also use it as an adversarial attack. Suppose we have a training dataset on which we trained an NLP model. Then, we can augment the training dataset and generate prediction from our model on augmented texts. If the predictions are different than our ground-truth labels, then we have a list of texts where our model fails. We can get good insights by analyzing those responses.
 
 ## Conclusion
 Thus, MarianMT is a decent free and offline alternative to Google Translate for back-translation.  
