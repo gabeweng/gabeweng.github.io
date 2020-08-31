@@ -414,6 +414,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Pandas on Huge data|[vaex](https://github.com/vaexio/vaex)||
 | Parallelize numpy operations| [numba](http://numba.pydata.org/)||
 | Distributed training| [horovod](https://github.com/horovod/horovod)||
+|Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
 
 ### Bechmark  
 
