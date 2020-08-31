@@ -3,6 +3,7 @@ title: "A Visual Survey of Data Augmentation in NLP"
 date: 2020-05-16T22:22:30-04:00
 categories:
   - nlp
+  - data augmentation
 classes: wide
 excerpt: An extensive overview of text data augmentation techniques for Natural Language Processing
 header:
@@ -107,7 +108,7 @@ You can also run back-translation using different languages at once to generate 
 ![Multi-step Back-Translation](/images/nlp-aug-backtranslation-multi.png){: .align-center} 
 This technique was also used in the [1st place solution](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/discussion/52557) for the "Toxic Comment Classification Challenge" on Kaggle. The winner used it for both training-data augmentations as well as during test-time where the predicted probabilities for English sentence along with back-translation using three languages(French, German, Spanish) were averaged to get the final prediction.    
 
-For the implementation of back-translation, you can use TextBlob. Alternatively, you can also use Google Sheets and follow the instructions given [here](https://amitness.com/2020/02/back-translation-in-google-sheets/) to apply Google Translate for free.  
+For the implementation of back-translation, you can use TextBlob. Alternatively, you can also use Google Sheets and follow the instructions given [here](https://amitness.com/2020/02/back-translation-in-google-sheets/) to apply Google Translate for free. You can also use [MarianMT](https://amitness.com/back-translation/) for back translation.  
 
 ## 3. Text Surface Transformation
 These are simple pattern matching transformations applied using regex and was introduced by [Claude Coulombe](https://arxiv.org/abs/1812.04718) in his paper.
