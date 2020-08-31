@@ -12,18 +12,18 @@ header:
 classes: wide
 ---
 
-Keyword Extraction is one of the easiest ways to leverage text mining for providing business value. It can automatically identify the most representative terms in the document. 
+Keyword Extraction is one of the simplest ways to leverage text mining for providing business value. It can automatically identify the most representative terms in the document. 
 
-Such extracted keywords can be used for multiple applications. They can be used to summarize the underlying theme of a large document with just a few terms. They are also useful as metadata for indexing and tagging the documents. They can even be used for clustering similar documents. For example, to showcase relevant advertisements on a webpage, we could extract keywords from the webpage, find matching advertisements for these keywords, and showcase those.  
+Such extracted keywords can be used for various applications. They can be used to summarize the underlying theme of a large document with just a few terms. They are also valuable as metadata for indexing and tagging the documents. They can likewise be used for clustering similar documents. For instance, to showcase relevant advertisements on a webpage, we could extract keywords from the webpage, find matching advertisements for these keywords, and showcase those.  
 
 In this post, I will provide an overview of the general pipeline of keyword extraction and explain the working mechanism of various unsupervised algorithms for this.  
 
 ## Unsupervised Keyphrase Extraction Pipeline  
-For keyword extraction, all algorithms follow a similar pipeline as shown below. A document is preprocessed to remove less informative words like stop words, punctuation, and split into terms. Candidate keywords such as words and phrases are selected. 
+For keyword extraction, all algorithms follow a similar pipeline as shown below. A document is preprocessed to remove less informative words like stop words, punctuation, and split into terms. Candidate keywords such as words and phrases are chosen. 
 
 ![](/images/keyword-extraction-pipeline.png){:.align-center}  
 
-Then, a score is calculated for each candidate keyword using some algorithm. The highest-ranking keywords are taken and post-processing such as removing near-duplicates is applied. Finally, the algorithm returns the top N ranking keywords as output.  
+Then, a score is determined for each candidate keyword using some algorithm. The highest-ranking keywords are selected and post-processing such as removing near-duplicates is applied. Finally, the algorithm returns the top N ranking keywords as output.  
 
 ## Unsupervised Methods  
 Unsupervised algorithms for keyword extraction don't need to be trained on the corpus and don't need any pre-defined rules, dictionary, or thesaurus. They can use statistical features from the text itself and as such can be applied to large documents easily without re-training. Most of these algorithms don't need any linguistic features except for stop word lists and so can be applied to multiple languages.  
