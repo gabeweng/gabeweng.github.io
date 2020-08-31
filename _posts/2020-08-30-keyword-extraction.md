@@ -60,7 +60,7 @@ We can sort the keywords in descending order based on the counts and take the to
 ![](/images/keyword-counting-ranking.png){:.align-center}  
 
 ### Drawback of Naive Counting  
-This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document, but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
+This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
 
 ## 2. Term Frequency Inverse Document Frequency (TF-IDF)
 This method takes into account both how frequent the keyphrase is and also how rare it is across the documents. 
@@ -71,7 +71,7 @@ Let's understand how it works by going through the various steps of the pipeline
 In this step, we lowercase the text and split the document into sentences.  
 
 ### b. Candidate Generation  
-We generate 1-gram, 2-gram and 3-grams candidate phrases from each sentence such that they don't contain any punctuations. These are our list of candidate phrases.  
+We generate 1-gram, 2-gram, and 3-grams candidate phrases from each sentence such that they don't contain any punctuations. These are our list of candidate phrases.  
 
 ### c. Candidate Scoring  
 Now, for each candidate keyword "w", we calculate the TF-IDF score in the following steps.
@@ -82,7 +82,7 @@ $$
 TF(w) = count(w)
 $$
 
-Then, the inverse document frequency(IDF) is calculated by dividing the total number of documents by the number of documents that contain word "w" and taking log of that quantity.  
+Then, the inverse document frequency(IDF) is calculated by dividing the total number of documents by the number of documents that contain the word "w" and taking the log of that quantity.  
   
 $$
 IDF(W) = log(\ \frac{total\ documents}{number\ of\ docs\ containing\ word\ w}\ )
