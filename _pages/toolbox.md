@@ -449,6 +449,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
 ||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
+|streamlit|[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
 
 ### Adversarial testing  
 
