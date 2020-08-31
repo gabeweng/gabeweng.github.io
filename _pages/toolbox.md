@@ -197,7 +197,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [JamSpell](https://github.com/bakwc/JamSpell), [pyhunspell](https://github.com/blatinier/pyhunspell), [pyspellchecker](https://github.com/barrust/pyspellchecker), [cython_hunspell](https://github.com/MSeal/cython_hunspell), [hunspell-dictionaries](https://github.com/wooorm/dictionaries), [autocorrect (can add more languages)](https://github.com/phatpiglet/autocorrect), [symspellpy](https://github.com/mammothb/symspellpy), [spello (train your own spelling correction)](https://github.com/hellohaptik/spello), [contextualSpellCheck](https://github.com/R1j1t/contextualSpellCheck)|Spelling Correction|
 | | [contractions](https://github.com/kootenpv/contractions), [pycontractions](https://pypi.org/project/pycontractions/)|Contraction Mapping|
 | | [truecase](https://pypi.org/project/truecase/)|Fix casing|
-|| [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor)|Sentence Segmentation|
+|| [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor), [pysbd](https://github.com/nipunsadvilkar/pySBD)|Sentence Segmentation|
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check)|Language Detection|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
