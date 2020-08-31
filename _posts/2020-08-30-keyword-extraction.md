@@ -62,7 +62,42 @@ We can sort the keywords in descending order based on the counts and take the to
 ### Drawback of Naive Counting  
 This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document, but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
 
-## 2. Rapid Automatic Keyword Extraction (RAKE)
+## 2. Term Frequency Inverse Document Frequency (TF-IDF)
+This method takes into account both how frequent the keyphrase is and also how rare it is across the documents. 
+
+Let's understand how it works by going through the various steps of the pipeline:
+
+### a. Pre-processing  
+In this step, we lowercase the text and split the document into sentences.  
+
+### b. Candidate Generation  
+We generate 1-gram, 2-gram and 3-grams candidate phrases from each sentence such that they don't contain any punctuations. These are our list of candidate phrases.  
+
+### c. Candidate Scoring  
+Now, for each candidate keyword "w", we calculate the TF-IDF score in the following steps.
+
+First, the term frequency(TF) is calculated simply by counting the occurrence of the word.  
+
+$$
+TF(w) = count(w)
+$$
+
+Then, the inverse document frequency(IDF) is calculated by dividing the total number of documents by the number of documents that contain word "w" and taking log of that quantity.  
+  
+$$
+IDF(W) = log(\ \frac{total\ documents}{number\ of\ docs\ containing\ word\ w}\ )
+$$
+
+Finally, we get the `TF-IDF` score for a term by multiplying the two quantities.  
+
+$$
+TFIDF(w) = TF(w) * IDF(w)
+$$
+
+### d. Final Ranking  
+We can sort the keywords in descending order based on their TF-IDF scores and take the top N keywords as the output.  
+
+## 3. Rapid Automatic Keyword Extraction (RAKE)
 RAKE is a domain-independent keyword extraction method proposed in 2010. It uses word frequency and co-occurrence to identify the keywords. It is very useful for identifying relevant multi-word expressions. 
 
 ### How RAKE works
@@ -140,7 +175,7 @@ print(rake.get_ranked_phrases_with_scores())
 # [(4.0, 'deep learning'), (1.0, 'useful'), (1.0, 'subfield'), (1.0, 'ai')]
 ```
 
-## 3. Yet Another Keyword Extractor (YAKE)  
+## 4. Yet Another Keyword Extractor (YAKE)  
 YAKE is another popular keyword extraction algorithm proposed in 2018. It outperforms TF-IDF and RAKE across many datasets and went on to win the best "short paper award" at [ECIR 2018](http://ecir2018.org/ "European Conference on Information Retrieval 2018").   
 
 YAKE uses statistical features to identify and rank the most important keywords. It doesn't need any linguistic information like NER or POS tagging and thus can be used with any language. It only requires a stop word list for the language.  
