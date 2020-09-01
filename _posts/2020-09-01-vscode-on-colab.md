@@ -1,6 +1,6 @@
 ---
 title: "VSCode on Google Colab"
-date: 2020-09-01T19:44-00:00
+date: 2020-09-01T00:00-00:00
 permalink: /vscode-on-colab/
 categories:
   - colab
