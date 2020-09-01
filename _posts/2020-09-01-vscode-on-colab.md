@@ -53,7 +53,7 @@ I have described the steps in details below. After going through all the steps, 
 
 ![](/images/vscode-ctrl-shift-p.png){:.align-center}  
 
-- The Colab interface is still usable to upload and download files and mount with Google Drive. So, you get the benefits of both a notebook and a code editor.  
+- The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.  
 
 ## References
 - [Code-Server FAQs](https://github.com/cdr/code-server/blob/v3.5.0/doc/FAQ.md)
