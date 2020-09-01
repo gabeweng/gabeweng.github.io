@@ -57,6 +57,10 @@ I have described the steps in details below. After going through all the steps, 
 
 ![](/images/vscode-terminal.png){:.align-center}  
 
+- To get python code completions, you can install the Python(`ms-python`) extension from the extensions page on the left sidebar.
+
+![](/images/vscode-code-completions.png){:.align-center}  
+
 - The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.  
 
 ## References
