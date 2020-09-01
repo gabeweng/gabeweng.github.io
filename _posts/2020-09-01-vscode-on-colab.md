@@ -49,7 +49,10 @@ I have described the steps in details below. After going through all the steps, 
 ![](/images/colab-vscode.png){:.align-center}  
 
 ## Tips
-- You can use `Ctrl + Shift + P` to open a popup for various actions.
+- All the keyword shortcuts of regular VSCode works with this. For example, you can use `Ctrl + Shift + P` to open a popup for various actions.
+
+![](/images/vscode-ctrl-shift-p.png){:.align-center}  
+
 - The Colab interface is still usable to upload and download files and mount with Google Drive. So, you get the benefits of both a notebook and a code editor.  
 
 ## References
