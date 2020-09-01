@@ -53,6 +53,10 @@ I have described the steps in details below. After going through all the steps, 
 
 ![](/images/vscode-ctrl-shift-p.png){:.align-center}  
 
+- To open a terminal, you can use the shortcut ``Ctrl + Shift + ` ``.
+
+![](/images/vscode-terminal.png){:.align-center}  
+
 - The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.  
 
 ## References
