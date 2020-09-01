@@ -16,5 +16,5 @@ I currently apply Machine Learning research to industry problems at [Fusemachine
 **Interest Areas**  
 I'm interested in the paradigm of learning with limited labels ([Self-Supervised Learning](https://amitness.com/categories/#self-supervised-learning) / [Semi-Supervised Learning](https://amitness.com/categories/#semi-supervised-learning)) and [Natural Language Processing](https://amitness.com/categories/#nlp).
 
-**Get Updates**  
-You can get connected with me on [Twitter](https://twitter.com/amitness) to receive updates when I publish new posts.
+**Contact**  
+If you enjoyed the blog posts, feel free to connect with me on [Twitter](https://twitter.com/amitness) where I share new blog posts every week.
