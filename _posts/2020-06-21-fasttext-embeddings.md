@@ -178,5 +178,5 @@ Pre-trained word vectors trained on Common Crawl and Wikipedia for 157 languages
  
 ## References
 - Piotr Bojanowski et al., ["Enriching Word Vectors with Subword Information"](https://arxiv.org/abs/1607.04606)
-- Armand Joulin et al., ["Bag of Tricks for Efficient Text Classification"](https://arxiv.org/abs/1607.04606)
+- Armand Joulin et al., ["Bag of Tricks for Efficient Text Classification"](https://arxiv.org/abs/1607.01759)
 - Tomas Mikolov et al., ["Efficient Estimation of Word Representations in Vector Space"](https://arxiv.org/abs/1301.3781)
