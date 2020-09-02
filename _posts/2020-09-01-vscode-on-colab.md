@@ -11,9 +11,9 @@ header:
 classes: wide
 ---
 
-I recently discovered a way to setup VSCode on Google Colab and use it as an IDE to edit code and run experiments on the Colab VM. 
+I recently discovered a way to setup VSCode on Google Colab and use it as an editor to write code and run experiments on the Colab VM.  
 
-With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of an IDE. Here is how you can replicate my setup.  
+With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of an full-fledged code editor. Here is how you can replicate my setup.  
 
 ## Steps  
 I have described the steps in details below. After going through all the steps, please use this [colab notebook](https://colab.research.google.com/drive/1yvUy5Gn9lPjmCQH6RjD_LvUO2NE0Z7RM?usp=sharing) to try it out directly. 
@@ -61,7 +61,7 @@ I have described the steps in details below. After going through all the steps, 
 
 ![](/images/vscode-code-completions.png){:.align-center}  
 
-- The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.  
+- The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.   
 
 ## References
 - [Code-Server FAQs](https://github.com/cdr/code-server/blob/v3.5.0/doc/FAQ.md)
