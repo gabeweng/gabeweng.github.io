@@ -154,6 +154,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Find SOTA models| [sotawhat](https://sotawhat.herokuapp.com), [papers-with-code](https://paperswithcode.com/sota)||
 ||[bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)|BERT Papers|
 ||[acl-explorer](http://acl-explorer.eu-west-2.elasticbeanstalk.com/)|ACL Publications Explorer|
+||[survey-papers](https://github.com/NiuTrans/ABigSurvey)|Collection of survey papers|
 | Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub)|General|
 ||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch), [pytorchcv](https://pypi.org/project/pytorchcv/)|Pre-trained ConvNets|
 ||[pytorch-image-models](https://rwightman.github.io/pytorch-image-models/)|200+ pretrained ConvNet backbones|
