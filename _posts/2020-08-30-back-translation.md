@@ -60,7 +60,7 @@ def translate(texts, model, tokenizer, language="fr"):
     src_texts = [template(text) for text in texts]
 
     # Tokenize the texts
-    encoded = tokenizer.prepare_translation_batch(src_texts)
+    encoded = tokenizer.prepare_seq2seq_batch(src_texts)
     
     # Generate translation using model
     translated = model.generate(**encoded)
@@ -73,7 +73,7 @@ def translate(texts, model, tokenizer, language="fr"):
 
 Next, we will prepare a function to use the above `translate()` function to perform back translation.
 ```python
-def back_translate(texts, target_lang="fr", source_lang="en"):
+def back_translate(texts, source_lang="en", target_lang="fr"):
     # Translate from source to target language
     fr_texts = translate(texts, target_model, target_tokenizer, 
                          language=target_lang)
@@ -149,4 +149,4 @@ Similarly, we can also use it as an adversarial attack. Suppose we have a traini
 Thus, MarianMT is a decent free and offline alternative to Google Translate for back-translation.  
 
 ## References
-- [MarianMT - transformers 3.0.2 documentation](https://huggingface.co/transformers/model_doc/marian.html)
+- [MarianMT - transformers 3.0.2 documentation](https://huggingface.co/transformers/master/model_doc/marian.html)
