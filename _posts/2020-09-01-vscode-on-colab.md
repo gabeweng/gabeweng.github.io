@@ -11,12 +11,12 @@ header:
 classes: wide
 ---
 
-I recently discovered a way to setup VSCode on Google Colab and use it as an editor to write code and run experiments on the Colab VM.  
+I recently discovered a way to set up VSCode on Google Colab and use it as an editor to write code and run experiments on the Colab VM.  
 
-With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of an full-fledged code editor. Here is how you can replicate my setup.  
+With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of a full-fledged code editor. Here is how you can replicate my setup.  
 
 ## Steps  
-I have described the steps in details below. After going through all the steps, please use this [colab notebook](https://colab.research.google.com/drive/1yvUy5Gn9lPjmCQH6RjD_LvUO2NE0Z7RM?usp=sharing) to try it out directly. 
+I have described the steps in detail below. After going through all the steps, please use this [colab notebook](https://colab.research.google.com/drive/1yvUy5Gn9lPjmCQH6RjD_LvUO2NE0Z7RM?usp=sharing) to try it out directly. 
 
 1. First, we will install the [code-server](https://github.com/cdr/code-server) package to run VSCode editor as a web app. Copy and run the following command on colab to install `code-server`.  
 
@@ -30,7 +30,7 @@ I have described the steps in details below. After going through all the steps, 
     !pip install -qqq pyngrok
     ```
 
-3. Then, run the following following command to get a public ngrok URL. This will be the URL we will use to access VSCode. 
+3. Then, run the following command to get a public ngrok URL. This will be the URL we will use to access VSCode. 
 
     ```python
     from pyngrok import ngrok
@@ -44,7 +44,7 @@ I have described the steps in details below. After going through all the steps, 
     !nohup code-server --port 9000 --auth none &
     ```
 
-5. Now, you can access the VSCode interface at the URL you got from step 3. The interface and functionality is same as the desktop version of VSCode.  
+5. Now, you can access the VSCode interface at the URL you got from step 3. The interface and functionality is the same as the desktop version of VSCode.  
 
 ![](/images/colab-vscode.png){:.align-center}  
 
