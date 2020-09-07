@@ -128,7 +128,7 @@ print(aug2_texts)
 Here are language codes for a subset of major romance language that you can use above.  
 
 |Language|French|Spanish|Italian|Portuguese|Romanian|Catalan|Galician|Latin|
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 |**Code**|fr|es|it|pt|ro|ca|gl|la|
 
 |Language|Walloon|Occitan (post 1500)|Sardinian|Aragonese|Corsican|Romansh|
