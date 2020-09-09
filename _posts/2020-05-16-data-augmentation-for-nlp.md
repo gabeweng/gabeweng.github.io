@@ -11,28 +11,36 @@ header:
   teaser: /images/semantic-invariance-nlp.png
 ---
 
-Unlike Computer Vision where using image data augmentation is standard practice, augmentation of text data in NLP is pretty rare. This is because trivial operations for images like rotating an image a few degrees or converting it into grayscale doesn't change its semantics. This presence of semantically invariant transformation is what made augmentation an essential toolkit in Computer Vision research.
+Unlike Computer Vision where using image data augmentation is standard practice, augmentation of text data in NLP is pretty rare. Trivial operations for images such as rotating an image a few degrees or converting it into grayscale doesn't change its semantics. This presence of semantically invariant transformation made augmentation an essential toolkit in Computer Vision research.
 
 ![Challenge of Semantically Invariant Transformation in NLP](/images/semantic-invariance-nlp.png){: .align-center}
 
-I was curious if there were attempts at developing augmentation techniques for NLP and explored the existing literature. In this post, I will give an overview of the current approaches being used for text data augmentation based on my findings.    
+I was curious if there were attempts at developing augmentation techniques for NLP and explored the existing literature. In this post, I will give an overview of the current approaches for text data augmentation based on my findings.    
 
 ## NLP Data Augmentation Techniques
 ## 1. Lexical Substitution  
 This line of work tries to substitute words present in a text without changing the meaning of the sentence.
 
-- **Thesaurus-based substitution**  
-In this technique, we take a random word from the sentence and replace it with its synonym using a Thesaurus. For example, we could use the [WordNet](https://wordnet.princeton.edu/) database for English to look up the synonyms and then perform the replacement. It is a manually curated database with relations between words.
-![Thesaurus-based substitution](/images/nlp-aug-wordnet.png){: .align-center} 
+### a. Thesaurus-based substitution  
+In this technique, we take a random word from the sentence and replace it with its synonym using a Thesaurus. For example, we could use the [WordNet](https://wordnet.princeton.edu/) database for English to look up the synonyms and then perform the replacement. It is a manually curated database with relations between words.  
+
+![Thesaurus-based substitution](/images/nlp-aug-wordnet.png){: .align-center}  
+
 [Zhang et al.](https://arxiv.org/abs/1509.01626) used this technique in their 2015 paper "Character-level Convolutional Networks for Text Classification". [Mueller et al.](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12195/12023) used a similar strategy to generate additional 10K training examples for their sentence similarity model. This technique was also used by [Wei et al.](https://arxiv.org/abs/1901.11196) as one of the techniques in their pool of four random augmentations in the "Easy Data Augmentation" paper.  
-<br>
+
 For implementation, NLTK provides a programmatic [access](https://www.nltk.org/howto/wordnet.html) to WordNet. You can also use the [TextBlob API](https://textblob.readthedocs.io/en/dev/quickstart.html#wordnet-integration). Additionally, there is a database called [PPDB](http://paraphrase.org/#/download) containing millions of paraphrases that you can download and use programmatically.  
 
-- **Word-Embeddings Substitution**  
-In this approach, we take pre-trained word embeddings such as Word2Vec, GloVe, FastText, Sent2Vec, and use the nearest neighbor words in the embedding space as the replacement for some word in the sentence. [Jiao et al.](https://arxiv.org/abs/1909.10351) have used this technique with GloVe embeddings in their paper "*TinyBert*" to improve the generalization of their language model on downstream tasks. [Wang et al.](https://www.aclweb.org/anthology/D15-1306.pdf) used it to augment tweets needed to learn a topic model.  
-![Nearest Neighbors with Word Vectors](/images/nlp-aug-embedding.png){: .align-center} 
-For example, you can replace the word with the 3-most similar words and get three variations of the text.
-![Augmenting text with word embeddings](/images/nlp-aug-embedding-example.png){: .align-center} 
+### b. Word-Embeddings Substitution    
+In this approach, we take pre-trained word embeddings such as Word2Vec, GloVe, FastText, Sent2Vec, and use the nearest neighbor words in the embedding space as the replacement for some word in the sentence. 
+
+[Jiao et al.](https://arxiv.org/abs/1909.10351) used this technique with GloVe embeddings in their paper "*TinyBert*" to improve the generalization of their language model on downstream tasks. [Wang et al.](https://www.aclweb.org/anthology/D15-1306.pdf) used it to augment tweets needed to learn a topic model.  
+
+![Nearest Neighbors with Word Vectors](/images/nlp-aug-embedding.png){: .align-center}  
+
+For example, you can replace the word with the 3-most similar words and get three variations of the text.  
+
+![Augmenting text with word embeddings](/images/nlp-aug-embedding-example.png){: .align-center}  
+
 It's easy to use packages like Gensim to access pre-trained word vectors and get the nearest neighbors. For example, here we find the synonyms for the word 'awesome' using word vectors trained on tweets.  
 
 ```python
@@ -51,15 +59,18 @@ You will get back the 5 most similar words along with the cosine similarities.
  ('perfect', 0.9243415594100952)]
 ```  
   
-- **Masked Language Model**  
+### c. Masked Language Model    
 Transformer models such as BERT, ROBERTA, and ALBERT have been trained on a large amount of text using a pretext task called "Masked Language Modeling" where the model has to predict masked words based on the context.  
-<br>
-This can be used to augment some text. For example, we could use a pre-trained BERT model, mask some parts of the text, and ask the BERT model to predict the token for the mask.    
-![Masked Word Prediction](/images/nlp-aug-bert-mlm.png){: .align-center}
-Thus, we can generate variations of a text using the mask predictions. Compared to previous approaches, the generated text is more grammatically coherent as the model takes context into account when making predictions.
-![Text Augmentation using BERT](/images/nlp-aug-bert-augmentations.png){: .align-center} 
-This is easy to implement with open-source libraries such as [transformers](https://huggingface.co/transformers/) by Hugging Face. You can set the token you want to replace with `<mask>` and generate predictions.  
 
+This can be used to augment some text. For example, we could use a pre-trained BERT model, mask some parts of the text, and ask the BERT model to predict the token for the mask.    
+
+![Masked Word Prediction](/images/nlp-aug-bert-mlm.png){: .align-center}
+
+Thus, we can generate variations of a text using the mask predictions. Compared to previous approaches, the generated text is more grammatically coherent as the model takes context into account when making predictions.
+
+![Text Augmentation using BERT](/images/nlp-aug-bert-augmentations.png){: .align-center} 
+
+This is easy to implement with open-source libraries such as [transformers](https://huggingface.co/transformers/) by Hugging Face. You can set the token you want to replace with `<mask>` and generate predictions.  
 
 ```python
 from transformers import pipeline
@@ -87,12 +98,12 @@ nlp('This is <mask> cool')
 However, one caveat of this method is that deciding which part of the text to mask is not trivial. You will have to use heuristics to decide the mask, otherwise the generated text might not retain the meaning of the original sentence.  
 
 
-- **TF-IDF based word replacement**  
+### d. TF-IDF based word replacement  
 This augmentation method was proposed by [Xie et al.](https://arxiv.org/abs/1904.12848) in the Unsupervised Data Augmentation paper. The basic idea is that words that have <span style="color: #d52f2f;">low TF-IDF scores</span> are uninformative and thus can be replaced without affecting the ground-truth labels of the sentence.  
 
 ![TF-IDF based word replacement](/images/nlp-aug-tf-idf-word-replacement.png){: .align-center}  
 
-The words that replace the original word are chosen by calculating TF-IDF scores of words over the whole document and taking the lowest ones. You can refer to the code implementation for this in the original paper [here](https://github.com/google-research/uda/blob/master/text/augmentation/word_level_augment.py).  
+The words that replace the original word are chosen by calculating TF-IDF scores of words over the whole document and taking the lowest ones. You can refer to the [code implementation](https://github.com/google-research/uda/blob/master/text/augmentation/word_level_augment.py) for this in the original paper.  
 
 ## 2. Back Translation
 In this approach, we leverage machine translation to paraphrase a text while retraining the meaning. [Xie et al.](https://arxiv.org/abs/1904.12848) used this method to augment the unlabeled text and learn a semi-supervised model on IMDB dataset with only 20 labeled examples. Their model outperformed the previous state-of-the-art model trained on 25,000 labeled examples.
@@ -133,36 +144,44 @@ You can find a list of contractions for the English language [here](https://en.w
 ## 4. Random Noise Injection
 The idea of these methods is to inject noise in the text so that the model trained is robust to perturbations.  
 
-- **Spelling error injection**  
+### a. Spelling error injection  
 In this method, we add spelling errors to some random word in the sentence. These spelling errors can be added programmatically or using a mapping of common spelling errors such as [this list](https://github.com/makcedward/nlpaug/blob/master/model/spelling_en.txt) for English.  
+
 ![Spelling Error Injection](/images/nlp-aug-spelling-example.png){: .align-center} 
 
-- **QWERTY Keyboard Error Injection**    
+### b. QWERTY Keyboard Error Injection  
 This method tries to simulate common errors that happen when typing on a QWERTY layout keyboard due to keys that are very near to each other. The errors are injected based on keyboard distance.  
+
 ![QUERTY Keyboard Error Injection](/images/nlp-aug-keyboard-error-example.png){: .align-center} 
 
-- **Unigram Noising**    
+### c. Unigram Noising      
 This method has been used by [Xie et al.](https://arxiv.org/abs/1703.02573) and the [UDA](https://arxiv.org/abs/1904.12848) paper. The idea is to perform replacement with words sampled from the unigram frequency distribution. This frequency is basically how many times each word occurs in the training corpus.    
+
 ![Unigram Noising](/images/nlp-aug-unigram-noise.png){: .align-center} 
 
-- **Blank Noising**    
+### d. Blank Noising      
 This method has been proposed by [Xie et al.](https://arxiv.org/abs/1703.02573) in their paper. The idea is to replace a random word with a placeholder token. The paper uses "_" as the placeholder token. In the paper, they use it as a way to avoid overfitting on specific contexts as well as a smoothing mechanism for the language model. The technique helped improve perplexity and BLEU scores.   
+
 ![Blank Noising](/images/nlp-aug-blank-noising.png){: .align-center} 
 
-- **Sentence Shuffling**    
+### e. Sentence Shuffling      
 This is a naive technique where we shuffle sentences present in a training text to create an augmented version.  
+
 ![Sentence Shuffling](/images/nlp-aug-sentence-shuffle.png){: .align-center} 
 
-- **Random Insertion**  
+### f. Random Insertion  
 This technique was proposed by [Wei et al.](https://arxiv.org/abs/1901.11196) in their paper "Easy Data Augmentation". In this technique, we first choose a random word from the sentence that is not a stop word. Then, we find its synonym and insert that into a random position in the sentence. 
+
 ![Random Insertion](/images/nlp-aug-random-insertion.png){: .align-center} 
 
-- **Random Swap**  
+### g. Random Swap
 This technique was also proposed by [Wei et al.](https://arxiv.org/abs/1901.11196) in their paper "Easy Data Augmentation". The idea is to randomly swap any two words in the sentence.  
+
 ![Random Swap](/images/nlp-aug-random-swap.png){: .align-center} 
 
-- **Random Deletion**  
+### h. Random Deletion    
 This technique was also proposed by [Wei et al.](https://arxiv.org/abs/1901.11196) in their paper "Easy Data Augmentation".  In this, we randomly remove each word in the sentence with some probability p.  
+
 ![Random Deletion](/images/nlp-aug-random-deletion.png){: .align-center} 
 
 ## 5. Instance Crossover Augmentation  
@@ -188,12 +207,12 @@ Mixup is a simple yet effective image augmentation technique introduced by [Zhan
 
 Bringing this idea to NLP, [Guo et al.](https://arxiv.org/abs/1905.08941) modified Mixup to work with text. They propose two novel approaches for applying Mixup to text:  
 
-- **wordMixup**:  
+### a. wordMixup:  
 In this method, two random sentences in a mini-batch are taken and they are zero-padded to the same length. Then, their word embeddings are combined in some proportion. The resulting word embedding is passed to the usual flow for text classification. The cross-entropy loss is calculated for both the labels of the original text in the given proportion.  
 
 ![Mixup on Word Embeddings](/images/nlp-aug-wordmixup.png){: .align-center} 
 
-- **sentMixup**:  
+### b. sentMixup:  
 In this method, two sentences are taken and they are zero-padded to the same length. Then, their word embeddings are passed through LSTM/CNN encoder and we take the last hidden state as sentence embedding. These embeddings are combined in a certain proportion and then passed to the final classification layer. The cross-entropy loss is calculated based on both the labels of original sentences in the given proportion.  
 
 ![Mixup on Sentence Embeddings](/images/nlp-aug-sentmixup.png){: .align-center} 
@@ -201,20 +220,20 @@ In this method, two sentences are taken and they are zero-padded to the same len
 ## 8. Generative Methods
 This line of work tries to generate additional training data while preserving the class label.  
 
-- **Conditional Pre-trained Language Models**  
+### a. Conditional Pre-trained Language Models  
 This technique was first proposed by Anaby-Tavor et al. in their paper ["Not Enough Data? Deep Learning to the Rescue!](https://arxiv.org/abs/1911.03118). A recent paper from [Kumar et al.](https://arxiv.org/abs/2003.02245) evaluated this idea across multiple transformer-based pre-trained models. The problem formulation is as follows:   
 
-    - Prepend the class label to each text in your training data  
-      
-    ![Adding SEP and EOS tokens](/images/nlp-aug-generation-training.png){: .align-center} 
-    
-    - Finetune a large pre-trained language model(BERT/GPT2/BART) on this modified training data. For GPT2, the fine-tuning task is generation while for BERT, the goal would be a masked token prediction.  
-     
-    ![Finetuning GPT-2 on labels and text](/images/nlp-aug-gpt2-finetuning.png){: .align-center} 
-    
-    - Using the fine-tuned language model, new samples can be generated by using the class label and a few initial words as the prompt for the model. The paper uses 3 initial words of each training text and also generates one synthetic example for each point in the training data.  
-       
-    ![Generating new samples with GPT-2](/images/nlp-aug-gpt2.png){: .align-center} 
+- Prepend the class label to each text in your training data  
+  
+![Adding SEP and EOS tokens](/images/nlp-aug-generation-training.png){: .align-center} 
+
+- Finetune a large pre-trained language model(BERT/GPT2/BART) on this modified training data. For GPT2, the fine-tuning task is generation while for BERT, the goal would be a masked token prediction.  
+ 
+![Finetuning GPT-2 on labels and text](/images/nlp-aug-gpt2-finetuning.png){: .align-center} 
+
+- Using the fine-tuned language model, new samples can be generated by using the class label and a few initial words as the prompt for the model. The paper uses 3 initial words of each training text and also generates one synthetic example for each point in the training data.  
+   
+![Generating new samples with GPT-2](/images/nlp-aug-gpt2.png){: .align-center} 
   
 
 ## Implementation
