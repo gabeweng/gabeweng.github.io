@@ -31,6 +31,7 @@ In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colab
     ```
    
    You can also use it directly with the default port and without any password as shown below.
+   
     ```python
     from colabcode import ColabCode
     ColabCode()
