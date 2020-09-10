@@ -30,7 +30,7 @@ In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colab
     ColabCode(port=10000, password="password123")
     ```
    
-3. You will get the ngrok url in the output. Click the link and a login page will open in a new tab.
+3. You will get the ngrok URL in the output. Click the link and a login page will open in a new tab.
 
     ![](/images/colab-code-step-1.png){:.align-center}  
 
@@ -38,7 +38,7 @@ In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colab
 
     ![](/images/colab-code-step-2.png){:.align-center}  
 
-5. Now you will get an access to the editor interface and can use it to work on python files.  
+5. Now you will get access to the editor interface and can use it to work on python files.  
     
     ![](/images/colab-code-step-3.png){:.align-center}  
 
@@ -72,12 +72,12 @@ I have described the setup steps in detail below. After going through all the st
     !nohup code-server --port 9000 --auth none &
     ```
 
-5. Now, you can access the VSCode interface at the URL you got from step 3. The interface and functionality is the same as the desktop version of VSCode.  
+5. Now, you can access the VSCode interface at the URL you got from step 3. The interface and functionality are the same as the desktop version of VSCode.  
 
 ![](/images/colab-vscode.png){:.align-center}  
 
 ## Usage Tips  
-1. You can switch to the dark theme by going to the bottom-left corner of the editor, clicking the **settings icon** and then clicking '**Color Theme**'.
+1. You can switch to the dark theme by going to the bottom-left corner of the editor, clicking the **settings icon**, and then clicking '**Color Theme**'.
     
     ![](/images/colab-dark-theme-step-1.png){:.align-center} 
     
