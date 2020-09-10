@@ -16,7 +16,7 @@ I recently discovered a way to set up VSCode on Google Colab and use it as an ed
 With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of a full-fledged code editor. Here is how you can replicate my setup.  
 
 ## Approach 1: Python Package  
-In this setup, we can use the [colab-code](https://github.com/abhishekkrthakur/colabcode) package that automates all the setup steps previously written in the *Approach 2* part of this blog post. You can make a copy of this [notebook](https://colab.research.google.com/github/abhishekkrthakur/colabcode/blob/master/colab_starter.ipynb) directly to get started.  
+In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colabcode) package that automates all the manual setup steps previously described in the **Approach 2** section of this blog post. You can make a copy of this [notebook](https://colab.research.google.com/github/abhishekkrthakur/colabcode/blob/master/colab_starter.ipynb) directly to get started.  
 
 1. First, install the `colab-code` package using the following command:   
 
