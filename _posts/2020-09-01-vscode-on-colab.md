@@ -15,8 +15,36 @@ I recently discovered a way to set up VSCode on Google Colab and use it as an ed
 
 With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of a full-fledged code editor. Here is how you can replicate my setup.  
 
-## Steps  
-I have described the steps in detail below. After going through all the steps, please use this [colab notebook](https://colab.research.google.com/drive/1yvUy5Gn9lPjmCQH6RjD_LvUO2NE0Z7RM?usp=sharing) to try it out directly. 
+## Approach 1: Python Package  
+In this setup, we can use the [colab-code](https://github.com/abhishekkrthakur/colabcode) package that automates all the setup steps previously written in this blog post. You can make a copy of this [notebook](https://colab.research.google.com/github/abhishekkrthakur/colabcode/blob/master/colab_starter.ipynb) directly to get started.  
+
+1. First, install the `colab-code` package using the following command:   
+
+    ```python
+    pip install colabcode
+    ```
+2. Now, import `ColabCode` class from the package and specify the port and password.
+
+    ```python
+    from colabcode import ColabCode
+    ColabCode(port=10000, password="password123")
+    ```
+   
+3. You will get the ngrok url in the output. Click the link and the VSCode interface will open in a new tab.
+
+    ![](/images/colab-code-step-1.png){:.align-center}  
+
+4. Type the password you had set in step 2.  
+
+    ![](/images/colab-code-step-2.png){:.align-center}  
+
+5. Now you will get an access to the editor interface and can use it to work on python files.  
+    
+    ![](/images/colab-code-step-3.png){:.align-center}  
+
+
+## Approach 2: Manual Setup 
+I have described the setup steps in detail below. After going through all the steps, please use this [colab notebook](https://colab.research.google.com/drive/1yvUy5Gn9lPjmCQH6RjD_LvUO2NE0Z7RM?usp=sharing) to try it out directly. 
 
 1. First, we will install the [code-server](https://github.com/cdr/code-server) package to run VSCode editor as a web app. Copy and run the following command on colab to install `code-server`.  
 
@@ -48,7 +76,7 @@ I have described the steps in detail below. After going through all the steps, p
 
 ![](/images/colab-vscode.png){:.align-center}  
 
-## Tips
+## Usage Tips
 - All the keyword shortcuts of regular VSCode works with this. For example, you can use `Ctrl + Shift + P` to open a popup for various actions.
 
 ![](/images/vscode-ctrl-shift-p.png){:.align-center}  
