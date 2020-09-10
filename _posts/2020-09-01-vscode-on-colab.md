@@ -4,7 +4,7 @@ date: 2020-09-01T00:00-00:00
 permalink: /vscode-on-colab/
 categories:
   - colab
-excerpt: Learn how to setup and use VSCode as an IDE on Google Colab
+excerpt: Learn how to setup and use VSCode as an IDE on Google Colab and Kaggle.  
 header:
   og_image: /images/colab-vscode.png
   teaser: /images/colab-vscode.png
@@ -16,7 +16,7 @@ I recently discovered a way to set up VSCode on Google Colab and use it as an ed
 With this setup, you can still prototype in the Colab Notebook while also using VSCode for all the advantages of a full-fledged code editor. Here is how you can replicate my setup.  
 
 ## Approach 1: Python Package  
-In this setup, we can use the [colab-code](https://github.com/abhishekkrthakur/colabcode) package that automates all the setup steps previously written in this blog post. You can make a copy of this [notebook](https://colab.research.google.com/github/abhishekkrthakur/colabcode/blob/master/colab_starter.ipynb) directly to get started.  
+In this setup, we can use the [colab-code](https://github.com/abhishekkrthakur/colabcode) package that automates all the setup steps previously written in the *Approach 2* part of this blog post. You can make a copy of this [notebook](https://colab.research.google.com/github/abhishekkrthakur/colabcode/blob/master/colab_starter.ipynb) directly to get started.  
 
 1. First, install the `colab-code` package using the following command:   
 
@@ -30,7 +30,7 @@ In this setup, we can use the [colab-code](https://github.com/abhishekkrthakur/c
     ColabCode(port=10000, password="password123")
     ```
    
-3. You will get the ngrok url in the output. Click the link and the VSCode interface will open in a new tab.
+3. You will get the ngrok url in the output. Click the link and a login page will open in a new tab.
 
     ![](/images/colab-code-step-1.png){:.align-center}  
 
