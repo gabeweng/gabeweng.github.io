@@ -76,20 +76,27 @@ I have described the setup steps in detail below. After going through all the st
 
 ![](/images/colab-vscode.png){:.align-center}  
 
-## Usage Tips
-- All the keyword shortcuts of regular VSCode works with this. For example, you can use `Ctrl + Shift + P` to open a popup for various actions.
+## Usage Tips  
+1. You can switch to the dark theme by going to the bottom-left corner of the editor, clicking the **settings icon** and then clicking '**Color Theme**'.
+    
+    ![](/images/colab-dark-theme-step-1.png){:.align-center} 
+    
+    A popup will open. Select **Dark (Visual Studio)** in the options and the editor will switch to a dark theme. 
+    ![](/images/colab-dark-theme-step-2.png){:.align-center}  
 
-![](/images/vscode-ctrl-shift-p.png){:.align-center}  
+2. All the keyword shortcuts of regular VSCode works with this. For example, you can use `Ctrl + Shift + P` to open a popup for various actions.
 
-- To open a terminal, you can use the shortcut ``Ctrl + Shift + ` ``.
+    ![](/images/vscode-ctrl-shift-p.png){:.align-center}  
 
-![](/images/vscode-terminal.png){:.align-center}  
+3. To open a terminal, you can use the shortcut ``Ctrl + Shift + ` ``.
 
-- To get python code completions, you can install the Python(`ms-python`) extension from the extensions page on the left sidebar.
+    ![](/images/vscode-terminal.png){:.align-center}  
 
-![](/images/vscode-code-completions.png){:.align-center}  
+4. To get python code completions, you can install the Python(`ms-python`) extension from the extensions page on the left sidebar.
 
-- The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.   
+    ![](/images/vscode-code-completions.png){:.align-center}  
+
+5. The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.   
 
 ## References
 - [Code-Server FAQs](https://github.com/cdr/code-server/blob/v3.5.0/doc/FAQ.md)
