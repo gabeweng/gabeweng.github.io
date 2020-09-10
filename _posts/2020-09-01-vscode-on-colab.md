@@ -30,11 +30,17 @@ In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colab
     ColabCode(port=10000, password="password123")
     ```
    
+   You can also use it directly with the default port and without any password as shown below.
+    ```python
+    from colabcode import ColabCode
+    ColabCode()
+    ```
+   
 3. You will get the ngrok URL in the output. Click the link and a login page will open in a new tab.
 
     ![](/images/colab-code-step-1.png){:.align-center}  
 
-4. Type the password you had set in step 2.  
+4. Type the password you had set in step 2 and click submit. If the page gets stuck for more than 4-5 seconds, refresh the page and you should be redirected to the editor.  
 
     ![](/images/colab-code-step-2.png){:.align-center}  
 
