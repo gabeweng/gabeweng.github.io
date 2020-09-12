@@ -56,7 +56,7 @@ Next, we write a helper function to translate a batch of text given the machine 
 ```python
 def translate(texts, model, tokenizer, language="fr"):
     # Prepare the text data into appropriate format for the model
-    template = lambda text: f"{text}" if language == "en" else f"{language}<< {text}"
+    template = lambda text: f"{text}" if language == "en" else f">>{language}<< {text}"
     src_texts = [template(text) for text in texts]
 
     # Tokenize the texts
