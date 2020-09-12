@@ -161,7 +161,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [huggingface-models](https://huggingface.co/models), [huggingface-pretrained](https://huggingface.co/transformers/pretrained_models.html)|Transformer Models|
 ||[huggingface-languages](https://huggingface.co/languages)|Multi-lingual Models|
 ||[model-forge](https://models.quantumstat.com/), [The Super Duper NLP Repo](https://notebooks.quantumstat.com/)|Pre-trained NLP models by usecase|
-| AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs), [pycaret](https://pycaret.org/guide/)||
+| AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs), [pycaret](https://pycaret.org/guide/), [evalml](https://evalml.alteryx.com/en/stable/install.html)||
 ||[lazypredict](https://github.com/shankarpandala/lazypredict)|Run all sklearn models at once|
 ||[tpot](https://github.com/EpistasisLab/tpot)|Genetic AutoML|
 ||[autocat](https://autocat.apps.allenai.org/)|Auto-generate text classification models in spacy|
