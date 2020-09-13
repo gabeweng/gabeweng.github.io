@@ -51,6 +51,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Audio | [audioset](https://research.google.com/audioset/index.html)|YouTube audio with labels|
 |Graphs| [Social Networks (Github, Facebook, Reddit)](https://github.com/benedekrozemberczki/datasets)||
 |Handwriting| [iam-handwriting](http://www.fki.inf.unibe.ch/databases/iam-on-line-handwriting-database)||
+||[text_renderer](https://github.com/oh-my-ocr/text_renderer)|Generate synthetic OCR text|
 
 ### Importing Data  
 
