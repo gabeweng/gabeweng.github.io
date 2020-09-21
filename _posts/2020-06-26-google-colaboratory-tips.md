@@ -69,6 +69,7 @@ Similar to an IDE, you can go to a class definition by pressing `Ctrl` and then 
 The Google Colab team provides an official chrome extension to open notebooks on GitHub directly on colab. You can install it from [here](https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo).
 
 After installation, click the colab icon on any GitHub notebook to open it directly.  
+ 
 ![Extension for opening github notebook in colab](/images/colab-from-github.png){: .align-center}  
 
 Alternatively, you can also manually open any GitHub notebook by replacing `github.com` with `colab.research.google.com/github`.
@@ -76,6 +77,13 @@ Alternatively, you can also manually open any GitHub notebook by replacing `gith
 
 to
 > https://**colab.research.google.com/github**/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb
+
+An even easier way is to replace `github.com` with `githubtocolab.com`. It will redirect you to a colab notebook.  
+> https://**github.com**/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb
+
+to
+> https://**githubtocolab.com**/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb
+
 
 ## 7. Run Flask apps from Colab  
 With a library called [flask-ngrok](https://github.com/gstaff/flask-ngrok), you can easily expose a Flask web app running on colab to demo prototypes. First, you need to install `flask` and `flask-ngrok`.
