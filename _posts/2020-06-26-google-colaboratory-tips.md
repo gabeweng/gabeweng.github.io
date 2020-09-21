@@ -244,6 +244,12 @@ You can run javascript code by using the `%%javascript` magic command.
 ![](/images/colab-javascript.png){:.align-center}  
 
 
+## 20. Run VSCode on Colab  
+You can run a full-fledged VSCode editor on Colab by following the method I have explained in another [article](https://amitness.com/vscode-on-colab/).
+
+![](/images/colab-code-step-3.png){:.align-center}  
+
+
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
 - Gal Oshri, ["What's new in TensorBoard (TF Dev Summit '19)"](https://www.youtube.com/watch?v=xM8sO33x_OU)
