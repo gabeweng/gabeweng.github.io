@@ -12,7 +12,7 @@ header:
 
 Colab is one of the best products to come from Google. It has made GPUs freely accessible to learners and practitioners like me who otherwise wouldn't be able to afford a high-end GPU.  
 
-While the interface is very easy to use, there are many lesser-known and undocumented features in colab. In this post, I will share those features that I've discovered from their official talks and basic usage.    
+While the interface is very easy to use, there are many lesser-known and undocumented features in colab. In this post, I will share those features that I've discovered from basic usage and their official talks.    
 
 ## 1. Scratchpad Notebook
 It's a pretty common scenario that we have a bunch of cluttered untitled notebooks created when we try out temporary stuff on colab.  
