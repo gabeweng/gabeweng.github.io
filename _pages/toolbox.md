@@ -106,7 +106,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
 | Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
 | Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
-| Numerical data| [numerizer](https://github.com/jaidevd/numerizer)|Parse natural language number|
+| Numerical data| [numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
 | Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
 | Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
 | Parsing| [pyparsing](https://pyparsing-docs.readthedocs.io/en/latest/index.html), [parse](https://pypi.org/project/parse/)||
