@@ -212,6 +212,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
+|Spacy Extensions|[spacy-pattern-builder](https://github.com/cyclecycle/spacy-pattern-builder)|Generate dependency matcher patterns automatically|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
 | Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
