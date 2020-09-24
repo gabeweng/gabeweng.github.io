@@ -320,6 +320,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Libraries| [xlearn](https://github.com/aksnzhy/xlearn), [DeepCTR](https://github.com/shenweichen/DeepCTR)| Factorization machines (FM), and field-aware factorization machines (FFM)|
 ||[lightfm](https://github.com/lyst/lightfm), [spotlight](https://github.com/maciejkula/spotlight)|Popular Recsys algos|
+||[tensorflow_recommenders](https://www.tensorflow.org/recommenders)|Recommendation System in Tensorflow|
 | Collaborative Filtering| [implicit](https://github.com/benfred/implicit)||
 | Scikit-learn like API| [surprise](https://github.com/NicolasHug/Surprise)||
 | Recommendation System in Pytorch| [CaseRecommender](https://github.com/caserec/CaseRecommender)||
