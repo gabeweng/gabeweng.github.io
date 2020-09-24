@@ -242,6 +242,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [googletrans](https://pypi.org/project/googletrans/), [word2word](https://github.com/Kyubyong/word2word), [translate-python](https://github.com/terryyin/translate-python), [deep_translator](https://github.com/nidhaloff/deep_translator)|Translation libraries|
 ||[translators](https://pypi.org/project/translators)|Free calls to multiple translation APIs|
 | Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
+||[doc2query](https://github.com/castorini/docTTTTTquery)|Summarize document with queries|
 |Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
 | Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine)||
 || [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
