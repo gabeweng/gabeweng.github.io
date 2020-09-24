@@ -464,6 +464,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
 ||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
 |streamlit|[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
+||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
 
 ### Adversarial testing  
 
