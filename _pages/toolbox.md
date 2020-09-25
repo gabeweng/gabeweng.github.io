@@ -291,6 +291,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
 | Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn)||
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
+||[Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)|Face Emotion|
 | GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html)||
 |Image Inpainting|[GAN Image Inpainting](https://github.com/renatoviolin/GAN-image-inpainting)||
 | Face swapping| [faceit](https://github.com/goberoi/faceit), [faceit-live](https://github.com/alew3/faceit_live), [avatarify](https://github.com/alievk/avatarify)||
