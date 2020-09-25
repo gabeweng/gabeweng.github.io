@@ -140,12 +140,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [skits](https://github.com/ethanrosenthal/skits)|Transformation for time-series data|
 | | [catch22](https://github.com/chlubba/catch22)|Pre-built features for time-series data|
 | DAG based dataset generation| [DFFML](https://intel.github.io/dffml/usage/integration.html)||
-
-### Dimensionality reduction  
-
-|Category|Tool|Remarks|
-|---|---|---|
-| Dimensionality reduction| [fbpca](https://github.com/facebook/fbpca), [fitsne](https://github.com/KlugerLab/FIt-SNE)||
+| Dimensionality reduction| [fbpca](https://github.com/facebook/fbpca), [fitsne](https://github.com/KlugerLab/FIt-SNE), [trimap](https://github.com/eamid/trimap)||
 
 ## Phase: Modeling
 
