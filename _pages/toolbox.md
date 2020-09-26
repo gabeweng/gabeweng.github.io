@@ -211,6 +211,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Spacy Extensions|[spacy-pattern-builder](https://github.com/cyclecycle/spacy-pattern-builder)|Generate dependency matcher patterns automatically|
 ||[spacy_grammar](https://github.com/tokestermw/spacy_grammar)|Rule-based grammar error detection|
 ||[role-pattern-builder](https://github.com/cyclecycle/role-pattern-nlp)|Pattern based SRL|
+||[textpipeliner](https://github.com/krzysiekfonal/textpipeliner)|Extract RDF triples|
 ||[tenseflow](https://github.com/bendichter/tenseflow)|Convert tense of sentence|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
