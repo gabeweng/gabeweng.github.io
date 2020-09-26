@@ -478,6 +478,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 | Decorators| [retrying (retry some function)](https://pypi.org/project/retrying/)||
+| Subprocess|[delegator.py](https://github.com/amitt001/delegator.py)||
 | bloom filter| [python-bloomfilter](https://github.com/jaybaird/python-bloomfilter)||
 | Run python libraries in sandbox| [pipx](https://github.com/pipxproject/pipx)||
 | Pretty print tables in CLI| [tabulate](https://pypi.org/project/tabulate/)||
