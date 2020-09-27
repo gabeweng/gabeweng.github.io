@@ -162,8 +162,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[lazypredict](https://github.com/shankarpandala/lazypredict)|Run all sklearn models at once|
 ||[tpot](https://github.com/EpistasisLab/tpot)|Genetic AutoML|
 ||[autocat](https://autocat.apps.allenai.org/)|Auto-generate text classification models in spacy|
-| Autogenerate ML code| [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://uber.github.io/ludwig/)||
-| ML from command line (or Python or HTTP)| [DFFML](https://intel.github.io/dffml/)||
+|| [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://uber.github.io/ludwig/)|Autogenerate ML code|
 | Gradient Boosting| [catboost](https://catboost.ai/docs/concepts/about.html), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
 ||[lightgbm](https://github.com/Microsoft/LightGBM), [thunderbm](https://github.com/Xtra-Computing/thundergbm)|GPU Capable|
 | Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
