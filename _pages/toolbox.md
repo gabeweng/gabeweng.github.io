@@ -187,7 +187,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [camphr (spacy plugin for transformers, elmo, udify)](https://github.com/PKSHATechnology-Research/camphr/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/)||
+| Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/)||
 | | [headliner](https://github.com/as-ideas/headliner), [txt2txt](https://github.com/bedapudi6788/txt2txt)|Sequence to sequence models|
 | Wrappers| [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)||
 | | [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
@@ -213,6 +213,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[role-pattern-builder](https://github.com/cyclecycle/role-pattern-nlp)|Pattern based SRL|
 ||[textpipeliner](https://github.com/krzysiekfonal/textpipeliner)|Extract RDF triples|
 ||[tenseflow](https://github.com/bendichter/tenseflow)|Convert tense of sentence|
+||[camphr](https://github.com/PKSHATechnology-Research/camphr/)|Wrapper to transformers, elmo, udify|
+||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
 | Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
