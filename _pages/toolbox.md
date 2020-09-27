@@ -69,7 +69,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [pygooglenews](https://github.com/kotartemiy/pygooglenews)|Google News|
 | Lyrics| [lyricsgenius](https://github.com/johnwmillr/LyricsGenius)||
 | Email| [talon](https://github.com/mailgun/talon)||
-| PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber)||
+| PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber), [pymupdf](https://pymupdf.readthedocs.io/en/latest/intro.html)||
 | Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
 | Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
 | Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
