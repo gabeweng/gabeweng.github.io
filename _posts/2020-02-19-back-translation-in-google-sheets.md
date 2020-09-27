@@ -3,6 +3,7 @@ title: "Back Translation for Text Augmentation with Google Sheets"
 date: 2020-02-19T16:13:30-04:00
 categories:
   - nlp
+  - data augmentation
 classes: wide
 excerpt: Learn how to augment existing labeled text data for free using Google Sheets.
 header:
