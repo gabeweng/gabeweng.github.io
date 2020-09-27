@@ -113,6 +113,16 @@ This formulation was used in the [DeepMoji](https://arxiv.org/abs/1708.00524) pa
 
 Authors of [DeepMoji](https://arxiv.org/abs/1708.00524) used this concept to perform pre-training of a model on 1.2 billion tweets and then fine-tuned it on emotion-related downstream tasks like sentiment analysis, hate speech detection and insult detection.  
 
+## 11. Gap Sentence Generation  
+This pretext task was proposed in the [PEGASUS](https://arxiv.org/abs/1912.08777) paper. The pre-training task was specifically designed to improve performance on the downstream task of abstractive summarization.  
+
+The idea is to take a input document and mask the important sentences. Then, the model has to generate the missing sentences concatenated together.  
+
+![](/images/pegasus-pretext-task.gif){:.align-center}  
+
+Source: [Google AI Blog](https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.html)
+{: .text-center}
+
 ## References
 - Ryan Kiros, et al. ["Skip-Thought Vectors"](https://arxiv.org/abs/1506.06726)
 - Tomas Mikolov, et al. ["Efficient Estimation of Word Representations in Vector Space"](https://arxiv.org/abs/1301.3781)
