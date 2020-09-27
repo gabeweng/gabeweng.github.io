@@ -195,6 +195,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [contractions](https://github.com/kootenpv/contractions), [pycontractions](https://pypi.org/project/pycontractions/)|Contraction Mapping|
 | | [truecase](https://pypi.org/project/truecase/)|Fix casing|
 || [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor), [pysbd](https://github.com/nipunsadvilkar/pySBD)|Sentence Segmentation|
+||[wordninja](https://github.com/keredson/wordninja)|Probabilistic Word Segmentation|
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check)|Language Detection|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
