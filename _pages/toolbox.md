@@ -295,7 +295,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn)||
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
 ||[Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)|Face Emotion|
-| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html)||
+| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](http://imaginaire.cc/docs)||
 |Image Inpainting|[GAN Image Inpainting](https://github.com/renatoviolin/GAN-image-inpainting)||
 | Face swapping| [faceit](https://github.com/goberoi/faceit), [faceit-live](https://github.com/alew3/faceit_live), [avatarify](https://github.com/alievk/avatarify)||
 | Video summarization| [videodigest](https://github.com/agermanidis/videodigest)||
