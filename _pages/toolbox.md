@@ -24,7 +24,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [prodigy](https://prodi.gy/)|Paid|
 ||[chatio](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
 |Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
-|General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html)|Label in notebooks|
+|General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html), [pigeon](https://github.com/agermanidis/pigeon)|Annotate in notebooks|
 || [labelstudio](https://labelstud.io/)|Open Source Data Labeling Tool|
 
 ### Data Collection  
