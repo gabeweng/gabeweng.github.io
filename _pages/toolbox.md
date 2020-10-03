@@ -197,7 +197,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor), [pysbd](https://github.com/nipunsadvilkar/pySBD)|Sentence Segmentation|
 ||[wordninja](https://github.com/keredson/wordninja)|Probabilistic Word Segmentation|
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
-| | [language-check](https://github.com/myint/language-check)|Language Detection|
+| | [language-check](https://github.com/myint/language-check), [langdetect](https://github.com/Mimino666/langdetect), [polyglot](https://polyglot.readthedocs.io/en/latest/Detection.html), [pycld2](https://github.com/aboSamoor/pycld2), [cld2](https://github.com/CLD2Owners/cld2)|Language Detection|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
 | | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
