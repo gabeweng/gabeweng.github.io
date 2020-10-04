@@ -106,7 +106,7 @@ The pre-trained AlexNet is then finetuned on various benchmark datasets.
 
 ### e. Results  
 Using deeper network like VGG-16 leads to better representation and pseudo-labels and also better results in benchmark tasks.
-#### 1. Transfer Learning  
+#### 1. Transfer Learning on PASCAL VOC
 The authors tested their method on object classification and detection on PASCAL VOC 2007 dataset and semantic segmentation on PASCAL VOC 2012 dataset. 
 
 **Insights**:  
@@ -121,12 +121,12 @@ The authors tested their method on object classification and detection on PASCAL
 |Jigsaw++|yes|AlexNet|AlexNet|69.9|55.0|55.8|40.0|
 |Jigsaw++|yes|VGG-16|AlexNet|**72.5**|**56.5**|**57.2**|**42.6**|
 
-#### 2. Linear Classification  
+#### 2. Linear Classification on ImageNet
 In this, a linear classifier is trained on features extracted from AlexNet at different convolutional layers. For ImageNet, using VGG-16 and transfering knowledge to AlexNet using clustering gives a substantial boost of 2%.
 
 ![](/images/kt-imagenet-performance.png){:.align-center}  
 
-#### 3. Non-linear classification
+#### 3. Non-linear classification on ImageNet
 For a non-linear classifier trained on frozen features from various convolutional layers, the approach of using VGG-16 and transferring knowledge to AlexNet using clustering gives the best performance on ImageNet.  
 ![](/images/kt-nonlinear-result.png){:.align-center}  
 
