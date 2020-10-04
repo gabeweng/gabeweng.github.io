@@ -8,7 +8,7 @@ classes: wide
 excerpt: A general framework to transfer knowledge from deep self-supervised models to shallow task-specific models
 header:
   og_image: /images/kt-step-3.png
-  teaser: /images/kt-step-3.png
+  teaser: "/images/kt-step-3.png"
 ---
 
 Self Supervised Learning is an interesting research area where the goal is to learn rich representations from unlabeled data without any human annotation. 
