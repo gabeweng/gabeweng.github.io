@@ -32,7 +32,7 @@ The dataset has a column containing the text and a label indicating whether it's
  
 ![](/images/projector-head-5.png){:.align-center}  
 
-We will introduce label noise into our dataset by corrupting five of the responses with random text. It will act as an outlier for our example.  
+We will introduce noise into our dataset by corrupting five of the responses with random text. It will act as an outlier for our example.  
 ```python
 df.loc[[10, 27, 54, 72, 91], 'text'] = 'askgkn askngk kagkasng'
 ```
