@@ -92,6 +92,8 @@ To evaluate the idea quantitatively, the authors set up an experiment as describ
 ### a. Increase complexity of pretext task (Jigsaw++)
 To evaluate their method, the authors took an old puzzle-like pretext task called "Jigsaw" where we need to predict the permutation that was used to randomly shuffle a 3*3 square grid of image.
 
+![](/images/kt-jigsaw-plus-plus.png){:.align-center}  
+
 They extended the task by randomly replacing 0 to 2 number of tiles with tile from another random image at some random locations. This increases the difficulty as now we need to solve the problem using only the remaining patches. The new pretext task is called "Jigsaw++".
 
 ### b. Use a deeper network to solve pretext task
