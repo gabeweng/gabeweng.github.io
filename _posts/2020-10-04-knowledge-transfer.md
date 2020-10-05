@@ -15,20 +15,22 @@ Self Supervised Learning is an interesting research area where the goal is to le
 
 This can be achieved by creatively formulating a problem such that you use parts of the data itself as labels and try to predict that. Such formulations are called pretext tasks.
 
+For example, you can setup a pretext task to predict the color version of image given the grayscale version. Similarly, you could remove a part of the image and train a model to predict the part from the surrounding. There are many such [pretext tasks](https://amitness.com/2020/02/illustrated-self-supervised-learning/).
+
 ![](/images/kt-pretext-tasks.png){:.align-center}  
 
 By pre-training on the pretext task, the hope is that the model will learn useful representations. Then, we can finetune the model to downstream tasks such as image classification, object detection, and semantic segmentation with only a small set of labeled training data.  
 
 ## Challenge of evaluating representations  
-We learned how pretext tasks can give us representations. But, this poses a question:
+So pretext tasks can help us learn representations. But, this poses a question:
 > How to determine how good a learned representation is?
 
 Currently, the standard way to gauge the representations is to evaluate it on a set of standard tasks and benchmark datasets.
-- Linear classification on ImageNet using frozen features
-- Image Classification using only 1% to 10% of labels on ImageNet
-- Transfer Learning: Object Detection on PASCAL VOC
+- **Linear classification**: ImageNet classification using frozen features
+- **Low Data Regime**: ImageNet Classification using only 1% to 10% of data
+- **Transfer Learning**: Object Classification, Object Detection and Semantic Segmentation on PASCAL VOC
 
-We can see that the above evaluation method requires us to use the same model architecture for both the pretext task and the target task.  
+We can see that the above evaluation methods requires us to use the same model architecture for both the pretext task and the target task.  
 
 ![](/images/kt-pretext-target-challenge.png){:.align-center}  
 
@@ -38,6 +40,8 @@ This poses some interesting challenges:
     But, for downstream tasks, we would prefer shallow models(e.g. AlexNet) for actual applications. Thus, we currently have to consider this limitation when designing the pretext task.  
 
 2. It's harder to fairly compare which pre-text task is better if some methods used simpler architecture while other methods used deeper architecture.
+
+3. We can't compare the representations learned from pretext tasks to handcrafted features such as HOG.
 
 ## Knowledge Transfer
 Noroozi et al. proposed a simple idea to tackle this issue in their 2018 paper ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385).  
@@ -114,10 +118,17 @@ Using a deeper network like VGG-16 leads to better representation and pseudo-lab
 #### 1. Transfer Learning on PASCAL VOC
 The authors tested their method on object classification and detection on PASCAL VOC 2007 dataset and semantic segmentation on PASCAL VOC 2012 dataset. 
 
-**Insights**:  
-- Switching to a difficult task Jigsaw++ boost performance than Jigsaw.
-- Knowledge transfer doesn't have a significant impact when using the same architecture AlexNet to solve both Jigsaw++ and downstream tasks.
-- Training Jigsaw++ with VGG16 and using AlexNet to predict cluster gives the best performance.
+<div class="notice--success">
+    <h4 class="no_toc">Insights</h4>
+    
+<ul>
+  <li>Training Jigsaw++ with VGG16 and using AlexNet to predict cluster gives the best performance.</li>
+  <li>Switching to a challenging pretext task "Jigsaw++" improves performance than "Jigsaw".</li>
+  <li>Knowledge transfer doesn't have a significant impact when using the same architecture AlexNet in both Jigsaw++ and downstream tasks.</li>
+</ul>
+
+</div>
+
 
 |Task|Clustering|Pre-text architecture|Downstream arch.|Classification|Detection(SS)|Detection(MS)|Segmentation|
 |---|---|---|---|---|---|---|---|
@@ -132,7 +143,8 @@ In this, a linear classifier is trained on features extracted from AlexNet at di
 ![](/images/kt-imagenet-performance.png){:.align-center}  
 
 #### 3. Non-linear classification on ImageNet
-For a non-linear classifier trained on frozen features from various convolutional layers, the approach of using VGG-16 and transferring knowledge to AlexNet using clustering gives the best performance on ImageNet.  
+For a non-linear classifier, using VGG-16 and transferring knowledge to AlexNet using clustering gives the best performance on ImageNet.  
+
 ![](/images/kt-nonlinear-result.png){:.align-center}  
 
 
