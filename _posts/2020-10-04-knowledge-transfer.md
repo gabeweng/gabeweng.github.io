@@ -99,7 +99,7 @@ Figure: Re-training on pseudo-labels ([Source](https://arxiv.org/abs/1805.00385)
 ## Advantage of Knowledge Transfer  
 We saw how by clustering the features and then using pseudo-labels, we can bring the knowledge from any pretext task representations into a common reference model like AlexNet. 
 
-As such, we can now easily compare different pretext task even if they are trained using different architectures and on different data domains.
+As such, we can now easily compare different pretext task even if they are trained using different architectures and on different data domains. This also allows us to improve self-supervised methods by using deep models and challenging pretext tasks.  
 
 ## How well does this framework work?
 To evaluate the idea quantitatively, the authors set up an experiment as described below:
@@ -164,7 +164,7 @@ For a non-linear classifier, using VGG-16 and transferring knowledge to AlexNet 
 
 ![](/images/kt-nonlinear-result.png){:.align-center}  
 
-## Insights from Paper
+## Additional Insights from Paper
 #### 1. How does number of clusters affect the performance?
 The network is not significantly affected by the number of clusters. The authors tested AlexNet trained on pseudo-labels from different number of clusters on task on object detection.
 
@@ -172,6 +172,9 @@ The network is not significantly affected by the number of clusters. The authors
 
 #### 2. How is this different from Knowledge Distillation?
 The idea of knowledge transfer in this paper is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to target model. Unlike distillation, we don't do any regression to the exact output of teacher.  
+
+## Conclusion
+Thus, Knowledge Transfer is a simple and efficient way to map representations from deep to shallow models.   
 
 ## References
 - Mehdi Noroozi et al., ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385)
