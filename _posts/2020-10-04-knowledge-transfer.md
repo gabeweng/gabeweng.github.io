@@ -35,12 +35,13 @@ We can see that the above evaluation method requires us to use the same model ar
 This poses some interesting challenges:
 1. For the pretext task, our goal is to learn on a large-scale unlabeled dataset and thus deeper models(e.g. ResNet) would help us learn better representations. 
 
-    But, for downstream tasks, we would prefer shallow models(e.g. AlexNet) for actual applications. This limits our ability to use large scale datasets as we have to consider the final task into account as well.  
+    But, for downstream tasks, we would prefer shallow models(e.g. AlexNet) for actual applications. Thus, we currently have to consider this limitation when designing the pretext task.  
 
 2. It's harder to fairly compare which pre-text task is better if some methods used simpler architecture while other methods used deeper architecture.
 
 ## Knowledge Transfer
-Noroozi et al. proposed a simple idea to tackle this issue in their paper ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385).  
+Noroozi et al. proposed a simple idea to tackle this issue in their 2018 paper ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385).  
+
 
 ### Intuition  
 The authors observed that in a good representation space, semantically similar data points should be close together.  
