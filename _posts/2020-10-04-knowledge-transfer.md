@@ -103,6 +103,10 @@ Image Modified from [Paper](https://arxiv.org/abs/1805.00385)
 
 They extended the task by randomly replacing 0 to 2 number of tiles with tile from another random image at some random locations. This increases the difficulty as now we need to solve the problem using only the remaining patches. The new pretext task is called "Jigsaw++".
 
+![](/images/kt-jigsaw-plus-plus-goal.png){:.align-center}  
+Image Modified from [Paper](https://arxiv.org/abs/1805.00385)
+{: .text-center}
+
 ### b. Use a deeper network to solve pretext task
 The authors used VGG-16 to solve the pretext task and learn representations. As VGG-16 has increased capacity, it can better handle the increased complexity of the "Jigsaw++" task and thus extract better representation.
 
