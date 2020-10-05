@@ -15,7 +15,7 @@ Self Supervised Learning is an interesting research area where the goal is to le
 
 This can be achieved by creatively formulating a problem such that you use parts of the data itself as labels and try to predict that. Such formulations are called pretext tasks.
 
-For example, you can setup a pretext task to predict the color version of image given the grayscale version. Similarly, you could remove a part of the image and train a model to predict the part from the surrounding. There are many such [pretext tasks](https://amitness.com/2020/02/illustrated-self-supervised-learning/).
+For example, you can setup a pretext task to predict the color version of the image given the grayscale version. Similarly, you could remove a part of the image and train a model to predict the part from the surrounding. There are many such [pretext tasks](https://amitness.com/2020/02/illustrated-self-supervised-learning/).
 
 ![](/images/kt-pretext-tasks.png){:.align-center}  
 
@@ -30,7 +30,7 @@ Currently, the standard way to gauge the representations is to evaluate it on a 
 - **Low Data Regime**: ImageNet Classification using only 1% to 10% of data
 - **Transfer Learning**: Object Classification, Object Detection and Semantic Segmentation on PASCAL VOC
 
-We can see that the above evaluation methods requires us to use the same model architecture for both the pretext task and the target task.  
+We can see that the above evaluation methods require us to use the same model architecture for both the pretext task and the target task.  
 
 ![](/images/kt-pretext-target-challenge.png){:.align-center}  
 
@@ -43,8 +43,12 @@ This poses some interesting challenges:
 
 3. We can't compare the representations learned from pretext tasks to handcrafted features such as HOG.
 
+4. We may want to exploit several data domains such as sound, text, and videos in the pretext task but the target task may limit our design choices.  
+
+5. Model trained on pretext task may learn extra knowledge that is not useful for generic visual recognition. Currently, the final task-specific layers are ignored and weights or features only up to certain convolutional layers are taken.  
+
 ## Knowledge Transfer
-Noroozi et al. proposed a simple idea to tackle this issue in their 2018 paper ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385).  
+Noroozi et al. proposed a simple idea to tackle these issues in their 2018 paper ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385).  
 
 
 ### Intuition  
@@ -99,7 +103,7 @@ Figure: Re-training on pseudo-labels ([Source](https://arxiv.org/abs/1805.00385)
 ## Advantage of Knowledge Transfer  
 We saw how by clustering the features and then using pseudo-labels, we can bring the knowledge from any pretext task representations into a common reference model like AlexNet. 
 
-As such, we can now easily compare different pretext task even if they are trained using different architectures and on different data domains. This also allows us to improve self-supervised methods by using deep models and challenging pretext tasks.  
+As such, we can now easily compare different pretext tasks even if they are trained using different architectures and on different data domains. This also allows us to improve self-supervised methods by using deep models and challenging pretext tasks.  
 
 ## How well does this framework work?
 To evaluate the idea quantitatively, the authors set up an experiment as described below:
@@ -126,7 +130,7 @@ The authors used VGG-16 to solve the pretext task and learn representations. As 
 The representations from VGG-16 are clustered and cluster centers are converted to pseudo-labels. Then, AlexNet is trained to classify the pseudo-labels.
 
 ### d. Finetune AlexNet on Evaluation datasets
-For downstream tasks, the conv layers for the AlexNet model are initialized with weights from pseudo-label classification and the fully connected layers were randomly initialized.
+For downstream tasks, the convolutional layers for the AlexNet model are initialized with weights from pseudo-label classification and the fully connected layers were randomly initialized.
 The pre-trained AlexNet is then finetuned on various benchmark datasets.
 
 ### e. Results  
@@ -165,17 +169,16 @@ For a non-linear classifier, using VGG-16 and transferring knowledge to AlexNet 
 ![](/images/kt-nonlinear-result.png){:.align-center}  
 
 ## Additional Insights from Paper
-#### 1. How does number of clusters affect the performance?
-The network is not significantly affected by the number of clusters. The authors tested AlexNet trained on pseudo-labels from different number of clusters on task on object detection.
+#### 1. How does the number of clusters affect the performance?
+The network is not significantly affected by the number of clusters. The authors tested AlexNet trained on pseudo-labels from a different number of clusters on the task of object detection.
 
 ![](/images/kt-impact-of-cluster-numbers.png){:.align-center}  
 
 #### 2. How is this different from Knowledge Distillation?
-The idea of knowledge transfer in this paper is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to target model. Unlike distillation, we don't do any regression to the exact output of teacher.  
+The idea of knowledge transfer in this paper is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to the target model. Unlike distillation, we don't do any regression to the exact output of the teacher.  
 
 ## Conclusion
 Thus, Knowledge Transfer is a simple and efficient way to map representations from deep to shallow models.   
-
 ## References
 - Mehdi Noroozi et al., ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385)
 - Mehdi Noroozi et al., ["Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles"](https://arxiv.org/abs/1603.09246)
