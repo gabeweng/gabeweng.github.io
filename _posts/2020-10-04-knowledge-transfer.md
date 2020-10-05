@@ -59,16 +59,21 @@ Thus, with pre-text tasks in self-supervised learning, the objective is implicit
 ## General Framework  
 The authors propose a novel framework to transfer knowledge from a deep self-supervised model to a separate shallow downstream model. You can use different model architectures for the pretext task and downstream task.  
 
-The end-to-end process is as follows:
+**Key Idea:**  
+   
+> Cluster features from pretext task and assign cluster centers as pseudo-labels for unlabeled images. Then, re-train a small network with target task architecture on pseudo-labels to predict pseudo-labels and learn a novel representation.
 
-#### 1. Pre-text task:  
+
+The end-to-end process is described below:
+
+#### 1. Pretext task  
 Here we choose some deep network architecture and train it on some pretext task of our choice on some dataset. We can take features from some intermediate layer after the model is trained.  
 
 ![](/images/kt-step-1.png){:.align-center}  
 Figure: Training on Pre-text Task ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
-#### 2. **Clustering**:  
+#### 2. K-means Clustering
 For all the unlabeled images in the dataset, we compute the feature vectors from the pretext task model. Then, we run K-means clustering to group semantically similar images. The idea is that the cluster centers will be aligned with categories in ImageNet.
 
 ![](/images/kt-step-2.png){:.align-center}  
@@ -91,6 +96,11 @@ We take the model architecture that will be used for downstream tasks and train 
 Figure: Re-training on pseudo-labels ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
+## Advantage of Knowledge Transfer  
+We saw how by clustering the features and then using pseudo-labels, we can bring the knowledge from any pretext task representations into a common reference model like AlexNet. 
+
+As such, we can now easily compare different pretext task even if they are trained using different architectures and on different data domains.
+
 ## How well does this framework work?
 To evaluate the idea quantitatively, the authors set up an experiment as described below:
 
@@ -107,6 +117,8 @@ They extended the task by randomly replacing 0 to 2 number of tiles with tile fr
 Image Modified from [Paper](https://arxiv.org/abs/1805.00385)
 {: .text-center}
 
+In the paper, they use 701 total permutations which had a minimum hamming distance of 3. They apply mean and standard deviation normalization at each image tile independently. They also make images gray-scale 70% of the time to prevent the network from cheating with low-level statistics.  
+
 ### b. Use a deeper network to solve pretext task
 The authors used VGG-16 to solve the pretext task and learn representations. As VGG-16 has increased capacity, it can better handle the increased complexity of the "Jigsaw++" task and thus extract better representation.
 
@@ -118,7 +130,8 @@ For downstream tasks, the conv layers for the AlexNet model are initialized with
 The pre-trained AlexNet is then finetuned on various benchmark datasets.
 
 ### e. Results  
-Using a deeper network like VGG-16 leads to better representation and pseudo-labels and also better results in benchmark tasks.
+Using a deeper network like VGG-16 leads to better representation and pseudo-labels and also better results in benchmark tasks. It got state of the art results on several benchmarks in 2018 and reduced the gap between supervised and self-supervised methods further.  
+
 #### 1. Transfer Learning on PASCAL VOC
 The authors tested their method on object classification and detection on PASCAL VOC 2007 dataset and semantic segmentation on PASCAL VOC 2012 dataset. 
 
@@ -151,7 +164,14 @@ For a non-linear classifier, using VGG-16 and transferring knowledge to AlexNet 
 
 ![](/images/kt-nonlinear-result.png){:.align-center}  
 
+## Insights from Paper
+#### 1. How does number of clusters affect the performance?
+The network is not significantly affected by the number of clusters. The authors tested AlexNet trained on pseudo-labels from different number of clusters on task on object detection.
 
+![](/images/kt-impact-of-cluster-numbers.png){:.align-center}  
+
+#### 2. How is this different from Knowledge Distillation?
+The idea of knowledge transfer in this paper is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to target model. Unlike distillation, we don't do any regression to the exact output of teacher.  
 
 ## References
 - Mehdi Noroozi et al., ["Boosting Self-Supervised Learning via Knowledge Transfer"](https://arxiv.org/abs/1805.00385)
