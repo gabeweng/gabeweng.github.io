@@ -449,7 +449,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[fastapi](https://fastapi.tiangolo.com/)|Automatic Docs and Validation|
 | Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
 | Data Validation| [schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
-| Enable CORS in Flask| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)||
+| CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
 | Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
 | Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
 | Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
@@ -469,13 +469,14 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |streamlit|[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
 ||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
 
-### Adversarial testing  
+### Testing 
 
 |Category|Tool|Remarks|
 |---|---|---|
 | Generate images to fool model| [foolbox](https://github.com/bethgelab/foolbox)||
 | Generate phrases to fool NLP models| [triggers](https://www.ericswallace.com/triggers)||
 | General| [cleverhans](https://github.com/tensorflow/cleverhans)||
+|pytest|[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in tests|
 
 ### Python libraries  
 
