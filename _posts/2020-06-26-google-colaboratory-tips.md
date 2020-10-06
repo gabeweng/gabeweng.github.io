@@ -194,7 +194,7 @@ You can see the regular pandas dataframe and the interactive dataframe after loa
 ![Interactive pandas dataframe output](/images/colab-pandas-after.png){: .align-center}  
 
 ## 15. Setup Conda environment  
-If you use miniconda as your python environment manager, you can setup it on colab by running this command at the top of your notebook.  
+If you use miniconda as your python environment manager, you can setup it on colab by running these commands at the top of your notebook.  
 
 ```shell
 # Download Miniconda installation script
@@ -249,6 +249,27 @@ You can run a full-fledged VSCode editor on Colab by following the method I have
 
 ![](/images/colab-code-step-3.png){:.align-center}  
 
+## 21. Custom snippets  
+You can save your own collections of useful snippets and access them easily in any colab notebook.
+
+- Create a colab notebook called `snippets.ipynb`. To add each of your snippets, create a markdown cell and add name of the snippet as header. Below, the markdown cell, add a code cell with the snippet code.  
+
+    ![](/images/custom-snippets-step-1.png){:.align-center}  
+
+- Copy the link of this notebook from the browser tab.  
+
+    ![](/images/custom-snippets-step-2.png){:.align-center}  
+
+- Click `Tools > Settings` in your menu bar to open preference of colab.  
+![](/images/custom-snippets-step-3.png){:.align-center}  
+
+- Paste the link into the `Custom snippet notebook URL` textbox and click save.
+
+![](/images/custom-snippets-step-4.png){:.align-center}  
+
+- Now, the snippets are available in any colab notebook you use. Just click the **<>** icon on sidebar, search for your snippet name and click **Insert**. The code will be inserted into a new cell.  
+
+![](/images/custom-snippets-usage.gif){:.align-center}  
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
