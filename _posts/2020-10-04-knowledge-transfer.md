@@ -175,7 +175,12 @@ The network is not significantly affected by the number of clusters. The authors
 ![](/images/kt-impact-of-cluster-numbers.png){:.align-center}  
 
 #### 2. How is this different from Knowledge Distillation?
-The idea of knowledge transfer in this paper is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to the target model. Unlike distillation, we don't do any regression to the exact output of the teacher.  
+Knowledge transfer is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to the target model. Unlike distillation, we don't do any regression to the exact output of the teacher.
+
+#### 3. Can you use different datasets in clustering vs predicting pseudo-labels?
+Yes. The authors did an experiment where they trained clustering on representations for ImageNet and then calculated cluster centers on "Places" dataset. There was only a small reduction (-1.5%) in performance for object classification.
+
+![](/images/kt-different-datasets-impact.png){:.align-center}
 
 ## Conclusion
 Thus, Knowledge Transfer is a simple and efficient way to map representations from deep to shallow models.   
