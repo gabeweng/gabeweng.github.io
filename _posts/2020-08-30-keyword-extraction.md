@@ -1,7 +1,7 @@
 ---
 title: "Unsupervised Keyphrase Extraction"
 date: 2020-08-30T18:00-00:00
-last_modified_at: 2020-08-31T00:00:00-00:00
+last_modified_at: 2020-10-08T00:00:00-00:00
 permalink: /keyphrase-extraction/
 categories:
   - nlp
@@ -22,7 +22,7 @@ In this post, I will provide an overview of the general pipeline of keyword extr
 ## Unsupervised Keyphrase Extraction Pipeline  
 For keyword extraction, all algorithms follow a similar pipeline as shown below. A document is preprocessed to remove less informative words like stop words, punctuation, and split into terms. Candidate keywords such as words and phrases are chosen. 
 
-![](/images/keyword-extraction-pipeline.png){:.align-center}  
+![General Pipeline of Keyword Extraction](/images/keyword-extraction-pipeline.png){:.align-center}  
 
 Then, a score is determined for each candidate keyword using some algorithm. The highest-ranking keywords are selected and post-processing such as removing near-duplicates is applied. Finally, the algorithm returns the top N ranking keywords as output.  
 
@@ -36,17 +36,17 @@ This is a simple method which only takes into account how many times each term o
 
 Let's understand it by applying it to an example document.   
 
-![](/images/keyword-matter-example.png){:.align-center}  
+![Example document for keyword extraction](/images/keyword-matter-example.png){:.align-center}  
 
 ### a. Pre-processing  
 In this step, we lowercase the text and remove low informative words such as stop words from the text.  
 
-![](/images/keyword-matter-stopword-removal.png){:.align-center}      
+![Removing stopwords from a document](/images/keyword-matter-stopword-removal.png){:.align-center}      
 
 ### b. Candidate Generation  
 We split the remaining terms by space and punctuation symbols to get a list of possible keywords. 
  
-![](/images/keyword-candidates.png){:.align-center}  
+![Generating candidate keywords](/images/keyword-candidates.png){:.align-center}  
 
 ### c. Candidate Scoring  
 We can count the number of times each term occurs to get a score for each term.  
@@ -58,7 +58,7 @@ We can count the number of times each term occurs to get a score for each term.
 ### d. Final Ranking  
 We can sort the keywords in descending order based on the counts and take the top N keywords as the output.  
 
-![](/images/keyword-counting-ranking.png){:.align-center}  
+![Re-ranking keywords using count](/images/keyword-counting-ranking.png){:.align-center}  
 
 ### Drawback of Naive Counting  
 This method has an obvious drawback of only focusing on frequency. But, generic words are likely to be very frequent in any document but are not representative of the domain and topic of the document. We need some way to filter out generic terms.  
@@ -104,17 +104,17 @@ RAKE is a domain-independent keyword extraction method proposed in 2010. It uses
 ### How RAKE works
 Let's apply RAKE on a toy example document to understand how it works:  
 
-![](/images/keyword-sentence.png){:.align-center}  
+![Example document for RAKE algorithm](/images/keyword-sentence.png){:.align-center}  
 
 #### a. Preprocessing
 First, the stop words in the document are removed.
 
-![](/images/keyword-stopwords-removal.png){:.align-center}  
+![Removing stop words from the document](/images/keyword-stopwords-removal.png){:.align-center}  
 
 #### b. Candidate Generation
 We split the document at the stop word positions and punctuations to get content words. The words that occur consecutively without any stop word between them are taken as candidate keywords.
 
-![](/images/keyword-split-at-stopwords.png){:.align-center}  
+![Generating candidate keywords using merging](/images/keyword-split-at-stopwords.png){:.align-center}  
 
 For example, "Deep Learning" is treated as a single keyword.  
 
