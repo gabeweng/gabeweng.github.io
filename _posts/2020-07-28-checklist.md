@@ -1,6 +1,7 @@
 ---
 title: "Behavioral Testing of NLP models with CheckList"
 date: 2020-07-28T12:13-00:00
+last_modified_at: 2020-10-08T00:00:00-00:00
 categories:
   - nlp
 excerpt: An overview of the "CheckList" framework for fine-grained evaluation of NLP models   
@@ -16,7 +17,7 @@ But, when real users start using it, the story could be completely different tha
 
 In contrast, the field of software engineering uses a suite of unit tests, integration tests, and end-to-end tests to evaluate all aspects of the product for failures. An application is deployed to production only after passing these rigorous tests.  
 
-![](/images/checklist-software-testing.png){: .align-center}
+![Different types of tests in software engineering](/images/checklist-software-testing.png){: .align-center}
 
 [Ribeiro et al.](https://arxiv.org/abs/2005.04118) noticed this gap and took inspiration from software engineering to propose an evaluation methodology for NLP called **"CheckList"**. Their paper won the best overall paper award at ACL 2020.  
 
@@ -76,7 +77,7 @@ This test is similar to unit tests in software engineering. We build a collectio
 
 For example, we are testing the negation capability of the model using an MFT test below.  
 
-![](/images/checklist-mft.png){: .align-center}  
+![Example of minimum functionality test](/images/checklist-mft.png){: .align-center}  
 Template: I <span style="color: #E57373;">{NEGATION}</span> <span style="color: #81C784;">{POS_VERB}</span> the <span style="color: #90A4AE;">{THING}</span>
 {: .text-center}
     
@@ -87,7 +88,7 @@ In this test, we perturb our existing training examples in a way that the label 
 
 For example, changing the location from Chicago to Dallas should not change the original sentiment of a text.  
 
-![](/images/checklist-INV.png){: .align-center}  
+![Example of invariance test](/images/checklist-INV.png){: .align-center}  
 
 We can use different perturbation functions to test different capabilities. The paper mentions two examples:  
 
@@ -101,7 +102,7 @@ This test is similar to the invariance test but here we expect the model predict
 
 For example, if we add a text "You are lame" to the end of a text, the expectation is that sentiment of the original text will not move towards a positive direction.  
 
-![](/images/checklist-DIR.png){: .align-center}  
+![Example of directional expectation test](/images/checklist-DIR.png){: .align-center}  
 
 We can also write tests where we expect the target label to change. For example, consider the QQP task where we need to detect if two questions are duplicates or not.  
  
@@ -294,7 +295,7 @@ The tool provides three approaches to write test cases:
 
 To generate templates, you can either brainstorm them from scratch or generalize patterns from your existing data.
 
-#### Manually Generated Templates  
+#### a. Manually Generated Templates  
 For example, if we had a text such as "*I didn't love the food*" in our training data, we can generalize it as:  
 
 |Original Text|Generalized Template|
@@ -317,7 +318,7 @@ By taking the cartesian products of all these possibilities, we can generate a l
 |didn't|love|services|I didn't love the **services**|Negative|
 |||...|||
 
-#### Masked Language Model Template  
+#### b. Masked Language Model Template  
 Instead of manually specifying fill-ins for the template, we can also use MLM models like ROBERTA and use masking to generate variants.
 
 For example, here we are using ROBERTA to suggest words for the mask and then we manually filter them into positive/negative/neutral. 
@@ -332,17 +333,17 @@ For example, here we are using ROBERTA to suggest words for the mask and then we
 
 These fill-ins can be reused across multiple tests. The paper also suggests using WordNet to select only context-appropriate synonyms from ROBERTA.   
 
-#### Built-in Fill-ins  
+#### c. Built-in Fill-ins  
 CheckList also provides out-of-box support for lexicons such as:
 
 - **NER**: common first/last names, cities and countries
 - **Protected Group Adjectives**: Nationalities, Religions, Gender, Sexuality  
 
-#### Built-in Perturbations  
+#### d. Built-in Perturbations  
 CheckList also provides perturbation functions such as character swaps, contractions, name and location changes, and neutral word replacement.   
 
 ## Conclusion  
-Thus, CheckList proposes a general framework to perform a comprehensive and fine-grained evaluation of NLP models. This can help us better understand the state of NLP models beyond the leaderboard.  
+Thus, CheckList provides a general framework to perform a comprehensive and fine-grained evaluation of NLP models. This can help us better understand the state of NLP models beyond the leaderboard.  
 
 ## References
 - Marco Tulio Ribeiro et al., ["Beyond Accuracy: Behavioral Testing of NLP models with CheckList"](https://arxiv.org/abs/2005.04118)
