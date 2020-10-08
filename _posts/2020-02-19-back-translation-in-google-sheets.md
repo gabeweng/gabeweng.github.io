@@ -1,6 +1,7 @@
 ---
 title: "Back Translation for Text Augmentation with Google Sheets"
 date: 2020-02-19T16:13:30-04:00
+last_modified_at: 2020-09-27T00:00-00:00
 categories:
   - nlp
   - data augmentation

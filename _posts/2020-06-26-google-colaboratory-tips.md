@@ -1,6 +1,7 @@
 ---
 title: "Google Colab Tips for Power Users"
 date: 2020-06-26T15:30-00:00
+last_modified_at: 2020-09-21T00:00:00-00:00
 categories:
   - workflow
 classes: wide

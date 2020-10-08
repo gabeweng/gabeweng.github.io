@@ -1,6 +1,7 @@
 ---
 title: "Interactive Analysis of Sentence Embeddings"
 date: 2020-09-24T00:00-00:00
+last_modified_at: 2020-10-04T00:00-00:00
 permalink: /interactive-sentence-embeddings/
 categories:
   - nlp

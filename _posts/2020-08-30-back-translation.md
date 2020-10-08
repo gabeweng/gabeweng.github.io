@@ -1,6 +1,7 @@
 ---
 title: "Text Data Augmentation with MarianMT"
 date: 2020-08-30T19:44-00:00
+last_modified_at: 2020-09-12T00:00:00-00:00
 permalink: /back-translation/
 categories:
   - nlp
