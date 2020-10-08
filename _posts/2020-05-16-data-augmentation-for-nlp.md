@@ -97,6 +97,12 @@ nlp('This is <mask> cool')
 ```  
 However, one caveat of this method is that deciding which part of the text to mask is not trivial. You will have to use heuristics to decide the mask, otherwise the generated text might not retain the meaning of the original sentence.  
 
+[Garg. et al.](https://arxiv.org/abs/2004.01970) uses this idea for generating adversarial examples for text classification.  
+
+![](/images/bae-adversarial-attack.jpeg){:.align-center}  
+Figure: MLM augmentation via replacement or insertion ([Source](https://arxiv.org/abs/2004.01970))
+{: .text-center}
+
 
 ### d. TF-IDF based word replacement  
 This augmentation method was proposed by [Xie et al.](https://arxiv.org/abs/1904.12848) in the Unsupervised Data Augmentation paper. The basic idea is that words that have <span style="color: #d52f2f;">low TF-IDF scores</span> are uninformative and thus can be replaced without affecting the ground-truth labels of the sentence.  
