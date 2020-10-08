@@ -96,7 +96,7 @@ nlp('This is <mask> cool')
   'sequence': '<s> This is very cool</s>',
   'token': 182}]
 ```  
-However, one caveat of this method is that deciding which part of the text to mask is not trivial. You will have to use heuristics to decide the mask, otherwise the generated text might not retain the meaning of the original sentence.  
+However, one caveat of this method is that deciding which part of the text to mask is not trivial. You will have to use heuristics to decide the mask, otherwise, the generated text might not retain the meaning of the original sentence.  
 
 [Garg. et al.](https://arxiv.org/abs/2004.01970) use this idea for generating adversarial examples for text classification.  
 
@@ -247,7 +247,7 @@ This technique was first proposed by Anaby-Tavor et al. in their paper ["Not Eno
 Libraries like [nlpaug](https://github.com/makcedward/nlpaug) and [textattack](https://github.com/QData/TextAttack) provide simple and consistent API to apply the above NLP data augmentation methods in Python. They are framework agnostic and can be easily integrated into your pipeline.   
 
 ## Conclusion  
-My takeaway from the literature review is that many of these NLP augmentation methods are very task-specific and their impact on performance has been studied for some particular use-cases only. It would be interesting research to systematically compare these methods and analyze their impact on performance for many tasks.    
+My takeaway from the literature review is that many of these NLP augmentation methods are very task-specific and their impact on performance has been studied for some particular use-cases only. It would be an interesting research to systematically compare these methods and analyze their impact on performance for many tasks.    
 
 ## Citation Info (BibTex)
 If you found this blog post useful, please consider citing it as:
