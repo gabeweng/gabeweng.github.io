@@ -1,6 +1,7 @@
 ---
 title: "Evaluation Metrics For Information Retrieval"
 date: 2020-08-04T12:06-00:00
+last_modified_at: 2020-08-06T00:00:00-00:00
 categories:
   - nlp
 excerpt: Learn about common metrics used to evaluate performance of information retrieval systems      
