@@ -64,7 +64,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Audio| [pydub](https://github.com/jiaaro/pydub)||
 | Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
 | | [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
-| Image| [py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator), [idt](https://github.com/deliton/idt)|Auto fetch images from web for certain search|
+| Image| [py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator), [idt](https://github.com/deliton/idt), [jmd-imagescraper](https://joedockrill.github.io/jmd_imagescraper/)|Auto fetch images from web for certain search|
 | News| [news-please](https://github.com/fhamborg/news-please), [news-catcher](https://github.com/kotartemiy/newscatcher/blob/master/README.md)|Scrap News|
 || [pygooglenews](https://github.com/kotartemiy/pygooglenews)|Google News|
 | Lyrics| [lyricsgenius](https://github.com/johnwmillr/LyricsGenius)||
