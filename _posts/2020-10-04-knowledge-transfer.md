@@ -1,6 +1,7 @@
 ---
 title: "Knowledge Transfer in Self Supervised Learning"
 date: 2020-10-04T00:00-00:00
+last_modified_at: 2020-10-08T00:00:00-00:00
 categories:
   - self-supervised-learning
 permalink: /knowledge-transfer/
@@ -17,7 +18,7 @@ This can be achieved by creatively formulating a problem such that you use parts
 
 For example, you can setup a pretext task to predict the color version of the image given the grayscale version. Similarly, you could remove a part of the image and train a model to predict the part from the surrounding. There are many such [pretext tasks](https://amitness.com/2020/02/illustrated-self-supervised-learning/).
 
-![](/images/kt-pretext-tasks.png){:.align-center}  
+![Examples of pretext tasks](/images/kt-pretext-tasks.png){:.align-center}  
 
 By pre-training on the pretext task, the hope is that the model will learn useful representations. Then, we can finetune the model to downstream tasks such as image classification, object detection, and semantic segmentation with only a small set of labeled training data.  
 
@@ -32,7 +33,7 @@ Currently, the standard way to gauge the representations is to evaluate it on a 
 
 We can see that the above evaluation methods require us to use the same model architecture for both the pretext task and the target task.  
 
-![](/images/kt-pretext-target-challenge.png){:.align-center}  
+![Coupling of pretext task architecture and downstream task architecture](/images/kt-pretext-target-challenge.png){:.align-center}  
 
 This poses some interesting challenges:
 1. For the pretext task, our goal is to learn on a large-scale unlabeled dataset and thus deeper models(e.g. ResNet) would help us learn better representations. 
@@ -54,7 +55,7 @@ Noroozi et al. proposed a simple idea to tackle these issues in their 2018 paper
 ### Intuition  
 The authors observed that in a good representation space, semantically similar data points should be close together.  
 
-![](/images/kt-good-vs-bad-representation.png){:.align-center}  
+![Intuition behind Knowledge Transfer](/images/kt-good-vs-bad-representation.png){:.align-center}  
 
 In regular supervised classification, the information that images are semantically similar is encoded through labels annotated by humans. A model trained on such labels would have a representation space that groups semantically similar images.  
 
@@ -73,14 +74,14 @@ The end-to-end process is described below:
 #### 1. Pretext task  
 Here we choose some deep network architecture and train it on some pretext task of our choice on some dataset. We can take features from some intermediate layer after the model is trained.  
 
-![](/images/kt-step-1.png){:.align-center}  
+![Applying pretext task](/images/kt-step-1.png){:.align-center}  
 Figure: Training on Pre-text Task ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
 #### 2. K-means Clustering
 For all the unlabeled images in the dataset, we compute the feature vectors from the pretext task model. Then, we run K-means clustering to group semantically similar images. The idea is that the cluster centers will be aligned with categories in ImageNet.
 
-![](/images/kt-step-2.png){:.align-center}  
+![Clustering features from pretext task](/images/kt-step-2.png){:.align-center}  
 Figure: Clustering Features ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
@@ -89,14 +90,14 @@ In the paper, the authors ran K-means on a single Titan X GPU for 4 hours to clu
 #### 3. Pseudo-labeling  
 The cluster centers are treated as the pseudo-label. We can use either the same dataset as the above step or use a different dataset itself. Then, we compute the feature vectors for those images and find the closest cluster center for each image. This cluster center is used as the pseudo-label.  
 
-![](/images/kt-step-3.png){:.align-center}  
+![Generating pseudo-labels using cluster centers](/images/kt-step-3.png){:.align-center}  
 Figure: Generating Pseudo-labels ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
 #### 4. Training on Pseudo-labels  
 We take the model architecture that will be used for downstream tasks and train it to classify the unlabeled images into the pseudo-labels. Thus, the target architecture will learn a new representation such that it will map images that were originally close in the pre-trained feature space to close points.  
 
-![](/images/kt-step-4.png){:.align-center}  
+![Training model from scratch on pseudo-labels](/images/kt-step-4.png){:.align-center}  
 Figure: Re-training on pseudo-labels ([Source](https://arxiv.org/abs/1805.00385))
 {: .text-center}
 
@@ -111,13 +112,13 @@ To evaluate the idea quantitatively, the authors set up an experiment as describ
 ### a. Increase complexity of pretext task (Jigsaw++)
 To evaluate their method, the authors took an old puzzle-like pretext task called "Jigsaw" where we need to predict the permutation that was used to randomly shuffle a 3*3 square grid of image.
 
-![](/images/kt-jigsaw-plus-plus.png){:.align-center}  
+![Jigsaw to Jigsaw++ task](/images/kt-jigsaw-plus-plus.png){:.align-center}  
 Image Modified from [Paper](https://arxiv.org/abs/1805.00385)
 {: .text-center}
 
 They extended the task by randomly replacing 0 to 2 number of tiles with tile from another random image at some random locations. This increases the difficulty as now we need to solve the problem using only the remaining patches. The new pretext task is called "Jigsaw++".
 
-![](/images/kt-jigsaw-plus-plus-goal.png){:.align-center}  
+![Goal of Jigsaw++](/images/kt-jigsaw-plus-plus-goal.png){:.align-center}  
 Image Modified from [Paper](https://arxiv.org/abs/1805.00385)
 {: .text-center}
 
@@ -161,18 +162,18 @@ The authors tested their method on object classification and detection on PASCAL
 #### 2. Linear Classification on ImageNet
 In this, a linear classifier is trained on features extracted from AlexNet at different convolutional layers. For ImageNet, using VGG-16 and transferring knowledge to AlexNet using clustering gives a substantial boost of 2%.
 
-![](/images/kt-imagenet-performance.png){:.align-center}  
+![Results of Jigsaw++ on ImageNet](/images/kt-imagenet-performance.png){:.align-center}  
 
 #### 3. Non-linear classification on ImageNet
 For a non-linear classifier, using VGG-16 and transferring knowledge to AlexNet using clustering gives the best performance on ImageNet.  
 
-![](/images/kt-nonlinear-result.png){:.align-center}  
+![Non-Linear classification results](/images/kt-nonlinear-result.png){:.align-center}  
 
 ## Additional Insights from Paper
 #### 1. How does the number of clusters affect the performance?
 The network is not significantly affected by the number of clusters. The authors tested AlexNet trained on pseudo-labels from a different number of clusters on the task of object detection.
 
-![](/images/kt-impact-of-cluster-numbers.png){:.align-center}  
+![Impact of number of clusters on performance](/images/kt-impact-of-cluster-numbers.png){:.align-center}  
 
 #### 2. How is this different from Knowledge Distillation?
 Knowledge transfer is fundamentally different from knowledge distillation. Here, the goal is to only preserve the cluster association of images from the representation and transfer that to the target model. Unlike distillation, we don't do any regression to the exact output of the teacher.
@@ -182,7 +183,7 @@ Yes, the method is flexible and you can pre-train on one dataset, cluster on ano
 
 The authors did an experiment where they trained clustering on representations for ImageNet and then calculated cluster centers on the "Places" dataset to get pseudo-labels. There was only a small reduction (-1.5%) in performance for object classification.
 
-![](/images/kt-different-datasets-impact.png){:.align-center}
+![Impact of using different datasets](/images/kt-different-datasets-impact.png){:.align-center}
 
 ## Conclusion
 Thus, Knowledge Transfer is a simple and efficient way to map representations from deep to shallow models.   
