@@ -371,6 +371,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Learning curve| [lrcurve](https://github.com/AndreasMadsen/python-lrcurve), [livelossplot](https://github.com/stared/livelossplot)|Plot realtime learning curve in Keras|
 | Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
 | | [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
+||[apprise](https://github.com/caronc/apprise)|Notify to any platform|
 | Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
 | GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor)||
 | | [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
