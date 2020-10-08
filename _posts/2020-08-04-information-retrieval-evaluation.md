@@ -1,7 +1,7 @@
 ---
 title: "Evaluation Metrics For Information Retrieval"
 date: 2020-08-04T12:06-00:00
-last_modified_at: 2020-08-06T00:00:00-00:00
+last_modified_at: 2020-10-08T00:00:00-00:00
 categories:
   - nlp
 excerpt: Learn about common metrics used to evaluate performance of information retrieval systems      
@@ -13,7 +13,7 @@ classes: wide
 
 Most software products we encounter today have some form of search functionality integrated into them. We search for content on Google, videos on YouTube, products on Amazon, messages on Slack, emails on Gmail, people on Facebook, and so on.  
 
-![](/images/ltr-search-box.png){:.align-center}  
+![Search box in popular software apps](/images/ltr-search-box.png){:.align-center}  
 
 As users, the workflow is pretty simple. We can search for items by writing our queries in a search box and the ranking model in their system gives us back the top-N most relevant results.
 
@@ -26,7 +26,7 @@ Let's take a simple toy example to understand the details and trade-offs of vari
 
 We have a ranking model that gives us back 5-most relevant results for a certain query. The first, third, and fifth results were <span class="bg-color-green">relevant</span> as per our ground-truth annotation.    
 
-![](/images/ltr-documents-horizontal.png){:.align-center}  
+![Example of binary relevance](/images/ltr-documents-horizontal.png){:.align-center}  
 
 Let's look at various metrics to evaluate this simple example.  
 
@@ -40,11 +40,11 @@ $$
 
 For our example, precision@1 = 1 as all items in the first 1 results is relevant.  
 
-![](/images/ltr-precision-at-1.png){:.align-center}  
+![Precision@1 for 5 documents](/images/ltr-precision-at-1.png){:.align-center}  
 
 Similarly, precision@2 = 0.5 as only one of the top-2 results are relevant.  
  
-![](/images/ltr-precision-at-2.png){:.align-center}  
+![Precision@2 for 5 documents](/images/ltr-precision-at-2.png){:.align-center}  
 
 Thus, we can calculate the precision score for all k values.   
 
@@ -56,7 +56,7 @@ A limitation of precision@k is that it doesn't consider the position of the rele
 
 For model A, the first three items were relevant, while for model B, the last three items were relevant. Precision@5 would be the same for both of these models even though model A is better.  
 
-![](/images/ltr-precision-drawback.png){:.align-center}  
+![Drawback of precision@k metric](/images/ltr-precision-drawback.png){:.align-center}  
 
 
 ### 2. Recall@k
@@ -68,11 +68,11 @@ $$
 
 For our example, recall@1 = 0.33 as only one of the 3 actual relevant items are present.  
 
-![](/images/ltr-recall-at-1.png){:.align-center}  
+![Calculation of Recall@1 for 5 documents](/images/ltr-recall-at-1.png){:.align-center}  
 
 Similarly, recall@3 = 0.67 as only two of the 3 actual relevant items are present.  
  
-![](/images/ltr-recall-at-3.png){:.align-center}  
+![Calculation of Recall@3 for 5 documents](/images/ltr-recall-at-3.png){:.align-center}  
 
 Thus, we can calculate the recall score for different K values.   
 
@@ -114,19 +114,19 @@ To calculate MRR, we first calculate the **reciprocal rank**. It is simply the r
 
 For our example, the reciprocal rank is $$\frac{1}{1}=1$$ as the first correct item is at position 1.  
 
-![](/images/ltr-reciprocal-rank.png){:.align-center}  
+![Calculation of MRR for first relevant result](/images/ltr-reciprocal-rank.png){:.align-center}  
 
 Let's see another example where the only one relevant result is present at the end of the list i.e. position 5. It gets a lower reciprocal rank score of 0.2. 
 
-![](/images/ltr-reciprocal-rank-last.png){:.align-center}  
+![MRR when document is at last](/images/ltr-reciprocal-rank-last.png){:.align-center}  
 
 Let's consider another example where none of the returned results are relevant. In such a scenario, the reciprocal rank will be 0.  
 
-![](/images/ltr-reciprocal-rank-zero.png){:.align-center}  
+![Worst case example of MRR](/images/ltr-reciprocal-rank-zero.png){:.align-center}  
 
 For multiple different queries, we can calculate the MRR by taking the mean of the reciprocal rank for each query.
 
-![](/images/ltr-mean-reciprocal-rank.png){:.align-center}  
+![Calculation of MRR for 3 queries](/images/ltr-mean-reciprocal-rank.png){:.align-center}  
 
 We can see that MRR doesn't care about the position of the remaining relevant results. So, if your use-case requires returning multiple relevant results in the best possible way, MRR is not a suitable metric.  
 
@@ -145,7 +145,7 @@ where:
 
 For our example, we can calculate the AP based on our Precision@K values for different K.
 
-![](/images/ltr-average-precision-example-1.png){:.align-center}  
+![Precision@k for different values of k](/images/ltr-average-precision-example-1.png){:.align-center}  
 
 $$
 AP = \frac{(1 + 2/3 + 3/5)}{3} = 0.7575
@@ -153,7 +153,7 @@ $$
 
 To illustrate the advantage of AP, let's take our previous example but place the 3 relevant results at the beginning. We can see that this gets a perfect AP score than the above example.  
 
-![](/images/ltr-average-precision-example-2.png){:.align-center}   
+![Impact of order on average precision](/images/ltr-average-precision-example-2.png){:.align-center}   
 
 $$
 AP = \frac{(1 + 1 + 1)}{3} = 1
@@ -173,11 +173,11 @@ where
 
 ## Problem Setup 2: Graded Relevance  
 Let's take another toy example where we annotated the items not just as relevant or not-relevant but instead used a grading scale between 0 to 5 where 0 denotes least relevant and 5 denotes the most relevant.  
-![](/images/ltr-graded-scale.png){:.align-center}  
+![Example of graded relevance score](/images/ltr-graded-scale.png){:.align-center}  
 
 We have a ranking model that gives us back 5-most relevant results for a certain query. The first item had a relevance score of 3 as per our ground-truth annotation, the second item has a relevance score of 2 and so on.  
 
-![](/images/ltr-graded-relevance.png){:.align-center}  
+![Actual example of graded relevance](/images/ltr-graded-relevance.png){:.align-center}  
 
 Let's understand the various metrics to evaluate this type of setup.  
 
@@ -190,7 +190,7 @@ $$
 
 For our example, CG@2 will be 5 because we add the first two relevance scores 3 and 2.    
 
-![](/images/ltr-cumulative-gain-2.png){:.align-center}  
+![Calculation of cumulative gain for 5 documents](/images/ltr-cumulative-gain-2.png){:.align-center}  
 
 Similarly, we can calculate the cumulative gain for all the K-values as:
 
@@ -200,14 +200,14 @@ Similarly, we can calculate the cumulative gain for all the K-values as:
 
 While simple, CG doesn't take into account the order of the relevant items. So, even if we swap a less-relevant item to the first position, the CG@2 will be the same.  
 
-![](/images/ltr-cumulative-gain-drawback.png){:.align-center}  
+![Drawback of cumulative gain due to ordering](/images/ltr-cumulative-gain-drawback.png){:.align-center}  
 
 ### 2. Discounted Cumulative Gain (DCG@k)  
 We saw how a simple cumulative gain doesn't take into account the position. But, we would normally want items with a high relevance score to be present at a better rank.  
 
 Consider an example below. With the cumulative gain, we are simply adding the scores without taking into account their position.  
 
-![](/images/ltr-need-for-dcg.png){:.align-center}  
+![Need for discounted cumulative gain](/images/ltr-need-for-dcg.png){:.align-center}  
 
 > An item with a relevance score of 3 at position 1 is better than the same item with relevance score 3 at position 2.
 
@@ -229,11 +229,11 @@ $$
 
 To understand the behavior of the log-penalty, let's plot ranking position in x-axis and the percentage of relevance score i.e. $$\frac{1}{log_{2}(i+1)} * 100$$ in the y-axis. As seen, in position 1, we don't apply any penalty and score remains unchanged. But, the percentage of score kept decays exponentially from 100% in position 1 to 63% in position 2, 50% in position 3, and so on.  
 
-![](/images/ltr-penalty-plot.png){:.align-center}  
+![Penalty on score based on position](/images/ltr-penalty-plot.png){:.align-center}  
 
 Let's now calculate DCG for our example.  
 
-![](/images/ltr-graded-relevance.png){:.align-center}  
+![Example calculation for DCG](/images/ltr-graded-relevance.png){:.align-center}  
 
 
 |$$Position(i)$$|$$Relevance(rel_{i})$$|$$log_{2}(i+1)$$|$$\frac{rel_{i}}{log_{2}(i+1)}$$|
@@ -262,14 +262,14 @@ $$
 
 While DCG solves the issues with cumulative gain, it has a limitation. Suppose we a query Q1 with 3 results and query Q2 with 5 results. Then the query with 5 results Q2 will have a larger overall DCG score. But we can't say that query 2 was better than query 1.  
 
-![](/images/ltr-dcg-drawback.png){:.align-center}  
+![Drawback of discounted cumulative gain](/images/ltr-dcg-drawback.png){:.align-center}  
 
 ### 3. Normalized Discounted Cumulative Gain (NDCG@k)  
 To allow a comparison of DCG across queries, we can use NDCG that normalizes the DCG values using the ideal order of the relevant items.  
 
 Let's take our previous example where we had already calculated the DCG values at various K values.
 
-![](/images/ltr-graded-relevance.png){:.align-center}  
+![Example problem for NDCG](/images/ltr-graded-relevance.png){:.align-center}  
 
 |k|DCG@k|
 |---|---|
@@ -281,7 +281,7 @@ Let's take our previous example where we had already calculated the DCG values a
 
 For our example, ideally, we would have wanted the items to be sorted in descending order of relevance scores.
 
-![](/images/ltr-ndcg-ideal.png){:.align-center}  
+![Ideal order of search results](/images/ltr-ndcg-ideal.png){:.align-center}  
 
 Let's calculate the ideal DCG(IDCG) for this order.  
 
