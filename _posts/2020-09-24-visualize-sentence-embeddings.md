@@ -1,7 +1,7 @@
 ---
 title: "Interactive Analysis of Sentence Embeddings"
 date: 2020-09-24T00:00-00:00
-last_modified_at: 2020-10-04T00:00-00:00
+last_modified_at: 2020-10-08T00:00-00:00
 permalink: /interactive-sentence-embeddings/
 categories:
   - nlp
@@ -31,7 +31,7 @@ df['label'] = df['label'].replace({0: 'negative', 1: 'positive'})
 
 The dataset has a column containing the text and a label indicating whether it's positive or negative opinion.  
  
-![](/images/projector-head-5.png){:.align-center}  
+![First 5 rows of SST-2 dataset](/images/projector-head-5.png){:.align-center}  
 
 We will introduce noise into our dataset by corrupting five of the responses with random text. It will act as an outlier for our example.  
 ```python
@@ -87,23 +87,23 @@ We first go to [https://projector.tensorflow.org/](https://projector.tensorflow.
 
 On the left-hand sidebar, click the **Load** button.
 
-![](/images/projector-load-step-1.png){:.align-center}  
+![Loading file in embedding projector](/images/projector-load-step-1.png){:.align-center}  
 
 Then, for the first **Choose file** button, upload the `output.tsv` file and for the second **Choose file** button, upload the `metadata.tsv` file.  
 
-![](/images/projector-load-step-2.png){:.align-center}  
+![Choosing embeddings and metadata](/images/projector-load-step-2.png){:.align-center}  
 
 After uploading both files, click outside and you should see the sentence embedding projection. The dimensions of embeddings are reduced to 3D by default using PCA.  
 
-![](/images/projector-3d.png){:.align-center}  
+![3D projection of embeddings](/images/projector-3d.png){:.align-center}  
 
 Let's switch to 2D by turning off the checkbox for 'Component #3' in the bottom part of sidebar.  
  
-![](/images/projector-turn-off-3d.png){:.align-center}  
+![Switching from 3D to 2D using PCA](/images/projector-turn-off-3d.png){:.align-center}  
 
 On the 2D visualization, we can see how the random text is far from other groups of text as an **outlier**. On hovering the point, we see the text `askgkn askngk kagkasng`.  
 
-![](/images/projector-outlier.gif){:.align-center}  
+![Detecting outlier using projection](/images/projector-outlier.gif){:.align-center}  
 
 ### 5. Useful Features in Projector    
 
@@ -112,17 +112,17 @@ We can enable color coding of the points by their actual labels (positive vs neg
 
 Select the name of the column that contains your labels. In our example file, the column name is **label**.
 
-![](/images/projector-color-code-labels.png){:.align-center}  
+![Coloring points by class label](/images/projector-color-code-labels.png){:.align-center}  
 
 The points themselves are interactive. You can see the actual sentence for each point by hovering over them.  
 
-![](/images/projector-interactive-1.gif){:.align-center}  
+![Hovering over points](/images/projector-interactive-1.gif){:.align-center}  
 
 You can click on the point to show the metadata. We can see below on clicking a blue point that its label is "positive" in the popup. 
 
 So the blue points are positive and the red points are negative. When a point is selected, 100 nearest points in terms of cosine similarity are also highlighted.  
 
-![](/images/projector-click-point.gif){:.align-center}  
+![Impact of clicking a data point](/images/projector-click-point.gif){:.align-center}  
 
 To get back to the original view, we can click on any empty white space.  
 
@@ -143,16 +143,16 @@ The web app provides three standard dimensionality reduction techniques: **UMAP*
 
 You can choose the algorithm and their parameters from the bottom of the left sidebar.  
 
-![](/images/projector-choose-dim-algorithm.png){:.align-center}  
+![Choosing the dimensionality reduction algorithm](/images/projector-choose-dim-algorithm.png){:.align-center}  
 
 #### c. Custom Linear Projection  
 You can also use a custom keyword or full text as the axis using the **CUSTOM** tab. This will apply a custom linear projection and can help us explore meaningful directions in the embedding space.   
 
-![](/images/projector-custom-dim.png){:.align-center}  
+![Performing custom linear projection](/images/projector-custom-dim.png){:.align-center}  
 
 For example, the Gmail team tried setting "yeah" on the left side and "yes" on the right side. When they projected encoder embeddings for email replies to this custom linear projection, they found replies in a casual tone (e.g. Here you go) on the left side and responses in a more formal tone clustered towards the right side.
 
-![](/images/projector-custom-direction.png){:.align-center}  
+![Formal vs informal aspects as axis](/images/projector-custom-direction.png){:.align-center}  
 
 ## Conclusion  
 Thus, Embedding Projector is a very useful tool to better understand the datasets and models we work with.  
