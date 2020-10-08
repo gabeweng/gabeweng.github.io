@@ -98,7 +98,7 @@ nlp('This is <mask> cool')
 ```  
 However, one caveat of this method is that deciding which part of the text to mask is not trivial. You will have to use heuristics to decide the mask, otherwise the generated text might not retain the meaning of the original sentence.  
 
-[Garg. et al.](https://arxiv.org/abs/2004.01970) uses this idea for generating adversarial examples for text classification.  
+[Garg. et al.](https://arxiv.org/abs/2004.01970) use this idea for generating adversarial examples for text classification.  
 
 ![](/images/bae-adversarial-attack.jpeg){:.align-center}  
 Figure: MLM augmentation via replacement or insertion ([Source](https://arxiv.org/abs/2004.01970))
