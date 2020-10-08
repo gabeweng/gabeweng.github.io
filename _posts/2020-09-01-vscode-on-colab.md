@@ -1,7 +1,7 @@
 ---
 title: "VSCode on Google Colab"
 date: 2020-09-01T00:00-00:00
-last_modified_at: 2020-09-10T00:00:00-00:00
+last_modified_at: 2020-10-08T00:00:00-00:00
 permalink: /vscode-on-colab/
 categories:
   - colab
@@ -40,15 +40,15 @@ In this setup, we use the [colab-code](https://github.com/abhishekkrthakur/colab
    
 3. You will get the ngrok URL in the output. Click the link and a login page will open in a new tab.
 
-    ![](/images/colab-code-step-1.png){:.align-center}  
+    ![Generated NGROK URL](/images/colab-code-step-1.png){:.align-center}  
 
 4. Type the password you had set in step 2 and click submit. If the page gets stuck for more than 4-5 seconds, refresh the page and you should be redirected to the editor.  
 
-    ![](/images/colab-code-step-2.png){:.align-center}  
+    ![Authenticating with password in VSCode](/images/colab-code-step-2.png){:.align-center}  
 
 5. Now you will get access to the editor interface and can use it to work on python files.  
     
-    ![](/images/colab-code-step-3.png){:.align-center}  
+    ![VSCode Interface](/images/colab-code-step-3.png){:.align-center}  
 
 
 ## Approach 2: Manual Setup 
@@ -82,27 +82,27 @@ I have described the setup steps in detail below. After going through all the st
 
 5. Now, you can access the VSCode interface at the URL you got from step 3. The interface and functionality are the same as the desktop version of VSCode.  
 
-![](/images/colab-vscode.png){:.align-center}  
+![Example of a running instance of VSCode server](/images/colab-vscode.png){:.align-center}  
 
 ## Usage Tips  
 1. You can switch to the dark theme by going to the bottom-left corner of the editor, clicking the **settings icon**, and then clicking '**Color Theme**'.
     
-    ![](/images/colab-dark-theme-step-1.png){:.align-center} 
+    ![Switching to dark theme on VSCode](/images/colab-dark-theme-step-1.png){:.align-center} 
     
     A popup will open. Select **Dark (Visual Studio)** in the options and the editor will switch to a dark theme. 
-    ![](/images/colab-dark-theme-step-2.png){:.align-center}  
+    ![Theme selection interface on VSCode](/images/colab-dark-theme-step-2.png){:.align-center}  
 
 2. All the keyword shortcuts of regular VSCode works with this. For example, you can use `Ctrl + Shift + P` to open a popup for various actions.
 
-    ![](/images/vscode-ctrl-shift-p.png){:.align-center}  
+    ![Action popup in VSCode](/images/vscode-ctrl-shift-p.png){:.align-center}  
 
 3. To open a terminal, you can use the shortcut ``Ctrl + Shift + ` ``.
 
-    ![](/images/vscode-terminal.png){:.align-center}  
+    ![Opening integrated terminal in VSCode](/images/vscode-terminal.png){:.align-center}  
 
 4. To get python code completions, you can install the Python(`ms-python`) extension from the extensions page on the left sidebar.
 
-    ![](/images/vscode-code-completions.png){:.align-center}  
+    ![Installing extensions in VSCode](/images/vscode-code-completions.png){:.align-center}  
 
 5. The Colab interface is still usable as a notebook and regular functions to upload and download files and mount with Google Drive. Thus, you get the benefits of both a notebook and a code editor.   
 
