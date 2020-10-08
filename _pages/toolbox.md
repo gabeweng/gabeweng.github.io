@@ -225,6 +225,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[starspace](https://github.com/facebookresearch/StarSpace)|Learn embeddings for anything|
 | Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
+||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
 | Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html)||
 || [inltk](https://github.com/goru001/inltk), [indic_nlp](https://github.com/anoopkunchukuttan/indic_nlp_library)|Indic Languages|
 |Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased)||
