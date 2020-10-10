@@ -344,6 +344,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
+||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
 | Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
 ||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
 ||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
