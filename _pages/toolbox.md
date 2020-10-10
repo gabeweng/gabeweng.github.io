@@ -426,6 +426,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 | Pickling extended| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)||
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
+||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
 
 ### Scalability  
 
