@@ -425,6 +425,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Transpiling| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 | Pickling extended| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)||
+|Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 
 ### Scalability  
 
