@@ -511,11 +511,12 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Code to Maths|[latexify-py](https://github.com/odashi/latexify_py), [handcalcs](https://github.com/connorferster/handcalcs)||
 |Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
 
-### Services
+### Utilities
 
 |Category|Tool|Remarks|
 |---|---|---|
 |Database|[mlab](https://mlab.com/)|Free 500 MB MongoDB|
+|Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
 
 ### Workflow  
 
