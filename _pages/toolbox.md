@@ -517,6 +517,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Database|[mlab](https://mlab.com/)|Free 500 MB MongoDB|
 |Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
+|Data Visualization|[flourish-studio](https://flourish.studio/)||
+
 
 ### Workflow  
 
