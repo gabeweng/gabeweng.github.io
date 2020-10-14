@@ -220,7 +220,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
-| Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
+| Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec), [BM25Transformer](https://github.com/arosh/BM25Transformer),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
 || [sentence-transformers](https://github.com/UKPLab/sentence-transformers), [DeCLUTR](https://huggingface.co/johngiorgi/declutr-base)|BERT sentence embeddings|
 ||[pymagnitude](https://github.com/plasticityai/magnitude)|Access word-embeddings programatically|
 ||[chakin](https://github.com/chakki-works/chakin)|Download pre-trained word vectors|
