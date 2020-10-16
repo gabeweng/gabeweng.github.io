@@ -394,6 +394,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Libraries| [pygal](http://www.pygal.org/en/latest/index.html), [plotly](https://github.com/plotly/plotly.py), [plotnine](https://github.com/has2k1/plotnine)||
 || [yellowbrick](https://www.scikit-yb.org/en/latest/index.html), [scikit-plot](https://scikit-plot.readthedocs.io/en/stable/metrics.html)|Visualization for scikit-learn|
 || [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
+||[dtreeviz](https://github.com/parrt/dtreeviz)|Visualize decision tree|
 | Interactive charts| [bokeh](https://github.com/bokeh/bokeh)||
 || [flourish-studio](https://flourish.studio/)|Create interactive charts online|
 || [mpld3](http://mpld3.github.io/index.html)|Matplotlib to D3 Converter|
