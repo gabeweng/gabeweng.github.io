@@ -466,6 +466,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/)||
 | Logging| [loguru](https://github.com/Delgan/loguru)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
+|Environment Management|[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 
 ### Dashboard  
 
