@@ -278,6 +278,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Profanity detection| [profanity-check](https://github.com/vzhou842/profanity-check)||
 | Visualization| [stylecloud](https://github.com/minimaxir/stylecloud)|Word Clouds|
 | | [scattertext](https://github.com/JasonKessler/scattertext)|Compare word usage across segments|
+||[picture-text](https://github.com/md-experiments/picture_text)|Interactive tree-maps for hierarchical clustering|
 | Named Entity Recognition(NER) | [spaCy](https://spacy.io/) , [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml), [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/index.html)||
 ||[med7](https://github.com/kormilitzin/med7)|Spacy NER for medical records|
 | Fill blanks| [fitbert](https://github.com/Qordobacode/fitbert)||
