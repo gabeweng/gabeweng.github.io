@@ -227,6 +227,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[zeugma](https://github.com/nkthiebaut/zeugma)|Pretrained-word embeddings as scikit-learn transformers|
 ||[starspace](https://github.com/facebookresearch/StarSpace)|Learn embeddings for anything|
 | Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
+||[MuRIL](https://tfhub.dev/google/MuRIL/1)|Embeddings for 17 indic languages with transliteration|
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
 ||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
 | Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html)||
