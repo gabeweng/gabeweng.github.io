@@ -230,7 +230,7 @@ We finally combine these two losses to get a total loss that we optimize to impr
     Intuitively, this is similar to how we're taught in childhood. In the early years, we learn easy concepts such as alphabets and what they represent before moving on to complex topics like word formation, sentence formation, and then essays.
 
 ## Paper Insights  
-## 1. Can we learn with just one image per class?  
+## Q. Can we learn with just one image per class?  
 The authors performed a really interesting experiment on the CIFAR-10 dataset. They trained a model on CIFAR-10 using only 10 labeled images i.e. 1 labeled example of each class.  
 
 - They created 4 datasets by randomly selecting 1 example per class from the dataset and trained on each dataset 4 times. They reached a test accuracy between 48.58% to 85.32% with a median accuracy of 64.28%. This variability in the accuracy was caused due to the quality of labeled examples. It is difficult for a model to learn each class effectively when provided with low-quality examples.
