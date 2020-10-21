@@ -1,6 +1,7 @@
 ---
 title: "The Illustrated FixMatch for Semi-Supervised Learning"
 date: 2020-03-31T10:00:30-04:00
+last_modified_at: 2020-10-21T00:00:00-00:00
 categories:
   - semi-supervised-learning
 classes: wide
