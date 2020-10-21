@@ -13,11 +13,11 @@ header:
   teaser: "/images/kt-step-3.png"
 ---
 
-It's a common task in NLP to extract parts from a text document that matches a certain pattern. A regular expression commonly referred to as "regex" is a powerful tool to achieve this.  
+It's a common task in NLP to either check a text against a pattern or extract parts from the text that matches a certain pattern. A regular expression or "regex" is a powerful tool to achieve this.  
 
-While powerful, regex can feel daunting as it comes with its own set of jargon and sub-components that you need to remember.
+While powerful, regex can feel daunting as it comes with a lot of features and sub-parts that you need to remember.
 
-In this post, I will illustrate the various ideas underlying regex which should help you build a good mental model of how it works.  
+In this post, I will illustrate the various concepts underlying regex. The goal is to help you build a good mental model of how a regex pattern works.  
 
 ## Mental Model    
 Let's start with a simple example where we are trying to find the word 'cool' in the text.
@@ -26,7 +26,7 @@ Let's start with a simple example where we are trying to find the word 'cool' in
 
 With regex, we could simply type out the word 'cool' as the pattern and it will match the word.  
 ```python
-r'cool'
+'cool'
 ```
 
 While regex matched our desired word '**cool**', the way it operates is not at the word level but the character level. This is the key idea.
@@ -46,14 +46,14 @@ We can simply specify the character in the regular expression and it will match 
 
 For example, a regular expression given below will match all instances of 'a' in the text. You can use any of the small and capital alphabets.  
 ```
-r'a'
+'a'
 ```
 
 ![](/images/regex-match-only-a.png){:.align-center}  
 
 You can also use any digits from 0 to 9 and it will work as well.  
 ```
-r'3'
+'3'
 ```
 
 ![](/images/regex-python-3.7-example.png){:.align-center}  
@@ -62,7 +62,7 @@ Note that regex is case-sensitive by default and thus the following regex won't 
 
 
 ```
-r'A'
+'A'
 ```
 
 ![](/images/regex-not-matched-by-capital-a.png){:.align-center}  
