@@ -13,9 +13,9 @@ header:
   teaser: "/images/kt-step-3.png"
 ---
 
-It's a common task in NLP to extract parts from a text document that match certain pattern. Regular expression, commonly referred to as "regex" is a powerful tool to achieve this.  
+It's a common task in NLP to extract parts from a text document that matches a certain pattern. A regular expression commonly referred to as "regex" is a powerful tool to achieve this.  
 
-While powerful, regex can feel daunting as it comes with its own set of jargons and sub-components that you need to remember.
+While powerful, regex can feel daunting as it comes with its own set of jargon and sub-components that you need to remember.
 
 In this post, I will illustrate the various ideas underlying regex which should help you build a good mental model of how it works.  
 
@@ -29,12 +29,12 @@ With regex, we could simply type out the word 'cool' as the pattern and it will 
 r'cool'
 ```
 
-While regex matched our desired word '**cool**', the way it operates is not at the word level but at the character level. This is the key idea.
+While regex matched our desired word '**cool**', the way it operates is not at the word level but the character level. This is the key idea.
 > **Key Idea**: Regex works at the character-level, not word-level.  
 
 ![](/images/regex-working.png){:.align-center}  
 
-The implication of this is at that the regex `r'cool'` would match the following sentences as well.  
+The implication of this is that the regex `r'cool'` would match the following sentences as well.  
 
 ![](/images/regex-exact-word-match.png){:.align-center}  
 
@@ -58,7 +58,7 @@ r'3'
 
 ![](/images/regex-python-3.7-example.png){:.align-center}  
 
-Note that regex are case-sensitive by default and thus the following regex won't match anything.
+Note that regex is case-sensitive by default and thus the following regex won't match anything.
 
 
 ```
@@ -95,7 +95,7 @@ It matches any whitespace character (<span style="color: #66bb6a;">space</span>,
 ![](/images/regex-match-any-whitespace.png){:.align-center}  
 
 #### Pattern: \w   
-It matches any of the small alphabets(a to z), capital alphabets(A to Z), digits (0 to 9) and underscore.  
+It matches any of the small alphabets(a to z), capital alphabets(A to Z), digits (0 to 9), and underscore.  
 
 ![](/images/regex-slash-w.png){:.align-center}  
 
@@ -121,10 +121,10 @@ For example, if "\d" matched any digits from 0 to 9, then "\D" will match anythi
 ### d. Character sets   
 These are patterns starting with `[` and ending with `]` and specify the characters that should be matched enclosed by brackets.  
 
-For example, the following pattern matches any of the characters 'a', 'e', 'i', 'o' and 'u'.
+For example, the following pattern matches any of the characters 'a', 'e', 'i', 'o', and 'u'.
 ![](/images/regex-aeiou.png){:.align-center}  
 
-You can also replicate the functionality of `\d` using below pattern. It will match any digits between 0 to 9.
+You can also replicate the functionality of `\d` using the below pattern. It will match any digits between 0 to 9.
 ![](/images/regex-1-to-9.png){:.align-center}  
 
 Instead of specifying all the digits, we can use `-` to specify only start and end digits. So, instead of `[0123456789]`, we can do:
@@ -157,15 +157,15 @@ Similarly, we can use the `$` anchor after the character to match patterns only 
 ### f. Escaping metacharacters  
 Consider a case where we want to exactly match the word "Mr. Stark". 
 
-If we write a regex like `Mr. Stark`, then it will have unintended effect. Since, we know dot has special meaning in regex.
+If we write a regex like `Mr. Stark`, then it will have an unintended effect. Since we know dot has a special meaning in a regex.
 
 ![](/images/regex-dot-issue.png){:.align-center}  
 
-So, we should always escape the special metachracters like `.`, `$` etc. if our goal is to match the exact character itself.  
+So, we should always escape the special metacharacters like `.`, `$` etc. if our goal is to match the exact character itself.  
 
 ![](/images/regex-dot-fixed.png){:.align-center}  
 
-Here are the list of metacharacters that you should remember to escape if you're using them directly.  
+Here is the list of metacharacters that you should remember to escape if you're using them directly.  
 ```
 ^ $ . * + ? { } [ ] \ | ( )
 ```
@@ -175,7 +175,7 @@ Here are the list of metacharacters that you should remember to escape if you're
 Now that we can pattern match any characters, we could repeat things and start building more complicated patterns.  
 
 ### a. Naive repetition
-Using only what we have learned so far, a naive way would be to just repeat the pattern. For example, we can match two digit number by just repeating the character-level pattern.  
+Using only what we have learned so far, a naive way would be to just repeat the pattern. For example, we can match two-digit numbers by just repeating the character-level pattern.  
 ```
 \d\d
 ```
@@ -194,11 +194,11 @@ For example, the previous pattern for matching 2-digit number can be recreated a
 
 ![](/images/regex-it-is-2020.png){:.align-center}  
 
-You can also specify a range of repetition using the same quantifier. For example, to match from 2-digit to 4-digit numbers, we could use the pattern:
+You can also specify a range of repetitions using the same quantifier. For example, to match from 2-digit to 4-digit numbers, we could use the pattern:
 
 ![](/images/regex-min-max-count.png){:.align-center}  
 
-When applied on a sentence, it will match both 4-digit and 2-digit numbers.  
+When applied to a sentence, it will match both 4-digit and 2-digit numbers.  
 
 ![](/images/regex-20-years-old.png){:.align-center}  
 
@@ -223,7 +223,7 @@ The `?` quantifier matches the previous character if it repeats 0 or 1 times. Th
 - **one or more times**: `+`  
 The `+` quantifier matches the previous character if it repeats 1 or more times.
 
-    For example, we could find numbers of any arbitary length using the regex `\d+`.
+    For example, we could find numbers of any arbitrary length using the regex `\d+`.
     
     ![](/images/regex-example-of-plus.png){:.align-center}  
 
