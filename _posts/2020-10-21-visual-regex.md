@@ -283,8 +283,11 @@ print(match)
 ```
 <re.Match object; span=(0, 6), match='batman'>
 ```
+  
+![](/images/regex-match-object.png){:.align-center}  
 
-With the match object, we can get the matched text as 
+With the match object, we can get the matched text as
+
 ```python
 print(match.group())
 ```
