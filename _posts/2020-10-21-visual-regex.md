@@ -9,8 +9,8 @@ permalink: /regex/
 classes: wide
 excerpt: A mental model of how various components of a regular expression work from the bottom-up. 
 header:
-  og_image: /images/regex-match-any-whitespace.png
-  teaser: /images/regex-match-any-whitespace.png
+  og_image: /images/regex-cover.png
+  teaser: /images/regex-cover.png
 ---
 
 It's a common task in NLP to either check a text against a pattern or extract parts from the text that matches a certain pattern. A regular expression or "regex" is a powerful tool to achieve this.  
