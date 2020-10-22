@@ -230,6 +230,80 @@ The `+` quantifier matches the previous character if it repeats 1 or more times.
 - **zero or more times**: `*`  
 The `*` quantifier matches the previous character if it repeats zero or more times.
 
+## Usage in Python  
+Python provides a module called "re" in the standard library to work with regular expression.
+
+### Need for raw strings  
+To specify a regular expression in Python, we precede it with **r** to create raw strings.
+```python
+pattern = r'\d'
+```
+
+To understand why we precede with **r**, let's try printing the expression **\t** without `**r**`.
+```python
+>>> pattern = '\t'
+>>> print(pattern)
+
+```
+You can see how when we don't use raw string, the string `\t` is treated as the escape character for tab by Python.  
+
+Now let's convert it into raw string. We get back whatever we specified.
+```python
+>>> pattern = r'\t'
+>>> print(pattern)
+\t
+```
+
+### Using re module  
+To use `re` module, we can start by importing the `re` module as:
+```python
+import re
+```
+
+#### 1. re.findall
+This function allows us to get all the matches as a list of strings.
+```python
+import re
+re.findall(r'\d', '123456')
+```
+```
+['1', '2', '3', '4', '5', '6']
+```
+
+#### 2. re.match
+This function searches for a pattern at the beginning of the string and returns the first occurrence as a match object. If the pattern is not found, it returns None.    
+
+```python
+import re
+
+match = re.match(r'batman', 'batman is cool')
+print(match)
+```
+
+```
+<re.Match object; span=(0, 6), match='batman'>
+```
+
+With the match object, we can get the matched text as 
+```python
+print(match.group())
+```
+
+```
+batman
+```
+
+In a case where our pattern is not at the start of the sentence, we will not get any match.  
+```python
+import re
+
+match = re.match(r'batman', 'The batman is cool')
+print(match)
+```
+
+```
+None
+```
 
 ## References
 - A.M. Kuchling, ["Regular Expression HOWTO - Python 3.9.0 documentation"](https://docs.python.org/3/howto/regex.html)
