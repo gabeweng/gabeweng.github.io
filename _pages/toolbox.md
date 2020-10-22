@@ -85,6 +85,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy)|Scrape Twitter|
 | App Store| [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)||
 | Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
+|Google Ngrams|[google-ngram-downloader](https://github.com/dimazest/google-ngram-downloader)||
 
 ### Data Augmentation  
 
