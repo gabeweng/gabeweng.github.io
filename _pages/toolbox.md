@@ -286,7 +286,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
 | Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss)||
 | Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
-| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm)||
+| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
 | Record Linking| [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)||
 |Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
 
