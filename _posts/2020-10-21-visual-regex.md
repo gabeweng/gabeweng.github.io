@@ -305,5 +305,19 @@ print(match)
 None
 ```
 
+#### 3. re.search
+This function also finds the first occurrence of a pattern but the pattern can occur anywhere in the text. If the pattern is not found, it returns None.    
+
+```python
+import re
+
+match = re.search(r'batman', 'the batman is cool')
+print(match.group())
+```
+
+```
+batman
+```
+
 ## References
 - A.M. Kuchling, ["Regular Expression HOWTO - Python 3.9.0 documentation"](https://docs.python.org/3/howto/regex.html)
