@@ -18,7 +18,7 @@ Text Language Identification is the process of predicting the language of a give
 
 When working with a dataset for NLP,  the corpus may contain a mixed set of languages. Here, language identification can be useful to either filter out a few languages or to translate the corpus to a single language and then use it for your downstream tasks.
 
-In this post, I will explain the working mechanism and usage of the fasttext language detection library. 
+In this post, I will explain the working mechanism and usage of various language detection libraries. 
 
 ## Facebook's Fasttext library  
 
