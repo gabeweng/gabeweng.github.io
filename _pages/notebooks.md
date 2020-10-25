@@ -5,8 +5,8 @@ date: 2020-10-25T00:00-00:00
 last_modified_at: 2020-10-25T00:00:00-00:00
 excerpt: Collection of reusable notebooks for common machine learning tasks   
 header:
-  og_image: /images/toolbox.png
-  teaser: "/images/toolbox.png"
+  og_image: /images/ml-notebooks-cover.png
+  teaser: "/images/ml-notebooks-cover.png
 classes: wide
 ---
 
