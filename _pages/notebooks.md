@@ -18,4 +18,4 @@ This page contains a collection of reusable notebooks for machine learning tasks
 |**GLUE**|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
 |**txtai**|Use txtai to do semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
 |**faiss**|Use faiss to do semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
-
+|**hdbscan-umap**|Use UMAP+HDBSCAN for text clustering|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
