@@ -10,7 +10,7 @@ header:
 classes: wide
 ---
 
-This page contains a collection of reusable notebooks for machine learning tasks.
+This page contains a collection of reusable notebooks for machine learning tasks. 
 
 |Name|Remarks|Colab|
 |---|---|---|
@@ -21,5 +21,6 @@ This page contains a collection of reusable notebooks for machine learning tasks
 |**hdbscan-umap**|Use UMAP+HDBSCAN for text clustering|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
 |**flair**|Basic usage of flair library|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
 |**fasttext**|Train custom word vectors in fasttext|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CEZOlhhDsKOvOrJaVHknzNOoWlAii7ug?usp=sharing)|
+|**spacy**|Text classification using spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
 
 
