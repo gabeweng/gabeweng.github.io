@@ -108,11 +108,11 @@ import matplotlib.pyplot as plt
 ```
 
 **Add conda kernel to jupyter**  
-Activate conda environment and run
+Activate conda environment and run below command.
 
 ```shell
 pip install --user ipykernel
-python -m ipykernel install --user --name=amit
+python -m ipykernel install --user --name=condaenv
 ```
 
 **Start notebook on remote server**  
@@ -152,14 +152,14 @@ scp ubuntu@example.com:/mnt/file.zip .
 **Assign path to port**  
 ```shell
 location /demo/ {
-                proxy_pass http://localhost:8080/;
+                proxy_pass http://localhost:5000/;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection "upgrade";
 	}
 ```
 
-**Increase timeout**  
+**Increase timeout for nginx**  
 Default timeout is 60s. Run below command or use [alternative](https://blogs.agilefaqs.com/tag/proxy_read_timeout/).
 
 ```
@@ -188,6 +188,25 @@ df.to_csv('data.csv',
 ## Python
 **Send email with SMTP**  
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
+
+**Run selenium on chromium**  
+```shell
+sudo apt-get update
+sudo apt install chromium-chromedriver
+cp /usr/lib/chromium-browser/chromedriver /usr/bin
+pip install selenium
+```
+
+```python
+from selenium import webdriver
+
+# set options to be headless:
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome('chromedriver',options=options)
+```
 
 ## PyTorch
 **Install CPU-only version of PyTorch**  
