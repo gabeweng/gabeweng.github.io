@@ -16,4 +16,5 @@ This page contains a collection of reusable notebooks for machine learning tasks
 |---|---|---|
 |**DialogRPT**|Predict upvote, context relatedness and<br> human-like score of generated reply|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
 |**GLUE**|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
+|**txtai**|Use txtai to do semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
 
