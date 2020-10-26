@@ -18,11 +18,11 @@ Each notebook contain very minimal code demonstrating usage of some library and 
 |---|---|---|
 |**DialogRPT**|Predict upvote, context relatedness and<br> human-like score of generated reply|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
 |**GLUE**|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
-|**txtai**|Use txtai to do semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
-|**faiss**|Use faiss to do semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
+|**txtai**|Use txtai for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
+|**faiss**|Use faiss for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
 |**hdbscan-umap**|Use UMAP+HDBSCAN for text clustering|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
 |**flair**|Use NER, Embeddings and Sentiment in Flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
 |**fasttext**|Train custom word vectors in fasttext|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CEZOlhhDsKOvOrJaVHknzNOoWlAii7ug?usp=sharing)|
-|**spacy**|Text classification using spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
+|**spacy**|Train text classification model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
 
 
