@@ -30,5 +30,6 @@ Each notebook contain minimal code demonstrating usage of some library and act a
 |**doc2query**|Generate questions that a piece of text can answer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
 |**pegasus**|Generate paraphrases of a question|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
 |**EmojiCloud**|Generate EmojiCloud from text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uNQY_ewQT1D-iP0ZOLaD9H0bFXGNMzhb?authuser=3#scrollTo=UJWyzxZD0J9b)|
+|**ULMFit**|Classify text using ULMFit in Fastai 1.0|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
 
 
