@@ -12,7 +12,7 @@ classes: wide
 
 This page contains a collection of reusable notebooks for machine learning tasks. 
 
-Each notebook contain minimal code demonstrating usage of some library and act as snippets. 
+Each notebook contain minimal code demonstrating usage of some library on dummy datasets and act as snippets. 
 
 |Name|Goal|Colab|
 |---|---|---|
