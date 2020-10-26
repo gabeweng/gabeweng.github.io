@@ -45,6 +45,10 @@ celery -A tasks.celery worker --loglevel=info --concurrency=1 -P solo
 **Dockerfile for FastAPI**  
 {% gist ac87e33d8522f5734e5b9c085bca86ae %}
 
+## Flask
+**Test API in flask**
+{% gist ff5579911c0eb7d4aa193596e02b9135 %}
+
 ## Git
 **Prevent git from asking for password**  
 ```shell
