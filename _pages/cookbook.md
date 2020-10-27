@@ -214,7 +214,7 @@ proxy_read_timeout      300;
 df.to_csv('data.csv', 
             index=False, 
             quotechar='"',
-            quoting=csv.QUOTE_NONNUMERIC))
+            quoting=csv.QUOTE_NONNUMERIC)
 ```
 
 ## Python
