@@ -129,6 +129,16 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 voila --port=$PORT --no-browser app.ipynb
 ```
 
+## Kaggle
+**Add kaggle credentials**  
+```shell
+pip install --upgrade  kaggle kaggle-cli
+
+mkdir ~/.kaggle
+mv kaggle.json ~/.kaggle
+chmod 600 /root/.kaggle/kaggle.json
+```
+
 ## Linux
 **Use remote server as VPN**  
 ```shell
@@ -353,6 +363,24 @@ model = load_model(model_name,
 **Ensure Conda doesn't cause tensorflow issue**  
 {% gist 5c63f2101652ecbeadf5e5c505d40922 %}
 
+**Upload tensorboard data to cloud**
+```shell
+tensorboard dev upload --logdir ./logs \
+    --name "XYZ" \
+    --description "some model"
+```
+
+## Textblob
+**Backtranslate a text**  
+```python
+from textblob import TextBlob
+
+def back_translate(text):
+    t = TextBlob(text)
+    return (TextBlob(t.translate('en', 'zh').raw)
+            .translate('zh', 'en')
+            .raw)
+```
 
 
 
