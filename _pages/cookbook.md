@@ -32,6 +32,11 @@ conda install cudatoolkit=9.2 -c pytorch
 conda install cudatoolkit=10.0 -c pytorch
 ```
 
+**Disable auto-activation of conda environment**
+```shell
+conda config --set auto_activate_base false
+```
+
 ## Celery
 **Run celery workers**  
 File `tasks.py` contains celery object, concurrency is set to 1 and no threads or process are used with `-P solo`
@@ -162,6 +167,19 @@ ssh -NT -R example.com:5000:localhost:5000 ubuntu@example.com -i ~/.ssh/xyz.pem 
 scp ubuntu@example.com:/mnt/file.zip .
 ```
 
+**Set correct permission for PEM file**
+```shell
+chmod 400 credentials.pem
+```
+
+**Clear DNS cache**
+```shell
+sudo service network-manager restart
+sudo service dns-clean
+sudo systemctl restart dnsmasq
+sudo iptables -F
+```
+
 ## Nginx  
 **Assign path to port**  
 ```shell
@@ -192,7 +210,7 @@ proxy_read_timeout      300;
 
 ## Pandas
 **Save with quoted strings**  
-```
+```python
 df.to_csv('data.csv', 
             index=False, 
             quotechar='"',
@@ -200,6 +218,19 @@ df.to_csv('data.csv',
 ```
 
 ## Python
+**Install build utilities**  
+```shell
+sudo apt update
+sudo apt install build-essential python3-dev
+sudo apt install python-pip virtualenv
+```
+
+**Install mysqlclient**  
+```shell
+sudo apt-get install libmysqlclient-dev mysql-server
+pip install mysqlclient
+```
+
 **Send email with SMTP**  
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
 
