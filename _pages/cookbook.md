@@ -47,8 +47,22 @@ celery -A tasks.celery worker --loglevel=info --concurrency=1 -P solo
 
 
 ## Docker
+**Start docker-compose as daemon**
+```shell
+docker-compose up --build -d
+```
+
 **Dockerfile for FastAPI**  
 {% gist ac87e33d8522f5734e5b9c085bca86ae %}
+
+## FastAPI
+**Use debugging mode**  
+```python
+# server.py
+
+if __name__ == "__main__":
+    uvicorn.run("server:app", host="0.0.0.0", port=8000, reload=True)
+```
 
 ## Flask
 **Test API in flask**
@@ -208,6 +222,9 @@ proxy_send_timeout      300;
 proxy_read_timeout      300;
 ```
 
+**Setup nginx for prodigy**  
+{% gist 2cc8f79a12a89e6cd22857c5bab49c8c %}
+
 ## Pandas
 **Save with quoted strings**  
 ```python
@@ -336,9 +353,31 @@ COPY . .
 CMD streamlit run src/main.py
 ```
 
+**Docker compose for streamlit**
+
+![](/images/streamlit-docker-compose.png){:.align-center}
+
+Add `Dockerfile` to app folder.
+{% gist 6573c17effd3c6245ace31994245a1c1 %}
+
+Add `project.conf` to nginx folder.
+{% gist 632911fe32f11f859799344baa196e9e %}
+
+Add `Dockerfile` to nginx folder.
+{% gist bf8cc293f79ef414bb0a2b611b483034 %}
+
+Add `docker-compose.yml` at the root
+{% gist 375deb78641bc23c79b5127d668fcb03 %}
+
 **Run on heroku**  
 Add `requirements.txt`, create [Procfile](https://github.com/arvkevi/nba-roster-turnover/blob/master/Procfile) and [setup.sh](https://github.com/arvkevi/nba-roster-turnover/blob/master/setup.sh).
 
+**Deploy streamlit on google cloud**  
+Create [Dockerfile](https://github.com/Jcharis/Streamlit_DataScience_Apps/blob/master/Deploying_Streamlit_Apps_To_GCP/Dockerfile), [app.yaml](https://github.com/Jcharis/Streamlit_DataScience_Apps/blob/master/Deploying_Streamlit_Apps_To_GCP/app.yaml) and run:
+```shell
+gcloud config set project your_projectname
+gcloud app deploy
+```
 
 **Render SVG**  
 ```python
@@ -400,6 +439,9 @@ tensorboard dev upload --logdir ./logs \
     --name "XYZ" \
     --description "some model"
 ```
+
+**Use TPU in Keras**  
+[TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/#connect-the-tpu-and-test-it)
 
 ## Textblob
 **Backtranslate a text**  
