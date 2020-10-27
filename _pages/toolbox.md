@@ -77,6 +77,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
 | | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
 ||[hext](https://hext.thomastrapp.com/)|DSL for extracting data from HTML|
+||[ratelimit](ratelimit)|API rate limit decorator|
 | Google sheets| [gspread](https://github.com/burnash/gspread)||
 | Google drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
 | Python API| [pydataset](https://github.com/iamaziz/PyDataset)||
