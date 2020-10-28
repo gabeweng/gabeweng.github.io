@@ -159,6 +159,11 @@ chmod 600 /root/.kaggle/kaggle.json
 ```
 
 ## Linux
+**Zip a folder**
+```shell
+zip -r folder.zip folder
+```
+
 **Use remote server as VPN**  
 ```shell
 ssh -D 8888 -f -C -q -N ubuntu@example.com
