@@ -52,6 +52,12 @@ celery -A tasks.celery worker --loglevel=info --concurrency=1 -P solo
 docker-compose up --build -d
 ```
 
+**Disable pip cache and version check**
+```shell
+ENV PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+```
+
 **Dockerfile for FastAPI**  
 {% gist ac87e33d8522f5734e5b9c085bca86ae %}
 
