@@ -455,6 +455,12 @@ export CUDA_VISIBLE_DEVICES=0
 export TF_FORCE_GPU_ALLOW_GROWTH='true'
 ```
 
+**Enable XLA**  
+```python
+import tensorflow as tf
+tf.config.optimizer.set_jit(True)
+```
+
 **Load saved model with custom layer**  
 ```python
 from tensorflow.keras.models import load_model
