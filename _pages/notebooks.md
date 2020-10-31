@@ -14,6 +14,8 @@ A personal collection of reusable code snippets in notebooks for machine learnin
 
 Each notebook contain minimal code demonstrating usage of a library on a dummy dataset. 
 
+External Notebooks which are not written by me are marked with *.
+
 |Name|Goal|Colab|
 |---|---|---|
 |**emojicloud**|Visualize EmojiCloud from text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uNQY_ewQT1D-iP0ZOLaD9H0bFXGNMzhb?authuser=3#scrollTo=UJWyzxZD0J9b)|
@@ -23,7 +25,7 @@ Each notebook contain minimal code demonstrating usage of a library on a dummy d
 |**gensim**|Train custom fasttext word vectors in gensim|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CEZOlhhDsKOvOrJaVHknzNOoWlAii7ug?usp=sharing)|
 |**gensim**|Train LDA topic model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JZlsdCKfDZYlPav8eVNZ7m8TFlPuAxKH?usp=sharing)|
 |**hdbscan-umap**|Use UMAP+HDBSCAN for text clustering|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
-|**huggingface**|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
+|**huggingface***|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
 |**huggingface**|Predict upvote, context relatedness and<br> human-like score of generated reply using DialogRPT model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
 |**huggingface**|Generate questions that a piece of text can answer using doc2query|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
 |**huggingface**|Generate paraphrases of a question using pegasus|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
@@ -34,5 +36,6 @@ Each notebook contain minimal code demonstrating usage of a library on a dummy d
 |**spacy**|Train NER model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
 |**txtai**|Use txtai for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
 |**ulmfit**|Classify text using ULMFit in Fastai 1.0|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
+|**wandb***|Log different data types in weights and biases|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
 
 
