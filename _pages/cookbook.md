@@ -45,6 +45,13 @@ File `tasks.py` contains celery object, concurrency is set to 1 and no threads o
 celery -A tasks.celery worker --loglevel=info --concurrency=1 -P solo
 ```
 
+## Colab
+**Force remount google drive**  
+```python
+from google.colab import drive
+drive.mount('/content/drive', force_remount=True)
+```
+
 
 ## Docker
 **Start docker-compose as daemon**
@@ -205,6 +212,12 @@ sudo systemctl restart dnsmasq
 sudo iptables -F
 ```
 
+**Unzip .xz file**  
+```shell
+sudo apt-get install xz-utils
+unxz ne.txt.xz
+```
+
 ## Nginx  
 **Assign path to port**  
 ```shell
@@ -294,6 +307,16 @@ random.seed(seed)
 np.random.seed(seed)
 torch.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
+```
+
+**Create custom transformation**  
+```python
+class Reshape:
+    def __init__(self, new_shape):
+        self.new_shape = new_shape
+
+    def __call__(self, img):
+        return torch.reshape(img, self.new_shape)
 ```
 
 ## Pytorch Lightning
