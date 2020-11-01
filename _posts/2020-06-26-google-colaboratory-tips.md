@@ -1,7 +1,7 @@
 ---
 title: "Google Colab Tips for Power Users"
 date: 2020-06-26T15:30-00:00
-last_modified_at: 2020-09-21T00:00:00-00:00
+last_modified_at: 2020-11-01T00:00:00-00:00
 categories:
   - workflow
 classes: wide
@@ -271,6 +271,24 @@ You can save your own collections of useful snippets and access them easily in a
 - Now, the snippets are available in any colab notebook you use. Just click the **<>** icon on sidebar, search for your snippet name and click **Insert**. The code will be inserted into a new cell.  
 
 ![](/images/custom-snippets-usage.gif){:.align-center}  
+
+## 22. Run JupyterLab on Google Colab  
+You can start a JupyterLab instance on colab by running the following commands in a cell.
+```python
+!pip install jupyterlab pyngrok -q
+
+# Run jupyterlab in the background
+!nohup jupyter lab --ip=0.0.0.0 &
+
+# Get ngrok URL mapped to port 8888
+from pyngrok import ngrok
+print(ngrok.connect(8888))
+```
+
+Once executed, click the printed ngrok URL to access the JupyterLab interface.  
+
+![](/images/colab-jupyterlab.png){:.align-center}  
+
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
