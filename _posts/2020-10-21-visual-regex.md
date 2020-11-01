@@ -213,7 +213,7 @@ There should not be any space between minimum and maximum count For example, \d{
 Regex also provides quantifiers "*", "+" and "?" using which you can specify flexible repetition of a character.
 
 - **0 or 1 times**: `?`  
-The `?` quantifier matches the previous character if it repeats 0 or 1 times. This can be useful to make certain parts optional.    
+The `?` quantifier matches the previous character if it repeats 0 or 1 times. This can be useful to make certain parts optional. It is equivalent to  `{0,1}`.
 
     ![](/images/regex-question-mark-clarify.png){:.align-center}  
 
@@ -221,14 +221,14 @@ The `?` quantifier matches the previous character if it repeats 0 or 1 times. Th
     ![](/images/regex-question-mark-example.png){:.align-center}  
 
 - **one or more times**: `+`  
-The `+` quantifier matches the previous character if it repeats 1 or more times.
+The `+` quantifier matches the previous character if it repeats 1 or more times. It is equivalent to  `{1,}`.
 
     For example, we could find numbers of any arbitrary length using the regex `\d+`.
     
     ![](/images/regex-example-of-plus.png){:.align-center}  
 
 - **zero or more times**: `*`  
-The `*` quantifier matches the previous character if it repeats zero or more times.
+The `*` quantifier matches the previous character if it repeats zero or more times. It is equivalent to  `{0,}`.
 
 ## Usage in Python  
 Python provides a module called "re" in the standard library to work with regular expression.
