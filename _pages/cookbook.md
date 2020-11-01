@@ -218,6 +218,10 @@ sudo apt-get install xz-utils
 unxz ne.txt.xz
 ```
 
+## Markdown
+**Add comparison of code blocks side by side**  
+[Solution](https://stackoverflow.com/a/59314488/10137343)
+
 ## Nginx  
 **Assign path to port**  
 ```shell
