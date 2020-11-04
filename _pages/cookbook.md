@@ -262,6 +262,10 @@ df.to_csv('data.csv',
             quoting=csv.QUOTE_NONNUMERIC)
 ```
 
+## Pycharm
+**Add keyboard shortcut for custom command**  
+[Link](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207070295/comments/207021015)
+
 ## Python
 **Install build utilities**  
 ```shell
