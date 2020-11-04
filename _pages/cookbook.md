@@ -280,6 +280,9 @@ df.to_csv('data.csv',
 **Allow camel case field name from frontend**  
 {%gist 97f5d44088ddf5ffa97f0cdb4b3360ba %}
 
+**Validate fields**  
+{% gist f9cc1f2afa48762aad5352aeb3043777 %}
+
 ## Python
 **Install build utilities**  
 ```shell
