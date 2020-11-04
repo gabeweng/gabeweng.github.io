@@ -340,6 +340,12 @@ driver = webdriver.Chrome(chrome_options=chrome_options)
 conda install pytorch torchvision cpuonly -c pytorch
 ```
 
+**Auto-select proper pytorch version based on GPU**  
+```
+pip install light-the-torch
+ltt install torch torchvision
+```
+
 **Set random seed**  
 ```python
 seed = 42
