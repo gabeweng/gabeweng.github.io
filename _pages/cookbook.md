@@ -143,6 +143,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 
+**Auto print all expressions**  
+Edit `~/.ipython/profile_default/ipython_config.py` and add
+```
+c = get_config()
+
+# Run all nodes interactively
+# c.InteractiveShell.ast_node_interactivity = "last_expr"
+c.InteractiveShell.ast_node_interactivity = "all"
+```
+
 **Add conda kernel to jupyter**  
 Activate conda environment and run below command.
 
