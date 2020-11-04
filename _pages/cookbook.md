@@ -276,6 +276,9 @@ df.to_csv('data.csv',
 **Add keyboard shortcut for custom command**  
 [Link](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207070295/comments/207021015)
 
+**Enable pytest as default test runner**  
+![](/images/pytest-pycharm.png){:.align-center}  
+
 ## Pydantic
 **Allow camel case field name from frontend**  
 {%gist 97f5d44088ddf5ffa97f0cdb4b3360ba %}
