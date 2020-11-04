@@ -416,6 +416,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
 ||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
 | Bar chart race animation| [bar_chart_race](https://github.com/dexplo/bar_chart_race)||
+|Tree-map chart|[squarify](https://github.com/laserson/squarify)||
 
 ## Phase: Optimization
 ### Hyperparameter Optimization  
