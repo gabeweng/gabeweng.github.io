@@ -312,6 +312,21 @@ options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome('chromedriver',options=options)
 ```
 
+**Genetate fake user agent in selenium**  
+Run `pip install fake_useragent`.
+
+```python
+from fake_useragent import UserAgent
+from selenium import webdriver
+
+ua = UserAgent(verify_ssl=False)
+user_agent = ua.random
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument(f"user-agent={user_agent}")
+driver = webdriver.Chrome(chrome_options=chrome_options)
+```
+
 ## PyTorch
 **Install CPU-only version of PyTorch**  
 ```
