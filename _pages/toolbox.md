@@ -522,7 +522,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
 |Code to Maths|[latexify-py](https://github.com/odashi/latexify_py), [handcalcs](https://github.com/connorferster/handcalcs)||
 |Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
-|Bidirectional dictionary|[bidict](https://pypi.org/project/bidict/)||
+|Collections|[bidict](https://pypi.org/project/bidict/)|Bidirectional dictionary|
+||[munch](https://github.com/Infinidat/munch)|Dictionary with dot access|
 
 ### Utilities
 
