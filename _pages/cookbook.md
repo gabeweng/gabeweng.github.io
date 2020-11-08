@@ -300,6 +300,11 @@ sudo apt-get install libmysqlclient-dev mysql-server
 pip install mysqlclient
 ```
 
+**Convert python package to command line tool**  
+{% gist a2889d272afdd5a454230f00d2079104 %}
+
+{% gist 6883909479adb11c0f3fee924175f21d %}
+
 **Send email with SMTP**  
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
 
@@ -322,7 +327,7 @@ options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome('chromedriver',options=options)
 ```
 
-**Genetate fake user agent in selenium**  
+**Generate fake user agent in selenium**  
 Run `pip install fake_useragent`.
 
 ```python
