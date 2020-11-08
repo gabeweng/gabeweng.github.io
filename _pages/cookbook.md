@@ -77,6 +77,9 @@ if __name__ == "__main__":
     uvicorn.run("server:app", host="0.0.0.0", port=8000, reload=True)
 ```
 
+**Enable CORS**  
+{% gist ec3e27028aa5d46f45fd0aeb435723f1 %}
+
 ## Flask
 **Test API in flask**
 {% gist ff5579911c0eb7d4aa193596e02b9135 %}
