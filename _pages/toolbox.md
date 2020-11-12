@@ -499,6 +499,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Generate phrases to fool NLP models| [triggers](https://www.ericswallace.com/triggers)||
 | General| [cleverhans](https://github.com/tensorflow/cleverhans)||
 |pytest|[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in tests|
+||[exdown](https://github.com/nschloe/exdown)|Extract code from markdown files|
 
 ### Python libraries  
 
