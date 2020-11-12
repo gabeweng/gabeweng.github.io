@@ -264,6 +264,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
 | Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
 | Readability| [homer](https://github.com/wyounas/homer)||
+|Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
 | Topic Modeling| [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic)||
 | Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering)||
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
