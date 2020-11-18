@@ -389,6 +389,13 @@ class Reshape:
 redis-cli -h 1.1.1.1 -p 6380 -a password
 ```
 
+**Connect to local redis**  
+```python
+from redis import Redis
+conn = Redis(host='127.0.0.1', port='6379')
+conn.set('age', 100)
+```
+
 ## Requests
 **Post JSON data to endpoint**  
 ```python
