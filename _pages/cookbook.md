@@ -396,6 +396,24 @@ conn = Redis(host='127.0.0.1', port='6379')
 conn.set('age', 100)
 ```
 
+**Add password to redis server**  
+  
+Edit `/etc/redis/redis.conf` file.  
+```shell
+sudo nano /etc/redis/redis.conf
+```
+
+Uncomment this line and set password.
+```shell
+# requirepass yourpassword
+```
+
+Restart redis server.
+```shell
+sudo service redis-server restart
+```
+
+
 ## Requests
 **Post JSON data to endpoint**  
 ```python
