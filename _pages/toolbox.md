@@ -33,7 +33,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Curations| [datasetlist](https://www.datasetlist.com/), [UCI](https://archive.ics.uci.edu/ml/datasets.php), [Google Dataset Search](https://toolbox.google.com/datasetsearch), [fastai-datasets](https://course.fast.ai/datasets.html)||
-||[huggingface-datasets](https://huggingface.co/datasets), [The Big Bad NLP Database](https://datasets.quantumstat.com/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets)|NLP Datasets|
+||[huggingface-datasets](https://huggingface.co/datasets), [The Big Bad NLP Database](https://datasets.quantumstat.com/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets), [nlp corpora](https://nlpforhackers.io/corpora/)|NLP Datasets|
 ||[bifrost](https://datasets.bifrost.ai/)|Vision Datasets|
 |Words|[curse-words](https://github.com/reimertz/curse-words), [badwords](https://github.com/MauriceButler/badwords), [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words), [10K most common words](https://github.com/first20hours/google-10000-english), [common-misspellings](https://bitbucket.org/bedizel/moe/src/master/data/)||
 ||[wordlists](https://github.com/imsky/wordlists)|Words organized by topic|
