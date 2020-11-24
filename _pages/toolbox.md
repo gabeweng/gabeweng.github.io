@@ -311,6 +311,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 | Image processing| [scikit-image](https://github.com/scikit-image/scikit-image), [imutils](https://github.com/jrosebr1/imutils), [opencv-wrapper](https://github.com/anbergem/opencv_wrapper), [opencv-python](https://pypi.org/project/opencv-python/)||
 | Segmentation Models| [segmentation_models](https://github.com/qubvel/segmentation_models)|Keras|
+||[segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)|Segmentation models in PyTorch|
 |High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
 | Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn)||
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
