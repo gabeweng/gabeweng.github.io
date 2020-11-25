@@ -167,6 +167,16 @@ pip install --user ipykernel
 python -m ipykernel install --user --name=condaenv
 ```
 
+**Add R kernel to jupyter**    
+
+```shell
+conda install -c r r-irkernel
+
+# Link to fix issue with readline
+cd /lib/x86_64-linux-gnu/
+sudo ln -s libreadline.so.7.0 libreadline.so.6
+```
+
 **Start notebook on remote server**  
 ```shell
 jupyter notebook --ip=0.0.0.0 --no-browser
