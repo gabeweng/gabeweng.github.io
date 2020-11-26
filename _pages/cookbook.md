@@ -244,6 +244,9 @@ sudo apt-get install xz-utils
 unxz ne.txt.xz
 ```
 
+**Auto-generate help for make files**  
+{% gist 14ba10992f7437cfac2b7a64a8f0a67a %}
+
 ## Markdown
 **Add comparison of code blocks side by side**  
 [Solution](https://stackoverflow.com/a/59314488/10137343)
