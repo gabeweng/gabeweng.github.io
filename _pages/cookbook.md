@@ -136,6 +136,10 @@ tail -f /var/log/gunicorn/error_
 gunicorn app:app  --preload -w 2 -b 0.0.0.0:5000
 ```
 
+## Huey  
+**Add background task to add 2 numbers**  
+{%gist c2ec5221c1d759c43f77111c438d13e5 %}
+
 ## Jupyter Notebook
 **Auto-import common libraries**  
 1. Create `startup` folder in `~/.ipython/profile_default`
