@@ -295,6 +295,14 @@ df.to_csv('data.csv',
             quoting=csv.QUOTE_NONNUMERIC)
 ```
 
+## Postgres  
+**Import database dump**  
+If database name is `test` and user is `postgres`.  
+
+```shell
+pg_restore -U postgres -d test < example.dump
+```
+
 ## Pycharm
 **Add keyboard shortcut for custom command**  
 [Link](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207070295/comments/207021015)
