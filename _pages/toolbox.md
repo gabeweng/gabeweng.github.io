@@ -288,7 +288,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[commonregex](https://github.com/madisonmay/CommonRegex)|Ready-made regex for email/phone etc.|
 | | [textdistance](https://github.com/life4/textdistance), [editdistance](https://github.com/aflc/editdistance), [word-mover-distance](https://radimrehurek.com/gensim/models/keyedvectors.html#what-can-i-do-with-word-vectors)|Text distances|
 ||[wmd-relax](https://github.com/src-d/wmd-relax)|Word mover distance for spacy|
-|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz)|Fuzzy Search|
+|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz)|Fuzzy Search|
 | Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment)|Rule based|
 | | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
 | Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch)||
