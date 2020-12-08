@@ -286,6 +286,14 @@ proxy_read_timeout      300;
 **Setup nginx for prodigy**  
 {% gist 2cc8f79a12a89e6cd22857c5bab49c8c %}
 
+## NLTK  
+**Get list of all POS tags**  
+```python
+import nltk
+nltk.download('tagsets')
+nltk.help.upenn_tagset()
+```
+
 ## Pandas
 **Save with quoted strings**  
 ```python
