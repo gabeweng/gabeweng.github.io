@@ -92,6 +92,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
 |Google Ngrams|[google-ngram-downloader](https://github.com/dimazest/google-ngram-downloader)||
 |Machine Translation Corpus|[mtdata](https://github.com/thammegowda/mtdata)||
+|XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
 
 ### Data Augmentation  
 
