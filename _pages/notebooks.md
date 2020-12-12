@@ -36,6 +36,7 @@ External Notebooks which are not written by me are marked with *.
 |**huggingface**|Generate replies using blenderbot|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-boriQIAJT-VokCywnVMtq8lZU1ElyqV?usp=sharing)|
 |**huggingface***|Predict emojis for a text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pjgechD9jtVJLAG7W6PmgiAYrs2uFSLJ?usp=sharing)|
 |**lm_scorer**|Use language model score for zero-shot classification|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
+|**mlxtend**|Run McNemar's test|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sxIidvIKHs8EFMQ1D7IAwFNkS-IezUbq?usp=sharing)|
 |**pytorch**|Use efficientnet model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
 |**seaborn**|Visualize sentiment of word in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
 |**spacy**|Train text classification model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
