@@ -431,7 +431,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
 | High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
 ||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
-| Bar chart race animation| [bar_chart_race](https://github.com/dexplo/bar_chart_race)||
+|Animated charts| [bar_chart_race](https://github.com/dexplo/bar_chart_race)|Bar chart race animation|
+||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
 |Tree-map chart|[squarify](https://github.com/laserson/squarify)||
 
 ## Phase: Optimization
