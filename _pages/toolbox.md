@@ -304,6 +304,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[picture-text](https://github.com/md-experiments/picture_text)|Interactive tree-maps for hierarchical clustering|
 | Named Entity Recognition(NER) | [spaCy](https://spacy.io/) , [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml), [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/index.html)||
 ||[med7](https://github.com/kormilitzin/med7)|Spacy NER for medical records|
+|Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api)||
 | Fill blanks| [fitbert](https://github.com/Qordobacode/fitbert)||
 | Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
 | Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss)||
