@@ -103,6 +103,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Audio| [audiomentations](https://github.com/iver56/audiomentations), [muda](https://github.com/bmcfee/muda)||
 | OCR data| [TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator)||
 | Tabular data| [deltapy](https://github.com/firmai/deltapy)||
+||[mockaroo](https://mockaroo.com/)|Generate synthetic user details|
 | Automatic augmentation| [deepaugment](https://pypi.org/project/deepaugment/)|Image|
 
 ## Phase: Exploration
