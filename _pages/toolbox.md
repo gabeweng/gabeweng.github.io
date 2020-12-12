@@ -141,6 +141,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)|Maps in notebooks|
 ||[ipycanvas](https://github.com/martinRenou/ipycanvas)|Draw diagrams in notebook|
 |Relationship|[ppscore](https://github.com/8080labs/ppscore)|Predictive Power Score|
+||[pdpbox](https://github.com/SauceCat/PDPbox)|Partial Dependence Plot|
 
 ## Phase: Feature Engineering
 ### Feature Generation  
