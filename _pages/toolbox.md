@@ -271,7 +271,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
 ||[doc2query](https://github.com/castorini/docTTTTTquery)|Summarize document with queries|
 |Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
-| Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/)||
+| Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
 || [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
 | Multiply Choice Question Answering| [mcQA](https://github.com/mcQA-suite/mcQA)||
 |Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
