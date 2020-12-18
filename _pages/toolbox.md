@@ -395,6 +395,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[ktrain](https://pypi.org/project/ktrain/)|FastAI like interface for keras|
 ||[tavolo](https://github.com/eliorc/tavolo)|Kaggle Tricks as Keras Layers|
 | Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
+||[tensorflow-wheels](https://github.com/davidenunes/tensorflow-wheels)|Optimized wheels for Tensorflow|
 
 ## Phase: Validation
 ### Model Training Monitoring  
