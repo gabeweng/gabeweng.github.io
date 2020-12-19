@@ -289,6 +289,10 @@ Once executed, click the printed ngrok URL to access the JupyterLab interface.
 
 ![](/images/colab-jupyterlab.png){:.align-center}  
 
+## 23. Run R programs in Google Colab  
+You can use R programming language in Google Colab by going to [https://colab.to/r](https://colab.to/r). It will open a new notebook with R set as the kernel instead of Python.
+
+![](/images/r-kerel-in-colab.png){:.align-center}  
 
 ## References
 - Timothy Novikoff, ["Making the most of Colab (TF Dev Summit '20)"](https://www.youtube.com/watch?v=pnClcwTCyc0)
