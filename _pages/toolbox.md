@@ -248,6 +248,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[rank_bm25](https://github.com/dorianbrown/rank_bm25), [BM25Transformer](https://github.com/arosh/BM25Transformer)|BM25|
 || [sentence-transformers](https://www.sbert.net/docs/pretrained_models.html), [DeCLUTR](https://huggingface.co/johngiorgi/declutr-base)|BERT sentence embeddings|
 ||[conceptnet-numberbatch](https://github.com/commonsense/conceptnet-numberbatch)|Word embeddings trained with common-sense knowledge graph|
+||[word2vec-twitter](https://github.com/loretoparisi/word2vec-twitter)|Word2vec trained on twitter|
 ||[pymagnitude](https://github.com/plasticityai/magnitude)|Access word-embeddings programatically|
 ||[chakin](https://github.com/chakki-works/chakin)|Download pre-trained word vectors|
 ||[zeugma](https://github.com/nkthiebaut/zeugma)|Pretrained-word embeddings as scikit-learn transformers|
