@@ -245,6 +245,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[spacy-udpipe](https://github.com/TakeLab/spacy-udpipe)|Use UDPipe from Spacy|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Morphology|[unimorph](https://pypi.org/project/unimorph/)|Morphology data for many languages|
+|Phonetics|[epitran](https://github.com/dmort27/epitran)|Transliterate text into IPA|
 |Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
 | Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
 ||[rank_bm25](https://github.com/dorianbrown/rank_bm25), [BM25Transformer](https://github.com/arosh/BM25Transformer)|BM25|
