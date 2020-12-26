@@ -358,11 +358,12 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection)||
 | Image hashing| [ImageHash](https://pypi.org/project/ImageHash/)||
 
-### Audio  
+### Speech  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Library| [speech_recognition](https://github.com/Uberi/speech_recognition), [pyannotate](http://pyannote.github.io/), [librosa](https://librosa.github.io/librosa/index.html), [espnet](https://github.com/espnet/espnet)||
+|Libraries|[pyannotate](http://pyannote.github.io/), [librosa](https://librosa.github.io/librosa/index.html), [espnet](https://github.com/espnet/espnet)||
+|Speech Recognition|[kaldi](https://github.com/kaldi-asr/kaldi), [speech_recognition](https://github.com/Uberi/speech_recognition)||
 |Feature Engineering|[python_speech_features](https://github.com/jameslyons/python_speech_features)|Convert raw audio to features|
 | Diarization| [resemblyzer](https://github.com/resemble-ai/Resemblyzer)||
 | Source Separation| [spleeter](https://github.com/deezer/spleeter), [nussl](https://github.com/nussl/nussl), [open-unmix-pytorch](https://github.com/sigsep/open-unmix-pytorch), [asteroid](https://github.com/mpariente/asteroid)||
