@@ -64,6 +64,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Paraphrasing| [PPDB](http://paraphrase.org/)||
 |Audio | [audioset](https://research.google.com/audioset/index.html)|YouTube audio with labels|
 |Speech|[voxforge](http://www.voxforge.org/), [openslr](https://openslr.org/), [cmu wilderness](http://festvox.org/cmu_wilderness/), [commonvoice](https://commonvoice.mozilla.org/en/datasets)||
+|Speech synthesis|[CMU Artic](http://www.festvox.org/cmu_arctic/)||
 |Graphs| [Social Networks (Github, Facebook, Reddit)](https://github.com/benedekrozemberczki/datasets)||
 |Handwriting| [iam-handwriting](http://www.fki.inf.unibe.ch/databases/iam-on-line-handwriting-database)||
 ||[text_renderer](https://github.com/oh-my-ocr/text_renderer)|Generate synthetic OCR text|
