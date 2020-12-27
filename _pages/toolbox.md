@@ -365,6 +365,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Libraries|[pyannotate](http://pyannote.github.io/), [librosa](https://librosa.github.io/librosa/index.html), [espnet](https://github.com/espnet/espnet)||
 |Speech Recognition|[kaldi](https://github.com/kaldi-asr/kaldi), [speech_recognition](https://github.com/Uberi/speech_recognition)||
+|Speech Synthesis|[festvox](http://festvox.org), [cmuflite](http://www.festvox.org/flite/)||
 |Feature Engineering|[python_speech_features](https://github.com/jameslyons/python_speech_features)|Convert raw audio to features|
 | Diarization| [resemblyzer](https://github.com/resemble-ai/Resemblyzer)||
 | Source Separation| [spleeter](https://github.com/deezer/spleeter), [nussl](https://github.com/nussl/nussl), [open-unmix-pytorch](https://github.com/sigsep/open-unmix-pytorch), [asteroid](https://github.com/mpariente/asteroid)||
