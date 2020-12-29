@@ -598,4 +598,5 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Linux|[ripgrep](https://github.com/phiresky/ripgrep-all)||
 |Colab| [colab-cli](https://github.com/Akshay090/colab-cli) | Manager colab notebook from command line|
+|Drive|[drive-cli](https://github.com/nurdtechie98/drive-cli)|Use google drive similar to git|
 |Git|[gitjk](https://github.com/mapmeld/gitjk)|Undo what you just did in git|
