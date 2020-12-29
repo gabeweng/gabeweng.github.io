@@ -470,6 +470,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Animated charts| [bar_chart_race](https://github.com/dexplo/bar_chart_race)|Bar chart race animation|
 ||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
 |Tree-map chart|[squarify](https://github.com/laserson/squarify)||
+|3D charts|[babyplots](https://bp.bleb.li/documentation/python)||
 
 ## Phase: Optimization
 ### Hyperparameter Optimization  
