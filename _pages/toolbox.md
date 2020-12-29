@@ -360,6 +360,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Semantic search over videos| [scoper](https://github.com/RameshAditya/scoper)||
 | OCR| [keras-ocr](https://github.com/faustomorales/keras-ocr), [pytesseract](https://github.com/madmaze/pytesseract), [keras-craft](https://github.com/notAI-tech/keras-craft)||
 ||[easyocr](https://github.com/JaidedAI/EasyOCR)|40+ languages|
+||[layout-parser](https://github.com/Layout-Parser/layout-parser)|OCR tables from document|
 | Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection)||
 | Image hashing| [ImageHash](https://pypi.org/project/ImageHash/)||
 
