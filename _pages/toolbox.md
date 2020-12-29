@@ -512,7 +512,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 | Profile pytorch layers| [torchprof](https://github.com/awwong1/torchprof)||
-|Profile python code|[scalene](https://github.com/emeryberger/scalene)||
+|Profile python code|[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)||
 | Load testing| [k6](https://k6.io/)||
 | Monitor GPU usage| [nvtop](https://github.com/Syllo/nvtop)||
 |Benchmark Machine|[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark latency on 19 different models|
