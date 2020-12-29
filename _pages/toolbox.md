@@ -76,6 +76,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Prebuilt| [openml](https://openml.github.io/openml-python/master/), [lineflow](https://github.com/tofunlp/lineflow)||
 ||[rs_datasets](https://darel13712.github.io/rs_datasets/)|Recommendation Datasets|
 ||[nlp](https://github.com/huggingface/nlp)|Python interface to NLP datasets|
+||[tensorflow_datasets](https://github.com/tensorflow/datasets)|Access datasets in Tensorflow|
+||[hub](https://github.com/activeloopai/Hub)|Prebuild datasets for PyTorch and Tensorflow|
 | Audio| [pydub](https://github.com/jiaaro/pydub)||
 | Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
 | | [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
