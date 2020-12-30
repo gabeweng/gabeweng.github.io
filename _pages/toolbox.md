@@ -299,7 +299,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
 | Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
 || [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
-| Multiply Choice Question Answering| [mcQA](https://github.com/mcQA-suite/mcQA)||
+|Question Answering|[haystack](https://haystack.deepset.ai/docs/latest/intromd)|Build end-to-end QA system|
+||[mcQA](https://github.com/mcQA-suite/mcQA)|Multiple Choice Question Answering|
+||[TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)|Table Question Answering|
 |Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
 |Search|[elasticsearch-dsl](https://elasticsearch-dsl.readthedocs.io/en/latest/)|Wrapper for elastic search|
 ||[jina](https://github.com/jina-ai/jina)|production-level neural semantic search|
@@ -343,7 +345,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Record Linking| [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)||
 |Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
 |Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
-|Table Question Answering|[TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)||
 
 ### Computer Vision  
 
