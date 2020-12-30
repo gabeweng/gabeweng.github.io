@@ -240,6 +240,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
+|Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
+||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
 |Gibberish Detection|[nostril](https://github.com/casics/nostril), [gibberish-detector](https://github.com/amitness/Gibberish-Detector)||
 |Paraphrasing|[pegasus](https://colab.research.google.com/drive/1RWvGuHKnPur7fCL0DObMeZXQVHem6aEV?usp=sharing)|Question Paraphrasing|
 ||[sentaugment](https://github.com/facebookresearch/SentAugment)|Paraphrase mining|
@@ -308,7 +310,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[mellisearch-python](https://github.com/meilisearch/meilisearch-python)||
 | NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
 | Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
-| Readability| [homer](https://github.com/wyounas/homer)||
 |Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
 | Topic Modeling| [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy)||
 |Code Switching|[codeswitch](https://github.com/sagorbrur/codeswitch)||
