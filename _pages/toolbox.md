@@ -414,6 +414,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pytorch-optimizer](https://github.com/jettify/pytorch-optimizer)|Collection of optimizers|
 ||[pytorch-block-sparse](https://github.com/huggingface/pytorch_block_sparse)|Sparse matrix replacement for nn.Linear|
 ||[pytorch-forecasting](https://pytorch-forecasting.readthedocs.io/en/latest/)|Time series forecasting in PyTorch lightning|
+||[nonechucks](https://github.com/msamogh/nonechucks)|Drop corrupt data automatically in DataLoader|
 | Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
 ||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
 ||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
