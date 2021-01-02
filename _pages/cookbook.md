@@ -197,6 +197,13 @@ pip install jupyterlab
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
+**Switch to language server in jupyter lab**  
+```shell
+pip install — pre jupyter-lsp
+jupyter labextension install @krassowski/jupyterlab-lsp
+pip install python-language-server[all]
+```
+
 ## Kaggle
 **Add kaggle credentials**  
 ```shell
