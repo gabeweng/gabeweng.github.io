@@ -58,6 +58,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Semantic Parsing|[wikisql](https://github.com/salesforce/WikiSQL), [spider](https://yale-lily.github.io/spider)|Text to SQL|
 ||[WebQuestions](https://github.com/brmson/dataset-factoid-webquestions), [ComplexWebQuestions](https://allenai.org/data/complexwebquestions)|Text to Knowledge Graph|
 ||[CoNaLa](https://conala-corpus.github.io/), [CONCODE](https://github.com/sriniiyer/concode)|Text to program|
+||[amrlib](https://github.com/bjascob/amrlib)|Parse AMR data|
 |Image|[1 million fake faces](https://archive.org/details/1mFakeFaces), [flickr-faces](https://github.com/NVlabs/ffhq-dataset), [objectnet](https://objectnet.dev/), [YFCC100m](http://projects.dfki.uni-kl.de/yfcc100m/), [USPS](https://www.kaggle.com/bistaumanga/usps-dataset), [Animal Faces-HQ dataset (AFHQ)](https://github.com/clovaai/stargan-v2/blob/master/README.md#animal-faces-hq-dataset-afhq)||
 ||[tiny-images](https://tiny-imagenet.herokuapp.com/),[SVHN](http://ufldl.stanford.edu/housenumbers/), [STL-10](http://ai.stanford.edu/~acoates/stl10/), [imagenette](https://github.com/fastai/imagenette), [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)|Small image datasets for quick experimentation|
 || [omniglot](https://github.com/brendenlake/omniglot), [mini-imagenet](https://github.com/yaoyao-liu/mini-imagenet-tools)|One Shot Learning |
