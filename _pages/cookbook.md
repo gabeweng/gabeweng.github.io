@@ -140,7 +140,7 @@ gunicorn app:app  --preload -w 2 -b 0.0.0.0:5000
 **Add background task to add 2 numbers**  
 {%gist c2ec5221c1d759c43f77111c438d13e5 %}
 
-## Jupyter Notebook
+## Jupyter
 **Auto-import common libraries**  
 1. Create `startup` folder in `~/.ipython/profile_default`
 2. Create a python file `start.py`
@@ -189,6 +189,12 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 **Serve as voila app**  
 ```shell
 voila --port=$PORT --no-browser app.ipynb
+```
+
+**Enable widgets in jupyter lab**  
+```shell
+pip install jupyterlab
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 ## Kaggle
@@ -292,6 +298,14 @@ proxy_read_timeout      300;
 import nltk
 nltk.download('tagsets')
 nltk.help.upenn_tagset()
+```
+
+## NPM
+**Upgrade to latest node version**
+```shell
+npm cache clean -f
+npm install -g n 
+n stable
 ```
 
 ## Pandas
