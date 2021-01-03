@@ -120,6 +120,12 @@ git clone https://<token>@github.com/amitness/example.git
 git config --global alias.test "!python -m doctest``"
 ```
 
+**Install Git LFS**  
+```shell
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+```
+
 ## Gunicorn
 **Increase timeout**  
 ```shell
