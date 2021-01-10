@@ -566,10 +566,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
 ||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
 
-### Testing 
+### Testing and Monitoring
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Data Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 | Generate images to fool model| [foolbox](https://github.com/bethgelab/foolbox)||
 | Generate phrases to fool NLP models| [triggers](https://www.ericswallace.com/triggers)||
 | General| [cleverhans](https://github.com/tensorflow/cleverhans)||
