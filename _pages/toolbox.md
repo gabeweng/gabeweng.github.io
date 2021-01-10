@@ -211,7 +211,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Deep Clustering| [deep-clustering-toolbox](https://github.com/jizongFox/deep-clustering-toolbox)||
 | Graph Neural Networks| [spektral](https://github.com/danielegrattarola/spektral/)|GNN for Keras|
 | Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
-|Gradient Free Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|
+|Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
+||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
 
 ### Natural Language Processing  
 
