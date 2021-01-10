@@ -444,6 +444,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Experiment tracking|[tensorboard](https://www.tensorflow.org/tensorboard), [mlflow](https://mlflow.org/docs/latest/index.html#)||
 | Learning curve| [lrcurve](https://github.com/AndreasMadsen/python-lrcurve), [livelossplot](https://github.com/stared/livelossplot)|Plot realtime learning curve in Keras|
 | Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
 | | [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
