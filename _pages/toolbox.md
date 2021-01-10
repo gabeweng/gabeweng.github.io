@@ -467,7 +467,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [pygal](http://www.pygal.org/en/latest/index.html), [plotly](https://github.com/plotly/plotly.py), [plotnine](https://github.com/has2k1/plotnine)||
+| Libraries|[matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [pygal](http://www.pygal.org/en/latest/index.html), [plotly](https://github.com/plotly/plotly.py), [plotnine](https://github.com/has2k1/plotnine)||
 || [yellowbrick](https://www.scikit-yb.org/en/latest/index.html), [scikit-plot](https://scikit-plot.readthedocs.io/en/stable/metrics.html)|Visualization for scikit-learn|
 || [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
 ||[dtreeviz](https://github.com/parrt/dtreeviz)|Visualize decision tree|
