@@ -1,7 +1,7 @@
 ---
 title: "Text Data Augmentation with MarianMT"
 date: 2020-08-30T19:44-00:00
-last_modified_at: 2020-09-12T00:00:00-00:00
+last_modified_at: 2021-01-10T00:00:00-00:00
 permalink: /back-translation/
 categories:
   - nlp
@@ -30,8 +30,8 @@ We will use a data augmentation technique called "Back Translation". In this, we
 
 First, we need to install Hugging Face transformers and Moses Tokenizers with the following command
 ```shell
-pip install -U transformers 
-pip install mosestokenizer
+pip install transformers==4.1.1 sentencepiece==0.1.94
+pip install mosestokenizer==1.1.0
 ```
 
 After installation, we can now import the MarianMT model and tokenizer.
