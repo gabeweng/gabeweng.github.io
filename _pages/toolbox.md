@@ -244,6 +244,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
+|Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
 |Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
 ||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
 |Gibberish Detection|[nostril](https://github.com/casics/nostril), [gibberish-detector](https://github.com/amitness/Gibberish-Detector)||
