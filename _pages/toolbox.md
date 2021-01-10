@@ -179,6 +179,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Project Structure|[cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/)||
 | Find SOTA models| [sotawhat](https://sotawhat.herokuapp.com), [papers-with-code](https://paperswithcode.com/sota), [codalab](https://competitions.codalab.org/), [nlpprogress](https://nlpprogress.com/), [evalai](https://evalai.cloudcv.org/), [collectiveknowledge](https://cknowledge.io/reproduced-results/)|Benchmarks|
 ||[bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)|BERT Papers|
 ||[acl-explorer](http://acl-explorer.eu-west-2.elasticbeanstalk.com/)|ACL Publications Explorer|
