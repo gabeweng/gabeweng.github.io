@@ -89,6 +89,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Email| [talon](https://github.com/mailgun/talon)||
 | PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber), [pymupdf](https://pymupdf.readthedocs.io/en/latest/intro.html)||
 ||[grobid](https://grobid.readthedocs.io/en/latest/Introduction/)|Parse PDF into structured XML|
+||[PyPDF2](https://github.com/mstamy2/PyPDF2)|Read and write PDF in Python|
 ||[pdf2image](https://github.com/Belval/pdf2image)|Convert PDF to image|
 | Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
 | Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
