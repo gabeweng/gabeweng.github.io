@@ -572,7 +572,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Data Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
+|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 | Generate images to fool model| [foolbox](https://github.com/bethgelab/foolbox)||
 | Generate phrases to fool NLP models| [triggers](https://www.ericswallace.com/triggers)||
 | General| [cleverhans](https://github.com/tensorflow/cleverhans)||
