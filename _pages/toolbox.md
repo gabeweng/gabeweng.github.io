@@ -42,6 +42,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[freeling](https://github.com/ixa-ehu/matxin/tree/master/data/freeling/en/dictionary)|Dictionary of words grouped by POS|
 |Text Corpus|[project gutenberg](https://www.gutenberg.org/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets),  [1 trillion n-grams](https://catalog.ldc.upenn.edu/LDC2006T13), [litbank](https://github.com/dbamman/litbank), [BookCorpus](https://github.com/soskek/bookcorpus), [south-asian text corpus](https://github.com/google-research-datasets/dakshina)||
 ||[opus](http://opus.nlpl.eu/), [oscar (big multilingual corpus)](https://traces1.inria.fr/oscar/)|Translation Parallel Text|
+||[pile](https://pile.eleuther.ai/)|825GB text corpus|
 ||[freebase](https://freebase-easy.cs.uni-freiburg.de/dump/)|Relation triples|
 ||[opensubtitles](http://opus.nlpl.eu/OpenSubtitles-v2018.php)|Movie subtitles parallel corpus|
 ||[lti-langid](http://www.cs.cmu.edu/~ralf/langid.html)|Language Identification Corpus for 1152 languages|
