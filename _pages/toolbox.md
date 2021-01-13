@@ -545,6 +545,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
 | Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
 ||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
+|Job Scheduler|[airflow](https://airflow.apache.org/)||
 | Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
 ||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
 | Logging| [loguru](https://github.com/Delgan/loguru)||
