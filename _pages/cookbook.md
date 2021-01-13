@@ -267,6 +267,12 @@ sudo apt-get install xz-utils
 unxz ne.txt.xz
 ```
 
+**Disable password-based login on server**  
+- Edit this file and set `PasswordAuthentication` to `no`
+```shell
+sudo nano /etc/ssh/sshd_config
+```
+
 **Auto-generate help for make files**  
 {% gist 14ba10992f7437cfac2b7a64a8f0a67a %}
 
