@@ -634,6 +634,13 @@ tensorboard dev upload --logdir ./logs \
 **Use TPU in Keras**  
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/#connect-the-tpu-and-test-it)
 
+**Use universal sentence encoder**  
+```python
+import tensorflow_hub as hub
+embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
+e = embed(['hello', 'hey']).numpy()
+```
+
 ## Textblob
 **Backtranslate a text**  
 ```python
@@ -645,17 +652,3 @@ def back_translate(text):
             .translate('zh', 'en')
             .raw)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
