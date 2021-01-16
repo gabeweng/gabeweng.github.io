@@ -318,6 +318,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
 | Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html)||
 || [inltk](https://github.com/goru001/inltk), [indic_nlp](https://github.com/anoopkunchukuttan/indic_nlp_library)|Indic Languages|
+||[cltk](https://github.com/cltk/cltk)|NLP for latin and classic languages|
 |Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased), [distilbert](https://huggingface.co/distilbert-base-uncased), [tinybert](https://huggingface.co/XiaoqiJiao),[BERT-of-Theseus-MNLI](https://huggingface.co/canwenxu/BERT-of-Theseus-MNLI), [MiniML](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)||
 |Information Extraction|[claucy](https://github.com/mmxgn/spacy-clausie/tree/dev-clausie-reimplementation)||
 | Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
