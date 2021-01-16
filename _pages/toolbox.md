@@ -327,7 +327,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
 || [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
 ||[twitter-roberta-base](https://huggingface.co/cardiffnlp/twitter-roberta-base)|twitter|
-|Scientific Domain| [scispacy](https://github.com/allenai/scispacy)|Spacy for bio-medical data|
+|| [scispacy](https://github.com/allenai/scispacy)|bio-medical data|
 | Text Extraction| [textract (Image, Audio, PDF)](https://textract.readthedocs.io/en/stable/)||
 | Text Generation| [gp2client](https://github.com/rish-16/gpt2client), [textgenrnn](https://github.com/minimaxir/textgenrnn), [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple), [aitextgen](https://github.com/minimaxir/aitextgen)|GPT-2|
 | | [markovify](https://github.com/jsvine/markovify)|Markov chains|
