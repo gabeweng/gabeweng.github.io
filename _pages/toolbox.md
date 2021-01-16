@@ -221,6 +221,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
+||[tensorflow-text](https://github.com/tensorflow/text)|Addons for NLP|
 ||[tensorflow-wheels](https://github.com/davidenunes/tensorflow-wheels)|Optimized wheels for Tensorflow|
 || [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
 ||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
