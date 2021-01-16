@@ -131,7 +131,10 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
+|Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
+|Parallelize| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)|Parallelize pandas|
+||[vaex](https://github.com/vaexio/vaex)|Pandas on huge data|
+|| [numba](http://numba.pydata.org/)|Parallelize numpy|
 | Missing values| [missingno](https://github.com/ResidentMario/missingno)||
 | Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
 | Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
@@ -513,23 +516,15 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/)||
-| Transpiling| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
+|Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
-| Pickling extended| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)||
+|| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 ||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
-
-### Scaling
-
-|Category|Tool|Remarks|
-|---|---|---|
-|Profiling| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
+|Benchmarking| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
 ||[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)|Profile python code|
-|Benchmarking| [k6](https://k6.io/)||
-||[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark latency on 19 different models|
-|Parallelize| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)|Parallelize pandas|
-||[vaex](https://github.com/vaexio/vaex)|Pandas on huge data|
-|| [numba](http://numba.pydata.org/)|Parallelize numpy|
+|| [k6](https://k6.io/)|Load test API|
+||[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark VM on 19 different models|
 |Distributed training| [horovod](https://github.com/horovod/horovod)||
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
 
