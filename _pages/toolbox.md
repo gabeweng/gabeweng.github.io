@@ -216,6 +216,35 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
 
+### Frameworks  
+
+|Category|Tool|Remarks|
+|---|---|---|
+|Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
+||[tensorflow-wheels](https://github.com/davidenunes/tensorflow-wheels)|Optimized wheels for Tensorflow|
+|| [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
+||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
+||[scikeras](https://github.com/adriangb/scikeras)|Scikit-learn Wrapper for Keras|
+||[larq](https://github.com/larq/larq)|Binarized neural networks|
+||[ktrain](https://pypi.org/project/ktrain/)|FastAI like interface for keras|
+||[tavolo](https://github.com/eliorc/tavolo)|Kaggle Tricks as Keras Layers|
+| Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
+||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
+||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
+||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
+||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)|Computer Vision Methods|
+||[torchcontrib](https://github.com/pytorch/contrib)|SOTA Bulding Blocks in PyTorch|
+||[pytorch-optimizer](https://github.com/jettify/pytorch-optimizer)|Collection of optimizers|
+||[pytorch-block-sparse](https://github.com/huggingface/pytorch_block_sparse)|Sparse matrix replacement for nn.Linear|
+||[pytorch-forecasting](https://pytorch-forecasting.readthedocs.io/en/latest/)|Time series forecasting in PyTorch lightning|
+||[nonechucks](https://github.com/msamogh/nonechucks)|Drop corrupt data automatically in DataLoader|
+| Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
+||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
+||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
+||[scikit-multilearn](http://scikit.ml/)|Multi-label classification|
+|Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
+||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
+
 ### Natural Language Processing  
 
 |Category|Tool|Remarks|
@@ -410,35 +439,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [sktime](https://github.com/alan-turing-institute/sktime)|Scikit-learn like API|
 ||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
-
-### Framework extensions  
-
-|Category|Tool|Remarks|
-|---|---|---|
-|Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
-||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
-| Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
-||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
-||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
-||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
-||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)|Computer Vision Methods|
-||[torchcontrib](https://github.com/pytorch/contrib)|SOTA Bulding Blocks in PyTorch|
-||[pytorch-optimizer](https://github.com/jettify/pytorch-optimizer)|Collection of optimizers|
-||[pytorch-block-sparse](https://github.com/huggingface/pytorch_block_sparse)|Sparse matrix replacement for nn.Linear|
-||[pytorch-forecasting](https://pytorch-forecasting.readthedocs.io/en/latest/)|Time series forecasting in PyTorch lightning|
-||[nonechucks](https://github.com/msamogh/nonechucks)|Drop corrupt data automatically in DataLoader|
-| Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
-||[tscv](https://github.com/WenjieZ/TSCV)|Time-series cross-validation|
-||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
-||[scikit-multilearn](http://scikit.ml/)|Multi-label classification|
-| Keras| [tf-sha-rnn](https://github.com/titu1994/tf-sha-rnn)||
-||[keras-radam](https://github.com/CyberZHG/keras-radam)|RADAM optimizer|
-||[scikeras](https://github.com/adriangb/scikeras)|Scikit-learn Wrapper for Keras|
-||[larq](https://github.com/larq/larq)|Binarized neural networks|
-||[ktrain](https://pypi.org/project/ktrain/)|FastAI like interface for keras|
-||[tavolo](https://github.com/eliorc/tavolo)|Kaggle Tricks as Keras Layers|
-| Tensorflow| [tensorflow-addons](https://github.com/tensorflow/addons)||
-||[tensorflow-wheels](https://github.com/davidenunes/tensorflow-wheels)|Optimized wheels for Tensorflow|
 
 ## Phase: Validation
 ### Model Training Monitoring  
