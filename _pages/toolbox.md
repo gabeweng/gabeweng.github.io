@@ -136,13 +136,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
 | Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
 | Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
-| Numerical data| [numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
 | Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
 | Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
 | Parsing| [pyparsing](https://pyparsing-docs.readthedocs.io/en/latest/index.html), [parse](https://pypi.org/project/parse/)||
-| Natural date parser| [dateparser](https://github.com/scrapinghub/dateparser)||
-| Unicode| [text-unidecode](https://pypi.org/project/text-unidecode/)||
-| Emoji| [emoji](https://pypi.org/project/emoji/)||
 | Weak Supervision| [snorkel](https://www.snorkel.org/get-started/)||
 | Graph Sampling| [little ball of fur](https://github.com/benedekrozemberczki/littleballoffur)||
 
@@ -269,10 +265,13 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
 | | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
-| | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text)|Fix Unicode Issues|
+| | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text),[text-unidecode](https://pypi.org/project/text-unidecode/)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 | | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai)|Parse Street Addresses|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
+||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
+|| [dateparser](https://github.com/scrapinghub/dateparser)|Parse natural dates|
+|| [emoji](https://pypi.org/project/emoji/)|Handle emoji|
 ||[pyarabic](https://pyarabic.readthedocs.io/ar/latest/)|multilingual|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
