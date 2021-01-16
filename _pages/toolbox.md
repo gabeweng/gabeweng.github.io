@@ -271,6 +271,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 | | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai)|Parse Street Addresses|
+||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[pyarabic](https://pyarabic.readthedocs.io/ar/latest/)|multilingual|
 | Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
