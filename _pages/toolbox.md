@@ -517,21 +517,21 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/)||
 |Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
-|| [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
+||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 ||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
 ||[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 |Benchmarking| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
 ||[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)|Profile python code|
-|| [k6](https://k6.io/)|Load test API|
+||[k6](https://k6.io/)|Load test API|
 ||[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark VM on 19 different models|
-|Distributed training| [horovod](https://github.com/horovod/horovod)||
+|Distributed training|[horovod](https://github.com/horovod/horovod)||
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
 
 ### Inference  
 |Category|Tool|Remarks|
 |---|---|---|
-|Dashboard| [streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
+|Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
 ||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
@@ -540,15 +540,15 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
 |API Frameworks|[flask](https://flask.palletsprojects.com/en/1.1.x/)||
 ||[fastapi](https://fastapi.tiangolo.com/)|Automatic Docs and Validation|
-| Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
-| Data Validation| [schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
-| CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
-| Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
-| Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
-| Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
+|Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
+|Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
+|CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
+|Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
+|Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
+|Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
 ||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
 |Job Scheduler|[airflow](https://airflow.apache.org/)||
-| Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
+|Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
 ||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
 |Logging| [loguru](https://github.com/Delgan/loguru)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
