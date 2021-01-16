@@ -250,7 +250,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/), [nlp-architect](https://intellabs.github.io/nlp-architect/index.html), [spark-nlp](https://github.com/JohnSnowLabs/spark-nlp), [pytext](https://github.com/facebookresearch/pytext)||
+| Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/), [nlp-architect](https://intellabs.github.io/nlp-architect/index.html), [spark-nlp](https://github.com/JohnSnowLabs/spark-nlp), [pytext](https://github.com/facebookresearch/pytext), [FARM](https://github.com/deepset-ai/FARM)||
 | | [headliner](https://github.com/as-ideas/headliner), [txt2txt](https://github.com/bedapudi6788/txt2txt)|Sequence to sequence models|
 ||[Nvidia NeMo](https://github.com/NVIDIA/NeMo)|Toolkit for ASR, NLP and TTS|
 ||[nlu](https://nlu.johnsnowlabs.com/docs/en/examples)|1-line models for NLP|
