@@ -378,6 +378,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Named Entity Recognition(NER) | [spaCy](https://spacy.io/) , [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml), [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/index.html)||
 ||[med7](https://github.com/kormilitzin/med7)|Spacy NER for medical records|
 |Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api)||
+|Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
 | Fill blanks| [fitbert](https://github.com/Qordobacode/fitbert)||
 | Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
 | Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss), [sparse_dot_topn](https://github.com/ing-bank/sparse_dot_topn)||
