@@ -388,6 +388,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
 |Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
 |Dialogue System|[ParlAI](https://github.com/facebookresearch/ParlAI)||
+|Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
 
 ### Computer Vision  
 
