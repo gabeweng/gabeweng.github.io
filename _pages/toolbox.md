@@ -445,7 +445,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
 
 ## Phase: Validation
-### Model Training Monitoring  
+### Experiment Monitoring  
 
 |Category|Tool|Remarks|
 |---|---|---|
@@ -454,9 +454,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
 | | [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
 ||[apprise](https://github.com/caronc/apprise)|Notify to any platform|
-| Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
-| GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor)||
-| | [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
+|Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
+|GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor), [nvtop](https://github.com/Syllo/nvtop)||
+|| [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
 
 ### Interpretability  
 
@@ -516,25 +516,19 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 ||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
 
-### Scalability  
+### Scaling
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Parallelize Pandas| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)||
-|Pandas on Huge data|[vaex](https://github.com/vaexio/vaex)||
-| Parallelize numpy operations| [numba](http://numba.pydata.org/)||
-| Distributed training| [horovod](https://github.com/horovod/horovod)||
+|Profiling| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
+||[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)|Profile python code|
+|Benchmarking| [k6](https://k6.io/)||
+||[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark latency on 19 different models|
+|Parallelize| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)|Parallelize pandas|
+||[vaex](https://github.com/vaexio/vaex)|Pandas on huge data|
+|| [numba](http://numba.pydata.org/)|Parallelize numpy|
+|Distributed training| [horovod](https://github.com/horovod/horovod)||
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
-
-### Bechmarking  
-
-|Category|Tool|Remarks|
-|---|---|---|
-| Profile pytorch layers| [torchprof](https://github.com/awwong1/torchprof)||
-|Profile python code|[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)||
-| Load testing| [k6](https://k6.io/)||
-| Monitor GPU usage| [nvtop](https://github.com/Syllo/nvtop)||
-|Benchmark Machine|[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark latency on 19 different models|
 
 ### API  
 
@@ -552,7 +546,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Job Scheduler|[airflow](https://airflow.apache.org/)||
 | Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
 ||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
-| Logging| [loguru](https://github.com/Delgan/loguru)||
+|Logging| [loguru](https://github.com/Delgan/loguru)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
 |Environment Management|[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 
