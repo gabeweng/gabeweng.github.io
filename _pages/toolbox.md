@@ -459,6 +459,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|MLOps|[clearml](https://www.clear.ml), [wandb](https://wandb.ai/), [neptune.ai](https://neptune.ai)||
 |Experiment tracking|[tensorboard](https://www.tensorflow.org/tensorboard), [mlflow](https://mlflow.org/docs/latest/index.html#)||
 | Learning curve| [lrcurve](https://github.com/AndreasMadsen/python-lrcurve), [livelossplot](https://github.com/stared/livelossplot)|Plot realtime learning curve in Keras|
 | Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
@@ -477,6 +478,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[bertviz](https://github.com/jessevig/bertviz)|Explore self-attention in BERT|
 | Interpret word2vec| [word2viz](https://lamyiowce.github.io/word2viz/), [whatlies](https://github.com/RasaHQ/whatlies)||
 |Interpret NLP models|[Language Interpretability Tool](https://pair-code.github.io/lit/setup/#custom)||
+|Adversarial Attack| [cleverhans](https://github.com/tensorflow/cleverhans)|General|
+|| [foolbox](https://github.com/bethgelab/foolbox)|Image|
+||[triggers](https://www.ericswallace.com/triggers)|NLP|
 
 ### Visualization  
 
@@ -533,6 +537,13 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Dashboard| [streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
+||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
+||[dash](https://plotly.com/dash/)|React Dashboard using Python|
+||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
+||[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
+||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
+||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
 |API Frameworks|[flask](https://flask.palletsprojects.com/en/1.1.x/)||
 ||[fastapi](https://fastapi.tiangolo.com/)|Automatic Docs and Validation|
 | Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
@@ -549,26 +560,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
 |Environment Management|[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 
-### Dashboard  
-
-|Category|Tool|Remarks|
-|---|---|---|
-|Libraries| [streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
-||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
-||[dash](https://plotly.com/dash/)|React Dashboard using Python|
-||[voila](https://github.com/voila-dashboards/voila)|Convert Jupyter notebooks into dashboard|
-|streamlit|[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
-||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
-||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
-
 ### Testing and Monitoring
 
 |Category|Tool|Remarks|
 |---|---|---|
 |Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
-| Generate images to fool model| [foolbox](https://github.com/bethgelab/foolbox)||
-| Generate phrases to fool NLP models| [triggers](https://www.ericswallace.com/triggers)||
-| General| [cleverhans](https://github.com/tensorflow/cleverhans)||
 |pytest|[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in tests|
 ||[exdown](https://github.com/nschloe/exdown)|Extract code from markdown files|
 ||[mktestdocs](https://github.com/koaning/mktestdocs)|Test code present in markdown files|
@@ -608,13 +604,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Database|[mlab](https://mlab.com/)|Free 500 MB MongoDB|
 |Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
 |Data Visualization|[flourish-studio](https://flourish.studio/)||
-|MLOps|[clearml](https://www.clear.ml), [wandb](https://wandb.ai/), [neptune.ai](https://neptune.ai)||
-
-
-### Workflow  
-
-|Category|Tool|Remarks|
-|---|---|---|
 |Linux|[ripgrep](https://github.com/phiresky/ripgrep-all)||
 |Colab| [colab-cli](https://github.com/Akshay090/colab-cli) | Manager colab notebook from command line|
 |Drive|[drive-cli](https://github.com/nurdtechie98/drive-cli)|Use google drive similar to git|
