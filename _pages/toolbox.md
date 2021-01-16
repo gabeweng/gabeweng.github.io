@@ -444,6 +444,16 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
 
+### Hyperparameter Optimization  
+
+|Category|Tool|Remarks|
+|---|---|---|
+| General| [hyperopt](https://github.com/hyperopt/hyperopt), [optuna](https://optuna.org/), [evol](https://github.com/godatadriven/evol), [talos](https://github.com/autonomio/talos)||
+| Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
+| Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn), [scikit-optimize](https://scikit-optimize.github.io/stable/)|Bayesian Optimization|
+||[sklearn-deap](https://github.com/rsteca/sklearn-deap)|Evolutionary algorithm|
+| Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
+
 ## Phase: Validation
 ### Experiment Monitoring  
 
@@ -492,17 +502,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
 |Tree-map chart|[squarify](https://github.com/laserson/squarify)||
 |3D charts|[babyplots](https://bp.bleb.li/documentation/python)||
-
-## Phase: Optimization
-### Hyperparameter Optimization  
-
-|Category|Tool|Remarks|
-|---|---|---|
-| General| [hyperopt](https://github.com/hyperopt/hyperopt), [optuna](https://optuna.org/), [evol](https://github.com/godatadriven/evol), [talos](https://github.com/autonomio/talos)||
-| Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
-| Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn), [scikit-optimize](https://scikit-optimize.github.io/stable/)|Bayesian Optimization|
-||[sklearn-deap](https://github.com/rsteca/sklearn-deap)|Evolutionary algorithm|
-| Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
 
 ## Phase: Production
 ### Model Serving  
