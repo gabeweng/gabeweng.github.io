@@ -156,7 +156,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Relationship|[ppscore](https://github.com/8080labs/ppscore)|Predictive Power Score|
 ||[pdpbox](https://github.com/SauceCat/PDPbox)|Partial Dependence Plot|
 
-## Phase: Feature Engineering
 ### Feature Generation  
 
 |Category|Tool|Remarks|
