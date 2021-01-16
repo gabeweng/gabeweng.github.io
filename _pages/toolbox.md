@@ -521,6 +521,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 ||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
+||[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 |Benchmarking| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
 ||[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)|Profile python code|
 || [k6](https://k6.io/)|Load test API|
@@ -528,8 +529,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Distributed training| [horovod](https://github.com/horovod/horovod)||
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
 
-### API  
-
+### Inference  
 |Category|Tool|Remarks|
 |---|---|---|
 |Dashboard| [streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
@@ -553,16 +553,10 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
 |Logging| [loguru](https://github.com/Delgan/loguru)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
-|Environment Management|[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
-
-### Testing and Monitoring
-
-|Category|Tool|Remarks|
-|---|---|---|
-|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
-|pytest|[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in tests|
+||[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in pytest|
 ||[exdown](https://github.com/nschloe/exdown)|Extract code from markdown files|
 ||[mktestdocs](https://github.com/koaning/mktestdocs)|Test code present in markdown files|
+|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 
 ### Python libraries  
 
