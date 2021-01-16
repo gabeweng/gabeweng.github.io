@@ -511,7 +511,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |3D charts|[babyplots](https://bp.bleb.li/documentation/python)||
 
 ## Phase: Production
-### Model Export 
+### Model Export
+
 |Category|Tool|Remarks|
 |---|---|---|
 |Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/)||
@@ -529,6 +530,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
 
 ### Inference  
+
 |Category|Tool|Remarks|
 |---|---|---|
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
