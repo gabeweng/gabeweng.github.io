@@ -493,6 +493,9 @@ response = requests.post('http://example.com',
                          headers=headers)
 ```
 
+**Use random user agent in requests**  
+{% gist f97ad3502d2e7321e0a38ac10bb11df2 %}
+
 ## SSH
 **Add server alias to SSH config**  
 Add to `~/.ssh/config`
