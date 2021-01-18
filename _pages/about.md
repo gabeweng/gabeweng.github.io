@@ -17,4 +17,4 @@ I currently apply Machine Learning research to industry problems at [Fusemachine
 I'm interested in the research paradigm of learning with limited labels and Natural Language Processing.
 
 **Get in touch**  
-I’m active on [twitter](http://bit.ly/amitnesstwitter) and would love to connect with you.
+I’m active on [twitter](https://twitter.com/amitness) and would love to connect with you.
