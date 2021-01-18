@@ -516,7 +516,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/)||
+|Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/), [huggingface-hub](https://github.com/huggingface/huggingface_hub)||
 |Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 ||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
