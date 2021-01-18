@@ -479,6 +479,19 @@ Restart redis server.
 sudo service redis-server restart
 ```
 
+**Enable cluster mode locally**  
+- Edit `/etc/redis/redis.conf` file.  
+```shell
+sudo nano /etc/redis/redis.conf
+```
+
+- Uncomment this line and save file.
+{% gist cf2ac62e38d2e20ff06e52ac49ae58df %}
+
+- Restart redis server.
+```shell
+sudo service redis-server restart
+```
 
 ## Requests
 **Post JSON data to endpoint**  
