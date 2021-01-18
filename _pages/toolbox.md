@@ -534,6 +534,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Serving Frameworks|[cortex](https://github.com/cortexlabs/cortex)||
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
