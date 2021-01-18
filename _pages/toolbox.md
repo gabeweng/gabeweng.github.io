@@ -264,6 +264,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [truecase](https://pypi.org/project/truecase/)|Fix casing|
 || [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor), [pysbd](https://github.com/nipunsadvilkar/pySBD), [sentence-splitter](https://github.com/mediacloud/sentence-splitter)|Sentence Segmentation|
 ||[wordninja](https://github.com/keredson/wordninja)|Probabilistic Word Segmentation|
+||[punctuator2](https://github.com/ottokart/punctuator2)|Punctuation Restoration|
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check), [langdetect](https://github.com/Mimino666/langdetect), [polyglot](https://polyglot.readthedocs.io/en/latest/Detection.html), [pycld2](https://github.com/aboSamoor/pycld2), [cld2](https://github.com/CLD2Owners/cld2), [cld3](https://github.com/google/cld3), [langid](https://github.com/saffsd/langid.py)|Language Identification|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
