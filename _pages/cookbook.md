@@ -612,6 +612,16 @@ Find link from [https://github.com/lakshayg/tensorflow-build](https://github.com
 pip install --ignore-installed --upgrade "url"
 ```
 
+**Install with GPU support**  
+```shell
+conda create --name tensorflow-22 \
+    tensorflow-gpu=2.2 \
+    cudatoolkit=10.1 \
+    cudnn=7.6 \
+    python=3.8 \
+    pip=20.0
+```
+
 **Use only single GPU**  
 ```shell
 export CUDA_VISIBLE_DEVICES=0
