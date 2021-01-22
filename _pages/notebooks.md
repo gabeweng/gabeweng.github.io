@@ -18,6 +18,7 @@ External Notebooks which are not written by me are marked with *.
 
 |Name|Goal|Colab|
 |---|---|---|
+|**benepar**|Perform constituency parsing of a sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Fxqq9OmIgPVT4xQJBT6E1siQtpvc_MV8?usp=sharing)|
 |**emojicloud**|Visualize EmojiCloud from text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uNQY_ewQT1D-iP0ZOLaD9H0bFXGNMzhb?authuser=3#scrollTo=UJWyzxZD0J9b)|
 |**faiss**|Use faiss for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
 |**fasttext**|Train custom word vectors in fasttext library|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12fhA0DCHhmYBOeFRvA15bNZKwTkIBvkH?usp=sharing)|
