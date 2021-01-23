@@ -241,7 +241,7 @@ unxz ne.txt.xz
 ```
 
 **Disable password-based login on server**  
-- Edit this file and set `PasswordAuthentication` to `no`
+Edit this file and set `PasswordAuthentication` to `no`
 ```shell
 sudo nano /etc/ssh/sshd_config
 ```
@@ -333,7 +333,7 @@ sudo apt install python-pip virtualenv
 
 **Install mysqlclient**  
 ```shell
-sudo apt-get install libmysqlclient-dev mysql-server
+sudo apt install libmysqlclient-dev mysql-server
 pip install mysqlclient
 ```
 
@@ -348,37 +348,18 @@ pip install mysqlclient
 
 **Run selenium on chromium**  
 ```shell
-sudo apt-get update
+sudo apt update
 sudo apt install chromium-chromedriver
 cp /usr/lib/chromium-browser/chromedriver /usr/bin
 pip install selenium
 ```
 
-```python
-from selenium import webdriver
-
-# set options to be headless:
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-dev-shm-usage')
-driver = webdriver.Chrome('chromedriver',options=options)
-```
+{% gist 67183908ecaa28e57bfcc444eb28a9a3 %}
 
 **Generate fake user agent in selenium**  
 Run `pip install fake_useragent`.
 
-```python
-from fake_useragent import UserAgent
-from selenium import webdriver
-
-ua = UserAgent(verify_ssl=False)
-user_agent = ua.random
-
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument(f"user-agent={user_agent}")
-driver = webdriver.Chrome(chrome_options=chrome_options)
-```
+{% gist 35d9049ac4d742a3ac472271e9c658db %}
 
 ## PyTorch
 **Install CPU-only version of PyTorch**  
@@ -402,14 +383,7 @@ torch.cuda.manual_seed_all(seed)
 ```
 
 **Create custom transformation**  
-```python
-class Reshape:
-    def __init__(self, new_shape):
-        self.new_shape = new_shape
-
-    def __call__(self, img):
-        return torch.reshape(img, self.new_shape)
-```
+{% gist d5b8d17d2d31987c687b52185a978b0f %}
 
 ## Pytorch Lightning
 **Use model checkpoint callback**  
@@ -422,11 +396,7 @@ redis-cli -h 1.1.1.1 -p 6380 -a password
 ```
 
 **Connect to local redis**  
-```python
-from redis import Redis
-conn = Redis(host='127.0.0.1', port='6379')
-conn.set('age', 100)
-```
+{% gist 73c6f7c46e9d2ac076ee7285d92f3855 %}
 
 **Add password to redis server**  
   
