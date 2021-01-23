@@ -298,6 +298,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[camphr](https://github.com/PKSHATechnology-Research/camphr/)|Wrapper to transformers, elmo, udify|
 ||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
 ||[spacy-udpipe](https://github.com/TakeLab/spacy-udpipe)|Use UDPipe from Spacy|
+||[spacymoji](https://pypi.org/project/spacymoji/)|Add emoji metadata to spacy docs|
 |Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
 |Morphology|[unimorph](https://pypi.org/project/unimorph/)|Morphology data for many languages|
 |Phonetics|[epitran](https://github.com/dmort27/epitran)|Transliterate text into IPA|
