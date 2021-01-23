@@ -42,7 +42,7 @@ conda config --set auto_activate_base false
 File `tasks.py` contains celery object, concurrency is set to 1 and no threads or process are used with `-P solo`
 
 ```shell
-celery -A tasks.celery worker --loglevel=info --concurrency=1 -P solo
+celery -A tasks.celery worker --loglevel=info -P solo
 ```
 
 ## Colab
@@ -70,12 +70,7 @@ ENV PIP_NO_CACHE_DIR=1 \
 
 ## FastAPI
 **Use debugging mode**  
-```python
-# server.py
-
-if __name__ == "__main__":
-    uvicorn.run("server:app", host="0.0.0.0", port=8000, reload=True)
-```
+{% gist 38ec3f01fc77026f8ace72b3d9d31cfc %}
 
 **Enable CORS**  
 {% gist ec3e27028aa5d46f45fd0aeb435723f1 %}
@@ -94,18 +89,7 @@ git config credential.helper 'cache --timeout=1800'
 ```
 
 **Whitelist in .gitignore**  
-```shell
-# First, ignore everything
-*
-
-# Whitelist all directory
-!*/
-
-# Only .py and markdown files
-!*.py
-!*.md
-!*.gitignore
-```
+{% gist 416ea3274dfd05509ab3c12a4c222a2e %}
 
 **Clone private repo using personal token**  
 
@@ -161,13 +145,7 @@ import matplotlib.pyplot as plt
 
 **Auto print all expressions**  
 Edit `~/.ipython/profile_default/ipython_config.py` and add
-```
-c = get_config()
-
-# Run all nodes interactively
-# c.InteractiveShell.ast_node_interactivity = "last_expr"
-c.InteractiveShell.ast_node_interactivity = "all"
-```
+{% gist c008ad727ffed8a435f5829ecc157f23 %}
 
 **Add conda kernel to jupyter**  
 Activate conda environment and run below command.
@@ -213,7 +191,7 @@ pip install python-language-server[all]
 ## Kaggle
 **Add kaggle credentials**  
 ```shell
-pip install --upgrade  kaggle kaggle-cli
+pip install --upgrade kaggle kaggle-cli
 
 mkdir ~/.kaggle
 mv kaggle.json ~/.kaggle
@@ -294,19 +272,11 @@ location /demo/ {
 **Increase timeout for nginx**  
 Default timeout is 60s. Run below command or use [alternative](https://blogs.agilefaqs.com/tag/proxy_read_timeout/).
 
-```
+```shell
 sudo nano /etc/nginx/proxy_params
 ```
 
-```shell
-proxy_set_header Host $http_host;
-proxy_set_header X-Real-IP $remote_addr;
-proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-proxy_set_header X-Forwarded-Proto $scheme;
-proxy_connect_timeout   300;
-proxy_send_timeout      300;
-proxy_read_timeout      300;
-```
+{% d9f2ee92288d1fdf512ee46be780814a %}
 
 **Setup nginx for prodigy**  
 {% gist 2cc8f79a12a89e6cd22857c5bab49c8c %}
