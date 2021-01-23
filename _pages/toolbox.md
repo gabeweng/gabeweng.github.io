@@ -505,6 +505,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Model Visualization|[netron](https://github.com/lutzroeder/netron), [nn-svg](http://alexlenail.me/NN-SVG/LeNet.html)|Architecture|
 || [keract](https://github.com/philipperemy/keract)|Activation maps for keras|
 || [keras-vis](https://github.com/raghakot/keras-vis)|Visualize keras models|
+||[PlotNeuralNet](https://github.com/HarisIqbal88/PlotNeuralNet)|Latex code for drawing neural network|
 | Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
 ||[mplcyberpunk](https://github.com/dhaitz/mplcyberpunk)|Cyberpunk style for matplotlib|
 || [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
