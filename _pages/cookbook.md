@@ -498,26 +498,10 @@ df = pd.read_csv(file)
 ```
 
 **Create download link for CSV file**  
-```python
-import base64
-
-csv = df.to_csv(index=False)
-filename = 'data.csv'
-b64 = base64.b64encode(csv.encode()).decode()
-href = f'<a href="data:file/csv;base64,{b64}" download="{filename}.csv">Download CSV File</a>'
-st.markdown(href, unsafe_allow_html=True)
-```
+{% gist b5cc45a87952e20d2c17b933c64d6be1 %}
 
 **Run on docker**  
-```
-FROM python:3.7
-EXPOSE 8501
-WORKDIR /app
-COPY requirements.txt ./requirements.txt
-RUN pip3 install -r requirements.txt
-COPY . .
-CMD streamlit run src/main.py
-```
+{% gist 48c92eba1bc5ed8d9eb4dc784559f4c7 %}
 
 **Docker compose for streamlit**
 
@@ -546,16 +530,7 @@ gcloud app deploy
 ```
 
 **Render SVG**  
-```python
-import base64
-import streamlit as st
-
-def render_svg(svg):
-    """Renders the given svg string."""
-    b64 = base64.b64encode(svg.encode('utf-8')).decode("utf-8")
-    html = f'<img src="data:image/svg+xml;base64,{b64}"/>'
-    st.write(html, unsafe_allow_html=True)
-```
+{% gist 6d32bc45b4eafb619126a9e7549fda71 %}
 
 
 ## Tensorflow
@@ -604,13 +579,7 @@ tf.config.optimizer.set_jit(True)
 ```
 
 **Load saved model with custom layer**  
-```python
-from tensorflow.keras.models import load_model
-import tensorflow_hub as hub
-
-model = load_model(model_name, 
-                   custom_objects={'KerasLayer':hub.KerasLayer})
-```
+{% gist 36ac239ce8da187ccd454dc2962eb075 %}
 
 **Ensure Conda doesn't cause tensorflow issue**  
 {% gist 5c63f2101652ecbeadf5e5c505d40922 %}
@@ -626,20 +595,8 @@ tensorboard dev upload --logdir ./logs \
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/#connect-the-tpu-and-test-it)
 
 **Use universal sentence encoder**  
-```python
-import tensorflow_hub as hub
-embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
-e = embed(['hello', 'hey']).numpy()
-```
+{% gist acea96a3ceb801de6ea7a27c9f112645 %}
 
 ## Textblob
 **Backtranslate a text**  
-```python
-from textblob import TextBlob
-
-def back_translate(text):
-    t = TextBlob(text)
-    return (TextBlob(t.translate('en', 'zh').raw)
-            .translate('zh', 'en')
-            .raw)
-```
+{% gist d1c3d33098b00aa7362b0e753352cc9a %}
