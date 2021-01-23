@@ -276,7 +276,7 @@ Default timeout is 60s. Run below command or use [alternative](https://blogs.agi
 sudo nano /etc/nginx/proxy_params
 ```
 
-{% d9f2ee92288d1fdf512ee46be780814a %}
+{% gist d9f2ee92288d1fdf512ee46be780814a %}
 
 **Setup nginx for prodigy**  
 {% gist 2cc8f79a12a89e6cd22857c5bab49c8c %}
