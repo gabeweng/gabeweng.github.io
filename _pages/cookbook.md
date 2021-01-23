@@ -48,14 +48,6 @@ celery -A tasks.celery worker --loglevel=info -P solo
 **Start flower server to monitor celery**  
 {% gist 1b93ae88d83009dd1eff998e96a8d4db %}
 
-## Colab
-**Force remount google drive**  
-```python
-from google.colab import drive
-drive.mount('/content/drive', force_remount=True)
-```
-
-
 ## Docker
 **Start docker-compose as daemon**
 ```shell
