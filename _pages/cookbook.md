@@ -378,6 +378,7 @@ pip install mysqlclient
 {% gist 6883909479adb11c0f3fee924175f21d %}
 
 **Send email with SMTP**  
+- Enable `less secure app access` in [settings](https://myaccount.google.com/lesssecureapps) of gmail.
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
 
 **Run selenium on chromium**  
