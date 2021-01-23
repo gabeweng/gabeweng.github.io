@@ -452,6 +452,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [sktime](https://github.com/alan-turing-institute/sktime)|Scikit-learn like API|
 ||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
+|Anomaly Detection|[orion](https://github.com/signals-dev/Orion)|Unsupervised time-series anomaly detection|
 
 ### Hyperparameter Optimization  
 
