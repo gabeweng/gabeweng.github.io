@@ -462,13 +462,12 @@ sudo service redis-server restart
 ## Requests
 **Post JSON data to endpoint**  
 ```python
-import json
 import requests
 
 headers = {'Content-Type': 'application/json'}
 data = {}
 response = requests.post('http://example.com',
-                         data=json.dumps(data),
+                         json=data,
                          headers=headers)
 ```
 
