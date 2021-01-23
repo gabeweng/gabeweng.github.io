@@ -45,6 +45,9 @@ File `tasks.py` contains celery object, concurrency is set to 1 and no threads o
 celery -A tasks.celery worker --loglevel=info -P solo
 ```
 
+**Start flower server to monitor celery**  
+{% gist 1b93ae88d83009dd1eff998e96a8d4db %}
+
 ## Colab
 **Force remount google drive**  
 ```python
