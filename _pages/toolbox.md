@@ -417,7 +417,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | OCR| [keras-ocr](https://github.com/faustomorales/keras-ocr), [pytesseract](https://github.com/madmaze/pytesseract), [keras-craft](https://github.com/notAI-tech/keras-craft), [ocropy](https://github.com/ocropus/ocropy), [doc2text](https://github.com/jlsutherland/doc2text)||
 ||[easyocr](https://github.com/JaidedAI/EasyOCR), [kraken](https://github.com/mittagessen/kraken), [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)|Multilingual OCR|
 ||[layout-parser](https://github.com/Layout-Parser/layout-parser), [pdftabextract](https://github.com/WZBSocialScienceCenter/pdftabextract)|OCR tables from document|
-| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection)||
+| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection), [icevision](https://airctic.com/)||
 | Image hashing| [ImageHash](https://pypi.org/project/ImageHash/)||
 
 ### Speech  
