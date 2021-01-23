@@ -387,12 +387,12 @@ driver = webdriver.Chrome(chrome_options=chrome_options)
 
 ## PyTorch
 **Install CPU-only version of PyTorch**  
-```
+```shell
 conda install pytorch torchvision cpuonly -c pytorch
 ```
 
 **Auto-select proper pytorch version based on GPU**  
-```
+```shell
 pip install light-the-torch
 ltt install torch torchvision
 ```
