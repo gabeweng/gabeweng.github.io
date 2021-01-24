@@ -543,6 +543,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML)|Serving Framework|
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
+|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
+|Cloud Monitoring|[datadog](https://www.datadoghq.com)||
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
@@ -565,7 +567,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in pytest|
 ||[exdown](https://github.com/nschloe/exdown)|Extract code from markdown files|
 ||[mktestdocs](https://github.com/koaning/mktestdocs)|Test code present in markdown files|
-|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 
 ### Python libraries  
 
