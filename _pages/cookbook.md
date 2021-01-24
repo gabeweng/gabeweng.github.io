@@ -70,6 +70,9 @@ ENV PIP_NO_CACHE_DIR=1 \
 **Enable CORS**  
 {% gist ec3e27028aa5d46f45fd0aeb435723f1 %}
 
+**Raise HTTP Exception**  
+{% gist 8cd45995fcd3bd48662369e0db7f429f %}
+
 **Run FastAPI in Jupyter Notebook**  
 {% gist 5702a2c3787749a783360c0129133408 %}
 
