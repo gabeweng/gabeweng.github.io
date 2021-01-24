@@ -541,7 +541,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Model Serving Frameworks|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML)||
+|Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML)|Serving Framework|
+||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
@@ -549,8 +550,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
 ||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
 ||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
-|API Frameworks|[flask](https://flask.palletsprojects.com/en/1.1.x/)||
-||[fastapi](https://fastapi.tiangolo.com/)|Automatic Docs and Validation|
 |Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
 |Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
 |CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
