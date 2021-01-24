@@ -189,6 +189,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch), [pytorchcv](https://pypi.org/project/pytorchcv/)|Pre-trained ConvNets|
 ||[pytorch-image-models](https://rwightman.github.io/pytorch-image-models/)|200+ pretrained ConvNet backbones|
 | | [huggingface-models](https://huggingface.co/models), [huggingface-pretrained](https://huggingface.co/transformers/pretrained_models.html)|Transformer Models|
+||[awesome-coreml-models](https://github.com/likedan/Awesome-CoreML-Models)|Pretrained CoreML models|
 ||[huggingface-languages](https://huggingface.co/languages)|Multi-lingual Models|
 ||[model-forge](https://models.quantumstat.com/), [The Super Duper NLP Repo](https://notebooks.quantumstat.com/)|Pre-trained NLP models by usecase|
 | AutoML| [auto-sklearn](https://automl.github.io/auto-sklearn), [mljar-supervised](https://github.com/mljar/mljar-supervised), [automl-gs](https://github.com/minimaxir/automl-gs), [pycaret](https://pycaret.org/guide/), [evalml](https://evalml.alteryx.com/en/stable/install.html)||
@@ -545,6 +546,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
 |Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
+|Edge Computing|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml), ||
 |Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 |Cloud Monitoring|[datadog](https://www.datadoghq.com)||
 |Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect)|Outlier and drift detection|
