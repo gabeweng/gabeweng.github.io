@@ -546,6 +546,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
 |Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 |Cloud Monitoring|[datadog](https://www.datadoghq.com)||
+|Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect)|Outlier and drift detection|
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
