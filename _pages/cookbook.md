@@ -68,6 +68,9 @@ ENV PIP_NO_CACHE_DIR=1 \
 docker-compose up --abort-on-container-exit --exit-code-from worker
 ```
 
+**Change entrypoint of Dockerfile in compose**  
+{% gist fd1c143e9488c6715f7a1e6313e50321 %}
+
 ## FastAPI
 **Use debugging mode**  
 {% gist 38ec3f01fc77026f8ace72b3d9d31cfc %}
