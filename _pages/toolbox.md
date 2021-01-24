@@ -542,7 +542,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
-|Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML)|Serving Framework|
+|Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
 |Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 |Cloud Monitoring|[datadog](https://www.datadoghq.com)||
