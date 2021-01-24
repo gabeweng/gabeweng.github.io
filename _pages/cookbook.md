@@ -337,6 +337,14 @@ sudo apt install libmysqlclient-dev mysql-server
 pip install mysqlclient
 ```
 
+**Get memory usage of python script**  
+```python
+import os
+import psutil
+process = psutil.Process(os.getpid())
+print(process.memory_info().rss)
+```
+
 **Convert python package to command line tool**  
 {% gist a2889d272afdd5a454230f00d2079104 %}
 
