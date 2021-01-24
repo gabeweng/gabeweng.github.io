@@ -63,6 +63,11 @@ ENV PIP_NO_CACHE_DIR=1 \
 **Dockerfile for FastAPI**  
 {% gist ac87e33d8522f5734e5b9c085bca86ae %}
 
+**Return exit code in docker-compose**  
+```shell
+docker-compose up --abort-on-container-exit --exit-code-from worker
+```
+
 ## FastAPI
 **Use debugging mode**  
 {% gist 38ec3f01fc77026f8ace72b3d9d31cfc %}
