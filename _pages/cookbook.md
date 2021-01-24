@@ -76,6 +76,9 @@ ENV PIP_NO_CACHE_DIR=1 \
 **Run FastAPI in Jupyter Notebook**  
 {% gist 5702a2c3787749a783360c0129133408 %}
 
+**Mock ML model in test case**  
+{% gist a3f049b9675039c164ef17c6b414f7a3 %}
+
 ## Flask
 **Test API in flask**
 {% gist ff5579911c0eb7d4aa193596e02b9135 %}
