@@ -37,6 +37,14 @@ conda install cudatoolkit=10.0 -c pytorch
 conda config --set auto_activate_base false
 ```
 
+**Disable multithreading in numpy**
+```shell
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export OPENMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+```
+
 ## Celery
 **Run celery workers**  
 File `tasks.py` contains celery object, concurrency is set to 1 and no threads or process are used with `-P solo`
