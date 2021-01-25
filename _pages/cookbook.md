@@ -99,6 +99,9 @@ docker-compose up --abort-on-container-exit --exit-code-from worker
 **Test API in flask**
 {% gist ff5579911c0eb7d4aa193596e02b9135 %}
 
+**Load model only once before first request**
+{% gist b471ceba9b0e6268aa5818ff82a36177 %}
+
 ## Git
 **Prevent git from asking for password**  
 ```shell
