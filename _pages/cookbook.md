@@ -152,7 +152,7 @@ If `CPU cores=1`, then suggested concurrency = `2*1+1=3`
 gunicorn main:app --worker-class=gevent --worker-connections=1000 --workers=3
 ```
 
-**Use multiple threads**
+**Use multiple threads**  
 If `CPU cores=4`, then suggested concurrency = `2*4+1=9`
 ```shell
 gunicorn main:app --workers=3 --threads=3
