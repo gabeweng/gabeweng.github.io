@@ -133,7 +133,7 @@ sudo apt-get install git-lfs
 ## Gunicorn
 **Increase timeout**  
 ```shell
-gunicorn --bind 0.0.0.0:5000 app:app --timeout 6000
+gunicorn --bind 0.0.0.0:5000 main:app --timeout 6000
 ```
 
 **Check error logs**  
@@ -143,7 +143,19 @@ tail -f /var/log/gunicorn/error_
 
 **Run two workers**  
 ```shell
-gunicorn app:app  --preload -w 2 -b 0.0.0.0:5000
+gunicorn main:app  --preload -w 2 -b 0.0.0.0:5000
+```
+
+**Use pseudo-threads**  
+If `CPU cores=1`, then suggested concurrency = `2*1+1=3`
+```shell
+gunicorn main:app --worker-class=gevent --worker-connections=1000 --workers=3
+```
+
+**Use multiple threads**
+If `CPU cores=4`, then suggested concurrency = `2*4+1=9`
+```shell
+gunicorn main:app --workers=3 --threads=3
 ```
 
 ## Huey  
