@@ -563,6 +563,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
 |Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple)||
 |Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
+|Server-Side Events|[sse-starlette](https://github.com/sysid/sse-starlette)|Server-side events for FastAPI|
 |CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
 |Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
 |Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
