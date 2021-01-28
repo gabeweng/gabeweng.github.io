@@ -43,6 +43,7 @@ External Notebooks which are not written by me are marked with *.
 |**mlxtend**|Run McNemar's test|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sxIidvIKHs8EFMQ1D7IAwFNkS-IezUbq?usp=sharing)|
 |**pytorch**|Use efficientnet model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
 |**seaborn**|Visualize sentiment of word in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
+|**sentence-transformers***|Perform semantic search on research papers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12hfBveGHRsxhPIUMmJYrll2lFU4fOX06)|
 |**spacy**|Train text classification model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
 |**spacy**|Train NER model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
 |**squarify**|Generate tree-map chart in python|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PX2aaQjjJ6-CBPz-QYL8DipyoI6POu9U?usp=sharing)|
