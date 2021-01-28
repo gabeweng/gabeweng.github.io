@@ -13,6 +13,9 @@ This is a personal collection of repetitive commands and snippets for ML project
 **Specify key manually in boto3**  
 {% gist 9c80648a506cfee097533c29cb424262 %}
 
+**S3 operations on boto3**  
+{% gist ed7daa09fb3440fafa3d0003b9693fab %}
+
 **Enable static website hosting on S3**   
 Enable hosting
 ```shell
