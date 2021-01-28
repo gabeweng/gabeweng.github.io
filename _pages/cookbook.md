@@ -9,6 +9,18 @@ toc_sticky: true
 
 This is a personal collection of repetitive commands and snippets for ML projects.
 
+## AWS
+**Enable static website hosting on S3**   
+- Enable hosting
+```shell
+aws s3 website s3://somebucket --index-document index.html
+```
+- Goto `Permissions > Public Access Settings > Edit` and change (`Block new public bucket policies`, `Block public and cross-account access if bucket has public policies`, and `Block new public ACLs and uploading public objects`) to false.
+
+- Navigate to `Permissions > Bucket Policy` and paste below command.
+{% gist 4a78d1e72517645f8cead3a8f92bc677 %}
+
+
 ## Conda
 **Install OpenCV in conda**  
 ```shell
