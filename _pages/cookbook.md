@@ -10,6 +10,9 @@ toc_sticky: true
 This is a personal collection of repetitive commands and snippets for ML projects.
 
 ## AWS
+**Specify key manually in boto3**  
+{% gist 9c80648a506cfee097533c29cb424262 %}
+
 **Enable static website hosting on S3**   
 Enable hosting
 ```shell
