@@ -86,6 +86,14 @@ celery -A tasks.celery worker --loglevel=info -P solo
 docker-compose up --build -d
 ```
 
+**Use journald as logging driver**  
+Edit `/etc/docker/daemon.json`, add this json and restart.  
+```json
+{
+  "log-driver": "journald"
+}
+```
+
 **Disable pip cache and version check**
 ```shell
 ENV PIP_NO_CACHE_DIR=1 \
