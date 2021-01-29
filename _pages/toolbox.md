@@ -549,6 +549,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
 |Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml, [Tensorflow.js](https://www.tensorflow.org/js))||
 |Batch Jobs|[airflow](https://airflow.apache.org/), [luigi](https://github.com/spotify/luigi), [oozie](https://oozie.apache.org/), [prefect](https://docs.prefect.io/core/), [kubernetes-cron-jobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/), [argo](https://argoproj.github.io/projects/argo)||
+|Processing|[pyspark](https://spark.apache.org/docs/latest/api/python/index.html), [hive](http://hive.apache.org/)||
 |Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
 |Cloud Monitoring|[datadog](https://www.datadoghq.com)||
 |Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect)|Outlier and drift detection|
