@@ -16,6 +16,9 @@ This is a personal collection of repetitive commands and snippets for ML project
 **S3 operations on boto3**  
 {% gist ed7daa09fb3440fafa3d0003b9693fab %}
 
+**SNS operations on boto3**  
+{% gist 4951d014e2e81e0a33ad01a65568cfb6 %}
+
 **Enable static website hosting on S3**   
 Enable hosting
 ```shell
