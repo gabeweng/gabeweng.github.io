@@ -318,6 +318,10 @@ sudo nano /etc/ssh/sshd_config
 **Auto-generate help for make files**  
 {% gist 14ba10992f7437cfac2b7a64a8f0a67a %}
 
+**Rebind prefix for tmux**   
+Edit `~/.tmux.conf` with below content and reload by running `tmux source-file ~/.tmux.conf`
+{% gist 53fc232f5ce70b8b773e4abf8bbcf13a %}
+
 ## Markdown
 **Add comparison of code blocks side by side**  
 [Solution](https://stackoverflow.com/a/59314488/10137343)
