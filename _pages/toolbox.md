@@ -510,6 +510,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [keract](https://github.com/philipperemy/keract)|Activation maps for keras|
 || [keras-vis](https://github.com/raghakot/keras-vis)|Visualize keras models|
 ||[PlotNeuralNet](https://github.com/HarisIqbal88/PlotNeuralNet)|Latex code for drawing neural network|
+||[loss-landscape-anim](https://github.com/logancyang/loss-landscape-anim)|Generate loss landscape of optimizer|
 | Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
 ||[mplcyberpunk](https://github.com/dhaitz/mplcyberpunk)|Cyberpunk style for matplotlib|
 || [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
