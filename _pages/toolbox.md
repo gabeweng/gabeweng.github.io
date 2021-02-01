@@ -276,6 +276,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
 | | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text),[text-unidecode](https://pypi.org/project/text-unidecode/)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
+||[pyphen](https://pyphen.org/)|Hypthenate words into syllables|
 | | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai)|Parse Street Addresses|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
