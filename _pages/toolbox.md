@@ -546,6 +546,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
+|Documentation|[mkdocs](https://www.mkdocs.org/), [pdoc](https://pdoc3.github.io/pdoc/)||
 |Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
 |Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml, [Tensorflow.js](https://www.tensorflow.org/js))||
