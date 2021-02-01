@@ -190,6 +190,11 @@ If `CPU cores=4`, then suggested concurrency = `2*4+1=9`
 gunicorn main:app --workers=3 --threads=3
 ```
 
+**Use in-memory file system for heartbeat file**    
+```shell
+gunicorn --worker-tmp-dir /dev/shm
+```
+
 ## Huey  
 **Add background task to add 2 numbers**  
 {%gist c2ec5221c1d759c43f77111c438d13e5 %}
