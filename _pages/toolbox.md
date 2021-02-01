@@ -514,6 +514,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
 ||[mplcyberpunk](https://github.com/dhaitz/mplcyberpunk)|Cyberpunk style for matplotlib|
 || [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
+||[adjustText](https://github.com/Phlya/adjustText/wiki)|Prevent overlap when plotting point text label|
 | Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
 | High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
 ||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
