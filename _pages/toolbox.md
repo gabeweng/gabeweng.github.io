@@ -400,6 +400,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
 |Dialogue System|[ParlAI](https://github.com/facebookresearch/ParlAI)||
 |Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
+|Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
 
 ### Computer Vision  
 
