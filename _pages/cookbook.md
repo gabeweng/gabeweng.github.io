@@ -95,15 +95,12 @@ Edit `/etc/docker/daemon.json`, add this json and restart.
 ```
 
 **Send logs to CloudWatch**   
-Run 
 ```shell
 sudo nano /etc/docker/daemon.json
 ```
 
-Add this content 
 {% gist 78068e11e1cc31eedf07efe2228613fd %}
 
-Reload daemon with:
 ```shell
 sudo systemctl daemon-reload
 ```
