@@ -94,6 +94,10 @@ Edit `/etc/docker/daemon.json`, add this json and restart.
 }
 ```
 
+**Send logs to CloudWatch**   
+Run `sudo nano /etc/docker/daemon.json`, add content give below and run `sudo systemctl daemon-reload`. 
+{% gist 78068e11e1cc31eedf07efe2228613fd %}
+
 **Disable pip cache and version check**
 ```shell
 ENV PIP_NO_CACHE_DIR=1 \
