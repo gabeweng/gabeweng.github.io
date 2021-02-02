@@ -103,6 +103,7 @@ sudo nano /etc/docker/daemon.json
 
 ```shell
 sudo systemctl daemon-reload
+sudo service docker restart
 ```
 
 **Disable pip cache and version check**
