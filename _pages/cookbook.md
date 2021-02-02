@@ -106,6 +106,19 @@ sudo systemctl daemon-reload
 sudo service docker restart
 ```
 
+**Set environment variable globally in daemon**  
+```shell
+mkdir -p /etc/systemd/system/docker.service.d/
+sudo nano /etc/systemd/system/docker.service.d/aws-credentials.conf
+```
+
+{% gist 9e62dbd1e1115038f2562076e6738c4b %}
+
+```shell
+sudo systemctl daemon-reload
+sudo service docker restart
+```
+
 **Disable pip cache and version check**
 ```shell
 ENV PIP_NO_CACHE_DIR=1 \
