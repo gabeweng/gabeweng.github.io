@@ -277,6 +277,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 ||[pyphen](https://pyphen.org/)|Hypthenate words into syllables|
 | | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai)|Parse Street Addresses|
+||[geopy](https://pypi.org/project/geopy/)|Geocoding|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
 || [dateparser](https://github.com/scrapinghub/dateparser)|Parse natural dates|
