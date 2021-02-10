@@ -611,6 +611,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Code to Maths|[latexify-py](https://github.com/odashi/latexify_py), [handcalcs](https://github.com/connorferster/handcalcs)||
 |Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
 |Collections|[bidict](https://pypi.org/project/bidict/)|Bidirectional dictionary|
+||[sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)|Sorted list, set and dict|
 ||[munch](https://github.com/Infinidat/munch)|Dictionary with dot access|
 
 ### Utilities
