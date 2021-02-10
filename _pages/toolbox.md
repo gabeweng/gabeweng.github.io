@@ -276,7 +276,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text),[text-unidecode](https://pypi.org/project/text-unidecode/)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 ||[pyphen](https://pyphen.org/)|Hypthenate words into syllables|
-| | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai)|Parse Street Addresses|
+| | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai), [usaddress](https://github.com/datamade/usaddress)|Parse Street Addresses|
 ||[geopy](https://pypi.org/project/geopy/)|Geocoding|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
