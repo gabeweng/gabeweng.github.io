@@ -288,6 +288,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
+|Probabilistic parsing|[parserator](https://github.com/datamade/parserator)|Create domain-specific parser for address, name etc.|
 |Constituency Parsing|[benepar](https://github.com/plandes/self-attentive-parser), [allennlp](https://demo.allennlp.org/constituency-parsing/)||
 |Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
 |Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
