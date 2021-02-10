@@ -278,7 +278,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pyphen](https://pyphen.org/)|Hypthenate words into syllables|
 | | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai), [usaddress](https://github.com/datamade/usaddress)|Parse Street Addresses|
 ||[geopy](https://pypi.org/project/geopy/)|Geocoding|
-||[probablepeople](https://github.com/datamade/probablepeople)|Parse person name|
+||[probablepeople](https://github.com/datamade/probablepeople), [python-nameparser](https://github.com/derek73/python-nameparser)|Parse person name|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
 || [dateparser](https://github.com/scrapinghub/dateparser)|Parse natural dates|
