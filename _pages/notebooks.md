@@ -52,5 +52,6 @@ External Notebooks which are not written by me are marked with *.
 |**ulmfit**|Classify text using ULMFit in Fastai 1.0|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
 |**wandb***|Log different data types in weights and biases|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
 |**wandb***|Run hyperparameter sweep for Pytorch Lightning|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
+|**other***|Do record deduplication on different data|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vintasoftware/deduplication-slides/blob/master/slides.ipynb)|
 
 
