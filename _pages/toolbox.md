@@ -379,7 +379,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[commonregex](https://github.com/madisonmay/CommonRegex)|Ready-made regex for email/phone etc.|
 | | [textdistance](https://github.com/life4/textdistance), [editdistance](https://github.com/aflc/editdistance), [word-mover-distance](https://radimrehurek.com/gensim/models/keyedvectors.html#what-can-i-do-with-word-vectors)|Text distances|
 ||[wmd-relax](https://github.com/src-d/wmd-relax)|Word mover distance for spacy|
-|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [dedupe](https://github.com/dedupeio/dedupe)|Fuzzy Search|
+|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [fuzzymatcher](https://github.com/RobinL/fuzzymatcher), [dedupe](https://github.com/dedupeio/dedupe)|Fuzzy Search|
+||[recordlinkage](https://recordlinkage.readthedocs.io/en/stable/)|Record Linkage|
 | Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment)|Rule based|
 | | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
 | Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch)||
@@ -397,7 +398,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss), [sparse_dot_topn](https://github.com/ing-bank/sparse_dot_topn)||
 | Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
 | Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
-| Record Linking| [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)||
 |Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
 |Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
 |Dialogue System|[ParlAI](https://github.com/facebookresearch/ParlAI)||
