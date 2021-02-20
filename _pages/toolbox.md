@@ -218,6 +218,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Survival Analysis|[lifelines](https://lifelines.readthedocs.io/en/latest/)||
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
+|Interpretable Models|[imodels](https://github.com/csinva/imodels)|Models that show rules|
 
 ### Frameworks  
 
