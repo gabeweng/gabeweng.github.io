@@ -44,7 +44,7 @@ conda install -c conda-forge open-cv
 conda update -n base -c defaults conda
 ```
 
-**Make binaries work on Mac**
+**Make binaries work on Mac**  
 ```shell
 sudo xcode-select --install
 conda install clang_osx-64 clangxx_osx-64 gfortran_osx-64
