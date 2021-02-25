@@ -86,6 +86,9 @@ celery -A tasks.celery worker --loglevel=info -P solo
 **Start flower server to monitor celery**  
 {% gist 1b93ae88d83009dd1eff998e96a8d4db %}
 
+**Use flower from docker-compose**  
+{% gist 2678af1e3f411d68f6479a72839acb9f %}
+
 ## Docker
 **Start docker-compose as daemon**
 ```shell
