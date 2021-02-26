@@ -415,7 +415,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Segmentation Models| [segmentation_models](https://github.com/qubvel/segmentation_models)|Keras|
 ||[segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)|Segmentation models in PyTorch|
 |High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
-| Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn)||
+| Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn), [insightface](https://github.com/deepinsight/insightface)||
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
 ||[Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)|Face Emotion|
 | GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](http://imaginaire.cc/docs)||
