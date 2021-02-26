@@ -93,6 +93,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[PyPDF2](https://github.com/mstamy2/PyPDF2)|Read and write PDF in Python|
 ||[pdf2image](https://github.com/Belval/pdf2image)|Convert PDF to image|
 | Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
+|Network Packet|[dpkt](https://dpkt.readthedocs.io/en/latest/index.html), [scapy](https://scapy.readthedocs.io/en/latest/introduction.html)||
 | Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
 | Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
 | | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
