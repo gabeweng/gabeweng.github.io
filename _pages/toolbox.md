@@ -98,6 +98,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
 ||[hext](https://hext.thomastrapp.com/)|DSL for extracting data from HTML|
 ||[ratelimit](https://pypi.org/project/ratelimit/)|API rate limit decorator|
+||[asks](https://github.com/theelous3/asks)|Async version of requests|
 |Google Search|[googlesearch](https://github.com/Nv7-GitHub/googlesearch)|Parse google search results|
 | Google sheets| [gspread](https://github.com/burnash/gspread)||
 | Google drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
