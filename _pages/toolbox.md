@@ -483,6 +483,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
 | | [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
 ||[apprise](https://github.com/caronc/apprise)|Notify to any platform|
+||[pynotifier](https://github.com/YuriyLisovskiy/pynotifier)|Generate desktop notification|
 |Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
 |GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor), [nvtop](https://github.com/Syllo/nvtop)||
 || [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
