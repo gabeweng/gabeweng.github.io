@@ -458,7 +458,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy), [darts](https://github.com/unit8co/darts), [gluon-ts](https://github.com/awslabs/gluon-ts)||
+| Libraries| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy), [darts](https://github.com/unit8co/darts), [gluon-ts](https://github.com/awslabs/gluon-ts), [stldecompose](https://github.com/jrmontag/STLDecompose)||
 || [sktime](https://github.com/alan-turing-institute/sktime)|Scikit-learn like API|
 ||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
 | ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
