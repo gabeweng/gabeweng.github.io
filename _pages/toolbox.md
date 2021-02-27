@@ -386,7 +386,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[recordlinkage](https://recordlinkage.readthedocs.io/en/stable/)|Record Linkage|
 | Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment)|Rule based|
 | | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
-| Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch)||
+| Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch), [text2emotion](https://github.com/aman2656/text2emotion-library)||
 ||[emosent-py](https://pypi.org/project/emosent-py/)|Sentiment scores for Emojis|
 | Profanity detection| [profanity-check](https://github.com/vzhou842/profanity-check)||
 | Visualization| [stylecloud](https://github.com/minimaxir/stylecloud)|Word Clouds|
