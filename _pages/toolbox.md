@@ -513,6 +513,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [yellowbrick](https://www.scikit-yb.org/en/latest/index.html), [scikit-plot](https://scikit-plot.readthedocs.io/en/stable/metrics.html)|Visualization for scikit-learn|
 || [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
 ||[dtreeviz](https://github.com/parrt/dtreeviz)|Visualize decision tree|
+||[txtmarker](https://github.com/neuml/txtmarker)|Highlight text in PDF|
 | Interactive charts| [bokeh](https://github.com/bokeh/bokeh)||
 || [flourish-studio](https://flourish.studio/)|Create interactive charts online|
 || [mpld3](http://mpld3.github.io/index.html)|Matplotlib to D3 Converter|
