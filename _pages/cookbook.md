@@ -76,6 +76,7 @@ export MKL_NUM_THREADS=1
 ```
 
 **Faster alternatives to Conda**  
+
 |Docker Image|Remarks|
 |---|---|
 |[micromaba-docker](https://github.com/mamba-org/micromamba-docker)|Small binary version of mambda|
