@@ -204,6 +204,9 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 sudo apt-get install git-lfs
 ```
 
+**Triggers for GitHub Action**  
+{% gist c2c60e7dbb5fa0f3b6161d018014371a %}
+
 ## Gunicorn
 **Increase timeout**  
 ```shell
