@@ -79,8 +79,8 @@ export MKL_NUM_THREADS=1
 
 |Docker Image|Remarks|
 |---|---|
-|[micromaba-docker](https://github.com/mamba-org/micromamba-docker)|Small binary version of mambda|
-|[condaforge/mambaforge](https://hub.docker.com/r/condaforge/mambaforge)|Docker image with conda-forge and mambda|
+|[micromaba-docker](https://github.com/mamba-org/micromamba-docker)|Small binary version of mamba|
+|[condaforge/mambaforge](https://hub.docker.com/r/condaforge/mambaforge)|Docker image with conda-forge and mamba|
 |[condaforge/miniforge](https://github.com/conda-forge/miniforge)|Docker image with conda-forge as default channel|
 
 ## Celery
