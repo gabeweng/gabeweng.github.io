@@ -75,6 +75,13 @@ export OPENMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 ```
 
+**Faster alternatives to Conda**  
+|Docker Image|Remarks|
+|---|---|
+|[micromaba-docker](https://github.com/mamba-org/micromamba-docker)|Small binary version of mambda|
+|[condaforge/mambaforge](https://hub.docker.com/r/condaforge/mambaforge)|Docker image with conda-forge and mambda|
+|[condaforge/miniforge](https://github.com/conda-forge/miniforge)|Docker image with conda-forge as default channel|
+
 ## Celery
 **Run celery workers**  
 File `tasks.py` contains celery object, concurrency is set to 1 and no threads or process are used with `-P solo`
