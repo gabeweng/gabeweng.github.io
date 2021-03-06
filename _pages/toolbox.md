@@ -97,6 +97,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
 | Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
 | | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
+||[trafilatura](https://github.com/adbar/trafilatura)|Extract text sections from HTML|
 ||[hext](https://hext.thomastrapp.com/)|DSL for extracting data from HTML|
 ||[ratelimit](https://pypi.org/project/ratelimit/)|API rate limit decorator|
 ||[asks](https://github.com/theelous3/asks)|Async version of requests|
