@@ -207,6 +207,12 @@ sudo apt-get install git-lfs
 **Triggers for GitHub Action**  
 {% gist c2c60e7dbb5fa0f3b6161d018014371a %}
 
+**Useful GitHub Actions**  
+
+|Action|Remarks|
+|---|---|
+|[scrape.yml](https://github.com/simonw/cdc-vaccination-history/blob/main/.github/workflows/scrape.yml)|Scrap webpage and save to repo|
+
 ## Gunicorn
 **Increase timeout**  
 ```shell
