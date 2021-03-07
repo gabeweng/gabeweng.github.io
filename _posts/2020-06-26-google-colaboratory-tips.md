@@ -1,7 +1,7 @@
 ---
 title: "Google Colab Tips for Power Users"
 date: 2020-06-26T15:30-00:00
-last_modified_at: 2020-11-01T00:00:00-00:00
+last_modified_at: 2021-03-07T00:00:00-00:00
 categories:
   - workflow
 classes: wide
@@ -215,6 +215,17 @@ sys.path.append('/usr/local/lib/python3.7/site-packages/')
 After the cell is executed, you can use conda to install packages as usual.
 ```shell
 !conda install -y flask
+```
+
+Alternatively, you can use [condacolab](https://github.com/jaimergp/condacolab) package to install it easily.
+```shell
+pip install condacolab
+```
+
+Then, run these python commands to install miniconda.
+```python
+import condacolab
+condacolab.install_miniconda()
 ```
 
 ## 16. Manage Colab Notebooks from Command Line  
