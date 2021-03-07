@@ -98,6 +98,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
 | | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
 ||[trafilatura](https://github.com/adbar/trafilatura)|Extract text sections from HTML|
+||[justext](https://github.com/miso-belica/jusText)|Remove boilerplate from scraped HTML|
 ||[hext](https://hext.thomastrapp.com/)|DSL for extracting data from HTML|
 ||[ratelimit](https://pypi.org/project/ratelimit/)|API rate limit decorator|
 ||[asks](https://github.com/theelous3/asks)|Async version of requests|
