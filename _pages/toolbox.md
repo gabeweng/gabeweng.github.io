@@ -253,6 +253,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[scikit-multilearn](http://scikit.ml/)|Multi-label classification|
 |Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
 ||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
+|Sparsification|[sparseml](https://github.com/neuralmagic/sparseml)|Apply sparsification to any framework|
 
 ### Natural Language Processing  
 
