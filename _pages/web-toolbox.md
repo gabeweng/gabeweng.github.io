@@ -30,6 +30,7 @@ This is a curation of web apps that I have found useful.
 |[pyvideo](https://pyvideo.org/)|Search 16K python related videos|
 |[py.md](https://gist.github.com/jph00/d5981f649a83a754946964cf22322cb2)|Hyperlinked index to every module/function/class in Python standard library|
 |[random-subject-prompts](https://writingexercises.co.uk/subjectgenerator.php)|Generate random prompt to write about|
+|[star-history](https://star-history.t9t.io/)|Generate history of stars on a GitHub repo|
 |[twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)|Cheatsheet for twitter advanced search|
 |[text-to-handwriting](https://saurabhdaware.github.io/text-to-handwriting/)|Convert text to handwritten paper image|
 |[upgoer5](https://splasho.com/upgoer5/)|Write using only 10K most used words|
