@@ -289,6 +289,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
 ||[numerizer](https://github.com/jaidevd/numerizer), [word2number](https://pypi.org/project/word2number/)|Parse natural language number|
 || [dateparser](https://github.com/scrapinghub/dateparser)|Parse natural dates|
+||[ctparse](https://github.com/comtravo/ctparse)|Parse natural language time|
 ||[daterangeparser](https://github.com/robintw/daterangeparser)|Parse date ranges in natural language|
 || [emoji](https://pypi.org/project/emoji/)|Handle emoji|
 ||[pyarabic](https://pyarabic.readthedocs.io/ar/latest/)|multilingual|
