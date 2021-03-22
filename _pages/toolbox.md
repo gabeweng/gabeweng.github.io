@@ -27,6 +27,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [prodigy](https://prodi.gy/)|Paid|
 ||[chatito](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
 |Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
+|Inter-rater agreement|[disagree](https://github.com/o-P-o/disagree)||
 
 ### Data Collection  
 
