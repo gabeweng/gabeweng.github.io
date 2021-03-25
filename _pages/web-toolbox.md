@@ -14,6 +14,7 @@ This is a curation of web apps that I have found useful.
 |[abtestsize](https://abtestguide.com/abtestsize/)|Calculate sample size for A/B test|
 |[active-forks](https://techgaun.github.io/active-forks/index.html)|Find active forks for a github repo|
 |[aideadlines](https://aideadlin.es/?sub=ML)|AI Conference Deadlines|
+|[buzzin](https://buzzin.live/)|Create online buzzer for quiz competition|
 |[clip](https://clip.kiri.ai/)|Zero-shot image classification|
 |[composerize](https://www.composerize.com/)|Convert docker run command to docker-compose|
 |[connected-papers](https://www.connectedpapers.com/)|Explore papers in visual graph|
