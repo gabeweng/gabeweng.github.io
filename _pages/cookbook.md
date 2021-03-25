@@ -522,6 +522,10 @@ torch.cuda.manual_seed_all(seed)
 **Create custom transformation**  
 {% gist d5b8d17d2d31987c687b52185a978b0f %}
 
+## Pytest  
+**Disable warnings in pytest**  
+{% gist 67534a1fc7cc0ec98613d748a2b2b039 %}
+
 ## Pytorch Lightning
 **Use model checkpoint callback**  
 {% gist a64feca21ea6afbe3e873dbdbed7f384 %}
