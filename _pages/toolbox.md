@@ -416,6 +416,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
 |Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
 |Grammar Induction|[gitta](https://github.com/twinters/gitta)|Generate CFG from sentences|
+|Verb Disambiguation|[frame-english-fast](https://huggingface.co/flair/frame-english-fast)||
 
 ### Computer Vision  
 
