@@ -266,6 +266,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[Nvidia NeMo](https://github.com/NVIDIA/NeMo)|Toolkit for ASR, NLP and TTS|
 ||[nlu](https://nlu.johnsnowlabs.com/docs/en/examples)|1-line models for NLP|
 |CPU-optimizations|[turbo_transformers](https://github.com/Tencent/TurboTransformers), [onnx_transformers](https://github.com/patil-suraj/onnx_transformers)||
+||[fastT5](https://github.com/Ki6an/fastT5)|Generate optimized T5 model|
 | Wrappers| [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)||
 | | [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
 | Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe)||
