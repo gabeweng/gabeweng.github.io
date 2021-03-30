@@ -306,6 +306,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
 |Gibberish Detection|[nostril](https://github.com/casics/nostril), [gibberish-detector](https://github.com/amitness/Gibberish-Detector)||
 |Paraphrasing|[pegasus](https://colab.research.google.com/drive/1RWvGuHKnPur7fCL0DObMeZXQVHem6aEV?usp=sharing)|Question Paraphrasing|
+||[paraphrase_diversity_ranker](https://huggingface.co/salesken/paraphrase_diversity_ranker)|Rank paraphrases of sentence|
 ||[sentaugment](https://github.com/facebookresearch/SentAugment)|Paraphrase mining|
 |Spacy Extensions|[spacy-pattern-builder](https://github.com/cyclecycle/spacy-pattern-builder)|Generate dependency matcher patterns automatically|
 ||[spacy_grammar](https://github.com/tokestermw/spacy_grammar)|Rule-based grammar error detection|
