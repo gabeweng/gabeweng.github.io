@@ -163,6 +163,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [nbconvert](https://nbconvert.readthedocs.io/en/latest/)|Convert notebooks to other formats|
 | | [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)|Maps in notebooks|
 ||[ipycanvas](https://github.com/martinRenou/ipycanvas)|Draw diagrams in notebook|
+||[fastdoc](https://github.com/fastai/fastdoc)|Convert notebook to PDF book|
 |Relationship|[ppscore](https://github.com/8080labs/ppscore)|Predictive Power Score|
 ||[pdpbox](https://github.com/SauceCat/PDPbox)|Partial Dependence Plot|
 
