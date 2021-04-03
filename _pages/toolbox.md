@@ -390,7 +390,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
 ||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
-||[ranking-metrics](https://gist.github.com/bwhite/3726239)|Metrics for Information Retrieval|
+||[ranking-metrics](https://gist.github.com/bwhite/3726239), [cute_ranking](https://github.com/ncoop57/cute_ranking)|Metrics for Information Retrieval|
 | String match|[phrase-seeker](https://github.com/kirillgashkov/phrase-seeker), [textsearch](https://github.com/kootenpv/textsearch)||
 ||[jellyfish](https://pypi.org/project/jellyfish/), [fuzzy](https://github.com/yougov/fuzzy), [doublemetaphone](https://github.com/dedupeio/doublemetaphone)|Perform string and phonetic comparison|
 ||[flashtext](https://github.com/vi3k6i5/flashtext)|Super-fast extract and replace keywords|
