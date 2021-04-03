@@ -54,7 +54,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Emotion|[NRC-Emotion-Lexicon-Wordlevel](https://raw.githubusercontent.com/dinbav/LeXmo/master/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt), [ISEAR(17K)](https://github.com/PoorvaRane/Emotion-Detector/blob/master/ISEAR.csv), [HappyDB](https://megagon.ai/projects/happydb-a-happiness-database-of-100000-happy-moments/), [emotion-to-emoji-mapping](https://github.com/ErKiran/TwitterBot/blob/master/emoji.json)|
 ||[EmoTag1200](https://github.com/abushoeb/emotag)|Emoji-Emotion scores|
 |NLU Intents|[rasa-nlu-training-data](https://github.com/RasaHQ/NLU-training-data)||
-|N-grams|[google-book-ngrams](http://storage.googleapis.com/books/ngrams/books/datasetsv2.html), [norvig-processed-ngrams](https://norvig.com/ngrams/)||
+|N-grams|[google-book-ngrams](http://storage.googleapis.com/books/ngrams/books/datasetsv2.html), [norvig-processed-ngrams](https://norvig.com/ngrams/), [key-nbc](https://github.com/dougalg/Key-BNC/blob/master/key_bnc_cli/BNC_wordlist.csv)||
 |Summarization|[curation-corpus](https://github.com/CurationCorp/curation-corpus)||
 |Conversations|[conversational-datasets](https://github.com/PolyAI-LDN/conversational-datasets), [cornell-movie-dialog-corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html), [persona-chat](https://github.com/facebookresearch/ParlAI/blob/master/parlai/tasks/personachat/build.py), [DialogDatasets](https://breakend.github.io/DialogDatasets/)||
 |Semantic Parsing|[wikisql](https://github.com/salesforce/WikiSQL), [spider](https://yale-lily.github.io/spider)|Text to SQL|
