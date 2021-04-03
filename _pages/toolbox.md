@@ -273,6 +273,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe)||
 || [JamSpell](https://github.com/bakwc/JamSpell), [pyhunspell](https://github.com/blatinier/pyhunspell), [pyspellchecker](https://github.com/barrust/pyspellchecker), [cython_hunspell](https://github.com/MSeal/cython_hunspell), [hunspell-dictionaries](https://github.com/wooorm/dictionaries), [autocorrect (can add more languages)](https://github.com/phatpiglet/autocorrect), [symspellpy](https://github.com/mammothb/symspellpy), [spello (train your own spelling correction)](https://github.com/hellohaptik/spello), [contextualSpellCheck](https://github.com/R1j1t/contextualSpellCheck), [neuspell](https://github.com/neuspell/neuspell), [nlprule](https://github.com/bminixhofer/nlprule), [spylls](https://github.com/zverok/spylls)|Spelling Correction|
 ||[ekphrasis](https://github.com/cbaziotis/ekphrasis)|Pre-processing for social media texts|
+||[editop](https://github.com/gchrupala/editop)|Compute edit-operations for text normalization|
 | | [contractions](https://github.com/kootenpv/contractions), [pycontractions](https://pypi.org/project/pycontractions/)|Contraction Mapping|
 | | [truecase](https://pypi.org/project/truecase/)|Fix casing|
 || [nnsplit](https://github.com/bminixhofer/nnsplit), [deepsegment](https://github.com/notAI-tech/deepsegment), [sentence-doctor](https://github.com/flexudy-pipe/sentence-doctor), [pysbd](https://github.com/nipunsadvilkar/pySBD), [sentence-splitter](https://github.com/mediacloud/sentence-splitter)|Sentence Segmentation|
@@ -395,7 +396,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[flashtext](https://github.com/vi3k6i5/flashtext)|Super-fast extract and replace keywords|
 ||[pythonverbalexpressions](https://github.com/VerbalExpressions/PythonVerbalExpressions)|Verbally describe regex|
 ||[commonregex](https://github.com/madisonmay/CommonRegex)|Ready-made regex for email/phone etc.|
-| | [textdistance](https://github.com/life4/textdistance), [editdistance](https://github.com/aflc/editdistance), [word-mover-distance](https://radimrehurek.com/gensim/models/keyedvectors.html#what-can-i-do-with-word-vectors)|Text distances|
+| | [textdistance](https://github.com/life4/textdistance), [editdistance](https://github.com/aflc/editdistance), [word-mover-distance](https://radimrehurek.com/gensim/models/keyedvectors.html#what-can-i-do-with-word-vectors), [edlib](https://pypi.org/project/edlib/)|Text distances|
 ||[wmd-relax](https://github.com/src-d/wmd-relax)|Word mover distance for spacy|
 |  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [fuzzymatcher](https://github.com/RobinL/fuzzymatcher), [dedupe](https://github.com/dedupeio/dedupe)|Fuzzy Search|
 ||[recordlinkage](https://recordlinkage.readthedocs.io/en/stable/)|Record Linkage|
