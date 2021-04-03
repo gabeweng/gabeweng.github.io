@@ -559,6 +559,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 ||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
+|Optimization|[nn_pruning](https://github.com/huggingface/nn_pruning)|Movement Pruning|
 |Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
 ||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
 ||[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
