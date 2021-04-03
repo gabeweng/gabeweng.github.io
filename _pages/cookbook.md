@@ -383,6 +383,11 @@ sudo nano /etc/ssh/sshd_config
 Edit `~/.tmux.conf` with below content and reload by running `tmux source-file ~/.tmux.conf`
 {% gist 53fc232f5ce70b8b773e4abf8bbcf13a %}
 
+**Clear DNS cache**  
+```shell
+sudo systemd-resolve --flush-caches
+```
+
 ## Markdown
 **Add comparison of code blocks side by side**  
 [Solution](https://stackoverflow.com/a/59314488/10137343)
