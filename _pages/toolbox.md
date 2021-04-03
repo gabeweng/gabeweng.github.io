@@ -280,6 +280,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[punctuator2](https://github.com/ottokart/punctuator2)|Punctuation Restoration|
 | | [stopwords-iso](https://github.com/stopwords-iso/stopwords-iso)|Stopwords for all languages|
 | | [language-check](https://github.com/myint/language-check), [langdetect](https://github.com/Mimino666/langdetect), [polyglot](https://polyglot.readthedocs.io/en/latest/Detection.html), [pycld2](https://github.com/aboSamoor/pycld2), [cld2](https://github.com/CLD2Owners/cld2), [cld3](https://github.com/google/cld3), [langid](https://github.com/saffsd/langid.py)|Language Identification|
+||[langcodes](https://github.com/LuminosoInsight/langcodes)|Get language from language code|
 | | [neuralcoref](https://github.com/huggingface/neuralcoref)|Coreference Resolution|
 | | [inflect](https://pypi.org/project/inflect/), [lemminflect](https://lemminflect.readthedocs.io/en/latest/)|Inflections|
 | | [scrubadub](https://scrubadub.readthedocs.io/en/stable/#)|PID removal|
