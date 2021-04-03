@@ -263,6 +263,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 
+**Make auto-reload of modules by default**  
+1. Create `startup` folder in `~/.ipython/profile_default`
+2. Add this file
+{% gist f466f85ca2b7e7d93386547737c36a4d %}
+
 **Auto print all expressions**  
 Edit `~/.ipython/profile_default/ipython_config.py` and add
 {% gist c008ad727ffed8a435f5829ecc157f23 %}
