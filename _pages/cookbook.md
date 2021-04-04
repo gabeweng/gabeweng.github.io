@@ -489,6 +489,13 @@ print(process.memory_info().rss)
 
 {% gist 6883909479adb11c0f3fee924175f21d %}
 
+**Install package from TestPyPi**  
+```shell
+pip install --index-url https://test.pypi.org/simple
+	    --extra-index-url https://pypi.org/simple
+	    example-package
+```
+
 **Send email with SMTP**  
 - Enable `less secure app access` in [settings](https://myaccount.google.com/lesssecureapps) of gmail.
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
