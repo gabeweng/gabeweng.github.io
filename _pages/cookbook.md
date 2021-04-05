@@ -499,6 +499,10 @@ pip install --index-url https://test.pypi.org/simple
 **Test multiple python versions using tox**  
 {% gist c4a895952a1b33c3429e1cd1e4b81e5d %}
 
+**Flake8: Exclude certain checks**  
+Place `setup.cfg` alongside `setup.py`.
+{% gist 1945560267d80062c63f88a87ade299f %}
+
 **Send email with SMTP**  
 - Enable `less secure app access` in [settings](https://myaccount.google.com/lesssecureapps) of gmail.
 {% gist 7a806edddd79f2e7e0e743ec756ca4e5 %}
