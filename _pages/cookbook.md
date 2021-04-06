@@ -609,6 +609,9 @@ response = requests.post('http://example.com',
 **Use random user agent in requests**  
 {% gist f97ad3502d2e7321e0a38ac10bb11df2 %}
 
+**Use rate limit and backoff in API**  
+{% gist 740413007cdc3505e04f0b5ea40cb01c %}
+
 ## SSH
 **Add server alias to SSH config**  
 Add to `~/.ssh/config`
