@@ -55,7 +55,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[EmoTag1200](https://github.com/abushoeb/emotag)|Emoji-Emotion scores|
 |NLU Intents|[rasa-nlu-training-data](https://github.com/RasaHQ/NLU-training-data)||
 |N-grams|[google-book-ngrams](http://storage.googleapis.com/books/ngrams/books/datasetsv2.html), [norvig-processed-ngrams](https://norvig.com/ngrams/)||
-|Word Frequency|[wordfreq[(https://github.com/LuminosoInsight/wordfreq),[key-nbc](https://github.com/dougalg/Key-BNC/blob/master/key_bnc_cli/BNC_wordlist.csv)||
+|Word Frequency|[wordfreq](https://github.com/LuminosoInsight/wordfreq),[key-nbc](https://github.com/dougalg/Key-BNC/blob/master/key_bnc_cli/BNC_wordlist.csv)||
 |Summarization|[curation-corpus](https://github.com/CurationCorp/curation-corpus)||
 |Conversations|[conversational-datasets](https://github.com/PolyAI-LDN/conversational-datasets), [cornell-movie-dialog-corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html), [persona-chat](https://github.com/facebookresearch/ParlAI/blob/master/parlai/tasks/personachat/build.py), [DialogDatasets](https://breakend.github.io/DialogDatasets/)||
 |Semantic Parsing|[wikisql](https://github.com/salesforce/WikiSQL), [spider](https://yale-lily.github.io/spider)|Text to SQL|
