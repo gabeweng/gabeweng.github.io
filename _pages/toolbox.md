@@ -112,7 +112,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Google Maps| [geo-heatmap](https://github.com/luka1199/geo-heatmap)||
 | Text to Speech| [gtts](https://github.com/pndurette/gTTS)||
 | Database| [blaze](https://github.com/blaze/blaze)|Pandas and Numpy interface to databases|
-| Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy)|Scrape Twitter|
+| Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy), [twarc](https://twarc-project.readthedocs.io/en/latest/)|Scrape Twitter|
 | App Store| [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)||
 | Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
 |Arxiv|[pyarxiv](https://pypi.org/project/pyarxiv/)|Programmatic access to arxiv.org|
