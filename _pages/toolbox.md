@@ -425,7 +425,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Dialogue System|[ParlAI](https://github.com/facebookresearch/ParlAI)||
 |Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
 |Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
-|Grammar Induction|[gitta](https://github.com/twinters/gitta)|Generate CFG from sentences|
+|Grammar Induction|[gitta](https://github.com/twinters/gitta), [grasp](https://github.com/plkumjorn/GrASP)|Generate CFG from sentences|
 |Verb Disambiguation|[frame-english-fast](https://huggingface.co/flair/frame-english-fast)||
 
 ### Computer Vision  
