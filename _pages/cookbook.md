@@ -303,6 +303,8 @@ voila --port=$PORT --no-browser app.ipynb
 **Enable widgets in jupyter lab**  
 ```shell
 pip install jupyterlab
+pip install ipywidgets
+jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
