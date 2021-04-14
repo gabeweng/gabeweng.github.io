@@ -27,6 +27,7 @@ This is a curation of web apps that I have found useful.
 |[knowem](https://knowem.com/)|Search username on all social-media and domain-registrar|
 |[mlart](https://mlart.co/)|Showcase of creative ML applications|
 |[noun-project](https://thenounproject.com/)|Free icons for any noun|
+|[photopea](https://www.photopea.com/)|Photoshop clone in browser|
 |[phrasefinder](https://phrasefinder.io/)|Search millions of books for language use|
 |[python-tutor-live](http://pythontutor.com/live.html#mode=edit)|Show execution of python step by step|
 |[pyvideo](https://pyvideo.org/)|Search 16K python related videos|
