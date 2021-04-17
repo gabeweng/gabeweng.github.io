@@ -427,6 +427,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
 |Grammar Induction|[gitta](https://github.com/twinters/gitta), [grasp](https://github.com/plkumjorn/GrASP)|Generate CFG from sentences|
 |Verb Disambiguation|[frame-english-fast](https://huggingface.co/flair/frame-english-fast)||
+|Lexical Simplification|[easee](https://github.com/feralvam/easse/)|Evaluation metric|
 
 ### Computer Vision  
 
