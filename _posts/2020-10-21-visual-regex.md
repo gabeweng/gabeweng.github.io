@@ -1,7 +1,7 @@
 ---
 title: "A Visual Guide to Regular Expression"
 date: 2020-10-21T00:00-00:00
-last_modified_at: 2020-10-21T00:00:00-00:00
+last_modified_at: 2021-04-17T00:00:00-00:00
 categories:
   - python
   - nlp
@@ -217,7 +217,7 @@ The `?` quantifier matches the previous character if it repeats 0 or 1 times. Th
 
     ![](/images/regex-question-mark-clarify.png){:.align-center}  
 
-    For example, let's say we want to match both the word "sound" and "sound" where "s" is optional. Then, we can use the `?` quantifier that matches if a character repeats 0 or 1 times.  
+    For example, let's say we want to match both the word "sound" and "sounds" where "s" is optional. Then, we can use the `?` quantifier that matches if a character repeats 0 or 1 times.  
     ![](/images/regex-question-mark-example.png){:.align-center}  
 
 - **one or more times**: `+`  
