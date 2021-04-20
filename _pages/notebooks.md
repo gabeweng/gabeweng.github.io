@@ -16,44 +16,47 @@ Each notebook contain minimal code demonstrating usage of a library on a dummy d
 
 External Notebooks which are not written by me are marked with *.
 
-|Name|Goal|Colab|
+|Goal|Library|Colab|
 |---|---|---|
-|**benepar**|Perform constituency parsing of a sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Fxqq9OmIgPVT4xQJBT6E1siQtpvc_MV8?usp=sharing)|
-|**emojicloud**|Visualize EmojiCloud from text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uNQY_ewQT1D-iP0ZOLaD9H0bFXGNMzhb?authuser=3#scrollTo=UJWyzxZD0J9b)|
-|**easynmt***|Access NMT models using simple API|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC?usp=sharing)|
-|**faiss**|Use faiss for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
-|**fasttext**|Train custom word vectors in fasttext library|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12fhA0DCHhmYBOeFRvA15bNZKwTkIBvkH?usp=sharing)|
-|**flair**|Use NER, Embeddings and Sentiment in flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
-|**flair**|Perform sentiment classification in flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqZKxpFWM3XF_mi0twJHHW5dDHBzeIzh?usp=sharing)|
-|**gensim**|Train custom fasttext word vectors in gensim|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CEZOlhhDsKOvOrJaVHknzNOoWlAii7ug?usp=sharing)|
-|**gensim**|Train LDA topic model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JZlsdCKfDZYlPav8eVNZ7m8TFlPuAxKH?usp=sharing)|
-|**hdbscan-umap**|Use UMAP+HDBSCAN for text clustering|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
-|**huggingface***|Huggingface Transformers on GLUE tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
-|**huggingface**|Predict upvote, context relatedness and<br> human-like score of generated reply using DialogRPT model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
-|**huggingface**|Generate questions that a piece of text can answer using doc2query|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
-|**huggingface**|Generate paraphrases of a question using pegasus|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
-|**huggingface**|Perform next sentence prediction|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wYE1-jNZu3qZREE4TUNZ1TsAq1-KrVIh?usp=sharing)|
-|**huggingface**|Generate sentence embeddings using DECLUTR model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10ZPnVQ61F5JlK3s64NIa2XkiGh70QZFU?usp=sharing)|
-|**huggingface***|Train Causal and Masked LM using Trainer API|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)|
-|**huggingface***|Train NER model using Trainer API|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)|
-|**huggingface***|Train question-answering model using Trainer API|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/question_answering.ipynb)|
-|**huggingface**|Generate replies using blenderbot|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-boriQIAJT-VokCywnVMtq8lZU1ElyqV?usp=sharing)|
-|**huggingface***|Predict emojis for a text|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pjgechD9jtVJLAG7W6PmgiAYrs2uFSLJ?usp=sharing)|
-|**huggingface***|Distill zero-shot classifier to student model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mjBjd0cR8G57ZpsnFCS3ngGyo5nCa9ya?usp=sharing)|
-|**lm_scorer**|Use language model score for zero-shot classification|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
-|**mlxtend**|Run McNemar's test|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sxIidvIKHs8EFMQ1D7IAwFNkS-IezUbq?usp=sharing)|
-|**pytorch**|Use efficientnet model|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
-|**seaborn**|Visualize sentiment of word in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
-|**sentence-transformers***|Perform semantic search on research papers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12hfBveGHRsxhPIUMmJYrll2lFU4fOX06)|
-|**sentence-transformers***|Perform multi-modal text to image search using CLIP|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16OdADinjAg3w3ceZy3-cOR9A-5ZW9BYr)|
-|**spacy**|Train text classification model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
-|**spacy**|Train NER model in Spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
-|**squarify**|Generate tree-map chart in python|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PX2aaQjjJ6-CBPz-QYL8DipyoI6POu9U?usp=sharing)|
-|**stylecloud**|Generate wordcloud inside icons|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
-|**txtai**|Use txtai for semantic search|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
-|**ulmfit**|Classify text using ULMFit in Fastai 1.0|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
-|**wandb***|Log different data types in weights and biases|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
-|**wandb***|Run hyperparameter sweep for Pytorch Lightning|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
-|**other***|Do record deduplication on different data|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vintasoftware/deduplication-slides/blob/master/slides.ipynb)|
+|**Constituency Parsing**|benepar|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Fxqq9OmIgPVT4xQJBT6E1siQtpvc_MV8?usp=sharing)|
+|**Custom Word Vector**|fasttext|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12fhA0DCHhmYBOeFRvA15bNZKwTkIBvkH?usp=sharing)|
+||gensim|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CEZOlhhDsKOvOrJaVHknzNOoWlAii7ug?usp=sharing)|
+|**Emoji Prediction**|emojicloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uNQY_ewQT1D-iP0ZOLaD9H0bFXGNMzhb?authuser=3#scrollTo=UJWyzxZD0J9b)|
+||huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pjgechD9jtVJLAG7W6PmgiAYrs2uFSLJ?usp=sharing)|
+|**Evaluation**|McNemar's test|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sxIidvIKHs8EFMQ1D7IAwFNkS-IezUbq?usp=sharing)|
+|**Experiment Management**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
+|**Hyperparameter optimization**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
+|**Image Classification**|efficientnet|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
+|**Language Modeling**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)|
+|**Language Model Scoring**|lm_scorer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
+||DialogRPT|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
+|**Machine Translation**|easynmt|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC?usp=sharing)|
+|**Multimodal Search**|sentence-transformers(CLIP)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16OdADinjAg3w3ceZy3-cOR9A-5ZW9BYr)|
+|**NER**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
+||huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)|
+||spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
+|**Next Sentence Prediction**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wYE1-jNZu3qZREE4TUNZ1TsAq1-KrVIh?usp=sharing)|
+|**Open-domain Chatbot**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-boriQIAJT-VokCywnVMtq8lZU1ElyqV?usp=sharing)|
+|**Paraphrase Generation**|Question Paraphrasing (huggingface)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
+|**Question Answering**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/question_answering.ipynb)|
+|**Question Generation**|doc2query|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
+|**Record Deduplication**|mix|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vintasoftware/deduplication-slides/blob/master/slides.ipynb)|
+|**Sentence Embeddings**|DECLUTR in huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10ZPnVQ61F5JlK3s64NIa2XkiGh70QZFU?usp=sharing)|
+|**Sentiment Classification**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqZKxpFWM3XF_mi0twJHHW5dDHBzeIzh?usp=sharing)|
+||vader sentiment(nltk)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1WFo627ZtU8GZTRcelvLsTAVRWdizxZ9h?usp=sharing)|
+|**Semantic Search**|faiss|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
+||sentence-transformers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12hfBveGHRsxhPIUMmJYrll2lFU4fOX06)|
+||txtai|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
+|**Topic Modeling**|gensim(LDA)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JZlsdCKfDZYlPav8eVNZ7m8TFlPuAxKH?usp=sharing)|
+|**Treemap Chart**|squarify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PX2aaQjjJ6-CBPz-QYL8DipyoI6POu9U?usp=sharing)|
+|**Text Classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
+||spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
+||fastai(ULMFIT)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
+||fasttext(automl)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IcOdehbHLL3IzXunNAGQCwa-yR1zxmXG?usp=sharing)|
+||universal sentence encoder + keras|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1g9B1QNSXp1Pfcl4xx8RuMmDw1bQfhZSD?usp=sharing)|
+|**Text Clustering**|hdbscan-umap|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
+|**Visualization**|word sentiment in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
+||wordcloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
+|**Zero-shot classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mjBjd0cR8G57ZpsnFCS3ngGyo5nCa9ya?usp=sharing)|
 
 
