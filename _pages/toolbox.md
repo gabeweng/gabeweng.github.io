@@ -386,6 +386,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
 |Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
 | Topic Modeling|[gensim](https://github.com/RaRe-Technologies/gensim), [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy).[ToModAPI](https://github.com/D2KLab/ToModAPI)||
+||[octis](https://github.com/mind-lab/octis)|Evaluate topic models|
 |Code Switching|[codeswitch](https://github.com/sagorbrur/codeswitch)||
 | Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering), [genieclust](https://genieclust.gagolewski.com/weave/basics.html)||
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
