@@ -31,6 +31,7 @@ External Notebooks which are not written by me are marked with *.
 |**Language Model Scoring**|lm_scorer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
 ||DialogRPT|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
 |**Machine Translation**|easynmt|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC?usp=sharing)|
+|**Multilabel Classification**|scikit-multilearn|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lJiPPqL-X8-I_AAz1jyDkQP1m8TfE7nI?usp=sharing)|
 |**Multimodal Search**|sentence-transformers(CLIP)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16OdADinjAg3w3ceZy3-cOR9A-5ZW9BYr)|
 |**NER**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
 ||huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)|
@@ -58,5 +59,3 @@ External Notebooks which are not written by me are marked with *.
 |**Visualization**|word sentiment in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
 ||wordcloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
 |**Zero-shot classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mjBjd0cR8G57ZpsnFCS3ngGyo5nCa9ya?usp=sharing)|
-
-
