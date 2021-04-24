@@ -322,7 +322,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
 ||[spacy-udpipe](https://github.com/TakeLab/spacy-udpipe)|Use UDPipe from Spacy|
 ||[spacymoji](https://pypi.org/project/spacymoji/)|Add emoji metadata to spacy docs|
-|Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended)|Verb Conjugation|
+|Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended), [mlconj3](https://mlconjug3.readthedocs.io/en/latest/)|Verb Conjugation|
 |Morphology|[unimorph](https://pypi.org/project/unimorph/)|Morphology data for many languages|
 |Phonetics|[epitran](https://github.com/dmort27/epitran)|Transliterate text into IPA|
 ||[allosaurus](https://github.com/xinjli/allosaurus)|Recognize phone for 2000 languages|
