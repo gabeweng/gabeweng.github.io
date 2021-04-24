@@ -27,6 +27,7 @@ External Notebooks which are not written by me are marked with *.
 |**Experiment Management**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
 |**Hyperparameter optimization**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
 |**Image Classification**|efficientnet|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
+|**Keyword Extraction**|pytextrank|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-mbQ75Zgu0Qt8MI_NOI9vLyXZsw4hiF9?usp=sharing)|
 |**Language Modeling**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)|
 |**Language Model Scoring**|lm_scorer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
 ||DialogRPT|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
