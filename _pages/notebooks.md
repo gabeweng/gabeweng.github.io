@@ -44,6 +44,7 @@ External Notebooks which are not written by me are marked with *.
 |**Question Generation**|doc2query|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
 |**Record Deduplication**|mix|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vintasoftware/deduplication-slides/blob/master/slides.ipynb)|
 |**Sentence Embeddings**|DECLUTR in huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10ZPnVQ61F5JlK3s64NIa2XkiGh70QZFU?usp=sharing)|
+||Quantize sentence-transformers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yKGNqiANjsyxkoADc9TqL3oCCAuXy0f2?usp=sharing)|
 |**Sentiment Classification**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqZKxpFWM3XF_mi0twJHHW5dDHBzeIzh?usp=sharing)|
 ||vader sentiment(nltk)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1WFo627ZtU8GZTRcelvLsTAVRWdizxZ9h?usp=sharing)|
 ||finetune deepmoji|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-Ua8QzMXt1v5UwAB3a9SBdk_lNLAfpMS?usp=sharing)|
