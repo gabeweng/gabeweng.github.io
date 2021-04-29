@@ -49,6 +49,7 @@ External Notebooks which are not written by me are marked with *.
 |**Sentiment Classification**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqZKxpFWM3XF_mi0twJHHW5dDHBzeIzh?usp=sharing)|
 ||vader sentiment(nltk)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1WFo627ZtU8GZTRcelvLsTAVRWdizxZ9h?usp=sharing)|
 ||finetune deepmoji|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-Ua8QzMXt1v5UwAB3a9SBdk_lNLAfpMS?usp=sharing)|
+||xlm-t|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zZbuX1yPUNWoqtTXBd8v0miKz-87ajC8?usp=sharing)|
 |**Semantic Search**|faiss|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MSrwFndb62j87-00Rk4s9TQEXjgAWHLw?usp=sharing)|
 ||sentence-transformers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12hfBveGHRsxhPIUMmJYrll2lFU4fOX06)|
 ||txtai|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
