@@ -392,6 +392,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
 ||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
 ||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
+||[gsdmm](https://github.com/rwalk/gsdmm)|Short-text clustering|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
 ||[ranking-metrics](https://gist.github.com/bwhite/3726239), [cute_ranking](https://github.com/ncoop57/cute_ranking)|Metrics for Information Retrieval|
 ||[mir_eval](https://github.com/craffel/mir_eval)|Music Information Retrieval Metrics|
