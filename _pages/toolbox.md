@@ -353,6 +353,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased), [distilbert](https://huggingface.co/distilbert-base-uncased), [tinybert](https://huggingface.co/XiaoqiJiao),[BERT-of-Theseus-MNLI](https://huggingface.co/canwenxu/BERT-of-Theseus-MNLI), [MiniML](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)||
 |Information Extraction|[claucy](https://github.com/mmxgn/spacy-clausie/tree/dev-clausie-reimplementation)||
 ||[GiveMe5W1H](https://github.com/fhamborg/Giveme5W1H)|Extract 5-why 1-how phrases from news|
+||[spikex](https://github.com/erre-quadro/spikex)|Spacy pipeline for knowledge extraction|
 | Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
 ||[verbnet-parser](https://github.com/jgung/verbnet-parser)|VerbNet parser|
