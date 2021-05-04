@@ -36,6 +36,7 @@ This is a curation of web apps that I have found useful.
 |[random-subject-prompts](https://writingexercises.co.uk/subjectgenerator.php)|Generate random prompt to write about|
 |[star-history](https://star-history.t9t.io/)|Generate history of stars on a GitHub repo|
 |[startupdeals](https://github.com/startupdeals/startupdeals)|Free SAAS discounts for startups|
+|[tabfs](https://omar.website/tabfs/)|Mount browser tabs as file-system|
 |[twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)|Cheatsheet for twitter advanced search|
 |[text-to-handwriting](https://saurabhdaware.github.io/text-to-handwriting/)|Convert text to handwritten paper image|
 |[upgoer5](https://splasho.com/upgoer5/)|Write using only 10K most used words|
