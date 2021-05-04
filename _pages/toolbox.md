@@ -343,6 +343,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[starspace](https://github.com/facebookresearch/StarSpace)|Learn embeddings for anything|
 ||[svd2vec](https://valentinp72.github.io/svd2vec/getting_started.html)|Learn embeddings from co-occurrence|
 ||[all-but-the-top](https://gist.github.com/lgalke/febaaa1313d9c11f3bc8240defed8390)|Post-processing for word vectors|
+||[entity-embed](https://github.com/vintasoftware/entity-embed)|Train custom embeddings for named entities|
 | Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
 ||[transvec](https://github.com/big-o/transvec)|Train mapping between monolingual embeddings|
 ||[MuRIL](https://tfhub.dev/google/MuRIL/1)|Embeddings for 17 indic languages with transliteration|
