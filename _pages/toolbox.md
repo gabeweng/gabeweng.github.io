@@ -105,6 +105,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[ratelimit](https://pypi.org/project/ratelimit/)|API rate limit decorator|
 ||[backoff](https://github.com/litl/backoff)|Exponential backoff and jitter|
 ||[asks](https://github.com/theelous3/asks)|Async version of requests|
+||[requests-cache](https://github.com/reclosedev/requests-cache)|Cached version of requests|
 |Google Search|[googlesearch](https://github.com/Nv7-GitHub/googlesearch)|Parse google search results|
 | Google sheets| [gspread](https://github.com/burnash/gspread)||
 | Google drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
