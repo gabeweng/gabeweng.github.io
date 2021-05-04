@@ -526,7 +526,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [exbert](http://exbert.net/exBERT.html?sentence=I%20liked%20the%20music&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..9&metaMatch=pos&metaMax=pos&displayInspector=null&offsetIdxs=..-1,0,1&hideClsSep=true)|Interpret BERT|
 ||[bertviz](https://github.com/jessevig/bertviz)|Explore self-attention in BERT|
 | Interpret word2vec| [word2viz](https://lamyiowce.github.io/word2viz/), [whatlies](https://github.com/RasaHQ/whatlies)||
-|Interpret NLP models|[Language Interpretability Tool](https://pair-code.github.io/lit/setup/#custom)||
+|Interpret NLP models|[Language Interpretability Tool](https://pair-code.github.io/lit/setup/#custom), [transformers-interpret](https://github.com/cdpierse/transformers-interpret)||
 |Adversarial Attack| [cleverhans](https://github.com/tensorflow/cleverhans)|General|
 || [foolbox](https://github.com/bethgelab/foolbox)|Image|
 ||[triggers](https://www.ericswallace.com/triggers)|NLP|
