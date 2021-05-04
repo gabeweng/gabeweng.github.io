@@ -34,6 +34,7 @@ This is a curation of web apps that I have found useful.
 |[pyvideo](https://pyvideo.org/)|Search 16K python related videos|
 |[py.md](https://gist.github.com/jph00/d5981f649a83a754946964cf22322cb2)|Hyperlinked index to every module/function/class in Python standard library|
 |[random-subject-prompts](https://writingexercises.co.uk/subjectgenerator.php)|Generate random prompt to write about|
+|[readme.so](https://readme.so/editor)|Write README.md using drag and drop|
 |[star-history](https://star-history.t9t.io/)|Generate history of stars on a GitHub repo|
 |[startupdeals](https://github.com/startupdeals/startupdeals)|Free SAAS discounts for startups|
 |[tabfs](https://omar.website/tabfs/)|Mount browser tabs as file-system|
