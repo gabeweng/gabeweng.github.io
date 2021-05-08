@@ -68,4 +68,5 @@ External Notebooks which are not written by me are marked with *.
 |**Text Generation**|markovify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YOdecQEQXJA7Ig3fw9_Lh5wsBpNDClQ1?usp=sharing)|
 |**Visualization**|word sentiment in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
 ||wordcloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
+|**Weak Supervision**|snorkel*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/158vbUGgEaJDiwhDvKYbxlLKkVqA0bT6B?usp=sharing)|
 |**Zero-shot classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mjBjd0cR8G57ZpsnFCS3ngGyo5nCa9ya?usp=sharing)|
