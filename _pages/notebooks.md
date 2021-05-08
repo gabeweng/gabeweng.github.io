@@ -63,6 +63,7 @@ External Notebooks which are not written by me are marked with *.
 ||fasttext(automl)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IcOdehbHLL3IzXunNAGQCwa-yR1zxmXG?usp=sharing)|
 ||universal sentence encoder + keras|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1g9B1QNSXp1Pfcl4xx8RuMmDw1bQfhZSD?usp=sharing)|
 |**Text Clustering**|hdbscan-umap|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
+|**Text Generation**|markovify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YOdecQEQXJA7Ig3fw9_Lh5wsBpNDClQ1?usp=sharing)|
 |**Visualization**|word sentiment in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
 ||wordcloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
 |**Zero-shot classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mjBjd0cR8G57ZpsnFCS3ngGyo5nCa9ya?usp=sharing)|
