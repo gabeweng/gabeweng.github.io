@@ -26,6 +26,7 @@ External Notebooks which are not written by me are marked with *.
 ||huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pjgechD9jtVJLAG7W6PmgiAYrs2uFSLJ?usp=sharing)|
 |**Evaluation**|McNemar's test|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sxIidvIKHs8EFMQ1D7IAwFNkS-IezUbq?usp=sharing)|
 |**Experiment Management**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb)|
+|**Fuzzy Matching**|jellyfish|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GbxZk_R9w5oDojn0ynU-rPM-_hWvPyTh?usp=sharing)|
 |**Hyperparameter optimization**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
 |**Image Classification**|efficientnet|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
 |**Keyword Extraction**|pytextrank|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-mbQ75Zgu0Qt8MI_NOI9vLyXZsw4hiF9?usp=sharing)|
