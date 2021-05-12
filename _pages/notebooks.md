@@ -67,6 +67,7 @@ External Notebooks which are not written by me are marked with *.
 |**Text Clustering**|hdbscan-umap|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qVLRqhZmUAVuEguy_Tq-6MmziwizlLz#scrollTo=m-ufOolpvuEw)|
 |**Text Generation**|markovify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YOdecQEQXJA7Ig3fw9_Lh5wsBpNDClQ1?usp=sharing)|
 ||GPT-2 with simpletransformers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YBR4Dk5otMuq9uQ_xwFWpe4A8hRFWR5A?usp=sharing)|
+|**Text Preprocessing**|contractions+ftfy+emoji|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZVfQR_dFPgVTwzMjBW2-TPDnW28t3gLd?usp=sharing)|
 |**Verb Conjugation**|nodebox-linguistics|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xRqcktXcmJgFe8gWkEgaVwqKYCGUzXvN?usp=sharing)|
 |**Visualization**|word sentiment in sentence|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18raSBQHKKczIOznC77RwkE37wb5dIXpA?usp=sharing)|
 ||wordcloud|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15N5jTakPvI_VhQbcrB_FJWil0GMyyFSQ?usp=sharing)|
