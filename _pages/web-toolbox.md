@@ -18,6 +18,7 @@ This is a curation of web apps that I have found useful.
 |[clip](https://clip.kiri.ai/)|Zero-shot image classification|
 |[composerize](https://www.composerize.com/)|Convert docker run command to docker-compose|
 |[connected-papers](https://www.connectedpapers.com/)|Explore papers in visual graph|
+|[dbpedia-lookup](https://lookup.dbpedia.org/)|Find wikipedia data for entities|
 |[detexify](http://detexify.kirelabs.org/classify.html)|Find latex by drawing symbol|
 |[derivative-calculator](https://www.derivative-calculator.net/)|Calculate derivative with steps|
 |[emoji-recommender](https://share.streamlit.io/rensdimmendaal/emoji-recommender/main/app/streamlit.py)|Recommend emoji based on text|
