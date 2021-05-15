@@ -266,15 +266,15 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/), [nlp-architect](https://intellabs.github.io/nlp-architect/index.html), [spark-nlp](https://github.com/JohnSnowLabs/spark-nlp), [pytext](https://github.com/facebookresearch/pytext), [FARM](https://github.com/deepset-ai/FARM)||
-| | [headliner](https://github.com/as-ideas/headliner), [txt2txt](https://github.com/bedapudi6788/txt2txt)|Sequence to sequence models|
+|Libraries| [spacy](https://spacy.io/) , [nltk](https://github.com/nltk/nltk), [corenlp](https://stanfordnlp.github.io/CoreNLP/), [deeppavlov](http://docs.deeppavlov.ai/en/master/index.html), [kashgari](https://kashgari.bmio.net/), [transformers](https://github.com/huggingface/transformers), [ernie](https://github.com/brunneis/ernie), [stanza](https://stanfordnlp.github.io/stanza/), [nlp-architect](https://intellabs.github.io/nlp-architect/index.html), [spark-nlp](https://github.com/JohnSnowLabs/spark-nlp), [pytext](https://github.com/facebookresearch/pytext), [FARM](https://github.com/deepset-ai/FARM)||
+|| [headliner](https://github.com/as-ideas/headliner), [txt2txt](https://github.com/bedapudi6788/txt2txt)|Sequence to sequence models|
 ||[Nvidia NeMo](https://github.com/NVIDIA/NeMo)|Toolkit for ASR, NLP and TTS|
 ||[nlu](https://nlu.johnsnowlabs.com/docs/en/examples)|1-line models for NLP|
+|| [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)|Wrappers|
+|| [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
 |CPU-optimizations|[turbo_transformers](https://github.com/Tencent/TurboTransformers), [onnx_transformers](https://github.com/patil-suraj/onnx_transformers)||
 ||[fastT5](https://github.com/Ki6an/fastT5)|Generate optimized T5 model|
-| Wrappers| [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)||
-| | [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
-| Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe), [nlpretext](https://github.com/artefactory/NLPretext)||
+|Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe), [nlpretext](https://github.com/artefactory/NLPretext)||
 || [JamSpell](https://github.com/bakwc/JamSpell), [pyhunspell](https://github.com/blatinier/pyhunspell), [pyspellchecker](https://github.com/barrust/pyspellchecker), [cython_hunspell](https://github.com/MSeal/cython_hunspell), [hunspell-dictionaries](https://github.com/wooorm/dictionaries), [autocorrect (can add more languages)](https://github.com/phatpiglet/autocorrect), [symspellpy](https://github.com/mammothb/symspellpy), [spello (train your own spelling correction)](https://github.com/hellohaptik/spello), [contextualSpellCheck](https://github.com/R1j1t/contextualSpellCheck), [neuspell](https://github.com/neuspell/neuspell), [nlprule](https://github.com/bminixhofer/nlprule), [spylls](https://github.com/zverok/spylls)|Spelling Correction|
 ||[language-tool-python](https://github.com/jxmorris12/language_tool_python)|Grammar Checker|
 ||[ekphrasis](https://github.com/cbaziotis/ekphrasis)|Pre-processing for social media texts|
@@ -303,38 +303,31 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[daterangeparser](https://github.com/robintw/daterangeparser)|Parse date ranges in natural language|
 || [emoji](https://pypi.org/project/emoji/)|Handle emoji|
 ||[pyarabic](https://pyarabic.readthedocs.io/ar/latest/)|multilingual|
-| Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
+|Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
 | | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
-|Probabilistic parsing|[parserator](https://github.com/datamade/parserator)|Create domain-specific parser for address, name etc.|
+| Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering), [genieclust](https://genieclust.gagolewski.com/weave/basics.html)||
+||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
+||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
+||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
+||[gsdmm](https://github.com/rwalk/gsdmm)|Short-text clustering|
+|Code Switching|[codeswitch](https://github.com/sagorbrur/codeswitch)||
 |Constituency Parsing|[benepar](https://github.com/plandes/self-attentive-parser), [allennlp](https://demo.allennlp.org/constituency-parsing/), [chunk-english-fast](https://huggingface.co/flair/chunk-english-fast)||
-|Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
-|Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
-||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
-|Gibberish Detection|[nostril](https://github.com/casics/nostril), [gibberish-detector](https://github.com/amitness/Gibberish-Detector)||
-|Paraphrasing|[parrot](https://github.com/PrithivirajDamodaran/Parrot)||
-||[pegasus](https://colab.research.google.com/drive/1RWvGuHKnPur7fCL0DObMeZXQVHem6aEV?usp=sharing)|Question Paraphrasing|
-||[paraphrase_diversity_ranker](https://huggingface.co/salesken/paraphrase_diversity_ranker)|Rank paraphrases of sentence|
-||[sentaugment](https://github.com/facebookresearch/SentAugment)|Paraphrase mining|
-|Spacy Extensions|[spacy-pattern-builder](https://github.com/cyclecycle/spacy-pattern-builder)|Generate dependency matcher patterns automatically|
-||[spacy_grammar](https://github.com/tokestermw/spacy_grammar)|Rule-based grammar error detection|
-||[role-pattern-builder](https://github.com/cyclecycle/role-pattern-nlp)|Pattern based SRL|
-||[textpipeliner](https://github.com/krzysiekfonal/textpipeliner)|Extract RDF triples|
-||[tenseflow](https://github.com/bendichter/tenseflow)|Convert tense of sentence|
-||[camphr](https://github.com/PKSHATechnology-Research/camphr/)|Wrapper to transformers, elmo, udify|
-||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
-||[spacy-udpipe](https://github.com/TakeLab/spacy-udpipe)|Use UDPipe from Spacy|
-||[spacymoji](https://pypi.org/project/spacymoji/)|Add emoji metadata to spacy docs|
-|Linguistics|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended), [mlconj3](https://mlconjug3.readthedocs.io/en/latest/)|Verb Conjugation|
-|Morphology|[unimorph](https://pypi.org/project/unimorph/)|Morphology data for many languages|
-|Phonetics|[epitran](https://github.com/dmort27/epitran)|Transliterate text into IPA|
-||[allosaurus](https://github.com/xinjli/allosaurus)|Recognize phone for 2000 languages|
-|Phonology|[panphon](https://github.com/dmort27/panphon)|Generate phonological feature representations|
-||[phoible](https://phoible.org/)|Database of segment inventories for 2186 languages|
-|Typology|[lang2vec](https://github.com/antonisa/lang2vec)|Compare typological features of languages|
-|Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
-| Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
+|Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased), [distilbert](https://huggingface.co/distilbert-base-uncased), [tinybert](https://huggingface.co/XiaoqiJiao),[BERT-of-Theseus-MNLI](https://huggingface.co/canwenxu/BERT-of-Theseus-MNLI), [MiniML](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)||
+|Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
+||[transvec](https://github.com/big-o/transvec)|Train mapping between monolingual embeddings|
+||[MuRIL](https://tfhub.dev/google/MuRIL/1)|Embeddings for 17 indic languages with transliteration|
+||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
+||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
+| Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
+| Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
+|| [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
+||[twitter-roberta-base](https://huggingface.co/cardiffnlp/twitter-roberta-base)|twitter|
+|| [scispacy](https://github.com/allenai/scispacy)|bio-medical data|
+|Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api), [GENRE](https://github.com/facebookresearch/GENRE/blob/main/examples/transformers.md)||
+|Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
+|Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
 ||[chars2vec](https://github.com/IntuitionEngineeringTeam/chars2vec)|Character-embeddings for handling typo and slangs|
 ||[rank_bm25](https://github.com/dorianbrown/rank_bm25), [BM25Transformer](https://github.com/arosh/BM25Transformer)|BM25|
 || [sentence-transformers](https://www.sbert.net/docs/pretrained_models.html), [DeCLUTR](https://huggingface.co/johngiorgi/declutr-base)|BERT sentence embeddings|
@@ -347,62 +340,71 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[svd2vec](https://valentinp72.github.io/svd2vec/getting_started.html)|Learn embeddings from co-occurrence|
 ||[all-but-the-top](https://gist.github.com/lgalke/febaaa1313d9c11f3bc8240defed8390)|Post-processing for word vectors|
 ||[entity-embed](https://github.com/vintasoftware/entity-embed)|Train custom embeddings for named entities|
-| Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
-||[transvec](https://github.com/big-o/transvec)|Train mapping between monolingual embeddings|
-||[MuRIL](https://tfhub.dev/google/MuRIL/1)|Embeddings for 17 indic languages with transliteration|
-||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
-||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
-| Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html), [trankit](https://github.com/nlp-uoregon/trankit)||
-|| [inltk](https://github.com/goru001/inltk), [indic_nlp](https://github.com/anoopkunchukuttan/indic_nlp_library)|Indic Languages|
-||[cltk](https://github.com/cltk/cltk)|NLP for latin and classic languages|
-|Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased), [distilbert](https://huggingface.co/distilbert-base-uncased), [tinybert](https://huggingface.co/XiaoqiJiao),[BERT-of-Theseus-MNLI](https://huggingface.co/canwenxu/BERT-of-Theseus-MNLI), [MiniML](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)||
+|Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch), [text2emotion](https://github.com/aman2656/text2emotion-library)||
+||[emosent-py](https://pypi.org/project/emosent-py/)|Sentiment scores for Emojis|
+|Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
+||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
+|Fill mask| [fitbert](https://github.com/Qordobacode/fitbert)||
+|Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
+|Gibberish Detection|[nostril](https://github.com/casics/nostril), [gibberish-detector](https://github.com/amitness/Gibberish-Detector)||
+|Grammar Induction|[gitta](https://github.com/twinters/gitta), [grasp](https://github.com/plkumjorn/GrASP)|Generate CFG from sentences|
 |Information Extraction|[claucy](https://github.com/mmxgn/spacy-clausie/tree/dev-clausie-reimplementation)||
 ||[GiveMe5W1H](https://github.com/fhamborg/Giveme5W1H)|Extract 5-why 1-how phrases from news|
 ||[spikex](https://github.com/erre-quadro/spikex)|Spacy pipeline for knowledge extraction|
-| Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
+|Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
+|| [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
+|Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
 ||[verbnet-parser](https://github.com/jgung/verbnet-parser)|VerbNet parser|
-| Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
-|| [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
-||[twitter-roberta-base](https://huggingface.co/cardiffnlp/twitter-roberta-base)|twitter|
-|| [scispacy](https://github.com/allenai/scispacy)|bio-medical data|
-| Text Extraction| [textract (Image, Audio, PDF)](https://textract.readthedocs.io/en/stable/)||
-| Text Generation| [gp2client](https://github.com/rish-16/gpt2client), [textgenrnn](https://github.com/minimaxir/textgenrnn), [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple), [aitextgen](https://github.com/minimaxir/aitextgen)|GPT-2|
-| |[markovify](https://github.com/jsvine/markovify)|Markov chains|
-| |[keytotext](https://github.com/gagan3012/keytotext)|Keyword to Sentence Generation|
-|Transliteration|[wiktra](https://github.com/kbatsuren/wiktra)||
-| Machine Translation| [MarianMT](https://huggingface.co/transformers/model_doc/marian.html), [Opus-MT](https://github.com/Helsinki-NLP/Opus-MT), [joeynmt](https://joeynmt.readthedocs.io/en/latest/tutorial.html), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py), [EasyNMT](https://github.com/UKPLab/EasyNMT), [argos-translate](https://github.com/argosopentech/argos-translate), [dl-translate](https://github.com/xhlulu/dl-translate)||
-| | [googletrans](https://pypi.org/project/googletrans/), [word2word](https://github.com/Kyubyong/word2word), [translate-python](https://github.com/terryyin/translate-python), [deep_translator](https://github.com/nidhaloff/deep_translator)|Translation libraries|
-||[translators](https://pypi.org/project/translators)|Free calls to multiple translation APIs|
-||[giza++](https://github.com/moses-smt/giza-pp), [fastalign](https://github.com/clab/fast_align), [simalign](https://github.com/cisnlp/simalign), [eflomal](https://github.com/robertostling/eflomal), [awesome-align](https://github.com/neulab/awesome-align)|Word Alignment|
-| Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
-||[doc2query](https://github.com/castorini/docTTTTTquery)|Summarize document with queries|
-||[summarizers](https://github.com/hyunwoongko/summarizers)|Controllable summarization|
-||[insight_extractor](https://github.com/NoahFinberg/insight_extractor)|Extract insightful sentences from docs|
-|Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
-| Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
-|| [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
-|Question Answering|[haystack](https://haystack.deepset.ai/docs/latest/intromd)|Build end-to-end QA system|
-||[mcQA](https://github.com/mcQA-suite/mcQA)|Multiple Choice Question Answering|
-||[TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)|Table Question Answering|
-|Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
-|Search|[elasticsearch-dsl](https://elasticsearch-dsl.readthedocs.io/en/latest/)|Wrapper for elastic search|
-||[jina](https://github.com/jina-ai/jina)|production-level neural semantic search|
-||[mellisearch-python](https://github.com/meilisearch/meilisearch-python)||
-| NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
-| Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
-|Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
-| Topic Modeling|[gensim](https://github.com/RaRe-Technologies/gensim), [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy).[ToModAPI](https://github.com/D2KLab/ToModAPI)||
-||[octis](https://github.com/mind-lab/octis)|Evaluate topic models|
-|Code Switching|[codeswitch](https://github.com/sagorbrur/codeswitch)||
-| Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering), [genieclust](https://genieclust.gagolewski.com/weave/basics.html)||
-||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
-||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
-||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
-||[gsdmm](https://github.com/rwalk/gsdmm)|Short-text clustering|
+| Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
+| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
+|Lexical Simplification|[easee](https://github.com/feralvam/easse/)|Evaluation metric|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
 ||[ranking-metrics](https://gist.github.com/bwhite/3726239), [cute_ranking](https://github.com/ncoop57/cute_ranking)|Metrics for Information Retrieval|
 ||[mir_eval](https://github.com/craffel/mir_eval)|Music Information Retrieval Metrics|
+|Morphology|[unimorph](https://pypi.org/project/unimorph/)|Morphology data for many languages|
+|Multilingual support| [polyglot](https://polyglot.readthedocs.io/en/latest/index.html), [trankit](https://github.com/nlp-uoregon/trankit)||
+|| [inltk](https://github.com/goru001/inltk), [indic_nlp](https://github.com/anoopkunchukuttan/indic_nlp_library)|Indic Languages|
+||[cltk](https://github.com/cltk/cltk)|NLP for latin and classic languages|
+||[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
+| Named Entity Recognition(NER) | [spaCy](https://spacy.io/) , [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml), [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/index.html)||
+||[med7](https://github.com/kormilitzin/med7)|Spacy NER for medical records|
+| Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss), [sparse_dot_topn](https://github.com/ing-bank/sparse_dot_topn), [n2](https://github.com/kakao/n2/), [autofaiss](https://github.com/criteo/autofaiss)||
+|NLU| [snips-nlu](https://github.com/snipsco/snips-nlu)||
+||[ParlAI](https://github.com/facebookresearch/ParlAI)|Dialogue System|
+|Paraphrasing|[parrot](https://github.com/PrithivirajDamodaran/Parrot)||
+||[pegasus](https://colab.research.google.com/drive/1RWvGuHKnPur7fCL0DObMeZXQVHem6aEV?usp=sharing)|Question Paraphrasing|
+||[paraphrase_diversity_ranker](https://huggingface.co/salesken/paraphrase_diversity_ranker)|Rank paraphrases of sentence|
+||[sentaugment](https://github.com/facebookresearch/SentAugment)|Paraphrase mining|
+|Phonetics|[epitran](https://github.com/dmort27/epitran)|Transliterate text into IPA|
+||[allosaurus](https://github.com/xinjli/allosaurus)|Recognize phone for 2000 languages|
+|Phonology|[panphon](https://github.com/dmort27/panphon)|Generate phonological feature representations|
+||[phoible](https://phoible.org/)|Database of segment inventories for 2186 languages|
+|Probabilistic parsing|[parserator](https://github.com/datamade/parserator)|Create domain-specific parser for address, name etc.|
+|Profanity detection| [profanity-check](https://github.com/vzhou842/profanity-check)||
+|Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
+|Question Answering|[haystack](https://haystack.deepset.ai/docs/latest/intromd)|Build end-to-end QA system|
+||[mcQA](https://github.com/mcQA-suite/mcQA)|Multiple Choice Question Answering|
+||[TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)|Table Question Answering|
+|Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
+|Ranking|[transformer-rankers](https://github.com/Guzpenha/transformer_rankers)||
+|Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
+|Search|[elasticsearch-dsl](https://elasticsearch-dsl.readthedocs.io/en/latest/)|Wrapper for elastic search|
+||[jina](https://github.com/jina-ai/jina)|production-level neural semantic search|
+||[mellisearch-python](https://github.com/meilisearch/meilisearch-python)||
+|Semantic parsing| [quepy](https://github.com/machinalis/quepy)||
+|Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment), [afinn](https://github.com/fnielsen/afinn)|Rule based|
+| | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
+||[xlm-t](https://github.com/cardiffnlp/xlm-t)|Models|
+|Spacy Extensions|[spacy-pattern-builder](https://github.com/cyclecycle/spacy-pattern-builder)|Generate dependency matcher patterns automatically|
+||[spacy_grammar](https://github.com/tokestermw/spacy_grammar)|Rule-based grammar error detection|
+||[role-pattern-builder](https://github.com/cyclecycle/role-pattern-nlp)|Pattern based SRL|
+||[textpipeliner](https://github.com/krzysiekfonal/textpipeliner)|Extract RDF triples|
+||[tenseflow](https://github.com/bendichter/tenseflow)|Convert tense of sentence|
+||[camphr](https://github.com/PKSHATechnology-Research/camphr/)|Wrapper to transformers, elmo, udify|
+||[spleno](https://github.com/p-sodmann/SpLeNo)|Domain-specific lemmatization|
+||[spacy-udpipe](https://github.com/TakeLab/spacy-udpipe)|Use UDPipe from Spacy|
+||[spacymoji](https://pypi.org/project/spacymoji/)|Add emoji metadata to spacy docs|
 | String match|[phrase-seeker](https://github.com/kirillgashkov/phrase-seeker), [textsearch](https://github.com/kootenpv/textsearch)||
 ||[jellyfish](https://pypi.org/project/jellyfish/), [fuzzy](https://github.com/yougov/fuzzy), [doublemetaphone](https://github.com/dedupeio/doublemetaphone)|Perform string and phonetic comparison|
 ||[flashtext](https://github.com/vi3k6i5/flashtext)|Super-fast extract and replace keywords|
@@ -413,32 +415,30 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)|Fuzzy Search|
 ||[deduplipy](https://github.com/fritshermans/deduplipy), [dedupe](https://github.com/dedupeio/dedupe)|Active-Learning based fuzzy matching|
 ||[recordlinkage](https://recordlinkage.readthedocs.io/en/stable/)|Record Linkage|
-| Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment), [afinn](https://github.com/fnielsen/afinn)|Rule based|
-| | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
-||[xlm-t](https://github.com/cardiffnlp/xlm-t)|Models|
-| Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch), [text2emotion](https://github.com/aman2656/text2emotion-library)||
-||[emosent-py](https://pypi.org/project/emosent-py/)|Sentiment scores for Emojis|
-| Profanity detection| [profanity-check](https://github.com/vzhou842/profanity-check)||
+| Summarization| [textrank](https://github.com/summanlp/textrank), [pytldr](https://github.com/jaijuneja/PyTLDR), [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer), [sumy](https://github.com/miso-belica/sumy), [fast-pagerank](https://github.com/asajadi/fast-pagerank), [sumeval](https://github.com/chakki-works/sumeval)||
+||[doc2query](https://github.com/castorini/docTTTTTquery)|Summarize document with queries|
+||[summarizers](https://github.com/hyunwoongko/summarizers)|Controllable summarization|
+||[insight_extractor](https://github.com/NoahFinberg/insight_extractor)|Extract insightful sentences from docs|
+| Text Extraction| [textract (Image, Audio, PDF)](https://textract.readthedocs.io/en/stable/)||
+| Text Generation| [gp2client](https://github.com/rish-16/gpt2client), [textgenrnn](https://github.com/minimaxir/textgenrnn), [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple), [aitextgen](https://github.com/minimaxir/aitextgen)|GPT-2|
+| |[markovify](https://github.com/jsvine/markovify)|Markov chains|
+| |[keytotext](https://github.com/gagan3012/keytotext)|Keyword to Sentence Generation|
+|Transliteration|[wiktra](https://github.com/kbatsuren/wiktra)||
+| Machine Translation| [MarianMT](https://huggingface.co/transformers/model_doc/marian.html), [Opus-MT](https://github.com/Helsinki-NLP/Opus-MT), [joeynmt](https://joeynmt.readthedocs.io/en/latest/tutorial.html), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py), [EasyNMT](https://github.com/UKPLab/EasyNMT), [argos-translate](https://github.com/argosopentech/argos-translate), [dl-translate](https://github.com/xhlulu/dl-translate)||
+| | [googletrans](https://pypi.org/project/googletrans/), [word2word](https://github.com/Kyubyong/word2word), [translate-python](https://github.com/terryyin/translate-python), [deep_translator](https://github.com/nidhaloff/deep_translator)|Translation libraries|
+||[translators](https://pypi.org/project/translators)|Free calls to multiple translation APIs|
+||[giza++](https://github.com/moses-smt/giza-pp), [fastalign](https://github.com/clab/fast_align), [simalign](https://github.com/cisnlp/simalign), [eflomal](https://github.com/robertostling/eflomal), [awesome-align](https://github.com/neulab/awesome-align)|Word Alignment|
+|Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
+|Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
+|Topic Modeling|[gensim](https://github.com/RaRe-Technologies/gensim), [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy).[ToModAPI](https://github.com/D2KLab/ToModAPI)||
+||[octis](https://github.com/mind-lab/octis)|Evaluate topic models|
+|Typology|[lang2vec](https://github.com/antonisa/lang2vec)|Compare typological features of languages|
 | Visualization| [stylecloud](https://github.com/minimaxir/stylecloud)|Word Clouds|
 | | [scattertext](https://github.com/JasonKessler/scattertext)|Compare word usage across segments|
 ||[picture-text](https://github.com/md-experiments/picture_text)|Interactive tree-maps for hierarchical clustering|
-| Named Entity Recognition(NER) | [spaCy](https://spacy.io/) , [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml), [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/index.html)||
-||[med7](https://github.com/kormilitzin/med7)|Spacy NER for medical records|
-|Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api), [GENRE](https://github.com/facebookresearch/GENRE/blob/main/examples/transformers.md)||
-|Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
-| Fill blanks| [fitbert](https://github.com/Qordobacode/fitbert)||
-| Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
-| Nearest neighbor| [faiss](https://github.com/facebookresearch/faiss), [sparse_dot_topn](https://github.com/ing-bank/sparse_dot_topn), [n2](https://github.com/kakao/n2/), [autofaiss](https://github.com/criteo/autofaiss)||
-| Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
-| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
-|Cross-lingual transfer learning|[langrank](https://github.com/neulab/langrank)|Auto-select optimal transfer language|
-|Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
-|Dialogue System|[ParlAI](https://github.com/facebookresearch/ParlAI)||
-|Relation Extraction|[OpenNRE](https://github.com/thunlp/OpenNRE)||
-|Finite State Transducer|[OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome)||
-|Grammar Induction|[gitta](https://github.com/twinters/gitta), [grasp](https://github.com/plkumjorn/GrASP)|Generate CFG from sentences|
-|Verb Disambiguation|[frame-english-fast](https://huggingface.co/flair/frame-english-fast)||
-|Lexical Simplification|[easee](https://github.com/feralvam/easse/)|Evaluation metric|
+|Verb Conjugation|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended), [mlconj3](https://mlconjug3.readthedocs.io/en/latest/)||
+|Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
+||[frame-english-fast](https://huggingface.co/flair/frame-english-fast)|Verb Disambiguation|
 
 ### Computer Vision  
 
