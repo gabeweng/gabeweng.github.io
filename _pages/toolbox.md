@@ -444,98 +444,98 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Image processing| [scikit-image](https://github.com/scikit-image/scikit-image), [imutils](https://github.com/jrosebr1/imutils), [opencv-wrapper](https://github.com/anbergem/opencv_wrapper), [opencv-python](https://pypi.org/project/opencv-python/)||
-||[torchio](https://github.com/fepegar/torchio)|Medical Images|
-| Segmentation Models| [segmentation_models](https://github.com/qubvel/segmentation_models)|Keras|
-||[segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)|Segmentation models in PyTorch|
-|High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
 | Face recognition| [face_recognition](https://github.com/ageitgey/face_recognition), [mtcnn](https://github.com/ipazc/mtcnn), [insightface](https://github.com/deepinsight/insightface), [face-detection](https://github.com/hukkelas/DSFD-Pytorch-Inference)||
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
 ||[Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)|Face Emotion|
-| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](http://imaginaire.cc/docs), [pytorch-lightning-gans](https://github.com/nocotan/pytorch-lightning-gans)||
-|Image Inpainting|[GAN Image Inpainting](https://github.com/renatoviolin/GAN-image-inpainting)||
 | Face swapping| [faceit](https://github.com/goberoi/faceit), [faceit-live](https://github.com/alew3/faceit_live), [avatarify](https://github.com/alievk/avatarify)||
-| Video summarization| [videodigest](https://github.com/agermanidis/videodigest)||
-| Semantic search over videos| [scoper](https://github.com/RameshAditya/scoper)||
+| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](http://imaginaire.cc/docs), [pytorch-lightning-gans](https://github.com/nocotan/pytorch-lightning-gans)||
+|High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
+|Image Hashing| [ImageHash](https://pypi.org/project/ImageHash/), [imagededup](https://github.com/idealo/imagededup)||
+|Image Inpainting|[GAN Image Inpainting](https://github.com/renatoviolin/GAN-image-inpainting)||
+|Image Processing| [scikit-image](https://github.com/scikit-image/scikit-image), [imutils](https://github.com/jrosebr1/imutils), [opencv-wrapper](https://github.com/anbergem/opencv_wrapper), [opencv-python](https://pypi.org/project/opencv-python/)||
+||[torchio](https://github.com/fepegar/torchio)|Medical Images|
+| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection), [icevision](https://airctic.com/)||
 | OCR| [keras-ocr](https://github.com/faustomorales/keras-ocr), [pytesseract](https://github.com/madmaze/pytesseract), [keras-craft](https://github.com/notAI-tech/keras-craft), [ocropy](https://github.com/ocropus/ocropy), [doc2text](https://github.com/jlsutherland/doc2text)||
 ||[easyocr](https://github.com/JaidedAI/EasyOCR), [kraken](https://github.com/mittagessen/kraken), [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)|Multilingual OCR|
 ||[layout-parser](https://github.com/Layout-Parser/layout-parser), [pdftabextract](https://github.com/WZBSocialScienceCenter/pdftabextract)|OCR tables from document|
-| Object detection| [luminoth](https://github.com/tryolabs/luminoth), [detectron2](https://github.com/facebookresearch/detectron2), [mmdetection](https://github.com/open-mmlab/mmdetection), [icevision](https://airctic.com/)||
-| Image hashing| [ImageHash](https://pypi.org/project/ImageHash/), [imagededup](https://github.com/idealo/imagededup)||
+|Segmentation| [segmentation_models](https://github.com/qubvel/segmentation_models)|Keras|
+||[segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)|Segmentation models in PyTorch|
+|Semantic Search| [scoper](https://github.com/RameshAditya/scoper)|Video|
+|Video summarization| [videodigest](https://github.com/agermanidis/videodigest)||
 
 ### Speech  
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Diarization| [resemblyzer](https://github.com/resemble-ai/Resemblyzer)||
+|Feature Engineering|[python_speech_features](https://github.com/jameslyons/python_speech_features)|Convert raw audio to features|
 |Libraries|[speechbrain](https://github.com/speechbrain/speechbrain), [pyannotate](http://pyannote.github.io/), [librosa](https://librosa.github.io/librosa/index.html), [espnet](https://github.com/espnet/espnet)||
+|Source Separation| [spleeter](https://github.com/deezer/spleeter), [nussl](https://github.com/nussl/nussl), [open-unmix-pytorch](https://github.com/sigsep/open-unmix-pytorch), [asteroid](https://github.com/mpariente/asteroid)||
 |Speech Recognition|[kaldi](https://github.com/kaldi-asr/kaldi), [speech_recognition](https://github.com/Uberi/speech_recognition), [delta](https://github.com/Delta-ML/delta), [pocketsphinx-python](https://github.com/cmusphinx/pocketsphinx-python), [deepspeech](https://github.com/mozilla/DeepSpeech), [stt](https://github.com/coqui-ai/stt)||
 |Speech Synthesis|[festvox](http://festvox.org), [cmuflite](http://www.festvox.org/flite/), [tts](https://github.com/coqui-ai/tts)||
-|Feature Engineering|[python_speech_features](https://github.com/jameslyons/python_speech_features)|Convert raw audio to features|
-| Diarization| [resemblyzer](https://github.com/resemble-ai/Resemblyzer)||
-| Source Separation| [spleeter](https://github.com/deezer/spleeter), [nussl](https://github.com/nussl/nussl), [open-unmix-pytorch](https://github.com/sigsep/open-unmix-pytorch), [asteroid](https://github.com/mpariente/asteroid)||
 
 ### Recommendation System  
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Apriori algorithm| [apyori](https://github.com/ymoch/apyori)||
+|Collaborative Filtering| [implicit](https://github.com/benfred/implicit)||
 |Libraries| [xlearn](https://github.com/aksnzhy/xlearn), [DeepCTR](https://github.com/shenweichen/DeepCTR), [RankFM](https://github.com/etlundquist/rankfm)| Factorization machines (FM), and field-aware factorization machines (FFM)|
 ||[libmf-python](https://github.com/PorkShoulderHolder/python-libmf)|Matrix Factorization|
 ||[lightfm](https://github.com/lyst/lightfm), [spotlight](https://github.com/maciejkula/spotlight)|Popular Recsys algos|
 ||[tensorflow_recommenders](https://www.tensorflow.org/recommenders)|Recommendation System in Tensorflow|
-| Collaborative Filtering| [implicit](https://github.com/benfred/implicit)||
-| Scikit-learn like API| [surprise](https://github.com/NicolasHug/Surprise)||
-| Recommendation System in Pytorch| [CaseRecommender](https://github.com/caserec/CaseRecommender)||
-| Apriori algorithm| [apyori](https://github.com/ymoch/apyori)||
 |Metrics|[rs_metrics](https://darel13712.github.io/rs_metrics/metrics/)||
+|Recommendation System in Pytorch| [CaseRecommender](https://github.com/caserec/CaseRecommender)||
+|Scikit-learn like API| [surprise](https://github.com/NicolasHug/Surprise)||
 
 ### Timeseries  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Libraries| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy), [darts](https://github.com/unit8co/darts), [gluon-ts](https://github.com/awslabs/gluon-ts), [stldecompose](https://github.com/jrmontag/STLDecompose)||
+|Libraries| [prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api), [tslearn](https://github.com/tslearn-team/tslearn), [pyts](https://github.com/johannfaouzi/pyts), [seglearn](https://github.com/dmbee/seglearn), [cesium](https://github.com/cesium-ml/cesium), [stumpy](https://github.com/TDAmeritrade/stumpy), [darts](https://github.com/unit8co/darts), [gluon-ts](https://github.com/awslabs/gluon-ts), [stldecompose](https://github.com/jrmontag/STLDecompose)||
 || [sktime](https://github.com/alan-turing-institute/sktime)|Scikit-learn like API|
 ||[atspy](https://github.com/firmai/atspy)|Automated time-series models|
-| ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
 |Anomaly Detection|[orion](https://github.com/signals-dev/Orion), [luminaire](https://github.com/zillow/luminaire)|Unsupervised time-series anomaly detection|
+|ARIMA models| [pmdarima](https://github.com/alkaline-ml/pmdarima)||
 
 ### Hyperparameter Optimization  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| General| [hyperopt](https://github.com/hyperopt/hyperopt), [optuna](https://optuna.org/), [evol](https://github.com/godatadriven/evol), [talos](https://github.com/autonomio/talos)||
-| Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
-| Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn), [scikit-optimize](https://scikit-optimize.github.io/stable/)|Bayesian Optimization|
+|General| [hyperopt](https://github.com/hyperopt/hyperopt), [optuna](https://optuna.org/), [evol](https://github.com/godatadriven/evol), [talos](https://github.com/autonomio/talos)||
+|Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
+|Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
+|Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn), [scikit-optimize](https://scikit-optimize.github.io/stable/)|Bayesian Optimization|
 ||[sklearn-deap](https://github.com/rsteca/sklearn-deap)|Evolutionary algorithm|
-| Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
 
 ## Phase: Validation
 ### Experiment Monitoring  
 
 |Category|Tool|Remarks|
 |---|---|---|
-|MLOps|[clearml](https://www.clear.ml), [wandb](https://wandb.ai/), [neptune.ai](https://neptune.ai), [replicate.ai](https://replicate.ai/)||
 |Experiment tracking|[tensorboard](https://www.tensorflow.org/tensorboard), [mlflow](https://mlflow.org/docs/latest/index.html#)||
-| Learning curve| [lrcurve](https://github.com/AndreasMadsen/python-lrcurve), [livelossplot](https://github.com/stared/livelossplot)|Plot realtime learning curve in Keras|
-| Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
-| | [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
+|| [lrcurve](https://github.com/AndreasMadsen/python-lrcurve), [livelossplot](https://github.com/stared/livelossplot)|Plot realtime learning curve in Keras|
+|GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor), [nvtop](https://github.com/Syllo/nvtop)||
+|| [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
+|MLOps|[clearml](https://www.clear.ml), [wandb](https://wandb.ai/), [neptune.ai](https://neptune.ai), [replicate.ai](https://replicate.ai/)||
+|Notification| [knockknock](https://github.com/huggingface/knockknock)|Get notified by slack/email|
+|| [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
 ||[apprise](https://github.com/caronc/apprise)|Notify to any platform|
 ||[pynotifier](https://github.com/YuriyLisovskiy/pynotifier)|Generate desktop notification|
 |Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
-|GPU Usage| [gpumonitor](https://github.com/sicara/gpumonitor), [nvtop](https://github.com/Syllo/nvtop)||
-|| [jupyterlab-nvdashboard](https://github.com/rapidsai/jupyterlab-nvdashboard)|See GPU Usage in jupyterlab|
 
 ### Interpretability  
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Interpret models| [eli5](https://eli5.readthedocs.io/en/latest/), [lime](https://github.com/marcotcr/lime), [shap](https://github.com/slundberg/shap), [alibi](https://github.com/SeldonIO/alibi), [tf-explain](https://github.com/sicara/tf-explain), [treeinterpreter](https://github.com/andosa/treeinterpreter), [pybreakdown](https://github.com/MI2DataLab/pyBreakDown), [xai](https://github.com/EthicalML/xai), [lofo-importance](https://github.com/aerdem4/lofo-importance), [interpretML](https://github.com/interpretml/interpret), [shapash](https://github.com/MAIF/shapash)||
-|| [exbert](http://exbert.net/exBERT.html?sentence=I%20liked%20the%20music&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..9&metaMatch=pos&metaMax=pos&displayInspector=null&offsetIdxs=..-1,0,1&hideClsSep=true)|Interpret BERT|
-||[bertviz](https://github.com/jessevig/bertviz)|Explore self-attention in BERT|
-| Interpret word2vec| [word2viz](https://lamyiowce.github.io/word2viz/), [whatlies](https://github.com/RasaHQ/whatlies)||
-|Interpret NLP models|[Language Interpretability Tool](https://pair-code.github.io/lit/setup/#custom), [transformers-interpret](https://github.com/cdpierse/transformers-interpret)||
 |Adversarial Attack| [cleverhans](https://github.com/tensorflow/cleverhans)|General|
 || [foolbox](https://github.com/bethgelab/foolbox)|Image|
 ||[triggers](https://www.ericswallace.com/triggers)|NLP|
+| Interpret models| [eli5](https://eli5.readthedocs.io/en/latest/), [lime](https://github.com/marcotcr/lime), [shap](https://github.com/slundberg/shap), [alibi](https://github.com/SeldonIO/alibi), [tf-explain](https://github.com/sicara/tf-explain), [treeinterpreter](https://github.com/andosa/treeinterpreter), [pybreakdown](https://github.com/MI2DataLab/pyBreakDown), [xai](https://github.com/EthicalML/xai), [lofo-importance](https://github.com/aerdem4/lofo-importance), [interpretML](https://github.com/interpretml/interpret), [shapash](https://github.com/MAIF/shapash)||
+|| [exbert](http://exbert.net/exBERT.html?sentence=I%20liked%20the%20music&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..9&metaMatch=pos&metaMax=pos&displayInspector=null&offsetIdxs=..-1,0,1&hideClsSep=true)|Interpret BERT|
+||[bertviz](https://github.com/jessevig/bertviz)|Explore self-attention in BERT|
+|NLP| [word2viz](https://lamyiowce.github.io/word2viz/), [whatlies](https://github.com/RasaHQ/whatlies)|word-vectors|
+||[Language Interpretability Tool](https://pair-code.github.io/lit/setup/#custom), [transformers-interpret](https://github.com/cdpierse/transformers-interpret)||
 
 ### Visualization  
 
@@ -546,6 +546,10 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
 ||[dtreeviz](https://github.com/parrt/dtreeviz)|Visualize decision tree|
 ||[txtmarker](https://github.com/neuml/txtmarker)|Highlight text in PDF|
+|Animated charts| [bar_chart_race](https://github.com/dexplo/bar_chart_race)|Bar chart race animation|
+||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
+|High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
+||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
 | Interactive charts| [bokeh](https://github.com/bokeh/bokeh)||
 || [flourish-studio](https://flourish.studio/)|Create interactive charts online|
 || [mpld3](http://mpld3.github.io/index.html)|Matplotlib to D3 Converter|
@@ -554,15 +558,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [keras-vis](https://github.com/raghakot/keras-vis)|Visualize keras models|
 ||[PlotNeuralNet](https://github.com/HarisIqbal88/PlotNeuralNet)|Latex code for drawing neural network|
 ||[loss-landscape-anim](https://github.com/logancyang/loss-landscape-anim)|Generate loss landscape of optimizer|
-| Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
+|Styling| [open-color](https://yeun.github.io/open-color/)|Color Schemes|
 ||[mplcyberpunk](https://github.com/dhaitz/mplcyberpunk)|Cyberpunk style for matplotlib|
 || [chart.xkcd](https://timqian.com/chart.xkcd/)|XKCD like charts|
 ||[adjustText](https://github.com/Phlya/adjustText/wiki)|Prevent overlap when plotting point text label|
-| Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
-| High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
-||[ivis](https://github.com/beringresearch/ivis)|Ivis Algorithm|
-|Animated charts| [bar_chart_race](https://github.com/dexplo/bar_chart_race)|Bar chart race animation|
-||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
+|Generate graphs using markdown| [mermaid](https://mermaid-js.github.io/mermaid/#/README)||
 |Tree-map chart|[squarify](https://github.com/laserson/squarify)||
 |3D charts|[babyplots](https://bp.bleb.li/documentation/python)||
 
@@ -571,21 +571,22 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/), [huggingface-hub](https://github.com/huggingface/huggingface_hub)||
-|Model Store|[modelstore](https://modelstore.readthedocs.io/en/latest/)||
-|Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
-||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
-||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
-|Optimization|[nn_pruning](https://github.com/huggingface/nn_pruning)|Movement Pruning|
-|Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
-||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
-||[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
 |Benchmarking| [torchprof](https://github.com/awwong1/torchprof)|Profile pytorch layers|
 ||[scalene](https://github.com/emeryberger/scalene), [pyinstrument](https://github.com/joerick/pyinstrument)|Profile python code|
 ||[k6](https://k6.io/)|Load test API|
 ||[ai-benchmark](https://pypi.org/project/ai-benchmark/)|Bechmark VM on 19 different models|
-|Distributed training|[horovod](https://github.com/horovod/horovod)||
+|Cloud Storage|[Zenodo](https://zenodo.org/), [Github Releases](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository), [OneDrive](https://www.onedrive.com/), [Google Drive](https://drive.google.com/), [Dropbox](https://dropbox.com/), [S3](https://aws.amazon.com/s3/), [mega](https://mega.nz/), [DAGsHub](https://dagshub.com/), [huggingface-hub](https://github.com/huggingface/huggingface_hub)||
 |Data Pipeline|[pypeln](https://github.com/cgarciae/pypeln)||
+|Dependencies|[pip-chill](https://pypi.org/project/pip-chill/)|pip freeze without dependencies|
+||[pipreqs](https://pypi.org/project/pipreqs/)|Generate requirements.txt based on imports|
+||[conda-pack](https://conda.github.io/conda-pack/)|Export conda for offline use|
+|Distributed training|[horovod](https://github.com/horovod/horovod)||
+|Model Store|[modelstore](https://modelstore.readthedocs.io/en/latest/)||
+|Optimization|[nn_pruning](https://github.com/huggingface/nn_pruning)|Movement Pruning|
+|Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
+||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
+||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
+
 
 ### Inference  
 
