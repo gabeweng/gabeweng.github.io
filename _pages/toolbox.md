@@ -141,19 +141,19 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+| Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
+| Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
 |Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
+| Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
+| Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
+| Graph Sampling| [little ball of fur](https://github.com/benedekrozemberczki/littleballoffur)||
+| Missing values| [missingno](https://github.com/ResidentMario/missingno)||
 |Parallelize| [pandarallel](https://github.com/nalepae/pandarallel), [swifter](https://github.com/jmcarpenter2/swifter), [modin](https://github.com/modin-project/modin)|Parallelize pandas|
 ||[vaex](https://github.com/vaexio/vaex)|Pandas on huge data|
 || [numba](http://numba.pydata.org/)|Parallelize numpy|
-| Missing values| [missingno](https://github.com/ResidentMario/missingno)||
-| Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
-| Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
-| Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
-| Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
-| Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
 | Parsing| [pyparsing](https://pyparsing-docs.readthedocs.io/en/latest/index.html), [parse](https://pypi.org/project/parse/)||
+| Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
 | Weak Supervision| [snorkel](https://www.snorkel.org/get-started/)||
-| Graph Sampling| [little ball of fur](https://github.com/benedekrozemberczki/littleballoffur)||
 
 ### Data Exploration  
 
@@ -175,14 +175,14 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Automatic feature engineering| [featuretools](https://github.com/FeatureLabs/featuretools), [autopandas](https://autopandas.io/)||
+|Automatic feature engineering|[featuretools](https://github.com/FeatureLabs/featuretools), [autopandas](https://autopandas.io/)||
 || [tsfresh](https://github.com/blue-yonder/tsfresh)|Automatic feature engineering for time series|
-| Metric learning| [metric-learn](http://contrib.scikit-learn.org/metric-learn/getting_started.html), [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)||
-| Time series| [python-holidays](https://github.com/dr-prodigy/python-holidays)|List of holidays|
-| | [skits](https://github.com/ethanrosenthal/skits)|Transformation for time-series data|
-| | [catch22](https://github.com/chlubba/catch22)|Pre-built features for time-series data|
-| DAG based dataset generation| [DFFML](https://intel.github.io/dffml/usage/integration.html)||
-| Dimensionality reduction| [fbpca](https://github.com/facebook/fbpca), [fitsne](https://github.com/KlugerLab/FIt-SNE), [trimap](https://github.com/eamid/trimap)||
+|DAG based dataset generation|[DFFML](https://intel.github.io/dffml/usage/integration.html)||
+|Dimensionality reduction|[fbpca](https://github.com/facebook/fbpca), [fitsne](https://github.com/KlugerLab/FIt-SNE), [trimap](https://github.com/eamid/trimap)||
+|Metric learning|[metric-learn](http://contrib.scikit-learn.org/metric-learn/getting_started.html), [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)||
+|Time series|[python-holidays](https://github.com/dr-prodigy/python-holidays)|List of holidays|
+||[skits](https://github.com/ethanrosenthal/skits)|Transformation for time-series data|
+||[catch22](https://github.com/chlubba/catch22)|Pre-built features for time-series data|
 
 ## Phase: Modeling
 
@@ -207,29 +207,29 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[tpot](https://github.com/EpistasisLab/tpot)|Genetic AutoML|
 ||[autocat](https://autocat.apps.allenai.org/)|Auto-generate text classification models in spacy|
 || [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://uber.github.io/ludwig/)|Autogenerate ML code|
+| Active Learning| [modal](https://github.com/modAL-python/modAL)||
+| Anomaly detection| [adtk](https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html)||
+| Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
+| Deep Clustering| [deep-clustering-toolbox](https://github.com/jizongFox/deep-clustering-toolbox)||
+| Few Shot Learning| [keras-fewshotlearning](https://github.com/ClementWalter/Keras-FewShotLearning)||
+| Fuzzy Learning| [fylearn](https://github.com/sorend/fylearn), [scikit-fuzzy](https://github.com/scikit-fuzzy/scikit-fuzzy)||
+| Genetic Programming| [gplearn](https://gplearn.readthedocs.io/en/stable/index.html)||
 | Gradient Boosting| [catboost](https://catboost.ai/docs/concepts/about.html), [xgboost](https://github.com/dmlc/xgboost), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
 ||[lightgbm](https://github.com/Microsoft/LightGBM), [thunderbm](https://github.com/Xtra-Computing/thundergbm)|GPU Capable|
-| Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
-| Genetic Programming| [gplearn](https://gplearn.readthedocs.io/en/stable/index.html)||
-| Active Learning| [modal](https://github.com/modAL-python/modAL)||
-| Support Vector Machines| [thundersvm](https://github.com/Xtra-Computing/thundersvm)|Run SVM on GPU|
-| Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
-| Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate), [pymc3](https://docs.pymc.io/)||
-| Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/), [communities](https://github.com/shobrook/communities)||
-| Anomaly detection| [adtk](https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html)||
-| Spiking Neural Network| [norse](https://github.com/norse/norse)||
-| Fuzzy Learning| [fylearn](https://github.com/sorend/fylearn), [scikit-fuzzy](https://github.com/scikit-fuzzy/scikit-fuzzy)||
-| Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
-| Few Shot Learning| [keras-fewshotlearning](https://github.com/ClementWalter/Keras-FewShotLearning)||
-| Deep Clustering| [deep-clustering-toolbox](https://github.com/jizongFox/deep-clustering-toolbox)||
 | Graph Neural Networks| [spektral](https://github.com/danielegrattarola/spektral/)|GNN for Keras|
-| Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
-|Self-Supervised Learning|[lightly](https://github.com/lightly-ai/lightly), [vissl](https://github.com/facebookresearch/vissl)|Implementations of SSL models|
-||[self_supervised](https://github.com/KeremTurgutlu/self_supervised)|Self-supervised models in Fast.AI|
-|Survival Analysis|[lifelines](https://lifelines.readthedocs.io/en/latest/)||
+| Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/), [communities](https://github.com/shobrook/communities)||
+| Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
+|Interpretable Models|[imodels](https://github.com/csinva/imodels)|Models that show rules|
+| Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
-|Interpretable Models|[imodels](https://github.com/csinva/imodels)|Models that show rules|
+| Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate), [pymc3](https://docs.pymc.io/)||
+| Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
+|Self-Supervised Learning|[lightly](https://github.com/lightly-ai/lightly), [vissl](https://github.com/facebookresearch/vissl)|Implementations of SSL models|
+||[self_supervised](https://github.com/KeremTurgutlu/self_supervised)|Self-supervised models in Fast.AI|
+|Spiking Neural Network| [norse](https://github.com/norse/norse)||
+|Support Vector Machines| [thundersvm](https://github.com/Xtra-Computing/thundersvm)|Run SVM on GPU|
+|Survival Analysis|[lifelines](https://lifelines.readthedocs.io/en/latest/)||
 
 ### Frameworks  
 
