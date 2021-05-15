@@ -120,6 +120,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Google Ngrams|[google-ngram-downloader](https://github.com/dimazest/google-ngram-downloader)||
 |Machine Translation Corpus|[mtdata](https://github.com/thammegowda/mtdata)||
 |XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
+|Wikidata|[wikidata](https://github.com/dahlia/wikidata)|Python API to wikidata|
 
 ### Data Augmentation  
 
