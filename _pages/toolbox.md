@@ -592,19 +592,19 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
-|Documentation|[mkdocs](https://www.mkdocs.org/), [pdoc](https://pdoc3.github.io/pdoc/)||
-|Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
-||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
-|Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml, [Tensorflow.js](https://www.tensorflow.org/js))||
-|Serverless|[magnum](https://github.com/jordaneremieff/mangum)|Use FastAPI in Lambda|
+|Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
 |Batch Jobs|[airflow](https://airflow.apache.org/), [luigi](https://github.com/spotify/luigi), [oozie](https://oozie.apache.org/), [prefect](https://docs.prefect.io/core/), [kubernetes-cron-jobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/), [argo](https://argoproj.github.io/projects/argo)||
-|Processing|[pyspark](https://spark.apache.org/docs/latest/api/python/index.html), [hive](http://hive.apache.org/)||
-|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
+|| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)|Task Queue|
+||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
+|Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
+||[redis-py](https://github.com/andymccurdy/redis-py), [pymemcache](https://github.com/pinterest/pymemcache)||
 |Cloud Monitoring|[datadog](https://www.datadoghq.com)||
-|Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect), [torchdrift](https://torchdrift.org/)|Outlier and drift detection|
-|Stream Processing|[flink](https://flink.apache.org/), [kafka](https://kafka.apache.org/), [apache beam](https://beam.apache.org/)||
-|In-memory Cache|[redis-py](https://github.com/andymccurdy/redis-py), [pymemcache](https://github.com/pinterest/pymemcache)||
+|Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple), [python-dotenv](https://pypi.org/project/python-dotenv/), [dynaconf](https://dynaconf.readthedocs.io/en/docs_223/)||
+|CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
+|Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
+||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
+|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
+|Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
 ||[dash](https://plotly.com/dash/)|React Dashboard using Python|
@@ -612,17 +612,17 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[streamlit-drawable-canvas](https://github.com/andfanilo/streamlit-drawable-canvas)|Drawable Canvas for Streamlit|
 ||[streamlit-terran-timeline](https://github.com/pento-group/streamlit-terran-timeline)|Show timeline of faces in videos|
 ||[streamlit components](https://www.streamlit.io/components)|Collection of streamlit components|
-|Configuration Management| [config](https://pypi.org/project/config/), [python-decouple](https://github.com/henriquebastos/python-decouple), [python-dotenv](https://pypi.org/project/python-dotenv/), [dynaconf](https://dynaconf.readthedocs.io/en/docs_223/)||
-|Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
-|Server-Side Events|[sse-starlette](https://github.com/sysid/sse-starlette)|Server-side events for FastAPI|
-|CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
-|Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
-|Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
-|Task Queue| [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)||
-||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
-|Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
-||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
+|Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
+|Documentation|[mkdocs](https://www.mkdocs.org/), [pdoc](https://pdoc3.github.io/pdoc/)||
+|Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect), [torchdrift](https://torchdrift.org/)|Outlier and drift detection|
+|Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml, [Tensorflow.js](https://www.tensorflow.org/js))||
 |Logging| [loguru](https://github.com/Delgan/loguru)||
+|Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
+||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
+|Processing|[pyspark](https://spark.apache.org/docs/latest/api/python/index.html), [hive](http://hive.apache.org/)||
+|Serverless|[magnum](https://github.com/jordaneremieff/mangum)|Use FastAPI in Lambda|
+|Server-Side Events|[sse-starlette](https://github.com/sysid/sse-starlette)|Server-side events for FastAPI|
+|Stream Processing|[flink](https://flink.apache.org/), [kafka](https://kafka.apache.org/), [apache beam](https://beam.apache.org/)||
 |Testing| [schemathesis](https://github.com/kiwicom/schemathesis/)|Automatic test generation from Swagger|
 ||[pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)|Profile time in pytest|
 ||[exdown](https://github.com/nschloe/exdown)|Extract code from markdown files|
@@ -632,40 +632,41 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Decorators| [retrying (retry some function)](https://pypi.org/project/retrying/)||
+|Async| [tomorrow](https://github.com/madisonmay/Tomorrow)||
 |Audio|[simpleaudio](https://github.com/hamiltron/py-simple-audio)|Play audio using python|
-| Subprocess|[delegator.py](https://github.com/amitt001/delegator.py)||
-| bloom filter| [python-bloomfilter](https://github.com/jaybaird/python-bloomfilter)||
-| Run python libraries in sandbox| [pipx](https://github.com/pipxproject/pipx)||
-| Pretty print tables in CLI| [tabulate](https://pypi.org/project/tabulate/)||
-| Leaflet maps from python| [folium](https://python-visualization.github.io/folium/)||
-| Debugging| [PySnooper](https://github.com/cool-RR/PySnooper)||
-| Date and Time| [pendulum](https://github.com/sdispater/pendulum)||
-| Create interactive prompts| [prompt-toolkit](https://pypi.org/project/prompt-toolkit/)||
-| Concurrent database| [pickleshare](https://pypi.org/project/pickleshare/)||
-| Aync| [tomorrow](https://github.com/madisonmay/Tomorrow)||
-| Testing| [crosshair(find failure cases for functions)](https://github.com/pschanely/CrossHair)||
-| Virtual webcam| [pyfakewebcam](https://github.com/jremmons/pyfakewebcam)||
-| CLI Formatting| [rich](https://github.com/willmcgugan/rich)||
-| Control mouse and output device| [pynput](https://pypi.org/project/pynput/)||
-| Shell commands as functions| [sh](http://amoffat.github.io/sh/)||
-|Path-like interface to remote files|[pathy](https://github.com/justindujardin/pathy)||
-|Standard Library Extension|[ubelt](https://github.com/Erotemic/ubelt)||
-|Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
+|bloom filter| [python-bloomfilter](https://github.com/jaybaird/python-bloomfilter)||
+|CLI Formatting| [rich](https://github.com/willmcgugan/rich)||
+|Concurrent database| [pickleshare](https://pypi.org/project/pickleshare/)||
 |Code to Maths|[latexify-py](https://github.com/odashi/latexify_py), [handcalcs](https://github.com/connorferster/handcalcs)||
-|Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
+|Create interactive prompts| [prompt-toolkit](https://pypi.org/project/prompt-toolkit/)||
+|Control mouse and output device| [pynput](https://pypi.org/project/pynput/)||
 |Collections|[bidict](https://pypi.org/project/bidict/)|Bidirectional dictionary|
 ||[sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)|Sorted list, set and dict|
 ||[munch](https://github.com/Infinidat/munch)|Dictionary with dot access|
+|Date and Time| [pendulum](https://github.com/sdispater/pendulum)||
+|Decorators| [retrying (retry some function)](https://pypi.org/project/retrying/)||
+|Debugging| [PySnooper](https://github.com/cool-RR/PySnooper)||
+|Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
+|Leaflet maps from python| [folium](https://python-visualization.github.io/folium/)||
+|Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
+|Path-like interface to remote files|[pathy](https://github.com/justindujardin/pathy)||
+|Pretty print tables in CLI| [tabulate](https://pypi.org/project/tabulate/)||
+|Run python libraries in sandbox| [pipx](https://github.com/pipxproject/pipx)||
+|Shell commands as functions| [sh](http://amoffat.github.io/sh/)||
+|Standard Library Extension|[ubelt](https://github.com/Erotemic/ubelt)||
+|Subprocess|[delegator.py](https://github.com/amitt001/delegator.py)||
+|Testing| [crosshair(find failure cases for functions)](https://github.com/pschanely/CrossHair)||
+|Virtual webcam| [pyfakewebcam](https://github.com/jremmons/pyfakewebcam)||
+
 
 ### Utilities
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Database|[mlab](https://mlab.com/)|Free 500 MB MongoDB|
-|Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
-|Data Visualization|[flourish-studio](https://flourish.studio/)||
-|Linux|[ripgrep](https://github.com/phiresky/ripgrep-all)||
 |Colab| [colab-cli](https://github.com/Akshay090/colab-cli) | Manager colab notebook from command line|
 |Drive|[drive-cli](https://github.com/nurdtechie98/drive-cli)|Use google drive similar to git|
+|Database|[mlab](https://mlab.com/)|Free 500 MB MongoDB|
+|Data Visualization|[flourish-studio](https://flourish.studio/)||
 |Git|[gitjk](https://github.com/mapmeld/gitjk)|Undo what you just did in git|
+|Linux|[ripgrep](https://github.com/phiresky/ripgrep-all)||
+|Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
