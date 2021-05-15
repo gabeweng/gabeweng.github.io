@@ -522,7 +522,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [jupyter-notify](https://github.com/ShopRunner/jupyter-notify)|Notify when task is completed in jupyter|
 ||[apprise](https://github.com/caronc/apprise)|Notify to any platform|
 ||[pynotifier](https://github.com/YuriyLisovskiy/pynotifier)|Generate desktop notification|
-|Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
 
 ### Interpretability  
 
@@ -651,6 +650,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
 |Path-like interface to remote files|[pathy](https://github.com/justindujardin/pathy)||
 |Pretty print tables in CLI| [tabulate](https://pypi.org/project/tabulate/)||
+|Progress bar| [fastprogress](https://github.com/fastai/fastprogress), [tqdm](https://github.com/tqdm/tqdm)||
 |Run python libraries in sandbox| [pipx](https://github.com/pipxproject/pipx)||
 |Shell commands as functions| [sh](http://amoffat.github.io/sh/)||
 |Standard Library Extension|[ubelt](https://github.com/Erotemic/ubelt)||
