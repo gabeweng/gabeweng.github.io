@@ -410,7 +410,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[commonregex](https://github.com/madisonmay/CommonRegex)|Ready-made regex for email/phone etc.|
 | | [textdistance](https://github.com/life4/textdistance), [editdistance](https://github.com/aflc/editdistance), [word-mover-distance](https://radimrehurek.com/gensim/models/keyedvectors.html#what-can-i-do-with-word-vectors), [edlib](https://pypi.org/project/edlib/)|Text distances|
 ||[wmd-relax](https://github.com/src-d/wmd-relax)|Word mover distance for spacy|
-|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [fuzzymatcher](https://github.com/RobinL/fuzzymatcher), [dedupe](https://github.com/dedupeio/dedupe)|Fuzzy Search|
+|  | [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy), [spaczz](https://github.com/gandersen101/spaczz), [PolyFuzz](https://github.com/MaartenGr/PolyFuzz), [rapidfuzz](https://github.com/maxbachmann/rapidfuzz), [fuzzymatcher](https://github.com/RobinL/fuzzymatcher)|Fuzzy Search|
+||[deduplipy](https://github.com/fritshermans/deduplipy), [dedupe](https://github.com/dedupeio/dedupe)|Active-Learning based fuzzy matching|
 ||[recordlinkage](https://recordlinkage.readthedocs.io/en/stable/)|Record Linkage|
 | Sentiment| [vaderSentiment](https://github.com/cjhutto/vaderSentiment), [afinn](https://github.com/fnielsen/afinn)|Rule based|
 | | [absa](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis)|Aspect Based Sentiment Analysis|
