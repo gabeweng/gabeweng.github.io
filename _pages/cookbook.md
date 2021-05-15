@@ -571,6 +571,16 @@ redis-cli -h 1.1.1.1 -p 6380 -a password
 **Connect to local redis**  
 {% gist 73c6f7c46e9d2ac076ee7285d92f3855 %}
 
+**Use URL for redis**  
+If password is present:  
+```
+redis://:{password}@{hostname}:{port}/{db_number}
+```
+else  
+```
+redis://{hostname}:{port}/{db_number}
+```
+
 **Add password to redis server**  
   
 Edit `/etc/redis/redis.conf` file.  
