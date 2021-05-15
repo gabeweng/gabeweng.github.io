@@ -2,7 +2,7 @@
 title: "Machine Learning Notebooks"
 permalink: /notebooks/
 date: 2020-10-25T00:00-00:00
-last_modified_at: 2020-11-08T00:00:00-00:00
+last_modified_at: 2021-05-15T00:00:00-00:00
 excerpt: Collection of reusable notebooks for common machine learning tasks   
 header:
   og_image: /images/ml-notebooks-cover.png
