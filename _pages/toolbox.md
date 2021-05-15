@@ -20,13 +20,13 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
+|Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
 |General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html), [pigeon](https://github.com/agermanidis/pigeon)|Annotate in notebooks|
 || [labelstudio](https://labelstud.io/)|Open Source Data Labeling Tool|
 |Image | [makesense.ai](https://www.makesense.ai/), [labelimg](https://github.com/tzutalin/labelImg), [via](http://www.robots.ox.ac.uk/~vgg/software/via/), [cvat](https://github.com/openvinotoolkit/cvat)||
 |Text | [doccano](https://doccano.herokuapp.com/), [dataturks](https://dataturks.com/), [brat](http://brat.nlplab.org/)||
-| | [prodigy](https://prodi.gy/)|Paid|
 ||[chatito](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
-|Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
+| | [prodigy](https://prodi.gy/)|Paid|
 |Inter-rater agreement|[disagree](https://github.com/o-P-o/disagree)||
 
 ### Data Collection  
@@ -82,23 +82,12 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[nlp](https://github.com/huggingface/nlp)|Python interface to NLP datasets|
 ||[tensorflow_datasets](https://github.com/tensorflow/datasets)|Access datasets in Tensorflow|
 ||[hub](https://github.com/activeloopai/Hub)|Prebuild datasets for PyTorch and Tensorflow|
-| Audio| [pydub](https://github.com/jiaaro/pydub)||
-| Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
-| | [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
-| Image| [py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator), [idt](https://github.com/deliton/idt), [jmd-imagescraper](https://joedockrill.github.io/jmd_imagescraper/)|Auto fetch images from web for certain search|
-| News| [news-please](https://github.com/fhamborg/news-please), [news-catcher](https://github.com/kotartemiy/newscatcher/blob/master/README.md)|Scrap News|
-|| [pygooglenews](https://github.com/kotartemiy/pygooglenews)|Google News|
-| Lyrics| [lyricsgenius](https://github.com/johnwmillr/LyricsGenius)||
-| Email| [talon](https://github.com/mailgun/talon)||
-| PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber), [pymupdf](https://pymupdf.readthedocs.io/en/latest/intro.html)||
-||[grobid](https://grobid.readthedocs.io/en/latest/Introduction/)|Parse PDF into structured XML|
-||[PyPDF2](https://github.com/mstamy2/PyPDF2)|Read and write PDF in Python|
-||[pdf2image](https://github.com/Belval/pdf2image)|Convert PDF to image|
-| Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
-|Network Packet|[dpkt](https://dpkt.readthedocs.io/en/latest/index.html), [scapy](https://scapy.readthedocs.io/en/latest/introduction.html)||
-| Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
-| Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
-| | [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
+|| [pydataset](https://github.com/iamaziz/PyDataset)||
+|App Store| [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)||
+|Arxiv|[pyarxiv](https://pypi.org/project/pyarxiv/)|Programmatic access to arxiv.org|
+|Audio| [pydub](https://github.com/jiaaro/pydub)||
+|Crawling| [MechanicalSoup](https://github.com/MechanicalSoup/MechanicalSoup), [libextract](https://github.com/datalib/libextract)||
+|| [pyppeteer](https://github.com/pyppeteer/pyppeteer)|Chrome Automation|
 ||[trafilatura](https://github.com/adbar/trafilatura)|Extract text sections from HTML|
 ||[justext](https://github.com/miso-belica/jusText)|Remove boilerplate from scraped HTML|
 ||[hext](https://hext.thomastrapp.com/)|DSL for extracting data from HTML|
@@ -106,21 +95,32 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[backoff](https://github.com/litl/backoff)|Exponential backoff and jitter|
 ||[asks](https://github.com/theelous3/asks)|Async version of requests|
 ||[requests-cache](https://github.com/reclosedev/requests-cache)|Cached version of requests|
+|Database| [blaze](https://github.com/blaze/blaze)|Pandas and Numpy interface to databases|
+|Email| [talon](https://github.com/mailgun/talon)||
+|Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
+|Google Drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
+|Google Maps| [geo-heatmap](https://github.com/luka1199/geo-heatmap)||
 |Google Search|[googlesearch](https://github.com/Nv7-GitHub/googlesearch)|Parse google search results|
-| Google sheets| [gspread](https://github.com/burnash/gspread)||
-| Google drive| [gdown](https://github.com/wkentaro/gdown), [pydrive](https://pythonhosted.org/PyDrive/index.html)||
-| Python API| [pydataset](https://github.com/iamaziz/PyDataset)||
-| Google Maps| [geo-heatmap](https://github.com/luka1199/geo-heatmap)||
-| Text to Speech| [gtts](https://github.com/pndurette/gTTS)||
-| Database| [blaze](https://github.com/blaze/blaze)|Pandas and Numpy interface to databases|
-| Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy), [twarc](https://twarc-project.readthedocs.io/en/latest/)|Scrape Twitter|
-| App Store| [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)||
-| Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
-|Arxiv|[pyarxiv](https://pypi.org/project/pyarxiv/)|Programmatic access to arxiv.org|
+|Google Sheets| [gspread](https://github.com/burnash/gspread)||
 |Google Ngrams|[google-ngram-downloader](https://github.com/dimazest/google-ngram-downloader)||
+|Image| [py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator), [idt](https://github.com/deliton/idt), [jmd-imagescraper](https://joedockrill.github.io/jmd_imagescraper/)|Auto fetch images from web for certain search|
+| Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
+|| [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
+|Lyrics| [lyricsgenius](https://github.com/johnwmillr/LyricsGenius)||
 |Machine Translation Corpus|[mtdata](https://github.com/thammegowda/mtdata)||
-|XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
+|News| [news-please](https://github.com/fhamborg/news-please), [news-catcher](https://github.com/kotartemiy/newscatcher/blob/master/README.md)|Scrap News|
+||[pygooglenews](https://github.com/kotartemiy/pygooglenews)|Google News|
+|Network Packet|[dpkt](https://dpkt.readthedocs.io/en/latest/index.html), [scapy](https://scapy.readthedocs.io/en/latest/introduction.html)||
+|PDF| [camelot](https://camelot-py.readthedocs.io/en/master/), [tabula-py](https://github.com/chezou/tabula-py), [parsr](https://github.com/axa-group/Parsr), [pdftotext](https://pypi.org/project/pdftotext/), [pdfplumber](https://github.com/jsvine/pdfplumber), [pymupdf](https://pymupdf.readthedocs.io/en/latest/intro.html)||
+||[grobid](https://grobid.readthedocs.io/en/latest/Introduction/)|Parse PDF into structured XML|
+||[PyPDF2](https://github.com/mstamy2/PyPDF2)|Read and write PDF in Python|
+||[pdf2image](https://github.com/Belval/pdf2image)|Convert PDF to image|
+|Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
+|Text to Speech| [gtts](https://github.com/pndurette/gTTS)||
+|Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy), [twarc](https://twarc-project.readthedocs.io/en/latest/)|Scrape Twitter|
+|Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
 |Wikidata|[wikidata](https://github.com/dahlia/wikidata)|Python API to wikidata|
+|XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
 
 ### Data Augmentation  
 
