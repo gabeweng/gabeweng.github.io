@@ -28,6 +28,7 @@ This is a curation of web apps that I have found useful.
 |[jupyter-lite](https://github.com/jtpio/jupyterlite)|Client-side jupyter notebook using WASM|
 |[knowem](https://knowem.com/)|Search username on all social-media and domain-registrar|
 |[mlart](https://mlart.co/)|Showcase of creative ML applications|
+|[markmap](https://markmap.js.org/repl/)|Convert markdown to mindmap|
 |[noun-project](https://thenounproject.com/)|Free icons for any noun|
 |[photopea](https://www.photopea.com/)|Photoshop clone in browser|
 |[phrasefinder](https://phrasefinder.io/)|Search millions of books for language use|
