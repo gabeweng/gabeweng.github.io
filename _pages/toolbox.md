@@ -650,6 +650,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pydocstyle](https://pypi.org/project/pydocstyle/)|Check docstring|
 || [safety](https://pypi.org/project/safety/), [bandit](https://pypi.org/project/bandit/), [shellcheck](https://www.shellcheck.net/)|Check vulnerabilities|
 ||[mypy](https://mypy.readthedocs.io/en/stable/)|Check types|
+||[black](https://pypi.org/project/black/)|Automated Formatting|
 |Leaflet maps from python| [folium](https://python-visualization.github.io/folium/)||
 |Multiprocessing|[filelock](https://pypi.org/project/filelock/)|Lock files during access from multiple process|
 |Path-like interface to remote files|[pathy](https://github.com/justindujardin/pathy)||
