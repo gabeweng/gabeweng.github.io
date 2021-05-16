@@ -647,6 +647,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Debugging| [PySnooper](https://github.com/cool-RR/PySnooper)||
 |Improved doctest|[xdoctest](https://github.com/Erotemic/xdoctest)||
 |Linting| [pylint](https://pypi.org/project/pylint/), [pycodestyle](https://pypi.org/project/pycodestyle/)|Code Formatting|
+||[pydocstyle](https://pypi.org/project/pydocstyle/)|Check docstring|
 || [safety](https://pypi.org/project/safety/), [bandit](https://pypi.org/project/bandit/), [shellcheck](https://www.shellcheck.net/)|Check vulnerabilities|
 ||[mypy](https://mypy.readthedocs.io/en/stable/)|Check types|
 |Leaflet maps from python| [folium](https://python-visualization.github.io/folium/)||
