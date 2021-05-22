@@ -427,6 +427,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Transliteration|[wiktra](https://github.com/kbatsuren/wiktra)||
 | Machine Translation| [MarianMT](https://huggingface.co/transformers/model_doc/marian.html), [Opus-MT](https://github.com/Helsinki-NLP/Opus-MT), [joeynmt](https://joeynmt.readthedocs.io/en/latest/tutorial.html), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py), [EasyNMT](https://github.com/UKPLab/EasyNMT), [argos-translate](https://github.com/argosopentech/argos-translate), [dl-translate](https://github.com/xhlulu/dl-translate)||
 | | [googletrans](https://pypi.org/project/googletrans/), [word2word](https://github.com/Kyubyong/word2word), [translate-python](https://github.com/terryyin/translate-python), [deep_translator](https://github.com/nidhaloff/deep_translator)|Translation libraries|
+||[mosesdecoder](https://github.com/moses-smt/mosesdecoder)|Statistical MT|
+||[apertium](https://github.com/apertium/apertium)|RBMT|
 ||[translators](https://pypi.org/project/translators)|Free calls to multiple translation APIs|
 ||[giza++](https://github.com/moses-smt/giza-pp), [fastalign](https://github.com/clab/fast_align), [simalign](https://github.com/cisnlp/simalign), [eflomal](https://github.com/robertostling/eflomal), [awesome-align](https://github.com/neulab/awesome-align)|Word Alignment|
 |Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
