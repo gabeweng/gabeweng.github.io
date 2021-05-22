@@ -133,7 +133,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator)|OCR|
 |Tabular data|[deltapy](https://github.com/firmai/deltapy)||
 ||[mockaroo](https://mockaroo.com/)|Generate synthetic user details|
-|Text|[nlpaug](https://github.com/makcedward/nlpaug), [noisemix](https://github.com/noisemix/noisemix), [textattack](https://github.com/QData/TextAttack), [textaugment](https://github.com/dsfsi/textaugment), [niacin](https://github.com/deniederhut/niacin), [SeaQuBe](https://github.com/bees4ever/SeaQuBe)||
+|Text|[nlpaug](https://github.com/makcedward/nlpaug), [noisemix](https://github.com/noisemix/noisemix), [textattack](https://github.com/QData/TextAttack), [textaugment](https://github.com/dsfsi/textaugment), [niacin](https://github.com/deniederhut/niacin), [SeaQuBe](https://github.com/bees4ever/SeaQuBe), [DataAug4NLP](https://github.com/styfeng/DataAug4NLP)||
 ||[fastent](https://fastent.github.io/docs/)|Expand NER entity list|
 
 ## Phase: Exploration
