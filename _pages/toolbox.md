@@ -582,6 +582,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Distributed training|[horovod](https://github.com/horovod/horovod)||
 |Model Store|[modelstore](https://modelstore.readthedocs.io/en/latest/)||
 |Optimization|[nn_pruning](https://github.com/huggingface/nn_pruning)|Movement Pruning|
+||[aimet](https://github.com/quic/aimet), [tensorflow-lite](https://www.tensorflow.org/lite)|Quantization|
 |Serialization| [sklearn-porter](https://github.com/nok/sklearn-porter), [m2cgen](https://github.com/BayesWitnesses/m2cgen)|Transpile sklearn model to C, Java, JavaScript and others|
 ||[hummingbird](https://github.com/microsoft/hummingbird)|Convert ML models to PyTorch|
 ||[cloudpickle](https://github.com/cloudpipe/cloudpickle), [jsonpickle](https://github.com/jsonpickle/jsonpickle)|Pickle extensions|
