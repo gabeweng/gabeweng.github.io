@@ -95,6 +95,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[backoff](https://github.com/litl/backoff)|Exponential backoff and jitter|
 ||[asks](https://github.com/theelous3/asks)|Async version of requests|
 ||[requests-cache](https://github.com/reclosedev/requests-cache)|Cached version of requests|
+||[html2text](https://github.com/Alir3z4/html2text/)|Convert HTML to markdown-formatted plain text|
 |Database| [blaze](https://github.com/blaze/blaze)|Pandas and Numpy interface to databases|
 |Email| [talon](https://github.com/mailgun/talon)||
 |Excel| [openpyxl](https://openpyxl.readthedocs.io/en/stable/)||
