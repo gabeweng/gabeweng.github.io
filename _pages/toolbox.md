@@ -118,7 +118,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Remote file| [smart_open](https://github.com/RaRe-Technologies/smart_open)||
 |Text to Speech| [gtts](https://github.com/pndurette/gTTS)||
 |Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy), [twarc](https://twarc-project.readthedocs.io/en/latest/)|Scrape Twitter|
-|Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/)|Access data from wikipedia|
+|Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/), [wikitextparser](https://github.com/5j9/wikitextparser)|Access data from wikipedia|
 |Wikidata|[wikidata](https://github.com/dahlia/wikidata)|Python API to wikidata|
 |XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
 
