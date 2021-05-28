@@ -294,7 +294,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [ftfy](https://pypi.org/project/ftfy/), [clean-text](https://github.com/jfilter/clean-text),[text-unidecode](https://pypi.org/project/text-unidecode/)|Fix Unicode Issues|
 | | [fastpunct](https://github.com/notAI-tech/fastPunct)|Punctuation Restoration|
 ||[pyphen](https://pyphen.org/)|Hypthenate words into syllables|
-| | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai), [usaddress](https://github.com/datamade/usaddress)|Parse Street Addresses|
+| | [pypostal](https://github.com/openvenues/pypostal), [mordecai](https://github.com/openeventdata/mordecai), [usaddress](https://github.com/datamade/usaddress), [libpostal](https://github.com/openvenues/libpostal)|Parse Street Addresses|
 ||[geopy](https://pypi.org/project/geopy/), [geocoder](https://github.com/DenisCarriere/geocoder), [nominatim](https://nominatim.org/release-docs/develop/), [pelias](https://github.com/pelias/pelias), [photon](https://github.com/komoot/photon), [lieu](https://github.com/openvenues/lieu)|Geocoding|
 ||[probablepeople](https://github.com/datamade/probablepeople), [python-nameparser](https://github.com/derek73/python-nameparser)|Parse person name|
 ||[python-phonenumbers](https://github.com/daviddrysdale/python-phonenumbers)|Parse phone numbers|
