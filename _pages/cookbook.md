@@ -176,6 +176,15 @@ docker-compose up --abort-on-container-exit --exit-code-from worker
 **Load model only once before first request**
 {% gist b471ceba9b0e6268aa5818ff82a36177 %}
 
+## Gensim  
+**Load binary format in Word2Vec**  
+```python
+from gensim.models import KeyedVectors
+model = KeyedVectors.load_word2vec_format('model.bin', 
+                                          binary=True)
+model.most_similar('apple')
+```
+
 ## Git
 **Prevent git from asking for password**  
 ```shell
