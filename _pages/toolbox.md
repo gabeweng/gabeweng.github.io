@@ -509,7 +509,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Keras| [keras-tuner](https://github.com/keras-team/keras-tuner)||
 |Parameter optimization| [ParameterImportance](https://github.com/automl/ParameterImportance)||
 |Scikit-learn|[hyperopt-sklearn](https://github.com/hyperopt/hyperopt-sklearn), [scikit-optimize](https://scikit-optimize.github.io/stable/)|Bayesian Optimization|
-||[sklearn-deap](https://github.com/rsteca/sklearn-deap)|Evolutionary algorithm|
+||[sklearn-deap](https://github.com/rsteca/sklearn-deap), [sklearn-generic-opt](https://sklearn-genetic-opt.readthedocs.io/en/stable/)|Evolutionary algorithm|
 
 ## Phase: Validation
 ### Experiment Monitoring  
