@@ -278,7 +278,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[fastT5](https://github.com/Ki6an/fastT5)|Generate optimized T5 model|
 |Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe), [nlpretext](https://github.com/artefactory/NLPretext)||
 || [JamSpell](https://github.com/bakwc/JamSpell), [pyhunspell](https://github.com/blatinier/pyhunspell), [pyspellchecker](https://github.com/barrust/pyspellchecker), [cython_hunspell](https://github.com/MSeal/cython_hunspell), [hunspell-dictionaries](https://github.com/wooorm/dictionaries), [autocorrect (can add more languages)](https://github.com/phatpiglet/autocorrect), [symspellpy](https://github.com/mammothb/symspellpy), [spello (train your own spelling correction)](https://github.com/hellohaptik/spello), [contextualSpellCheck](https://github.com/R1j1t/contextualSpellCheck), [neuspell](https://github.com/neuspell/neuspell), [nlprule](https://github.com/bminixhofer/nlprule), [spylls](https://github.com/zverok/spylls)|Spelling Correction|
-||[language-tool-python](https://github.com/jxmorris12/language_tool_python)|Grammar Checker|
+||[gramformer](https://github.com/PrithivirajDamodaran/Gramformer)|Grammar Checker|
+||[language-tool-python](https://github.com/jxmorris12/language_tool_python)|Grammatical Error Correction|
 ||[ekphrasis](https://github.com/cbaziotis/ekphrasis)|Pre-processing for social media texts|
 ||[editop](https://github.com/gchrupala/editop)|Compute edit-operations for text normalization|
 | | [contractions](https://github.com/kootenpv/contractions), [pycontractions](https://pypi.org/project/pycontractions/)|Contraction Mapping|
