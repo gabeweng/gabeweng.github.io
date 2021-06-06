@@ -83,6 +83,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[tensorflow_datasets](https://github.com/tensorflow/datasets)|Access datasets in Tensorflow|
 ||[hub](https://github.com/activeloopai/Hub)|Prebuild datasets for PyTorch and Tensorflow|
 || [pydataset](https://github.com/iamaziz/PyDataset)||
+||[ir_datasets](https://github.com/allenai/ir_datasets/)|Information Retrieval Datasets|
 |App Store| [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)||
 |Arxiv|[pyarxiv](https://pypi.org/project/pyarxiv/)|Programmatic access to arxiv.org|
 |Audio| [pydub](https://github.com/jiaaro/pydub)||
