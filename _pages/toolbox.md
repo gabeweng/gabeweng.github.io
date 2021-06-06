@@ -28,6 +28,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[chatito](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
 | | [prodigy](https://prodi.gy/)|Paid|
 |Inter-rater agreement|[disagree](https://github.com/o-P-o/disagree)||
+||[simpledorff](https://github.com/LightTag/simpledorff)|Krippendorff's Alpha|
 
 ### Data Collection  
 
