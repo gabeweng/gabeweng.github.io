@@ -312,6 +312,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
 | Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering), [genieclust](https://genieclust.gagolewski.com/weave/basics.html)||
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
+||[sib](https://github.com/IBM/sib)|Sequential Information Bottleneck|
 ||[kneed](https://github.com/arvkevi/kneed)|Automatically find number of clusters from elbow curve|
 ||[OptimalCluster](https://github.com/shreyas-bk/OptimalCluster)|Automatically find optimal number of clusters|
 ||[gsdmm](https://github.com/rwalk/gsdmm)|Short-text clustering|
