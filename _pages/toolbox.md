@@ -321,7 +321,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Constituency Parsing|[benepar](https://github.com/plandes/self-attentive-parser), [allennlp](https://demo.allennlp.org/constituency-parsing/), [chunk-english-fast](https://huggingface.co/flair/chunk-english-fast)||
 |Compact Models|[mobilebert](https://huggingface.co/google/mobilebert-uncased), [distilbert](https://huggingface.co/distilbert-base-uncased), [tinybert](https://huggingface.co/XiaoqiJiao),[BERT-of-Theseus-MNLI](https://huggingface.co/canwenxu/BERT-of-Theseus-MNLI), [MiniML](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)||
 |Cross-lingual Embeddings| [muse](https://github.com/facebookresearch/MUSE), [laserembeddings](https://pypi.org/project/laserembeddings/), [xlm](https://github.com/facebookresearch/XLM), [LaBSE](https://tfhub.dev/google/LaBSE/1)||
-||[transvec](https://github.com/big-o/transvec)|Train mapping between monolingual embeddings|
+||[transvec](https://github.com/big-o/transvec), [vecmap](https://github.com/artetxem/vecmap)|Train mapping between monolingual embeddings|
 ||[MuRIL](https://tfhub.dev/google/MuRIL/1)|Embeddings for 17 indic languages with transliteration|
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
 ||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
