@@ -42,6 +42,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[english-words](https://github.com/dwyl/english-words)|A text file containing over 466k English words|
 ||[tf-idf-iif-top-100-wordlists](https://github.com/google-research-datasets/TF-IDF-IIF-top100-wordlists)|Top 100 distinctive words for each language|
 ||[freeling](https://github.com/ixa-ehu/matxin/tree/master/data/freeling/en/dictionary)|Dictionary of words grouped by POS|
+||[catvar](https://clipdemos.umiacs.umd.edu/catvar/), [lemmatization-lists](https://github.com/michmech/lemmatization-lists), [unimorph-eng](https://raw.githubusercontent.com/unimorph/eng/master/eng)|Word variants|
 |Text Corpus|[project gutenberg](https://www.gutenberg.org/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets),  [1 trillion n-grams](https://catalog.ldc.upenn.edu/LDC2006T13), [litbank](https://github.com/dbamman/litbank), [BookCorpus](https://github.com/soskek/bookcorpus), [south-asian text corpus](https://github.com/google-research-datasets/dakshina)||
 ||[opus](http://opus.nlpl.eu/), [oscar (big multilingual corpus)](https://traces1.inria.fr/oscar/)|Translation Parallel Text|
 ||[pile](https://pile.eleuther.ai/)|825GB text corpus|
