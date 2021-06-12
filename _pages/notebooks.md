@@ -40,6 +40,7 @@ External Notebooks which are not written by me are marked with *.
 |**Machine Translation**|easynmt|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC?usp=sharing)|
 |**Multilabel Classification**|scikit-multilearn|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lJiPPqL-X8-I_AAz1jyDkQP1m8TfE7nI?usp=sharing)|
 |**Multimodal Search**|sentence-transformers(CLIP)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16OdADinjAg3w3ceZy3-cOR9A-5ZW9BYr)|
+|**Multitask Learning**|Run T5 for 7 tasks|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rr4V0uDnt8unO_iOAWmGGQKuV7XyzhMB?usp=sharing)|
 |**NER**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
 ||huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)|
 ||spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
