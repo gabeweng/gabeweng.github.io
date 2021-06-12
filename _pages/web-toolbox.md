@@ -24,6 +24,7 @@ This is a curation of web apps that I have found useful.
 |[emoji-recommender](https://share.streamlit.io/rensdimmendaal/emoji-recommender/main/app/streamlit.py)|Recommend emoji based on text|
 |[git-explorer](https://gitexplorer.com/)|Find git command based on what you want to do|
 |[httpbin](http://httpbin.org/)|Service for fake request and response|
+|[handwriting-generator](https://www.handwriting-generator.com/)|Generate handwritten text in your own style|
 |[instant.io](https://instant.io/)|Download torrent in browser|
 |[jumpr](https://www.jumprco.com/resumes/build)|Online resume creator|
 |[jupyter-lite](https://github.com/jtpio/jupyterlite)|Client-side jupyter notebook using WASM|
