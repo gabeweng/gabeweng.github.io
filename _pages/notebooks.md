@@ -48,6 +48,7 @@ External Notebooks which are not written by me are marked with *.
 |**Next Sentence Prediction**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wYE1-jNZu3qZREE4TUNZ1TsAq1-KrVIh?usp=sharing)|
 |**Open-domain Chatbot**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-boriQIAJT-VokCywnVMtq8lZU1ElyqV?usp=sharing)|
 |**Paraphrase Generation**|Question Paraphrasing (huggingface)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
+|**Pytorch**|Serialize model in package format|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tvLmy5N0hfM_YFCzRLT2pN1hIJLoQruk?usp=sharing)|
 |**Question Answering**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/question_answering.ipynb)|
 |**Question Generation**|doc2query|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_-xghReObUfx1Xr8QG0-LKTYdrWlO87P?usp=sharing)|
 |**Record Deduplication**|mix|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vintasoftware/deduplication-slides/blob/master/slides.ipynb)|
