@@ -227,6 +227,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
+|Optimal Transport| [pot](https://pythonot.github.io/), [geomloss](https://www.kernel-operations.io/geomloss/)||
 | Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate), [pymc3](https://docs.pymc.io/)||
 | Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
 |Self-Supervised Learning|[lightly](https://github.com/lightly-ai/lightly), [vissl](https://github.com/facebookresearch/vissl)|Implementations of SSL models|
