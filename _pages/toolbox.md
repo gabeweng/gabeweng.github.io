@@ -123,6 +123,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Text to Speech| [gtts](https://github.com/pndurette/gTTS)||
 |Twitter| [twint](https://github.com/twintproject/twint), [tweepy](https://github.com/tweepy/tweepy), [twarc](https://twarc-project.readthedocs.io/en/latest/)|Scrape Twitter|
 |Wikipedia| [wikipedia](https://pypi.org/project/wikipedia/), [wikitextparser](https://github.com/5j9/wikitextparser)|Access data from wikipedia|
+||[wikitables](https://wikitables.readthedocs.io/en/latest/)|Import table from wikipedia article|
 |Wikidata|[wikidata](https://github.com/dahlia/wikidata)|Python API to wikidata|
 |XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
 
