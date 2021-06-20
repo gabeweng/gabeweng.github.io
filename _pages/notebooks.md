@@ -66,6 +66,7 @@ External Notebooks which are not written by me are marked with *.
 |**Topic Modeling**|gensim(LDA)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JZlsdCKfDZYlPav8eVNZ7m8TFlPuAxKH?usp=sharing)|
 |**Treemap Chart**|squarify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PX2aaQjjJ6-CBPz-QYL8DipyoI6POu9U?usp=sharing)|
 |**Text Classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
+||Huggingface Trainer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dnh9NAu1B5tqKU59nK2lvABWShLUGFNS?usp=sharing)|
 ||spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HiAvOOTjOHWD7tI2-Fu2RoizAdWiEvF0?usp=sharing)|
 ||fastai(ULMFIT)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19M536O5kCxYGte22z-TbuZ6UWjBbtoAT?usp=sharing)|
 ||fasttext(automl)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IcOdehbHLL3IzXunNAGQCwa-yR1zxmXG?usp=sharing)|
