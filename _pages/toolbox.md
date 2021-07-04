@@ -312,7 +312,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pyarabic](https://pyarabic.readthedocs.io/ar/latest/)|multilingual|
 |Tokenization| [sentencepiece](https://github.com/google/sentencepiece), [youtokentome](https://github.com/VKCOM/YouTokenToMe), [subword-nmt](https://github.com/rsennrich/subword-nmt)||
 ||[sacremoses](https://github.com/alvations/sacremoses)|Rule-based|
-| | [jieba](https://github.com/fxsjy/jieba)|Chinese Word Segmentation|
+| | [jieba](https://github.com/fxsjy/jieba), [pkuseg](https://github.com/lancopku/pkuseg-python)|Chinese Word Segmentation|
 ||[kytea](https://github.com/chezou/Mykytea-python)|Japanese word segmentation|
 | Clustering| [kmodes](https://github.com/nicodv/kmodes), [star-clustering](https://github.com/josephius/star-clustering), [genieclust](https://genieclust.gagolewski.com/weave/basics.html)||
 ||[spherecluster](https://github.com/jasonlaska/spherecluster)|K-means with cosine distance|
