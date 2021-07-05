@@ -63,6 +63,7 @@ External Notebooks which are not written by me are marked with *.
 ||sentence-transformers|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12hfBveGHRsxhPIUMmJYrll2lFU4fOX06)|
 ||txtai|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MiqtMLo2T86QFo1UN9EXF_C-nPDrECfG?usp=sharing)|
 |**Spelling Correction**|hunspell, jamspell, textblob|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H2dFeW6oDBfNXPPzE06UgfCk0YOacPw1?usp=sharing)|
+|**Synonyms**|spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wtA5ufX7zSQAlxiQQbsUvhKPhhpHMjAv?usp=sharing)|
 |**Topic Modeling**|gensim(LDA)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JZlsdCKfDZYlPav8eVNZ7m8TFlPuAxKH?usp=sharing)|
 |**Treemap Chart**|squarify|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PX2aaQjjJ6-CBPz-QYL8DipyoI6POu9U?usp=sharing)|
 |**Text Classification**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb#scrollTo=uNx5pyRlIrJh)|
