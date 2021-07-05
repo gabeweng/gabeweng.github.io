@@ -45,6 +45,7 @@ External Notebooks which are not written by me are marked with *.
 |**NER**|flair|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1arZ-VEraMNo3b8Rks266coyP5O58vVvn?usp=sharing)|
 ||huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)|
 ||spacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19uSXOPY9b5XVaj63I5Bzx64Da1iwnakO?usp=sharing)|
+||spacy rule-based|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IkzNZw9NsseveLDJ6P_wQ5dg9igdZKij?usp=sharing)|
 |**Next Sentence Prediction**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wYE1-jNZu3qZREE4TUNZ1TsAq1-KrVIh?usp=sharing)|
 |**Open-domain Chatbot**|huggingface|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-boriQIAJT-VokCywnVMtq8lZU1ElyqV?usp=sharing)|
 |**Paraphrase Generation**|Question Paraphrasing (huggingface)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bx94EOIK4HlAfti0L-isj98Spb9sgrXk?usp=sharing)|
