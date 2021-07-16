@@ -231,7 +231,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Optimal Transport| [pot](https://pythonot.github.io/), [geomloss](https://www.kernel-operations.io/geomloss/)||
 | Probabilistic modeling| [pomegranate](https://github.com/jmschrei/pomegranate), [pymc3](https://docs.pymc.io/)||
 | Rule based classifier| [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)||
-|Self-Supervised Learning|[lightly](https://github.com/lightly-ai/lightly), [vissl](https://github.com/facebookresearch/vissl)|Implementations of SSL models|
+|Self-Supervised Learning|[lightly](https://github.com/lightly-ai/lightly), [vissl](https://github.com/facebookresearch/vissl), [solo-learn](https://github.com/vturrisi/solo-learn)|Implementations of SSL models|
 ||[self_supervised](https://github.com/KeremTurgutlu/self_supervised)|Self-supervised models in Fast.AI|
 |Spiking Neural Network| [norse](https://github.com/norse/norse)||
 |Support Vector Machines| [thundersvm](https://github.com/Xtra-Computing/thundersvm)|Run SVM on GPU|
