@@ -30,6 +30,7 @@ External Notebooks which are not written by me are marked with *.
 |**Fuzzy Matching**|jellyfish|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GbxZk_R9w5oDojn0ynU-rPM-_hWvPyTh?usp=sharing)|
 ||rapidfuzz|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NrzDsNKyCQfKcxZh_fo4vc1PB-9vBzdg?usp=sharing)|
 |**Hyperparameter optimization**|wandb*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16d1uctGaw2y9KhGBlINNTsWpmlXdJwRW?usp=sharing)|
+|**Inter-rater Agreement**|Metrics|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XILo_BxEjyqniYdAC25-90UT36e2AQrf?usp=sharing)|
 |**Image Classification**|efficientnet|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KTqKZnoJV5TESmEJhKDPD9Wz9dJmJurk?usp=sharing)|
 |**Keyword Extraction**|pytextrank|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-mbQ75Zgu0Qt8MI_NOI9vLyXZsw4hiF9?usp=sharing)|
 ||pyate|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s9Qel1SGNeLazWjPc24NMmSVA2hv1CZV?usp=sharing)|
