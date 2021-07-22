@@ -604,7 +604,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-|Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt)||
+|Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt), [auth0](https://auth0.com/), [okta](https://www.okta.com/), [cognito](https://aws.amazon.com/cognito/)||
 |Batch Jobs|[airflow](https://airflow.apache.org/), [luigi](https://github.com/spotify/luigi), [dagster](https://dagster.io/), [oozie](https://oozie.apache.org/), [prefect](https://docs.prefect.io/core/), [kubernetes-cron-jobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/), [argo](https://argoproj.github.io/projects/argo)||
 || [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)|Task Queue|
 ||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
