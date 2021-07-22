@@ -615,7 +615,9 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |CORS| [flask-cors](https://flask-cors.readthedocs.io/en/latest/)|CORS in Flask|
 |Database| [flask-sqlalchemy](https://github.com/pallets/flask-sqlalchemy), [tinydb](https://github.com/msiemens/tinydb), [flask-pymongo](https://flask-pymongo.readthedocs.io/en/latest/), [odmantic](https://github.com/art049/odmantic)||
 ||[tortoise-orm](https://github.com/tortoise/tortoise-orm)|Asyncio ORM similar to Django|
-|Data Logging & Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)||
+|Monitoring|[whylogs](https://github.com/whylabs/whylogs-python)|Data Logging|
+||[grafana](https://grafana.com/), [prometheus](https://prometheus.io/)|Metric|
+||[sentry](https://sentry.io/), [honeybadger](https://www.honeybadger.io/)|Error Reporting|
 |Data Validation|[schema](https://github.com/keleshev/schema), [jsonschema](https://pypi.org/project/jsonschema/), [cerebrus](https://github.com/pyeve/cerberus), [pydantic](https://pydantic-docs.helpmanual.io/), [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [validators](https://validators.readthedocs.io/en/latest/#basic-validators)||
 |Dashboard|[streamlit](https://github.com/streamlit/streamlit)|Generate frontend with python|
 ||[gradio](https://github.com/gradio-app/gradio)|Fast UI generation for prototyping|
