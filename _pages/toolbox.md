@@ -448,7 +448,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [scattertext](https://github.com/JasonKessler/scattertext)|Compare word usage across segments|
 ||[picture-text](https://github.com/md-experiments/picture_text)|Interactive tree-maps for hierarchical clustering|
 |Verb Conjugation|[nodebox_linguistics_extended](https://github.com/amitness/nodebox_linguistics_extended), [mlconj3](https://mlconjug3.readthedocs.io/en/latest/)||
-|Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd)||
+|Word Sense Disambiguation|[pywsd](https://github.com/alvations/pywsd), [ewiser](https://github.com/SapienzaNLP/ewiser), [supwsd](https://supwsd.net/supwsd/)||
 ||[frame-english-fast](https://huggingface.co/flair/frame-english-fast)|Verb Disambiguation|
 
 ### Computer Vision  
