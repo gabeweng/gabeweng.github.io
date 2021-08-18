@@ -2,19 +2,24 @@
 permalink: /about/
 title: "About"
 classes: wide
-excerpt: Learn about me, my current endeavors, research interest areas and the motive behind this personal blog.
+excerpt: Learn about me, my current endeavors, research interest areas, and the motive behind this personal blog.
 ---
 
-In this blog, I explain machine learning concepts using diagrams, animations and intuition.  
+In this blog, I explain machine learning concepts using diagrams, animations, and intuition.  
 
-**Who I am**  
-I'm an engineer going [wide and deep](https://github.com/amitness/learning) in the field of Machine Learning.
+**About Me**  
+I'm an engineer passionate about applying Machine Learning to real-world industry problems.
 
-**What I do**  
-I currently apply Machine Learning research to industry problems at [Fusemachines](https://fusemachines.com) . 
+I initially started my career as a software engineer but transitioned to data science through rigorous [self-study](https://github.com/amitness/learning).
 
-**Interest Areas**  
-I'm interested in the research paradigm of learning with limited labels and Natural Language Processing.
+
+**Now**  
+Currently, I am pursuing an MS in Computational Linguistics at [CIMEC](https://www.cimec.unitn.it/en).
+
+Previously, I worked as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com) where I built NLP capabilities for a market research platform from ground zero.
+
+**Research Interests**  
+I'm interested in the paradigm of learning with limited labels and Natural Language Processing.
 
 **Get in touch**  
-I’m active on [twitter](https://twitter.com/amitness) and would love to connect with you.
+Please feel free to connect with me on [Twitter](https://twitter.com/amitness).
