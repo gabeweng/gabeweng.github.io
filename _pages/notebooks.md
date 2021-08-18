@@ -35,6 +35,7 @@ External Notebooks which are not written by me are marked with *.
 |**Keyword Extraction**|pytextrank|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-mbQ75Zgu0Qt8MI_NOI9vLyXZsw4hiF9?usp=sharing)|
 ||pyate|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s9Qel1SGNeLazWjPc24NMmSVA2hv1CZV?usp=sharing)|
 ||rake|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OV_o9qTzifhNHKZufhW5Jv53aPGHL5NB?usp=sharing)|
+||textacy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OvIrbqUivIz-ap2sif7-mmO-EN_RlV8K?usp=sharing)|
 |**Language Modeling**|huggingface*|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)|
 |**Language Model Scoring**|lm_scorer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16c6aYy6qHQ43aKN4V1vee3WNq_tjMgkp?usp=sharing)|
 ||DialogRPT|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1syAJZIj6sp97zTRoAvDf3Lp64y907xvy?usp=sharing)|
