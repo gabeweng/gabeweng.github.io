@@ -107,7 +107,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Google Search|[googlesearch](https://github.com/Nv7-GitHub/googlesearch)|Parse google search results|
 |Google Sheets| [gspread](https://github.com/burnash/gspread)||
 |Google Ngrams|[google-ngram-downloader](https://github.com/dimazest/google-ngram-downloader)||
-|HTML|[python-readability](https://github.com/buriy/python-readability)|HTML to Text|
+|HTML|[python-readability](https://github.com/buriy/python-readability), [html-text](https://github.com/TeamHG-Memex/html-text)|HTML to Text|
 |Image| [py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator), [idt](https://github.com/deliton/idt), [jmd-imagescraper](https://joedockrill.github.io/jmd_imagescraper/)|Auto fetch images from web for certain search|
 | Video| [moviepy](https://zulko.github.io/moviepy/)|Edit Videos|
 || [pytube](https://github.com/nficano/pytube)|Download youtube vidoes|
