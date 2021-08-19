@@ -361,7 +361,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Information Extraction|[claucy](https://github.com/mmxgn/spacy-clausie/tree/dev-clausie-reimplementation)||
 ||[GiveMe5W1H](https://github.com/fhamborg/Giveme5W1H)|Extract 5-why 1-how phrases from news|
 ||[spikex](https://github.com/erre-quadro/spikex)|Spacy pipeline for knowledge extraction|
-|Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
+|Keyword extraction| [rake](https://github.com/zelandiya/RAKE-tutorial), [multi-rake](https://github.com/vgrabovets/multi_rake), [pke](https://github.com/boudinfl/pke), [phrasemachine](https://github.com/slanglab/phrasemachine), [keybert](https://github.com/MaartenGr/KeyBERT/), [word2phrase](https://github.com/travisbrady/word2phrase)||
 || [pyate](https://github.com/kevinlu1248/pyate) |Automated Term Extraction|
 |Knowledge| [conceptnet-lite](https://github.com/ldtoolkit/conceptnet-lite)||
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
