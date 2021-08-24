@@ -432,6 +432,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Text Extraction| [textract (Image, Audio, PDF)](https://textract.readthedocs.io/en/stable/)||
 | Text Generation| [gp2client](https://github.com/rish-16/gpt2client), [textgenrnn](https://github.com/minimaxir/textgenrnn), [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple), [aitextgen](https://github.com/minimaxir/aitextgen)|GPT-2|
 | |[markovify](https://github.com/jsvine/markovify)|Markov chains|
+||[accelerated-text](https://github.com/tokenmill/accelerated-text)|Template-based generation|
 | |[keytotext](https://github.com/gagan3012/keytotext)|Keyword to Sentence Generation|
 |Transliteration|[wiktra](https://github.com/kbatsuren/wiktra)||
 | Machine Translation| [MarianMT](https://huggingface.co/transformers/model_doc/marian.html), [Opus-MT](https://github.com/Helsinki-NLP/Opus-MT), [joeynmt](https://joeynmt.readthedocs.io/en/latest/tutorial.html), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py), [EasyNMT](https://github.com/UKPLab/EasyNMT), [argos-translate](https://github.com/argosopentech/argos-translate), [dl-translate](https://github.com/xhlulu/dl-translate)||
