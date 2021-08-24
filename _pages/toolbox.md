@@ -330,10 +330,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[BPEmb](https://nlp.h-its.org/bpemb/)|Subword Embeddings in 275 Languages|
 ||[piecelearn](https://github.com/stephantul/piecelearn)|Train own sub-word embeddings|
 | Dictionary| [vocabulary](https://vocabulary.readthedocs.io/en/latest/usage.html)||
-| Domain-specific BERT| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
+| Domain-specific| [codebert](https://huggingface.co/codistai/codeBERT-small-v2#)|Code|
 || [clinicalbert-mimicnotes](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT), [clinicalbert-discharge-summary](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT)|Clinical Domain|
 ||[twitter-roberta-base](https://huggingface.co/cardiffnlp/twitter-roberta-base)|twitter|
 || [scispacy](https://github.com/allenai/scispacy)|bio-medical data|
+||[blackstone](https://github.com/ICLRandD/Blackstone)|Legal text|
 |Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api), [GENRE](https://github.com/facebookresearch/GENRE/blob/main/examples/transformers.md)||
 |Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
 |Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
