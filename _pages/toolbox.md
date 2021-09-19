@@ -23,6 +23,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Audio | [audio-annotator](https://github.com/CrowdCurio/audio-annotator), [audiono](https://github.com/midas-research/audino)||
 |General| [superintendent](https://superintendent.readthedocs.io/en/latest/installation.html), [pigeon](https://github.com/agermanidis/pigeon)|Annotate in notebooks|
 || [labelstudio](https://labelstud.io/)|Open Source Data Labeling Tool|
+||[awesome-data-labeling](https://github.com/heartexlabs/awesome-data-labeling)||
 |Image | [makesense.ai](https://www.makesense.ai/), [labelimg](https://github.com/tzutalin/labelImg), [via](http://www.robots.ox.ac.uk/~vgg/software/via/), [cvat](https://github.com/openvinotoolkit/cvat)||
 |Text | [doccano](https://doccano.herokuapp.com/), [dataturks](https://dataturks.com/), [brat](http://brat.nlplab.org/)||
 ||[chatito](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
