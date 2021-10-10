@@ -255,6 +255,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning)|Lightweight wrapper for PyTorch|
 ||[skorch](https://github.com/skorch-dev/skorch)|Wrap pytorch in scikit-learn compatible API|
 ||[torchcontrib](https://github.com/pytorch/contrib)|SOTA Bulding Blocks in PyTorch|
+||[bitsandbytes](https://github.com/facebookresearch/bitsandbytes)|8-bit optimizers for PyTorch|
 | Scikit-learn| [scikit-lego](https://scikit-lego.readthedocs.io/en/latest/index.html), [iterative-stratification](https://github.com/trent-b/iterative-stratification)||
 ||[iterstrat](https://github.com/trent-b/iterative-stratification)|Cross-validation for multi-label data|
 ||[scikit-multilearn](http://scikit.ml/)|Multi-label classification|
