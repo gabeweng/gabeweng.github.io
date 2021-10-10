@@ -562,6 +562,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [pyldavis](https://pyldavis.readthedocs.io/en/latest/)|Visualize topics models|
 ||[dtreeviz](https://github.com/parrt/dtreeviz)|Visualize decision tree|
 ||[txtmarker](https://github.com/neuml/txtmarker)|Highlight text in PDF|
+||[metriculous](https://github.com/metriculous-ml/metriculous)|Visualize model performance|
 |Animated charts| [bar_chart_race](https://github.com/dexplo/bar_chart_race)|Bar chart race animation|
 ||[pandas_alive](https://github.com/JackMcKew/pandas_alive)|Animated charts in pandas|
 |High dimensional visualization| [umap](https://github.com/lmcinnes/umap)||
