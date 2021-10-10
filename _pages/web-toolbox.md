@@ -23,6 +23,7 @@ This is a curation of web apps that I have found useful.
 |[derivative-calculator](https://www.derivative-calculator.net/)|Calculate derivative with steps|
 |[emoji-recommender](https://share.streamlit.io/rensdimmendaal/emoji-recommender/main/app/streamlit.py)|Recommend emoji based on text|
 |[git-explorer](https://gitexplorer.com/)|Find git command based on what you want to do|
+|[grandpapa](https://github.com/joaoperfig/GRaNDPapA)|Generate acronyms for paper titles|
 |[httpbin](http://httpbin.org/)|Service for fake request and response|
 |[handwriting-generator](https://www.handwriting-generator.com/)|Generate handwritten text in your own style|
 |[instant.io](https://instant.io/)|Download torrent in browser|
