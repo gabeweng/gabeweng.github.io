@@ -148,7 +148,7 @@ For our example, we can calculate the AP based on our Precision@K values for dif
 ![Precision@k for different values of k](/images/ltr-average-precision-example-1.png){:.align-center}  
 
 $$
-AP = \frac{(1 + 2/3 + 3/5)}{3} = 0.7575
+AP = \frac{(1 + 2/3 + 3/5)}{3} = 0.7555
 $$
 
 To illustrate the advantage of AP, let's take our previous example but place the 3 relevant results at the beginning. We can see that this gets a perfect AP score than the above example.  
