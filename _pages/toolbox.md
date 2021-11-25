@@ -228,6 +228,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/), [communities](https://github.com/shobrook/communities)||
 | Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
 |Interpretable Models|[imodels](https://github.com/csinva/imodels)|Models that show rules|
+|Multi-view Learning|[mvlearn](https://mvlearn.github.io)||
 | Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
