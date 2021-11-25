@@ -39,6 +39,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[huggingface-datasets](https://huggingface.co/datasets), [The Big Bad NLP Database](https://datasets.quantumstat.com/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets), [nlp corpora](https://nlpforhackers.io/corpora/)|NLP Datasets|
 ||[bifrost](https://datasets.bifrost.ai/), [VisualData](https://www.visualdata.io/), [roboflow](https://public.roboflow.com/)|Computer Vision Datasets|
 |Words|[curse-words](https://github.com/reimertz/curse-words), [badwords](https://github.com/MauriceButler/badwords), [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words), [10K most common words](https://github.com/first20hours/google-10000-english), [common-misspellings](https://bitbucket.org/bedizel/moe/src/master/data/)||
+||[profanity](https://github.com/surge-ai/profanity)|Profane words|
 ||[wordlists](https://github.com/imsky/wordlists)|Words organized by topic|
 ||[english-words](https://github.com/dwyl/english-words)|A text file containing over 466k English words|
 ||[tf-idf-iif-top-100-wordlists](https://github.com/google-research-datasets/TF-IDF-IIF-top100-wordlists)|Top 100 distinctive words for each language|
