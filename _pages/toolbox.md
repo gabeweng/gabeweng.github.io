@@ -376,7 +376,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
 ||[verbnet-parser](https://github.com/jgung/verbnet-parser)|VerbNet parser|
 | Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
-| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
+| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm), [mlm-scoring](https://github.com/awslabs/mlm-scoring)||
 |Lexical Simplification|[easee](https://github.com/feralvam/easse/)|Evaluation metric|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
 ||[ranking-metrics](https://gist.github.com/bwhite/3726239), [cute_ranking](https://github.com/ncoop57/cute_ranking)|Metrics for Information Retrieval|
