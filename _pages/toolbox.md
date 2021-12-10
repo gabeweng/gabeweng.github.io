@@ -285,6 +285,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[booknlp](https://github.com/booknlp/booknlp)|NLP for Books|
 || [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)|Wrappers|
 || [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
+||[compromise](https://compromise.cool/)|Javascript NLP|
 |CPU-optimizations|[turbo_transformers](https://github.com/Tencent/TurboTransformers), [onnx_transformers](https://github.com/patil-suraj/onnx_transformers)||
 ||[fastT5](https://github.com/Ki6an/fastT5)|Generate optimized T5 model|
 |Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe), [nlpretext](https://github.com/artefactory/NLPretext)||
