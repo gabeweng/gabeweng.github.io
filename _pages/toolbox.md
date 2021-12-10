@@ -39,6 +39,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[huggingface-datasets](https://huggingface.co/datasets), [The Big Bad NLP Database](https://datasets.quantumstat.com/), [nlp-datasets](https://github.com/niderhoff/nlp-datasets), [nlp corpora](https://nlpforhackers.io/corpora/)|NLP Datasets|
 ||[bifrost](https://datasets.bifrost.ai/), [VisualData](https://www.visualdata.io/), [roboflow](https://public.roboflow.com/)|Computer Vision Datasets|
 |Words|[curse-words](https://github.com/reimertz/curse-words), [badwords](https://github.com/MauriceButler/badwords), [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words), [10K most common words](https://github.com/first20hours/google-10000-english), [common-misspellings](https://bitbucket.org/bedizel/moe/src/master/data/)||
+||[profanity](https://github.com/surge-ai/profanity)|Profane words|
 ||[wordlists](https://github.com/imsky/wordlists)|Words organized by topic|
 ||[english-words](https://github.com/dwyl/english-words)|A text file containing over 466k English words|
 ||[tf-idf-iif-top-100-wordlists](https://github.com/google-research-datasets/TF-IDF-IIF-top100-wordlists)|Top 100 distinctive words for each language|
@@ -139,7 +140,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator), [genalog](https://github.com/microsoft/genalog)|OCR|
 |Tabular data|[deltapy](https://github.com/firmai/deltapy)||
 ||[mockaroo](https://mockaroo.com/)|Generate synthetic user details|
-|Text|[nlpaug](https://github.com/makcedward/nlpaug), [noisemix](https://github.com/noisemix/noisemix), [textattack](https://github.com/QData/TextAttack), [textaugment](https://github.com/dsfsi/textaugment), [niacin](https://github.com/deniederhut/niacin), [SeaQuBe](https://github.com/bees4ever/SeaQuBe), [DataAug4NLP](https://github.com/styfeng/DataAug4NLP)||
+|Text|[nlpaug](https://github.com/makcedward/nlpaug), [noisemix](https://github.com/noisemix/noisemix), [textattack](https://github.com/QData/TextAttack), [textaugment](https://github.com/dsfsi/textaugment), [niacin](https://github.com/deniederhut/niacin), [SeaQuBe](https://github.com/bees4ever/SeaQuBe), [DataAug4NLP](https://github.com/styfeng/DataAug4NLP), [NL-Augmenter](https://github.com/GEM-benchmark/NL-Augmenter)||
 ||[fastent](https://fastent.github.io/docs/)|Expand NER entity list|
 
 ## Phase: Exploration
@@ -227,6 +228,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/), [communities](https://github.com/shobrook/communities)||
 | Hidden Markov Models| [hmmlearn](https://github.com/hmmlearn/hmmlearn)||
 |Interpretable Models|[imodels](https://github.com/csinva/imodels)|Models that show rules|
+|Multi-view Learning|[mvlearn](https://mvlearn.github.io)||
 | Noisy Label Learning| [cleanlab](https://github.com/cgnorthcutt/cleanlab)||
 |Optimization|[nevergrad](https://github.com/facebookresearch/nevergrad)|Gradient Free Optimization|
 ||[cvxpy](https://github.com/cvxgrp/cvxpy)|Convex Optimization|
@@ -279,8 +281,11 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [headliner](https://github.com/as-ideas/headliner), [txt2txt](https://github.com/bedapudi6788/txt2txt)|Sequence to sequence models|
 ||[Nvidia NeMo](https://github.com/NVIDIA/NeMo)|Toolkit for ASR, NLP and TTS|
 ||[nlu](https://nlu.johnsnowlabs.com/docs/en/examples)|1-line models for NLP|
+||[pyconverse](https://github.com/AnjanaRita/converse)|Conversational Text Analysis|
+||[booknlp](https://github.com/booknlp/booknlp)|NLP for Books|
 || [fast-bert](https://github.com/kaushaltrivedi/fast-bert), [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers)|Wrappers|
 || [finetune](https://github.com/IndicoDataSolutions/finetune)|Scikit-learn like API for transformers|
+||[compromise](https://compromise.cool/)|Javascript NLP|
 |CPU-optimizations|[turbo_transformers](https://github.com/Tencent/TurboTransformers), [onnx_transformers](https://github.com/patil-suraj/onnx_transformers)||
 ||[fastT5](https://github.com/Ki6an/fastT5)|Generate optimized T5 model|
 |Preprocessing| [textacy](https://github.com/chartbeat-labs/textacy), [texthero](https://github.com/jbesomi/texthero), [textpipe](https://github.com/textpipe/textpipe), [nlpretext](https://github.com/artefactory/NLPretext)||
@@ -340,6 +345,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api), [GENRE](https://github.com/facebookresearch/GENRE/blob/main/examples/transformers.md)||
 |Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
 |Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
+||[counterix](https://github.com/akb89/counterix)|Train custom Count-based DSM|
+||[embeddix](https://github.com/akb89/embeddix)|Convert word vectors format|
 ||[wiki2vec](https://github.com/idio/wiki2vec)|Word2Vec trained on DBPedia Entities|
 ||[chars2vec](https://github.com/IntuitionEngineeringTeam/chars2vec)|Character-embeddings for handling typo and slangs|
 ||[rank_bm25](https://github.com/dorianbrown/rank_bm25), [BM25Transformer](https://github.com/arosh/BM25Transformer)|BM25|
@@ -370,7 +377,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | | [stanford-openie](https://github.com/philipperemy/Stanford-OpenIE-Python)|Knowledge Graphs|
 ||[verbnet-parser](https://github.com/jgung/verbnet-parser)|VerbNet parser|
 | Knowledge Distillation| [textbrewer](https://github.com/airaria/TextBrewer), [aquvitae](https://github.com/aquvitae/aquvitae)||
-| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm)||
+| Language Model Scoring| [lm-scorer](https://github.com/simonepri/lm-scorer), [bertscore](https://github.com/Tiiiger/bert_score), [kenlm](https://github.com/kpu/kenlm), [spacy_kenlm](https://github.com/tokestermw/spacy_kenlm), [mlm-scoring](https://github.com/awslabs/mlm-scoring)||
 |Lexical Simplification|[easee](https://github.com/feralvam/easse/)|Evaluation metric|
 | Metrics| [seqeval](https://github.com/chakki-works/seqeval)|NER, POS tagging|
 ||[ranking-metrics](https://gist.github.com/bwhite/3726239), [cute_ranking](https://github.com/ncoop57/cute_ranking)|Metrics for Information Retrieval|
@@ -446,7 +453,8 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[giza++](https://github.com/moses-smt/giza-pp), [fastalign](https://github.com/clab/fast_align), [simalign](https://github.com/cisnlp/simalign), [eflomal](https://github.com/robertostling/eflomal), [awesome-align](https://github.com/neulab/awesome-align)|Word Alignment|
 |Thesaurus|[python-datamuse](https://github.com/gmarmstrong/python-datamuse)||
 |Toxicity Detection|[detoxify](https://github.com/unitaryai/detoxify)||
-|Topic Modeling|[gensim](https://github.com/RaRe-Technologies/gensim), [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy).[ToModAPI](https://github.com/D2KLab/ToModAPI)||
+|Topic Modeling|[gensim](https://github.com/RaRe-Technologies/gensim), [guidedlda](https://github.com/vi3k6i5/guidedlda), [enstop](https://github.com/lmcinnes/enstop), [top2vec](https://github.com/ddangelov/Top2Vec), [contextualized-topic-models](https://github.com/MilaNLProc/contextualized-topic-models), [corex_topic](https://github.com/gregversteeg/corex_topic), [lda2vec](https://github.com/cemoody/lda2vec), [bertopic](https://github.com/MaartenGr/BERTopic), [tomotopy](https://bab2min.github.io/tomotopy), [ToModAPI](https://github.com/D2KLab/ToModAPI)||
+||[zeroshot_topics](https://github.com/AnjanaRita/zeroshot_topics)|Zero-shot topic modeling|
 ||[octis](https://github.com/mind-lab/octis)|Evaluate topic models|
 |Typology|[lang2vec](https://github.com/antonisa/lang2vec)|Compare typological features of languages|
 | Visualization| [stylecloud](https://github.com/minimaxir/stylecloud)|Word Clouds|
