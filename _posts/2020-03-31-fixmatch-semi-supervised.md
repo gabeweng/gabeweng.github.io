@@ -61,7 +61,7 @@ For weak augmentation, the paper uses a standard flip-and-shift strategy. It inc
 
     ![Example of Random Horizontal Flip](/images/fixmatch-horizontal-flip-gif){: .align-center}  
 
-    This augmentation is applied with a probability of 50%. This is skipped for the SVHN dataset since those images contain digits for which horizontal flip is not relevant. In PyTorch, this can be performed using [transforms](https://pytorch.org/docs/stable/torchvision/transforms.html) as:  
+    This augmentation is applied with a probability of 50%. This is skipped for the SVHN dataset since those images contain digits for which horizontal flip is not relevant. In PyTorch, this can be performed using [transforms](https://pytorch.org/vision/stable/transforms.html) as:  
     
     ```python
     from PIL import Image

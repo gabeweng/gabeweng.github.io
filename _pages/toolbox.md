@@ -25,7 +25,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [labelstudio](https://labelstud.io/)|Open Source Data Labeling Tool|
 ||[awesome-data-labeling](https://github.com/heartexlabs/awesome-data-labeling)||
 |Image | [makesense.ai](https://www.makesense.ai/), [labelimg](https://github.com/tzutalin/labelImg), [via](http://www.robots.ox.ac.uk/~vgg/software/via/), [cvat](https://github.com/openvinotoolkit/cvat)||
-|Text | [doccano](https://doccano.herokuapp.com/), [dataturks](https://dataturks.com/), [brat](http://brat.nlplab.org/)||
+|Text | [doccano](https://doccano.herokuapp.com/), [brat](http://brat.nlplab.org/)||
 ||[chatito](https://github.com/rodrigopivi/Chatito)|Generate text datasets using DSL|
 | | [prodigy](https://prodi.gy/)|Paid|
 |Inter-rater agreement|[disagree](https://github.com/o-P-o/disagree)||
@@ -54,7 +54,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[fandom-transcripts](https://transcripts.fandom.com/wiki/Transcripts_Wiki)|Movie and Series Transcripts|
 ||[cognet](https://github.com/kbatsuren/CogNet)|Cognates for 338 languages|
 ||[wold](https://wold.clld.org/)|Loan words|
-|Sentiment|[SST2](https://github.com/clairett/pytorch-sentiment-classification/tree/master/data/SST2), [Amazon Reviews](https://www.kaggle.com/bittlingmayer/amazonreviews), [Yelp Reviews](https://www.kaggle.com/yelp-dataset/yelp-dataset), [Movie Reviews](http://www.cs.cornell.edu/people/pabo/movie-review-data/), [Food Reviews](https://www.kaggle.com/snap/amazon-fine-food-reviews), [Twitter Airline](https://www.kaggle.com/crowdflower/twitter-airline-sentiment), [GOP Debate](https://www.kaggle.com/crowdflower/first-gop-debate-twitter-sentiment), [Sentiment Lexicons for 81 languages](https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages), [SentiWordNet](http://sentiwordnet.isti.cnr.it/), [Opinion Lexicon](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon), [Wordstat words](https://provalisresearch.com/products/content-analysis-software/wordstat-dictionary/sentiment-dictionaries/), [Emoticon Sentiment](http://people.few.eur.nl/hogenboom/files/EmoticonSentimentLexicon.zip), [socialsent](https://nlp.stanford.edu/projects/socialsent/)||
+|Sentiment|[SST2](https://github.com/clairett/pytorch-sentiment-classification/tree/master/data/SST2), [Amazon Reviews](https://www.kaggle.com/bittlingmayer/amazonreviews), [Yelp Reviews](https://www.kaggle.com/yelp-dataset/yelp-dataset), [Movie Reviews](http://www.cs.cornell.edu/people/pabo/movie-review-data/), [Food Reviews](https://www.kaggle.com/snap/amazon-fine-food-reviews), [Twitter Airline](https://www.kaggle.com/crowdflower/twitter-airline-sentiment), [GOP Debate](https://www.kaggle.com/crowdflower/first-gop-debate-twitter-sentiment), [Sentiment Lexicons for 81 languages](https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages), [SentiWordNet](https://github.com/aesuli/SentiWordNet), [Opinion Lexicon](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon), [Wordstat words](https://provalisresearch.com/products/content-analysis-software/wordstat-dictionary/sentiment-dictionaries/), [Emoticon Sentiment](http://people.few.eur.nl/hogenboom/files/EmoticonSentimentLexicon.zip), [socialsent](https://nlp.stanford.edu/projects/socialsent/)||
 |Emotion|[NRC-Emotion-Lexicon-Wordlevel](https://raw.githubusercontent.com/dinbav/LeXmo/master/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt), [ISEAR(17K)](https://github.com/PoorvaRane/Emotion-Detector/blob/master/ISEAR.csv), [HappyDB](https://megagon.ai/projects/happydb-a-happiness-database-of-100000-happy-moments/), [emotion-to-emoji-mapping](https://github.com/ErKiran/TwitterBot/blob/master/emoji.json)|
 ||[EmoTag1200](https://github.com/abushoeb/emotag)|Emoji-Emotion scores|
 |NLU Intents|[rasa-nlu-training-data](https://github.com/RasaHQ/NLU-training-data)||
@@ -81,7 +81,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Prebuilt| [openml](https://openml.github.io/openml-python/master/), [lineflow](https://github.com/tofunlp/lineflow)||
+| Prebuilt| [openml](https://openml.github.io/openml-python), [lineflow](https://github.com/tofunlp/lineflow)||
 ||[rs_datasets](https://darel13712.github.io/rs_datasets/)|Recommendation Datasets|
 ||[nlp](https://github.com/huggingface/nlp)|Python interface to NLP datasets|
 ||[tensorflow_datasets](https://github.com/tensorflow/datasets)|Access datasets in Tensorflow|
@@ -149,7 +149,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 
 |Category|Tool|Remarks|
 |---|---|---|
-| Class Imbalance| [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html)||
+| Class Imbalance| [imblearn](https://imbalanced-learn.org/stable/)||
 | Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
 |Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
 | Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
@@ -185,7 +185,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Automatic feature engineering|[featuretools](https://github.com/FeatureLabs/featuretools), [autopandas](https://autopandas.io/)||
 || [tsfresh](https://github.com/blue-yonder/tsfresh)|Automatic feature engineering for time series|
-|DAG based dataset generation|[DFFML](https://intel.github.io/dffml/usage/integration.html)||
+|DAG based dataset generation|[DFFML](https://intel.github.io/dffml/)||
 |Dimensionality reduction|[fbpca](https://github.com/facebook/fbpca), [fitsne](https://github.com/KlugerLab/FIt-SNE), [trimap](https://github.com/eamid/trimap)||
 |Metric learning|[metric-learn](http://contrib.scikit-learn.org/metric-learn/getting_started.html), [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)||
 |Time series|[python-holidays](https://github.com/dr-prodigy/python-holidays)|List of holidays|
@@ -201,7 +201,6 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Project Structure|[cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/)||
 | Find SOTA models| [sotawhat](https://sotawhat.herokuapp.com), [papers-with-code](https://paperswithcode.com/sota), [codalab](https://competitions.codalab.org/), [nlpprogress](https://nlpprogress.com/), [evalai](https://evalai.cloudcv.org/), [collectiveknowledge](https://cknowledge.io/reproduced-results/), [sotabench](https://sotabench.com)|Benchmarks|
 ||[bert-related-papers](https://github.com/tomohideshibata/BERT-related-papers)|BERT Papers|
-||[acl-explorer](http://acl-explorer.eu-west-2.elasticbeanstalk.com/)|ACL Publications Explorer|
 ||[survey-papers](https://github.com/NiuTrans/ABigSurvey)|Collection of survey papers|
 | Pretrained models| [modeldepot](https://modeldepot.io/browse), [pytorch-hub](https://pytorch.org/hub)|General|
 ||[pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch), [pytorchcv](https://pypi.org/project/pytorchcv/)|Pre-trained ConvNets|
@@ -214,7 +213,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[lazypredict](https://github.com/shankarpandala/lazypredict)|Run all sklearn models at once|
 ||[tpot](https://github.com/EpistasisLab/tpot)|Genetic AutoML|
 ||[autocat](https://autocat.apps.allenai.org/)|Auto-generate text classification models in spacy|
-|| [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://uber.github.io/ludwig/)|Autogenerate ML code|
+|| [mindsdb](https://github.com/mindsdb/mindsdb), [lugwig](https://ludwig-ai.github.io/ludwig-docs/)|Autogenerate ML code|
 | Active Learning| [modal](https://github.com/modAL-python/modAL)||
 | Anomaly detection| [adtk](https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html)||
 | Contrastive Learning| [contrastive-learner](https://github.com/lucidrains/contrastive-learner)||
@@ -222,7 +221,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 | Few Shot Learning| [keras-fewshotlearning](https://github.com/ClementWalter/Keras-FewShotLearning)||
 | Fuzzy Learning| [fylearn](https://github.com/sorend/fylearn), [scikit-fuzzy](https://github.com/scikit-fuzzy/scikit-fuzzy)||
 | Genetic Programming| [gplearn](https://gplearn.readthedocs.io/en/stable/index.html)||
-| Gradient Boosting| [catboost](https://catboost.ai/docs/concepts/about.html), [xgboost](https://github.com/dmlc/xgboost), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
+| Gradient Boosting| [catboost](https://github.com/catboost/catboost), [xgboost](https://github.com/dmlc/xgboost), [ngboost](https://github.com/stanfordmlgroup/ngboost)||
 ||[lightgbm](https://github.com/Microsoft/LightGBM), [thunderbm](https://github.com/Xtra-Computing/thundergbm)|GPU Capable|
 | Graph Neural Networks| [spektral](https://github.com/danielegrattarola/spektral/)|GNN for Keras|
 | Graph Embedding and Community Detection| [karateclub](https://github.com/benedekrozemberczki/karateclub), [python-louvain](https://python-louvain.readthedocs.io/en/latest/), [communities](https://github.com/shobrook/communities)||
@@ -249,7 +248,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
 | Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
 ||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
-||[kornia](https://torchgeometry.readthedocs.io/en/latest/index.html)|Computer Vision Methods|
+||[kornia](https://kornia.readthedocs.io/en/latest/)|Computer Vision Methods|
 ||[nonechucks](https://github.com/msamogh/nonechucks)|Drop corrupt data automatically in DataLoader|
 ||[pytorch-optimizer](https://github.com/jettify/pytorch-optimizer)|Collection of optimizers|
 ||[pytorch-block-sparse](https://github.com/huggingface/pytorch_block_sparse)|Sparse matrix replacement for nn.Linear|
@@ -343,7 +342,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [scispacy](https://github.com/allenai/scispacy)|bio-medical data|
 ||[blackstone](https://github.com/ICLRandD/Blackstone)|Legal text|
 |Entity Linking|[dbpedia-spotlight](https://www.dbpedia-spotlight.org/api), [GENRE](https://github.com/facebookresearch/GENRE/blob/main/examples/transformers.md)||
-|Entity Matching|[py_entitymatching](https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
+|Entity Matching|[py_entitymatching](https://github.com/anhaidgroup/py_entitymatching), [deepmatcher](https://github.com/anhaidgroup/deepmatcher)||
 |Embeddings| [InferSent](https://github.com/facebookresearch/InferSent), [embedding-as-service](https://github.com/amansrivastava17/embedding-as-service), [bert-as-service](https://github.com/hanxiao/bert-as-service), [sent2vec](https://github.com/NewKnowledge/nk-sent2vec), [sense2vec](https://github.com/explosion/sense2vec),[glove-python](https://github.com/maciejkula/glove-python), [fse](https://github.com/oborchers/Fast_Sentence_Embeddings)||
 ||[counterix](https://github.com/akb89/counterix)|Train custom Count-based DSM|
 ||[embeddix](https://github.com/akb89/embeddix)|Convert word vectors format|
@@ -360,7 +359,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[svd2vec](https://valentinp72.github.io/svd2vec/getting_started.html)|Learn embeddings from co-occurrence|
 ||[all-but-the-top](https://gist.github.com/lgalke/febaaa1313d9c11f3bc8240defed8390)|Post-processing for word vectors|
 ||[entity-embed](https://github.com/vintasoftware/entity-embed)|Train custom embeddings for named entities|
-|Emotion Classification| [distilroberta-finetuned](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment), [goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch), [text2emotion](https://github.com/aman2656/text2emotion-library)||
+|Emotion Classification|[goemotion-pytorch](https://github.com/monologg/GoEmotions-pytorch), [text2emotion](https://github.com/aman2656/text2emotion-library)||
 ||[emosent-py](https://pypi.org/project/emosent-py/)|Sentiment scores for Emojis|
 |Feature Generation|[homer](https://github.com/wyounas/homer), [textstat](https://github.com/shivam5992/textstat)|Readability scores|
 ||[LexicalRichness](https://github.com/LSYS/LexicalRichness)|Lexical Richness Measure|
@@ -403,7 +402,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Probabilistic parsing|[parserator](https://github.com/datamade/parserator)|Create domain-specific parser for address, name etc.|
 |Profanity detection| [profanity-check](https://github.com/vzhou842/profanity-check)||
 |Pronunciation|[pronouncing](https://pronouncing.readthedocs.io/en/latest/)||
-|Question Answering|[haystack](https://haystack.deepset.ai/docs/latest/intromd)|Build end-to-end QA system|
+|Question Answering|[haystack](https://haystack.deepset.ai)|Build end-to-end QA system|
 ||[mcQA](https://github.com/mcQA-suite/mcQA)|Multiple Choice Question Answering|
 ||[TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)|Table Question Answering|
 |Question Generation|[question-generation](https://github.com/patil-suraj/question_generation), [questiongen.ai](https://github.com/ramsrigouthamg/Questgen.ai)|Question Generation Pipeline for Transformers|
@@ -473,7 +472,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[face-alignment](https://github.com/1adrianb/face-alignment)|Find facial landmarks|
 ||[Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)|Face Emotion|
 | Face swapping| [faceit](https://github.com/goberoi/faceit), [faceit-live](https://github.com/alew3/faceit_live), [avatarify](https://github.com/alievk/avatarify)||
-| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](http://imaginaire.cc/docs), [pytorch-lightning-gans](https://github.com/nocotan/pytorch-lightning-gans)||
+| GANS| [mimicry](https://mimicry.readthedocs.io/en/latest/index.html), [imaginaire](https://github.com/NVlabs/imaginaire), [pytorch-lightning-gans](https://github.com/nocotan/pytorch-lightning-gans)||
 |High-level libraries|[terran](https://github.com/pento-group/terran)|Face detection, recognition, pose estimation|
 |Image Hashing| [ImageHash](https://pypi.org/project/ImageHash/), [imagededup](https://github.com/idealo/imagededup)||
 |Image Inpainting|[GAN Image Inpainting](https://github.com/renatoviolin/GAN-image-inpainting)||
@@ -621,7 +620,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Category|Tool|Remarks|
 |---|---|---|
 |Authentication| [pyjwt (JWT)](https://github.com/jpadilla/pyjwt), [auth0](https://auth0.com/), [okta](https://www.okta.com/), [cognito](https://aws.amazon.com/cognito/)||
-|Batch Jobs|[airflow](https://airflow.apache.org/), [luigi](https://github.com/spotify/luigi), [dagster](https://dagster.io/), [oozie](https://oozie.apache.org/), [prefect](https://docs.prefect.io/core/), [kubernetes-cron-jobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/), [argo](https://argoproj.github.io/projects/argo)||
+|Batch Jobs|[airflow](https://airflow.apache.org/), [luigi](https://github.com/spotify/luigi), [dagster](https://dagster.io/), [oozie](https://oozie.apache.org/), [prefect](https://docs.prefect.io/core/), [kubernetes-cron-jobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/), [argo](https://github.com/argoproj)||
 || [rq](https://github.com/rq/rq), [schedule](https://github.com/dbader/schedule), [huey](https://github.com/coleifer/huey)|Task Queue|
 ||[mlq](https://github.com/tomgrek/mlq)|Queue ML Tasks in Flask|
 |Caching| [cachetools](https://pypi.org/project/cachetools/), [cachew (cache to local sqlite)](https://github.com/karlicoss/cachew)||
@@ -645,7 +644,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Deployment Checklist|[ml-checklist](https://twolodzko.github.io/ml-checklist)||
 |Documentation|[mkdocs](https://www.mkdocs.org/), [pdoc](https://pdoc3.github.io/pdoc/)||
 |Drift Detection|[alibi-detect](https://github.com/SeldonIO/alibi-detect), [torchdrift](https://torchdrift.org/), [boxkite](https://github.com/boxkite-ml/boxkite)|Outlier and drift detection|
-|Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [firebase-ml](https://firebase.google.com/products/ml, [Tensorflow.js](https://www.tensorflow.org/js))||
+|Edge Deployment|[Tensorfow Lite](https://www.tensorflow.org/lite/models), [coreml](https://developer.apple.com/documentation/coreml), [Tensorflow.js](https://www.tensorflow.org/js))||
 |Logging| [loguru](https://github.com/Delgan/loguru)||
 |Model Serving|[cortex](https://github.com/cortexlabs/cortex), [torchserve](https://pytorch.org/serve/), [ray-serve](https://docs.ray.io/en/master/serve/), [bentoml](https://github.com/bentoml/BentoML), [seldon-core](https://github.com/SeldonIO/seldon-core/)|Serving Framework|
 ||[flask](https://flask.palletsprojects.com/en/1.1.x/), [fastapi](https://fastapi.tiangolo.com/)|API Frameworks|
@@ -705,4 +704,4 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Data Visualization|[flourish-studio](https://flourish.studio/)||
 |Git|[gitjk](https://github.com/mapmeld/gitjk)|Undo what you just did in git|
 |Linux|[ripgrep](https://github.com/phiresky/ripgrep-all)||
-|Trade-off tools|[egograph](http://egograph.herokuapp.com/graph/docker)|Find alternatives to anything|
+|Trade-off tools|[egograph](http://egograph.herokuapp.com)|Find alternatives to anything|
