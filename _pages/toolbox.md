@@ -664,12 +664,12 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 |Async| [tomorrow](https://github.com/madisonmay/Tomorrow)||
 |Audio|[simpleaudio](https://github.com/hamiltron/py-simple-audio)|Play audio using python|
+|Automation|[pyuserinput](https://github.com/PyUserInput/PyUserInput), [pyautogui](https://pyautogui.readthedocs.io/en/latest/), [pynput](https://pypi.org/project/pynput/)|Control mouse and keyboard|
 |bloom filter| [python-bloomfilter](https://github.com/jaybaird/python-bloomfilter)||
 |CLI Formatting| [rich](https://github.com/willmcgugan/rich)||
 |Concurrent database| [pickleshare](https://pypi.org/project/pickleshare/)||
 |Code to Maths|[latexify-py](https://github.com/odashi/latexify_py), [handcalcs](https://github.com/connorferster/handcalcs)||
 |Create interactive prompts| [prompt-toolkit](https://pypi.org/project/prompt-toolkit/)||
-|Control mouse and output device| [pynput](https://pypi.org/project/pynput/)||
 |Collections|[bidict](https://pypi.org/project/bidict/)|Bidirectional dictionary|
 ||[sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)|Sorted list, set and dict|
 ||[munch](https://github.com/Infinidat/munch)|Dictionary with dot access|
