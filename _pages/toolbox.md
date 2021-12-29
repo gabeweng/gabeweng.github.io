@@ -673,6 +673,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Collections|[bidict](https://pypi.org/project/bidict/)|Bidirectional dictionary|
 ||[sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)|Sorted list, set and dict|
 ||[munch](https://github.com/Infinidat/munch)|Dictionary with dot access|
+|Correlation Metric|[xicor](https://github.com/czbiohub/xicor)||
 |Date and Time| [pendulum](https://github.com/sdispater/pendulum)||
 |Decorators| [retrying (retry some function)](https://pypi.org/project/retrying/)||
 |Debugging| [PySnooper](https://github.com/cool-RR/PySnooper)||
