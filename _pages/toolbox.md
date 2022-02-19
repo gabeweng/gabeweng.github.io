@@ -161,6 +161,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 || [numba](http://numba.pydata.org/)|Parallelize numpy|
 | Parsing| [pyparsing](https://pyparsing-docs.readthedocs.io/en/latest/index.html), [parse](https://pypi.org/project/parse/)||
 | Split images into train/validation/test| [split-folders](https://github.com/jfilter/split-folders)||
+|Submodular Optimization|[twinning](https://github.com/avkl/twinning), [apricot](https://github.com/jmschrei/apricot)||
 | Weak Supervision| [snorkel](https://www.snorkel.org/get-started/)||
 
 ### Data Exploration  
