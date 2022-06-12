@@ -129,6 +129,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[wikitables](https://wikitables.readthedocs.io/en/latest/)|Import table from wikipedia article|
 |Wikidata|[wikidata](https://github.com/dahlia/wikidata)|Python API to wikidata|
 |XML|[xmltodict](https://github.com/martinblech/xmltodict)|Parse XML as python dictionary|
+|YouTube|[scrapetube](https://github.com/dermasmid/scrapetube)|Scrape video metadata from channel|
 
 ### Data Augmentation  
 
