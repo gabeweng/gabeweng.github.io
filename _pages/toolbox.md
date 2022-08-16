@@ -249,6 +249,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |Addons| [mlxtend](https://github.com/rasbt/mlxtend)|Extra utilities not present in frameworks|
 ||[tensor-sensor](https://github.com/parrt/tensor-sensor)|Visualize tensors|
 | Pytorch| [pytorch-summary](https://github.com/sksq96/pytorch-summary)|Keras-like summary|
+||[torchtyping](https://github.com/patrick-kidger/torchtyping), [tsalib](https://github.com/ofnote/tsalib)|Type annotation for tensors|
 ||[einops](https://github.com/arogozhnikov/einops)|Einstein Notation|
 ||[kornia](https://kornia.readthedocs.io/en/latest/)|Computer Vision Methods|
 ||[nonechucks](https://github.com/msamogh/nonechucks)|Drop corrupt data automatically in DataLoader|
