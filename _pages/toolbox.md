@@ -428,6 +428,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 ||[spacymoji](https://pypi.org/project/spacymoji/)|Add emoji metadata to spacy docs|
 | String match|[phrase-seeker](https://github.com/kirillgashkov/phrase-seeker), [textsearch](https://github.com/kootenpv/textsearch)||
 ||[jellyfish](https://pypi.org/project/jellyfish/), [fuzzy](https://github.com/yougov/fuzzy), [doublemetaphone](https://github.com/dedupeio/doublemetaphone)|Perform string and phonetic comparison|
+||[clavier](https://github.com/MaxHalford/clavier)|Edit distance based on keyboard layout|
 ||[flashtext](https://github.com/vi3k6i5/flashtext)|Super-fast extract and replace keywords|
 ||[pythonverbalexpressions](https://github.com/VerbalExpressions/PythonVerbalExpressions)|Verbally describe regex|
 ||[commonregex](https://github.com/madisonmay/CommonRegex)|Ready-made regex for email/phone etc.|
