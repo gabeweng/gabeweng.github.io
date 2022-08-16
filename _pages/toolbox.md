@@ -152,6 +152,7 @@ The libraries are organized below by phases of a typical Machine Learning projec
 |---|---|---|
 | Class Imbalance| [imblearn](https://imbalanced-learn.org/stable/)||
 | Categorical encoding| [category_encoders](https://github.com/scikit-learn-contrib/category_encoders)||
+||[dirty_cat](https://dirty-cat.github.io/stable/)|Encode cateogories with typos|
 |Dataframe| [cudf](https://github.com/rapidsai/cudf)|Pandas on GPU|
 | Data Validation| [pandera](https://github.com/pandera-dev/pandera), [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|Pandas|
 | Data Cleaning| [pyjanitor](https://github.com/ericmjl/pyjanitor)|Janitor ported to python|
