@@ -79,7 +79,7 @@ author:
     - label: "Subscribe"
       icon: "fas fa-fw fa-envelope"
       url: "https://amitness.substack.com"
-    - label: "Support"
+    - label: "Sponsor"
       icon: "fas fa-fw fa-mug-hot"
       url: "https://www.buymeacoffee.com/amitness"
 #    - label: "Email"
@@ -93,7 +93,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "http://bit.ly/amitnesstwitter"
+      url: "https://twitter.com/amitness"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/amitness"
