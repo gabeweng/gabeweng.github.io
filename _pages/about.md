@@ -8,7 +8,8 @@ excerpt: Learn about me, my current endeavors, research interest areas, and the 
 In this blog, I explain machine learning concepts using diagrams, animations, and intuition.  
 
 **About Me**  
-I am currently a first-year master's student at [CIMEC](https://www.cimec.unitn.it/en) exploring topics across Cognitive Science, Linguistics, and Natural Language Processing.
+
+I am currently a second-year master's student at [University of Malta](https://www.um.edu.mt/courses/overview/PMSCHLTFT-2022-3-O) / [CIMEC](https://www.cimec.unitn.it/en) exploring topics across Cognitive Science, Linguistics, and Natural Language Processing.
 
 Prior to that, I worked as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com) where I built production-level NLP capabilities for a consumer research product from ground zero.
 
