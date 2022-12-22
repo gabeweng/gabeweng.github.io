@@ -13,19 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Amit Chaudhary
-email: meamitkc@gmail.com
+title: Gabriel Weng
+email: gabeweng@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a Machine Learning Engineer applying research to products.
-  I explain machine learning concepts using diagrams, animations and intuition
-url: "https://amitness.com"
-twitter_username: amitness
-github_username: amitness
+  I am a high school student who enjoys learning.
+  I want to use technologies and math to
+url: "https://gabrielweng.com/"
+twitter_username: gabeweng
+github_username: gabeweng
 minimal_mistakes_skin: default
 search: true
 
 twitter:
-  username: "amitness"
+  username: "gabeweng"
 
 # Build settings
 markdown: kramdown
@@ -63,25 +63,25 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Amit Chaudhary"
+  name   : "Gabriel Weng"
   avatar : "/images/bio-photo.jpg"
   bio    : "Research && Engineering"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/amitness"
+      url: "https://twitter.com/gabeweng"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/amitness"
+      url: "https://github.com/gabeweng"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/amitness"
-    - label: "Subscribe"
-      icon: "fas fa-fw fa-envelope"
-      url: "https://amitness.substack.com"
-    - label: "Sponsor"
-      icon: "fas fa-fw fa-mug-hot"
-      url: "https://www.buymeacoffee.com/amitness"
+      url: "https://www.linkedin.com/in/gabrielweng"
+#    - label: "Subscribe"
+#      icon: "fas fa-fw fa-envelope"
+#      url: "https://amitness.substack.com"
+#    - label: "Sponsor"
+#      icon: "fas fa-fw fa-mug-hot"
+#      url: "https://www.buymeacoffee.com/amitness"
 #    - label: "Email"
 #      icon: "fab fa-envelope"
 #      url: "mailto:meamitkc@gmail.com"
@@ -93,10 +93,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/amitness"
+      url: "https://twitter.com/gabeweng"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/amitness"
+      url: "https://github.com/gabeweng"
 
 defaults:
   # _posts
@@ -143,12 +143,11 @@ social:
   type:  Person
   name:  Amit Chaudhary
   links:
-    - "https://twitter.com/amitness"
-    - "https://www.facebook.com/amitify"
-    - "https://www.linkedin.com/in/amitness"
+    - "https://twitter.com/gabeweng"
+    - "https://www.linkedin.com/in/gabrielweng"
 
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "UA-98232022-1"
+    tracking_id: ""
     anonymize_ip: false
