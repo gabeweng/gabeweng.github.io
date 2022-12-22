@@ -5,7 +5,7 @@ classes: wide
 excerpt: Learn about me, my current endeavors, research interest areas, and the motive behind this personal blog.
 ---
 
-In this blog, I explain machine learning concepts using diagrams, animations, and intuition.  
+Learn about me, my current endeavors, research interest areas, and the motive behind this personal blog. 
 
 **About Gabe**  
 
