@@ -7,13 +7,6 @@ excerpt: Learn about me, my current endeavors, research interest areas, and the 
 
 In this blog, I explain machine learning concepts using diagrams, animations, and intuition.  
 
-**About Me**  
+**About Gabe**  
 
-I am currently a second-year master's student at [University of Malta](https://www.um.edu.mt/courses/overview/PMSCHLTFT-2022-3-O) / [CIMEC](https://www.cimec.unitn.it/en) exploring topics across Cognitive Science, Linguistics, and Natural Language Processing.
-
-Prior to that, I worked as a Machine Learning Engineer at [Fusemachines](https://fusemachines.com) where I built production-level NLP capabilities for a consumer research product from ground zero.
-
-I initially began my career as a software engineer but transitioned to data science through rigorous [self-study](https://github.com/amitness/learning).
-
-**Get in touch**  
-Please feel free to connect with me on [Twitter](https://twitter.com/amitness) or [LinkedIn](https://www.linkedin.com/in/amitness).
+I am currently a student at [Staples High School](https://shs.westportps.org/) exploring topics across Healthcare, Natural Language Processing, Data Modeling & Computer Science.
