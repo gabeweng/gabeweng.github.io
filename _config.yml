@@ -64,8 +64,8 @@ plugins:
 
 author:
   name   : "Gabriel Weng"
-  avatar : "/images/bio-photo.jpg"
-  bio    : "Research && Engineering"
+  avatar : "/images/gabeweng.jpg"
+  bio    : "Research && Learning"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
