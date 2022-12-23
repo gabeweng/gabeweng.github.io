@@ -70,7 +70,7 @@ author:
     - label: "Devpost (my Hackathons)"
       icon: "fas fa-fw fa-link"
       url: "https://devpost.com/gabeweng"
-    - label: "GitHub (my Open Source codes)"
+    - label: "GitHub (Open-Source Code)"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gabeweng"
     - label: "Rosalind (Bioinformatics)"
