@@ -68,7 +68,7 @@ author:
   bio    : "Learning & Doing"
   links:
     - label: "Devpost"
-      icon: "fas fa-fw fa-envelope"
+      icon: "fas fa-fw fa-link"
       url: "https://devpost.com/gabeweng"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -80,10 +80,10 @@ author:
       icon: "fas fa-fw fa-mug-hot"
       url: "https://rosalind.info/users/gabeweng/"
     - label: "Email"
-      icon: "fab fa-envelope"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:gabeweng@gmail.com"
     - label: "Feed"
-      icon: "fab fa-fw fa-globe"
+      icon: "fas fa-fw fa-link"
       url: "/feed.xml"
 
 footer:
