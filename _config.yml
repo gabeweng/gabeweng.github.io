@@ -65,29 +65,26 @@ plugins:
 author:
   name   : "Gabriel Weng"
   avatar : "/images/gabeweng.jpg"
-  bio    : "Research && Learning"
+  bio    : "Learning & Doing"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/gabeweng"
+    - label: "Devpost"
+      icon: "fas fa-fw fa-envelope"
+      url: "https://devpost.com/gabeweng"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gabeweng"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/gabrielweng"
-#    - label: "Subscribe"
-#      icon: "fas fa-fw fa-envelope"
-#      url: "https://amitness.substack.com"
-#    - label: "Sponsor"
-#      icon: "fas fa-fw fa-mug-hot"
-#      url: "https://www.buymeacoffee.com/amitness"
-#    - label: "Email"
-#      icon: "fab fa-envelope"
-#      url: "mailto:meamitkc@gmail.com"
-#    - label: "Feed"
-#      icon: "fab fa-fw fa-globe"
-#      url: "/feed.xml"
+    - label: "Rosalind (Bioinformatics)"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "https://rosalind.info/users/gabeweng/"
+    - label: "Email"
+      icon: "fab fa-envelope"
+      url: "mailto:gabeweng@gmail.com"
+    - label: "Feed"
+      icon: "fab fa-fw fa-globe"
+      url: "/feed.xml"
 
 footer:
   links:
@@ -141,7 +138,7 @@ google_site_verification: "xETphZ5K1WItiUzH0YMRgZ8njDZlQMcGd_HD3zxGkuI"
 
 social:
   type:  Person
-  name:  Amit Chaudhary
+  name:  Gabriel Weng
   links:
     - "https://twitter.com/gabeweng"
     - "https://www.linkedin.com/in/gabrielweng"
