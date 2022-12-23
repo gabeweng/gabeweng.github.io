@@ -82,9 +82,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:gabeweng@gmail.com"
-    - label: "Feed"
-      icon: "fas fa-fw fa-link"
-      url: "/feed.xml"
+
 
 footer:
   links:
