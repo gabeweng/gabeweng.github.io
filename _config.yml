@@ -17,7 +17,7 @@ title: Singularity
 email: gabeweng@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am a high school student who enjoys learning.
-  I want to use technologies and math to
+  I want to use technologies and math to make this world a better place
 url: "https://gabrielweng.com/"
 twitter_username: gabeweng
 github_username: gabeweng
@@ -65,20 +65,23 @@ plugins:
 author:
   name   : "Gabriel Weng"
   avatar : "/images/gabeweng.jpg"
-  bio    : "Learning & Doing"
+  bio    : "Learning Journey"
   links:
-    - label: "Devpost"
+    - label: "Devpost (my Hackathons)"
       icon: "fas fa-fw fa-link"
       url: "https://devpost.com/gabeweng"
-    - label: "GitHub"
+    - label: "GitHub (my Open Source codes)"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gabeweng"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/gabrielweng"
     - label: "Rosalind (Bioinformatics)"
       icon: "fas fa-fw fa-mug-hot"
       url: "https://rosalind.info/users/gabeweng/"
+    - label: "RobotBenchmark (Robotics)"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "https://robotbenchmark.net/gabrielweng"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/gabrielweng"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:gabeweng@gmail.com"

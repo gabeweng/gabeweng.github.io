@@ -7,7 +7,6 @@ categories:
 permalink: /race-edu-tech/
 classes: wide
 excerpt: the role of education in shaping economic and social mobility in the United States
-header:
 ---
 
 "The Race between Education and Technology" is a book written by Claudia Goldin and Lawrence F. Katz that explores the role of education in shaping economic and social mobility in the United States. The authors argue that education has played a critical role in the country's economic development and in helping people improve their social and economic status. However, they also argue that education has struggled to keep pace with technological change, which has led to rising inequality and declining mobility.
