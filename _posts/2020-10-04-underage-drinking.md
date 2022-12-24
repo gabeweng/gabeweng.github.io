@@ -6,7 +6,6 @@ categories:
   - health
 permalink: /underage-drinking/
 classes: wide
-excerpt: A general framework to transfer knowledge from deep self-supervised models to shallow task-specific models
 header:
   og_image: /images/kt-step-3.png
   teaser: "/images/kt-step-3.png"
