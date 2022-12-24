@@ -11,6 +11,7 @@ header:
   og_image:
   teaser:
 ---
+Why did Mr. Plummer and Mr. Severe find personal pleasure in punishing slaves?
 
 Mr. Plummer’s excessive cruelty appears to be fueled by internal problems of his own. On page 4, Douglass describes him as a “miserable drunkard, a profane swearer, and a savage monster.. Because of his “miserable” state, he resorts to punishing slaves as a means to gain pleasure. Clearly, he is sadistic, but there is not much else in the text to support any other conclusions. On page 11, Douglass introduces another overseer, Mr. Severe, who also finds pleasure in the suffering of others. Like Mr. Plummer, he is also described as a “profane swearer” (12). Again, there is not much evidence that explains why he finds pleasure in his actions.
 
