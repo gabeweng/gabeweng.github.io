@@ -13,16 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# See https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
 title: Singularity
+subtitle: mathematics, economics, biology and coding
 email: gabeweng@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I am a high school student who enjoys learning.
-  I want to use technologies and math to make this world a better place
 url: "https://gabrielweng.com/"
 twitter_username: gabeweng
 github_username: gabeweng
 minimal_mistakes_skin: default
+words_per_minute: 130
 search: true
+masthead_title: masthead_title
 
 twitter:
   username: "gabeweng"
@@ -134,8 +135,6 @@ comments:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
 repository: "amitness/blog-comments"
-
-google_site_verification: "xETphZ5K1WItiUzH0YMRgZ8njDZlQMcGd_HD3zxGkuI"
 
 social:
   type:  Person
