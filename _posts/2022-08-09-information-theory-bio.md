@@ -1,13 +1,13 @@
 ---
 title: "Information theory in Biology"
-date: 2022-04-06T00:00-00:00
+date: 2022-08-09T00:00-00:00
 categories:
   - tech
   - future
   - biology
 permalink: /information-theory-bio-ai/
 classes: wide
-excerpt: a branch of mathematics that deals with the study of the transmission, processing, utilization, and extraction of information
+excerpt: study the way that information is encoded, transmitted, and processed within living organisms
 ---
 
 Information theory is a branch of mathematics that deals with the study of the transmission, processing, utilization, and extraction of information. It was developed by mathematician Claude Shannon in the 1940s as a way to understand the limits of communication systems and to optimize their design.
