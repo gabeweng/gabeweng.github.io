@@ -4,6 +4,7 @@ date: 2022-04-06T00:00-00:00
 categories:
   - tech
   - future
+  - biology
 permalink: /information-theory-bio-ai/
 classes: wide
 excerpt: a branch of mathematics that deals with the study of the transmission, processing, utilization, and extraction of information
