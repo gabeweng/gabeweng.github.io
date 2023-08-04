@@ -14,14 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # See https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
-title: Singularity
-subtitle: Mathematics, Economics, Biotechnology and Coding
+title: Singularity Is Near
+subtitle: Biotechnology, Mathematics, Economics and Coding
 email: gabeweng@gmail.com
 url: "https://gabrielweng.com/"
 twitter_username: gabeweng
 github_username: gabeweng
 minimal_mistakes_skin: default
-words_per_minute: 100
+words_per_minute: 80
 search: true
 
 twitter:
@@ -68,7 +68,10 @@ author:
   bio    : "Learning Journey"
   location: "Westport, CT"
   links:
-    - label: "Devpost (my Hackathons)"
+    - label: "Last Mile Now"
+      icon: "fas fa-fw fa-briefcase"
+      url: "https://lastmilenow.org/"
+    - label: "Devpost (Hackathons)"
       icon: "fas fa-fw fa-link"
       url: "https://devpost.com/gabeweng"
     - label: "GitHub (Open-Source Code)"
@@ -83,13 +86,6 @@ author:
     - label: "RobotBenchmark (Robotics)"
       icon: "fas fa-fw fa-terminal"
       url: "https://robotbenchmark.net/gabrielweng"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/gabrielweng"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:gabeweng@gmail.com"
-
 
 footer:
   links:
@@ -99,6 +95,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gabeweng"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/gabrielweng"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:gabeweng@gmail.com"
 
 defaults:
   # _posts
