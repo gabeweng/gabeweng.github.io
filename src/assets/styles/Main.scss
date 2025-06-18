@@ -9,8 +9,7 @@
     align-items: center;
     width: 100%;
     padding: 0px 15%;
-    min-height: 700px;
-    background-image: url("../images/bg-dark.png");
+    min-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -37,13 +36,21 @@
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
 
+    p:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0px;
+    }
+
     h1 {
-        font-size: 5em;
+        font-size: 4em;
         margin-block-start: 0px;
         margin-block-end: 0px;
     }

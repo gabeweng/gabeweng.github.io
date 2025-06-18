@@ -16,7 +16,11 @@ code {
 .main-container {
   position: relative;
   background-color: #0d1116;
-
+  background-image: url("./assets/images/bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 a {
@@ -94,6 +98,11 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 .light-mode {
   background-color: #f8f9fa;
+  background-image: url("./assets/images/bg-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 
   .navigation-bar {
     background-color: #f8f9fa;
@@ -110,10 +119,6 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
   .navigation-bar svg {
     color: #0d1116;
-  }
-
-  .about-section {
-    background-image: url("./assets/images/bg-light.png");
   }
 
   .skills-container svg {
