@@ -22,9 +22,9 @@ const tests = [
 
 function Tests() {
   return (
-    <div className="container" id="tests">
-      <h1 className="white-text">Tests</h1>
-      <ul className="two-column-list white-text">
+    <div className="items-container" id="tests">
+      <h1>Tests</h1>
+      <ul className="two-column-list">
         {tests.map((test, idx) => <li key={idx}>{test}</li>)}
       </ul>
     </div>

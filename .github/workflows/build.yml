@@ -17,8 +17,3 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel
           pip install requests
-      - name: "Clear Cloudflare cache"
-        run: python post_build.py
-        env:
-          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}

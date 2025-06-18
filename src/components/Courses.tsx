@@ -18,14 +18,14 @@ const currentCourses = [
 
 function Courses() {
   return (
-    <div className="container" id="courses">
-      <h1 className="white-text">Courses</h1>
-      <h2 className="white-text">Previous Courses</h2>
-      <ul className="two-column-list white-text">
+    <div className="items-container" id="courses">
+      <h1>Courses</h1>
+      <h2>Previous Courses</h2>
+      <ul className="two-column-list">
         {previousCourses.map((course, idx) => <li key={idx}>{course}</li>)}
       </ul>
-      <h2 className="white-text">Current Courses</h2>
-      <ul className="two-column-list white-text">
+      <h2>Current Courses</h2>
+      <ul className="two-column-list">
         {currentCourses.map((course, idx) => <li key={idx}>{course}</li>)}
       </ul>
     </div>

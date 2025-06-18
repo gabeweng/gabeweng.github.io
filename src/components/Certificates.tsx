@@ -14,9 +14,9 @@ const certificates = [
 
 function Certificates() {
   return (
-    <div className="container" id="certificates">
-      <h1 className="white-text">Certificates</h1>
-      <ul className="two-column-list white-text">
+    <div className="items-container" id="certificates">
+      <h1>Certificates</h1>
+      <ul className="two-column-list">
         {certificates.map((cert, idx) => (
           <li key={idx}>
             <a href={cert.url} target="_blank" rel="noreferrer">{cert.name}</a>

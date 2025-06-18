@@ -63,16 +63,26 @@
     padding-bottom: 30%;
 }
 
-.white-text {
-    color: white !important;
-}
-
 .two-column-list {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     column-gap: 40px;
     list-style-position: inside;
+}
+
+#courses, #certificates, #tests, #publications {
+    h1, h2, li, a {
+        color: white;
+    }
+}
+
+.light-mode {
+    #courses, #certificates, #tests, #publications {
+        h1, h2, li, a {
+            color: #0d1116;
+        }
+    }
 }
 
 @media screen {

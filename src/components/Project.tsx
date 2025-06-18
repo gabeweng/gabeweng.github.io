@@ -31,7 +31,7 @@ function Project() {
                 <p>Instructor. Led weekly coding enrichment program. Guided 150+ elementary students in coding and robotics, enhancing problem-solving skills. "Employee of 2023"</p>
             </div>
         </div>
-        <h2 className="white-text">Awards</h2>
+        <h2>Awards</h2>
         <ul>
             <li><a href="https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest/code-quest-past-quests/codequest-2022.html" target="_blank" rel="noreferrer">1st Place, Advanced Div, Lockheed Martin Code Quest "Sandy Coder"</a></li>
             <li><a href="https://drive.google.com/file/d/1NVCmX6Czi4QgtQO7aOIuDq-b9ds_6XAq/view?usp=share_link" target="_blank" rel="noreferrer">Semi-finalist, Modeling the Future, Actuarial Foundation 2023</a></li>
@@ -47,8 +47,8 @@ function Project() {
             <li><a href="https://robotbenchmark.net/gabrielweng" target="_blank" rel="noreferrer">Ranked top 8%, Robot Benchmark, 2023</a></li>
             <li>RIT Computing Award, Staples High School $76,000 scholarship. 2023</li>
         </ul>
-        <h2 className="white-text">Publications</h2>
-        <ul className="white-text">
+        <h2>Publications</h2>
+        <ul id="publications">
             <li>The Effect of Covid-19 Pandemic on Food Insecurity, Harvard CVT, Aug. 2022</li>
             <li>Ethical Considerations of Brain Technologies, NIH Brain Institute, April 2022</li>
             <li>Metaverse Virtualization as a Solution for Climate Change, Federal Reserve Bank of New York, Feb. 2022</li>
